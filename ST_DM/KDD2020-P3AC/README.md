@@ -1,4 +1,4 @@
-# P3AC
+# P3AC（Personalized Prefix embedding for POI Auto-Completion)
 
 ## 任务说明(Introduction)
 
@@ -6,13 +6,13 @@ TODO
 
 ## 安装说明(Install Guide)
 
-### 环境准备
+### 环境准备 (Enviornment Setup)
 
-1. paddle安装
+1. paddle安装 (Install Paddle)
 
     本项目依赖于Paddle Fluid 1.6.1 及以上版本，请参考[安装指南](http://www.paddlepaddle.org/#quick-start)进行安装
 
-2. 下载代码
+2. 下载代码 (Clone Codes)
 
     克隆数据集代码库到本地, 本代码依赖[Paddle-EPEP框架](https://github.com/PaddlePaddle/epep)
     ```
@@ -38,14 +38,14 @@ TODO
     #script to download 
     ```
 
-2. 模型训练
+2. 模型训练 (Model Training)
 
     ```
     cp conf/poi_qac_personalized/poi_qac_personalized.local.conf.template conf/poi_qac_personalized/poi_qac_personalized.local.conf
     sh run.sh -c conf/poi_qac_personalized/poi_qac_personalized.local.conf -m train [ -g 0 ]
     ```
 
-3. 模型评估
+3. 模型评估 (Model Testing)
     ```
     pred_gpu=$1
     mode=$2 #query, poi, eval
