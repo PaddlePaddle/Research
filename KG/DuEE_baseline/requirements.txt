@@ -1,0 +1,3 @@
+numpy==1.14.5
+six==1.11.0
+paddlepaddle-gpu==1.6.2.post97

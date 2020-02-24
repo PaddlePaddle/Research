@@ -1,0 +1,4 @@
+{"event_type": "财经/交易-涨停", "role_list": [{"role": "时间"}, {"role": "涨停股票"}], "id": "a4d265039f08a3754d649edf3f814496", "class": "财经/交易"}
+{"event_type": "竞赛行为-晋级", "role_list": [{"role": "时间"}, {"role": "晋级方"}, {"role": "晋级赛事"}], "id": "5dba3f7656533fe81a35c6e097ac6b69", "class": "竞赛行为"}
+{"event_type": "人生-出轨", "role_list": [{"role": "时间"}, {"role": "出轨方"}, {"role": "出轨对象"}], "id": "1e94e9b3c3b97b42e59d8a61bd79677a", "class": "人生"}
+{"event_type": "人生-结婚", "role_list": [{"role": "时间"}, {"role": "结婚双方"}], "id": "8179656fa2c0070c76cf41f239213557", "class": "人生"}
