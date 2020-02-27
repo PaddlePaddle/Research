@@ -23,8 +23,7 @@ Anything else besides the tagging strategy is implemented in the most straightfo
  <CLS> *input text* <SEP>, and the final hidden states are directly projected into classification probabilities.
 
 ### Environments  
-Python3 + Paddle Fluid 1.5 for training/evaluation/prediction (please confirm your Python path in scripts).  
-Python2 for official evaluation script.  
+Python3 + Paddle Fluid 1.5 (please confirm your Python path in scripts).  
 Dependencies are listed in `./requirements.txt`.  
 The code is tested on a single P40 GPU, with CUDA version=10.1, GPU Driver Version = 418.39.
 
@@ -61,6 +60,6 @@ This will write the predictions into a json file with the same format as the ori
 Zip your prediction json file and then run official evaluation:
 ```
 zip ./data/predict_dev.json.zip ./data/predict_dev.json
-python2 ./script/re_official_evaluation.py --golden_file=./data/dev.json  --predict_file=./data/predict_dev.json.zip [--alias_file alias_dict]
+python ./script/re_official_evaluation.py --golden_file=./data/dev.json  --predict_file=./data/predict_dev.json.zip [--alias_file alias_dict]
 ```
 Precision, Recall and F1 scores are used as the official evaluation metrics to measure the performance of participating systems. Alias file lists entities with more than one correct mentions. It is not provided due to security reasons.
