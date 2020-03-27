@@ -281,7 +281,10 @@ class RelationExtractionMultiCLSReader(BaseReader):
 
     def _convert_example_to_record(self, example_index, example, max_seq_length,
                                    tokenizer):
-        spo_list = example['spo_list']
+        if example.__contains__('spo_list'):
+            spo_list = example['spo_list']
+        else:
+            spo_list = []
         text_raw = example['text']
 
         sub_text = []
