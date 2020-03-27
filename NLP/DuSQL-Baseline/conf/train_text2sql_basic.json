@@ -1,0 +1,528 @@
+{
+    "dataset_reader": {
+        "train_reader": {
+            "name": "train_reader",
+            "type": "JsonDataSetReader",
+            "fields": [
+                {
+                    "name": "question_tokens",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2DFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_name_tokens": 10,
+                        "max_item_len": 55
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 120,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128
+                    }
+                },
+                {
+                    "name": "table_names",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2DFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_name_tokens": 20,
+                        "max_item_len": <MAX_TABLE>
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 36,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128
+                    }
+                },
+                {
+                    "name": "column_names",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2DFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_name_tokens": 20,
+                        "max_item_len": <MAX_COLUMN>
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 180,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128
+                    }
+                },
+                {
+                    "name": "values",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2DFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_name_tokens": 20,
+                        "max_item_len": <MAX_VALUE>
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 225,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128
+                    }
+                },
+                {
+                    "name": "question_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 55,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 6
+                    }
+                },
+                {
+                    "name": "table_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": <MAX_TABLE>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 2
+                    }
+                },
+                {
+                    "name": "column_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": <MAX_COLUMN>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 4
+                    }
+                },
+                {
+                    "name": "value_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": <MAX_VALUE>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 2
+                    }
+                },
+                {
+                    "name": "column_tables",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_COLUMN>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": <MAX_TABLE>
+                    }
+                },
+                {
+                    "name": "label",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "GrammarLabelFieldReader"
+                    },
+                    "tokenizer": {
+                        "grammar_file": "./conf/grammar.txt",
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": true,
+                    "vocab_path": "data/empty",
+                    "max_seq_len": 120,
+                    "truncation_type": 0,
+                    "padding_id": 0
+                }
+            ],
+            "config": {
+                "data_path": "./data/data_v1.0.0/train/",
+                "shuffle": true,
+                "batch_size": 64,
+                "epoch": 300,
+                "sampling_rate": 1.0
+            }
+        },
+        "evaluate_reader": {
+            "name": "evaluate_reader",
+            "type": "JsonDataSetReader",
+            "fields": [
+                {
+                    "name": "question_tokens",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2DFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_name_tokens": 10,
+                        "max_item_len": 55
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 120,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128
+                    }
+                },
+                {
+                    "name": "table_names",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2DFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_name_tokens": 20,
+                        "max_item_len": <MAX_TABLE>
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 36,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128
+                    }
+                },
+                {
+                    "name": "column_names",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2DFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_name_tokens": 20,
+                        "max_item_len": <MAX_COLUMN>
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 180,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128
+                    }
+                },
+                {
+                    "name": "values",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2DFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_name_tokens": 20,
+                        "max_item_len": <MAX_VALUE>
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 225,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128
+                    }
+                },
+                {
+                    "name": "question_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": 55,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 6
+                    }
+                },
+                {
+                    "name": "table_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": <MAX_TABLE>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 2
+                    }
+                },
+                {
+                    "name": "column_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": <MAX_COLUMN>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 4
+                    }
+                },
+                {
+                    "name": "value_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/vocab.txt",
+                    "max_seq_len": <MAX_VALUE>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 2
+                    }
+                },
+                {
+                    "name": "column_tables",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_COLUMN>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": <MAX_TABLE>
+                    }
+                },
+                {
+                    "name": "label",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "GrammarLabelFieldReader"
+                    },
+                    "tokenizer": {
+                        "grammar_file": "./conf/grammar.txt",
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": true,
+                    "vocab_path": "data/empty",
+                    "max_seq_len": 120,
+                    "truncation_type": 0,
+                    "padding_id": 0
+                }
+            ],
+            "config": {
+                "data_path": "./data/data_v1.0.0/dev/",
+                "shuffle": false,
+                "batch_size": 64,
+                "epoch": 1,
+                "sampling_rate": 1.0
+            }
+        }
+    },
+    "model": {
+        "type": "Text2SQL",
+        "optimizer": {
+            "learning_rate": 1e-3
+        },
+        "hidden_size": 300,
+        "dropout": 0.3,
+        "encoder": {
+            "type": "LSTM",
+            "encoder_layers": 1,
+            "table_encoder": "simple_sum",
+            "table_attention": "affine",
+            "embedding_size": 300,
+            "finetune_emb": true,
+            "vocab_file": "./data/vocab.txt",
+            "embedding_file": "./data/cc.zh.300.vec.filter"
+        },
+        "decoder": {
+            "max_infer_step": 120,
+            "lf_emb_size": 128,
+            "lf_name_emb_size": 128,
+            "beam_size": 1
+        },
+        "grammar_file": "./conf/grammar.txt"
+    },
+    "trainer": {
+        "PADDLE_USE_GPU": 1,
+        "PADDLE_IS_LOCAL": 1,
+        "use_fp16": false,
+        "train_log_step": 60,
+        "is_eval_dev": 1,
+        "is_eval_test": 0,
+        "eval_step": 300,
+        "save_model_step": 300,
+        "output_path": null,
+        "load_parameters": null,
+        "load_checkpoint": null,
+        "_load_checkpoint": "output/save_checkpoints/checkpoints_step_11780/",
+        "pre_train_model": []
+    }
+}
