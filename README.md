@@ -20,7 +20,11 @@
 
 
 ## 知识图谱
-
+| 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
+| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| 知识图谱表示学习 | [CoKE](https://github.com/PaddlePaddle/Research/tree/master/KG/CoKE) | 百度自主研发语境化知识图谱表示学习框架CoKE，在知识图谱链接预测和多步查询任务上取得学界领先效果。| [https://arxiv.org/abs/1911.02168](https://arxiv.org/abs/1911.02168) |
+| 关系抽取 | [DuIE\_Baseline](https://github.com/PaddlePaddle/Research/tree/master/KG/DuIE_Baseline) | 语言与智能技术竞赛关系抽取任务DuIE 2.0基线系统，通过设计结构化标注体系，实现基于[ERNIE](https://arxiv.org/abs/1904.09223)的端到端SPO抽取模型。| - |
+| 事件抽取 |[DuEE\_baseline](https://github.com/PaddlePaddle/Research/tree/master/KG/DuEE_baseline)| 语言与智能技术竞赛事件抽取任务DuEE 1.0基线系统，实现基于[ERNIE](https://arxiv.org/abs/1904.09223)+CRF的Pipeline事件抽取模型。| - |
 
 ## 时空数据挖掘
 
