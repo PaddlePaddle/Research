@@ -2,7 +2,7 @@ set -eux
 
 export BATCH_SIZE=16
 export LR=2e-5
-export EPOCH=10
+export EPOCH=9
 export SAVE_STEPS=5000
 
 export SAVE_PATH=./
@@ -14,7 +14,7 @@ export DEV_FILE=dev.json
 export FLAGS_sync_nccl_allreduce=1
 export PYTHONPATH=./ernie:${PYTHONPATH:-}
 
-CUDA_VISIBLE_DEVICES=7 python -u ./ernie/run_duie.py \
+CUDA_VISIBLE_DEVICES=0 python -u ./ernie/run_duie.py \
                    --use_cuda true \
                    --do_train true \
                    --do_val true \
