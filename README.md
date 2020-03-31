@@ -17,6 +17,7 @@
 | 中文词法分析 | [LAC(Lexical Analysis of Chinese)](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/lexical_analysis) | 百度自主研发中文特色模型词法分析任务，集成了中文分词、词性标注和命名实体识别任务。输入是一个字符串，而输出是句子中的词边界和词性、实体类别。 | |
 | 主动对话 | [DuConv](https://github.com/PaddlePaddle/Research/tree/master/NLP/ACL2019-DuConv) | 机器根据给定知识信息主动引领对话进程完成设定的对话目标 |https://www.aclweb.org/anthology/P19-1369/|
 | 语义解析 | [DuSQL-Baseline](NLP/DuSQL-Baseline) | 输入自然语言问题和相应的数据库，生成与问题对应的 SQL 查询语句，通过执行该 SQL 可得到问题的答案 | - |
+| 面向推荐的对话 | [Conversational-Recommendation-BASELINE](https://github.com/PaddlePaddle/Research/tree/master/NLP/Conversational-Recommendation-BASELINE) | 融合人机对话系统和个性化推荐系统，定义新一代智能推荐技术，该系统先通过问答或闲聊收集用户兴趣和偏好，然后主动给用户推荐其感兴趣的内容，比如餐厅、美食、电影、新闻等。 | - |
 
 
 ## 知识图谱
