@@ -6,11 +6,7 @@
 依赖的第三方python库：
 * jieba
 
-原始训练、测试数据下载地址：
-
-coming soon...
-
-得到的数据包括：
+DuSQL 数据集[下载](https://dataset-bj.cdn.bcebos.com/dusql/DuSQL.tar)。解压后得到的数据包括：
 
 * train.json: 训练集数据
 * dev.json: 开发集数据
