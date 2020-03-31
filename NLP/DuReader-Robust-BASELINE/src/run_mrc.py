@@ -356,7 +356,7 @@ def train(args):
         steps = 0
         total_cost, total_num_seqs = [], []
         time_begin = time.time()
-        while steps < max_train_steps:
+        while True:
             try:
                 steps += 1
                 if steps % args.skip_steps == 0:
