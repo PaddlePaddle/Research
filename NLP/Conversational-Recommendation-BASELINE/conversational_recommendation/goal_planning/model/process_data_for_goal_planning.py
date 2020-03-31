@@ -244,7 +244,7 @@ def process_sample_data(input_filename, output_filename):
 if __name__ == '__main__':
     add_label('../origin_data/resource/train.txt', '../origin_data/train_add_label.txt')
     add_label('../origin_data/resource/dev.txt', '../origin_data/dev_add_label.txt')
-    process_session_data('./origin_data/train_add_label.txt', '../origin_data/train.txt')
+    process_session_data('../origin_data/train_add_label.txt', '../origin_data/train.txt')
     process_session_data('../origin_data/dev_add_label.txt', '../origin_data/dev.txt')
     process_sample_data('../origin_data/resource/test_1.txt', '../origin_data/test.txt')
 

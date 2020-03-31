@@ -419,7 +419,11 @@ def inference():
     # binary_goal_input = file_reader("../train_data/train_binary_goal_type.txt")
     
     data, binary_utterance, binary_goal_input = data_process()
-    binary_goal_input = [goal_idx_dict[t] for t in binary_goal_input]
+    # binary_goal_input = [goal_idx_dict[t] for t in binary_goal_input]
+    binary_goal_input = []
+    for t in binary_goal_input:
+        if t in goal_idx_dict:
+            binary_goal_input.append(goal_idx_dict[t])
     model = GoalPlanning()
     print(len(data))
     
@@ -432,8 +436,8 @@ def inference():
     next_goal_true = list()
     next_kg_true = list()
     for idx in range(len(data)):
-        if jump_flag_list[idx] == 1 and data[idx]["utterance_idx"] != 0:
-            try:
+        try:
+            if jump_flag_list[idx] == 1 and data[idx]["utterance_idx"] != 0:
                 goal_route = [goal_idx_dict[g] for g in data[idx]["goal_type_route"]]
                 kg_route = [kg_idx_dict[k] for k in data[idx]["goal_entity_route"]]
                 goal_route, kg_route = remove_repeat(goal_route, kg_route)
@@ -449,8 +453,8 @@ def inference():
                     kg_route_data.append([kg_route + [nb], nb, final_goal_entity, idx, \
                         kg_idx_dict[data[idx]["next_goal_entity"]]])
                 next_kg_true.append(kg_idx_dict[data[idx]["next_goal_entity"]])
-            except:
-                pass
+        except:
+            pass
 
     goal_route_data_ = paddle.batch(reader_generater(goal_route_data), batch_size=512)
     kg_route_data_ = paddle.batch(reader_generater(kg_route_data), batch_size=512)
