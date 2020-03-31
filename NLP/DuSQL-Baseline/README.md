@@ -230,6 +230,14 @@ optional arguments:
   --db-max-len DB_MAX_LEN DB_MAX_LEN DB_MAX_LEN
                         max len of db tables/columns/values. replace
                         <MAX_TABLE>, <MAX_COLUMN>, <MAX_VALUE> in config file
+  --use-question-fea USE_QUESTION_FEA
+                        yes|no
+  --use-table-fea USE_TABLE_FEA
+                        yes|no
+  --use-column-fea USE_COLUMN_FEA
+                        yes|no
+  --use-value-fea USE_VALUE_FEA
+                        yes|no
   --seed SEED           random seed. currently unsupported!
   --log-file LOG_FILE   Log file path. Default is None, and logs will be wrote
                         to stderr.

@@ -32,6 +32,7 @@ from text2sql.utils import pad_batch_data
 from text2sql.datalib import DName
 
 TEXT2SQL_ERNIE_FIELD_NUM = 24
+g_meaning_full_star = '数量。任意。整体'
 
 @RegisterSet.field_reader.register
 class Text2SQLErnieFieldReader(BaseFieldReader):
@@ -194,9 +195,9 @@ class Text2SQLErnieFieldReader(BaseFieldReader):
         lst_t_toks_len = []
         lst_c_toks_len = []
         lst_v_toks_len = []
-        #sep_id = self.tokenizer.covert_token_to_id("[SEP]")
+
         for question, tnames, cnames, values in zip(*batch_text):
-            #q_toks = [x for x in self._segment_2d_field(question) if x != '[SEP]'] + ['[SEP]']
+            cnames = g_meaning_full_star + ' ' + cnames.split(' ', 1)[1]
             q_toks = self._segment_2d_field(question)
             t_toks = self._segment_2d_field(tnames)
             c_toks = self._segment_2d_field(cnames)
@@ -204,15 +205,15 @@ class Text2SQLErnieFieldReader(BaseFieldReader):
 
             base_idx = 1
             q_span_pos, q_span_len = self._gen_all_pos(base_idx, q_toks, del_sep=True)
-            base_idx += len(q_toks)
+            base_idx = len(q_toks) + 2   # +2 是增加 [CLS] 和 [SEP] 后的base idx
             t_pos, t_toks_len = self._gen_all_pos(base_idx, t_toks)
             base_idx += len(t_toks)
             c_pos, c_toks_len = self._gen_all_pos(base_idx, c_toks)
-            base_idx += len(c_toks)
+            base_idx = len(c_toks) + 2   # +2 是增加 [CLS] 和 [SEP] 后的base idx
             v_pos, v_toks_len = self._gen_all_pos(base_idx, v_toks)
 
-            tokens_qtc = ['[CLS]'] + q_toks + t_toks + c_toks
-            tokens_qv = ['[CLS]'] + q_toks + v_toks
+            tokens_qtc = ['[CLS]'] + q_toks + ['[SEP]'] + t_toks + c_toks
+            tokens_qv = ['[CLS]'] + q_toks + ['[SEP]'] + v_toks
             # 加上截断策略
             if len(tokens_qtc) > max_len:
                 raise ValueError('input tokens num(%d) > max_len(%d)' % (len(tokens_qtc), max_len))
@@ -382,11 +383,11 @@ class Text2SQLErnieFieldReader(BaseFieldReader):
             lst_result += tmp_result + [sep_str]
         return lst_result
 
-    def _gen_all_pos(self, start_idx, tokens, del_sep=False):
+    def _gen_all_pos(self, base_idx, tokens, del_sep=False):
         """generate each tokens pos and name lens
 
         Args:
-            start_idx (int): NULL
+            base_idx (int): NULL
             tokens (list): e.g. stu name [SEP] class no [SEP] age [SEP] ...
             del_sep (bool): if True, delete [SEP] token in inputs tokens
 
@@ -396,19 +397,21 @@ class Text2SQLErnieFieldReader(BaseFieldReader):
         """
         lst_pos_result = []
         lst_name_lens = []
+        start = 0
         idx = 0
         while idx < len(tokens):
             if tokens[idx] != '[SEP]':
                 idx += 1
                 continue
-            tmp_pos_list = list(range(start_idx, idx))
+            tmp_pos_list = list(range(start, idx))
+            tmp_pos_list = [x + base_idx for x in tmp_pos_list]
             lst_name_lens.append(len(tmp_pos_list))
             lst_pos_result.append(tmp_pos_list + [0] * (self.max_name_tokens - len(tmp_pos_list)))
             if del_sep:
                 tokens.pop(idx)
             else:
                 idx += 1
-            start_idx = idx
+            start = idx
 
         return lst_pos_result, lst_name_lens
 
