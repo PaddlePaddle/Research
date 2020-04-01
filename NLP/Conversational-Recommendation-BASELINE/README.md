@@ -128,7 +128,7 @@ sh run_test.sh match_kn_gene
 #### 预处理数据
 我们做了简单处理，直接拉取代码即可跑出结果。如想进一步提升效果，需要基于`goal planning`预测出更好的goal，然后替换数据集中的属性`goal`，我们通过实验发现加入goal能比较明显的提升效果。
 
-注意：`goal planning\sgns.weibo.300d.txt`是生成模型所需要的embedding文件，因原始文件较大，只放了100行供参赛者了解文件格式。参赛者可自行训练更好的embedding。`data/resource/train/dev/test.txt`包含少量数据，需要替换成完整数据。
+注意：`generative_model/data/sgns.weibo.300d.txt`是生成模型所需要的embedding文件，因原始文件较大，只放了100行供参赛者了解文件格式。参赛者可自行训练更好的embedding。`data/resource/train/dev/test.txt`包含少量数据，需要替换成完整数据。
 
 #### 训练模型
 
