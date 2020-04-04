@@ -151,7 +151,7 @@ Here are the configs to reproduce our results.
 These are also given in the `configs/${TASK}_job_config.sh` files.
 
 | Dataset | NetConfig |  epoch | dropout | label smoothing|
-|---|---|---|---|---|---| ---|
+|---|---|---|---|---|
 |FB15K| L=12, H=256, A=4|  400 | 0.2 | 0.8 |
 |WN18| L=12, H=256, A=4|  600 | 0.2 | 0.2 |
 |FB15K237| L=12, H=256, A=4|  500 | 0.5 | 0.25 |
