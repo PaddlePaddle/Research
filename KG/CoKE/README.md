@@ -133,31 +133,31 @@ Results on KBC datasets:
 
 |Dataset | MRR | HITS@1 |  HITS@5 | HITS@10 |
 |---|---|---|---|---|
-|FB15K | 0.852 | 0.823 |0.868 |    0.904 |
-|FB15K237| 0.361 | 0.269 | 0.398 | 0.547 |
-|WN18| 0.951 | 0.947 |0.954 | 0.960|
-|WN18RR| 0.475 | 0.437 | 0.490 | 0.552 |
+|FB15K | 0.855 | 0.826 |0.872 |    0.906 |
+|FB15K237| 0.364 | 0.272 | 0.400 | 0.549 |
+|WN18| 0.952 | 0.947 |0.955 | 0.960|
+|WN18RR| 0.484 | 0.450 | 0.496 | 0.553 |
 
 Results on path query datasets:
 
 |Dataset | MQ | HITS@10 |
 |---|---|---|
-|Freebase | 0.948  | 0.764|
-|WordNet |0.942 | 0.674 |
+|Freebase | 0.950  | 0.777 |
+|WordNet |0.942 | 0.679 |
 
 ## Reproducing the results
 
 Here are the configs to reproduce our results.
 These are also given in the `configs/${TASK}_job_config.sh` files.
 
-| Dataset | NetConfig | lr | softlabel | epoch | batch_size | dropout |
+| Dataset | NetConfig |  epoch | dropout | label smoothing|
 |---|---|---|---|---|---| ---|
-|FB15K| L=6, H=256, A=4| 5e-4 | 0.8 | 300 | 512| 0.1 |
-|WN18| L=6, H=256, A=4| 5e-4| 0.2 | 500 | 512 | 0.1 |
-|FB15K237| L=6, H=256, A=4| 5e-4| 0.25 | 800 | 512 | 0.5 |
-|WN18RR| L=6, H=256, A=4|3e-4 | 0.15 | 800 | 1024 | 0.1 |
-|pathqueryFB | L=6, H=256, A=4 | 3e-4 | 1 | 10 | 2048 | 0.1 |
-|pathqueryWN | L=6, H=256, A=4 | 3e-4 | 1 | 5 | 2048 | 0.1 |
+|FB15K| L=12, H=256, A=4|  400 | 0.2 | 0.8 |
+|WN18| L=12, H=256, A=4|  600 | 0.2 | 0.2 |
+|FB15K237| L=12, H=256, A=4|  500 | 0.5 | 0.25 |
+|WN18RR| L=12, H=256, A=4|  1000 |0.3 | 0.15 |
+|pathqueryFB | L=12, H=256, A=4 | 10 | 0.1 | 1|
+|pathqueryWN | L=12, H=256, A=4 | 5 | 0.1 | 1 |
 
 ## Citation
 If you use any source code included in this project in your work, please cite the following paper:
@@ -170,7 +170,6 @@ If you use any source code included in this project in your work, please cite th
   year={2019}
 }
 ```
-
 
 ## Copyright and License
 Copyright 2019 Baidu.com, Inc. All Rights Reserved Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
