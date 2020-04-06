@@ -153,7 +153,6 @@ def main():
         ret = []
         id2label = {val: key for key, val in reader.label_map.items()}
         input_data = [[d] for d in predict_data]
-        seq_label_task.finetune_and_eval()
         run_states = seq_label_task.predict(data=input_data[1:])
         results = []
         for batch_states in run_states:
