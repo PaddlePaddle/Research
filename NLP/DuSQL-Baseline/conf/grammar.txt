@@ -1,0 +1,66 @@
+START SQL
+SQL intersect SingleSQL SingleSQL END_TOKEN
+SQL union SingleSQL SingleSQL END_TOKEN
+SQL except SingleSQL SingleSQL END_TOKEN
+SQL + SingleSQL SingleSQL END_TOKEN
+SQL - SingleSQL SingleSQL END_TOKEN
+SQL * SingleSQL SingleSQL END_TOKEN
+SQL / SingleSQL SingleSQL END_TOKEN
+SQL SingleSQL END_TOKEN
+SingleSQL Select Superlative Filter
+SingleSQL Select Filter Order
+SingleSQL Select Superlative
+SingleSQL Select Filter
+SingleSQL Select Order
+SingleSQL Select
+Select NumA
+Filter and Filter Filter
+Filter or Filter Filter
+Filter = Agg Value
+Filter != Agg Value
+Filter < Agg Value
+Filter > Agg Value
+Filter <= Agg Value
+Filter >= Agg Value
+Filter between Agg Value Value
+Filter like Agg Value
+Filter not_like Agg Value
+Filter = Agg SingleSQL
+Filter < Agg SingleSQL
+Filter > Agg SingleSQL
+Filter != Agg SingleSQL
+Filter between Agg SingleSQL
+Filter >= Agg SingleSQL
+Filter <= Agg SingleSQL
+Filter in Agg SingleSQL
+Filter not_in Agg SingleSQL
+Superlative des Agg Value
+Superlative asc Agg Value
+Order des Agg
+Order asc Agg
+NumA Agg
+NumA Agg Agg
+NumA Agg Agg Agg
+NumA Agg Agg Agg Agg
+NumA Agg Agg Agg Agg Agg
+Agg none Column Table
+Agg max Column Table
+Agg min Column Table
+Agg count Column Table
+Agg sum Column Table
+Agg avg Column Table
+Agg none MathAgg
+Agg max MathAgg
+Agg min MathAgg
+Agg count MathAgg
+Agg sum MathAgg
+Agg avg MathAgg
+MathAgg + Agg Agg
+MathAgg - Agg Agg
+MathAgg * Agg Agg
+MathAgg / Agg Agg
+END END_TOKEN
+# Table、Column、Value 的定义必须放在最后
+Table LEAF
+Column LEAF
+Value LEAF

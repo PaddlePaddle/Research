@@ -1,0 +1,11 @@
+
+include MANIFEST.in
+include README
+include ChangeLog
+include setup.cfg
+include test
+
+#include conf
+#include data
+#recursive-include dir1 *.txt
+

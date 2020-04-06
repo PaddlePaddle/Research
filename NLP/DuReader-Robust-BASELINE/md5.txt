@@ -1,0 +1,3 @@
+553223945508e49483e899ae8548e5a9  dureader_robust-baseline-finetuned.tar.gz
+020b26396f1b5932e451dba84d0b3dc8  dureader_robust-data.tar.gz
+b6d1da2fbc610ac13b86b5113f8819f7  ERNIE_1.0_max-len-512.tar.gz

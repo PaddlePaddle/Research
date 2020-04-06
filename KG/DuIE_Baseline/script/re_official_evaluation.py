@@ -24,9 +24,6 @@ import os
 import zipfile
 import traceback
 import argparse
-import ConfigParser
-reload(sys)
-sys.setdefaultencoding('utf-8')
 
 SUCCESS = 0
 FILE_ERROR = 1
@@ -59,7 +56,7 @@ def check_format(line):
     ret_code = SUCCESS
     json_info = {}
     try:
-        line = line.decode('utf8').strip()
+        line = line.strip()
     except:
         ret_code = ENCODING_ERROR
         return ret_code, json_info
@@ -80,7 +77,7 @@ def check_format(line):
             [required_key in spo_item for required_key in required_key_list]):
             ret_code = SCHEMA_ERROR
             return ret_code, json_info
-        if not isinstance(spo_item['subject'], basestring) or \
+        if not isinstance(spo_item['subject'], str) or \
                 not isinstance(spo_item['object'], dict):
             ret_code = SCHEMA_ERROR
             return ret_code, json_info
@@ -131,7 +128,7 @@ def load_test_dataset(golden_filename):
     if not os.path.exists(golden_filename):
         ret_code = FILE_ERROR
         return ret_code, golden_dict
-    with open(golden_filename) as gf:
+    with open(golden_filename, 'r', encoding="utf-8") as gf:
         for line in gf:
             ret_code, json_info = check_format(line)
             if ret_code != SUCCESS:
@@ -152,9 +149,9 @@ def load_alias_dict(alias_filename):
     if not os.path.exists(alias_filename):
         ret_code = FILE_ERROR
         return ret_code, alias_dict
-    with open(alias_filename) as af:
+    with open(alias_filename, "r", encoding="utf-8") as af:
         for line in af:
-            line = line.decode().strip()
+            line = line.strip()
             try:
                 words = line.split('\t')
                 alias_dict[words[0].lower()] = set()
@@ -250,10 +247,11 @@ def calc_pr(predict_filename, alias_filename, golden_filename):
         for golden_spo in golden_spo_list:
             if is_spo_in_list(golden_spo, predict_spo_list, alias_dict):
                 recall_correct_sum += 1
-    print >> sys.stderr, 'correct spo num = ', correct_sum
-    print >> sys.stderr, 'submitted spo num = ', predict_sum
-    print >> sys.stderr, 'golden set spo num = ', recall_sum
-    print >> sys.stderr, 'submitted recall spo num = ', recall_correct_sum
+    sys.stderr.write('correct spo num = {}\n'.format(correct_sum))
+    sys.stderr.write('submitted spo num = {}\n'.format(predict_sum))
+    sys.stderr.write('golden set spo num = {}\n'.format(recall_sum))
+    sys.stderr.write('submitted recall spo num = {}\n'.format(
+        recall_correct_sum))
     precision = correct_sum / predict_sum if predict_sum > 0 else 0.0
     recall = recall_correct_sum / recall_sum if recall_sum > 0 else 0.0
     f1 = 2 * precision * recall / (precision + recall) \
@@ -271,8 +269,6 @@ def calc_pr(predict_filename, alias_filename, golden_filename):
 
 
 if __name__ == '__main__':
-    reload(sys)
-    sys.setdefaultencoding('utf-8')
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--golden_file", type=str, help="true spo results", required=True)
@@ -285,4 +281,4 @@ if __name__ == '__main__':
     predict_filename = args.predict_file
     alias_filename = args.alias_file
     ret_info = calc_pr(predict_filename, alias_filename, golden_filename)
-    print json.dumps(ret_info)
+    print(json.dumps(ret_info))

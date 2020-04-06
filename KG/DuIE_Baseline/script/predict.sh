@@ -3,12 +3,12 @@ set -eux
 export TASK_DATA_PATH=./data/
 export DEV_FILE=dev.json
 export MODEL_PATH=./pretrained_model/
-export CHECKPOINT=./checkpoints/step_60000/
+export CHECKPOINT=./checkpoints/step_n/
 export TEST_SAVE=./data/
 
 export FLAGS_sync_nccl_allreduce=1
 export PYTHONPATH=./ernie:${PYTHONPATH:-}
-CUDA_VISIBLE_DEVICES=7 python -u ./ernie/run_duie.py \
+CUDA_VISIBLE_DEVICES=0 python -u ./ernie/run_duie.py \
                    --use_cuda true \
                    --do_train false \
                    --do_val false \

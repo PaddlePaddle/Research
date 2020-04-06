@@ -1,0 +1,549 @@
+{
+    "dataset_reader": {
+        "train_reader": {
+            "name": "train_reader",
+            "type": "ErnieJsonDataSetReader",
+            "fields": [
+                {
+                    "name": "question_tokens",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2SQLErnieFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "FullTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_item_len": "60,<MAX_TABLE>,<MAX_COLUMN>,<MAX_VALUE>",
+                        "max_name_tokens": 20,
+                        "is_ernie": true
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/ernie1.0/vocab.txt",
+                    "max_seq_len": 512,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "ErnieTokenEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 768
+                    }
+                },
+                {
+                    "name": "table_names",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2SQLErnieFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "FullTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_item_len": "60,<MAX_TABLE>,<MAX_COLUMN>,<MAX_VALUE>",
+                        "max_name_tokens": 20,
+                        "is_ernie": true
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/ernie1.0/vocab.txt",
+                    "max_seq_len": 512,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "ErnieTokenEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 768
+                    }
+                },
+                {
+                    "name": "column_names",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2SQLErnieFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "FullTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_item_len": "60,<MAX_TABLE>,<MAX_COLUMN>,<MAX_VALUE>",
+                        "max_name_tokens": 20,
+                        "is_ernie": true
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/ernie1.0/vocab.txt",
+                    "max_seq_len": 512,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "ErnieTokenEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 768
+                    }
+                },
+                {
+                    "name": "values",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2SQLErnieFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "FullTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_item_len": "60,<MAX_TABLE>,<MAX_COLUMN>,<MAX_VALUE>",
+                        "max_name_tokens": 30,
+                        "is_ernie": true
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/ernie1.0/vocab.txt",
+                    "max_seq_len": 512,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "ErnieTokenEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 768
+                    }
+                },
+                {
+                    "name": "question_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": 60,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 6
+                    }
+                },
+                {
+                    "name": "table_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_TABLE>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 2
+                    }
+                },
+                {
+                    "name": "column_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_COLUMN>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 4
+                    }
+                },
+                {
+                    "name": "value_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_VALUE>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 2
+                    }
+                },
+                {
+                    "name": "column_tables",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_COLUMN>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": <MAX_TABLE>
+                    }
+                },
+                {
+                    "name": "label",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "GrammarLabelFieldReader"
+                    },
+                    "tokenizer": {
+                        "grammar_file": "./conf/grammar.txt",
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": true,
+                    "vocab_path": "data/empty",
+                    "max_seq_len": 120,
+                    "truncation_type": 0,
+                    "padding_id": 0
+                }
+            ],
+            "config": {
+                "data_path": "./data/data_v1.0.0/train/",
+                "shuffle": true,
+                "batch_size": 6,
+                "epoch": 500,
+                "sampling_rate": 1.0
+            }
+        },
+        "evaluate_reader": {
+            "name": "evaluate_reader",
+            "type": "ErnieJsonDataSetReader",
+            "fields": [
+                {
+                    "name": "question_tokens",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2SQLErnieFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "FullTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_item_len": "60,<MAX_TABLE>,<MAX_COLUMN>,<MAX_VALUE>",
+                        "max_name_tokens": 20,
+                        "is_ernie": true
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/ernie1.0/vocab.txt",
+                    "max_seq_len": 512,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "ErnieTokenEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 768
+                    }
+                },
+                {
+                    "name": "table_names",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2SQLErnieFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "FullTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_item_len": "60,<MAX_TABLE>,<MAX_COLUMN>,<MAX_VALUE>",
+                        "max_name_tokens": 20,
+                        "is_ernie": true
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/ernie1.0/vocab.txt",
+                    "max_seq_len": 512,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "ErnieTokenEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 768
+                    }
+                },
+                {
+                    "name": "column_names",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2SQLErnieFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "FullTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_item_len": "60,<MAX_TABLE>,<MAX_COLUMN>,<MAX_VALUE>",
+                        "max_name_tokens": 20,
+                        "is_ernie": true
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/ernie1.0/vocab.txt",
+                    "max_seq_len": 512,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "ErnieTokenEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 768
+                    }
+                },
+                {
+                    "name": "values",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "Text2SQLErnieFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "FullTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]",
+                        "max_item_len": "60,<MAX_TABLE>,<MAX_COLUMN>,<MAX_VALUE>",
+                        "max_name_tokens": 30,
+                        "is_ernie": true
+                    },
+                    "need_convert": true,
+                    "vocab_path": "./data/ernie1.0/vocab.txt",
+                    "max_seq_len": 512,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "ErnieTokenEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 768
+                    }
+                },
+                {
+                    "name": "question_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": 60,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 6
+                    }
+                },
+                {
+                    "name": "table_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_TABLE>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 2
+                    }
+                },
+                {
+                    "name": "column_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_COLUMN>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 4
+                    }
+                },
+                {
+                    "name": "value_features",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_VALUE>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": 2
+                    }
+                },
+                {
+                    "name": "column_tables",
+                    "data_type": "int",
+                    "reader": {
+                        "type": "OneHotFeatureFieldReader"
+                    },
+                    "tokenizer": {
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": false,
+                    "vocab_path": "./data/empty",
+                    "max_seq_len": <MAX_COLUMN>,
+                    "truncation_type": 0,
+                    "padding_id": 0,
+                    "embedding": {
+                        "type": "CustomFluidEmbedding",
+                        "use_reader_emb": false,
+                        "emb_dim": 128,
+                        "feature_dim": <MAX_TABLE>
+                    }
+                },
+                {
+                    "name": "label",
+                    "data_type": "string",
+                    "reader": {
+                        "type": "GrammarLabelFieldReader"
+                    },
+                    "tokenizer": {
+                        "grammar_file": "./conf/grammar.txt",
+                        "type": "CustomTokenizer",
+                        "split_char": " ",
+                        "unk_token": "[UNK]"
+                    },
+                    "need_convert": true,
+                    "vocab_path": "data/empty",
+                    "max_seq_len": 120,
+                    "truncation_type": 0,
+                    "padding_id": 0
+                }
+            ],
+            "config": {
+                "data_path": "./data/data_v1.0.0/dev/",
+                "shuffle": false,
+                "batch_size": 6,
+                "epoch": 1,
+                "sampling_rate": 1.0
+            }
+        }
+    },
+    "model": {
+        "type": "Text2SQL",
+        "optimizer": {
+            "learning_rate": 5e-05,
+            "max_train_steps": 80000,
+            "lr_scheduler": "linear_warmup_decay",
+            "warmup_steps": 0,
+            "warmup_proportion": 0.1,
+            "weight_decay": 0.01,
+            "use_dynamic_loss_scaling": false,
+            "init_loss_scaling": 128,
+            "incr_every_n_steps": 100,
+            "decr_every_n_nan_or_inf": 2,
+            "incr_ratio": 2.0,
+            "decr_ratio": 0.8
+        },
+        "hidden_size": 300,
+        "dropout": 0.2,
+        "encoder": {
+            "type": "ErnieTokenEmbedding",
+            "emb_dim": 768,
+            "config_path": "./conf/ernie1.0_config.json",
+            "table_encoder": "simple_sum",
+            "table_attention": "affine",
+            "use_fp16": false
+        },
+        "decoder": {
+            "max_infer_step": 120,
+            "lf_emb_size": 128,
+            "lf_name_emb_size": 128,
+            "beam_size": 1
+        },
+        "grammar_file": "./conf/grammar.txt"
+    },
+    "trainer": {
+        "PADDLE_USE_GPU": 1,
+        "PADDLE_IS_LOCAL": 1,
+        "use_fp16": false,
+        "is_eval_dev": 1,
+        "is_eval_test": 0,
+        "eval_step": 1000,
+        "train_log_step": 200,
+        "save_model_step": 2000,
+        "output_path": null,
+        "load_parameters": null,
+        "load_checkpoint": null,
+        "pre_train_model": [
+            {
+                "name":"ernie_base",
+                "params_path":"./data/ernie1.0/params"
+            }
+        ]
+    }
+}
