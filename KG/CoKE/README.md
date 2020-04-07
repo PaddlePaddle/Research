@@ -131,7 +131,7 @@ Check that your preprocessed `vocab.txt` files are identical to ours before eval
 ## Results
 Results on KBC datasets:
 
-|Dataset | MRR | HITS@1 |  HITS@5 | HITS@10 |
+|Dataset | MRR | HITS@1 |  HITS@3 | HITS@10 |
 |---|---|---|---|---|
 |FB15K | 0.855 | 0.826 |0.872 |    0.906 |
 |FB15K237| 0.364 | 0.272 | 0.400 | 0.549 |
