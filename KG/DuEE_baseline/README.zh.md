@@ -9,7 +9,7 @@ EE-Baseline是在事件抽取数据集（DuEE 1.0）上进行事件抽取的基�
 基于序列标注的触发词抽取模型是整体模型的一部分，该部分主要是给定事件类型，识别句子中出现的事件触发词对应的位置以及对应的事件类别，该模型是基于ERNIE开发序列标注模型，采用ERNIE+CRF实现，模型原理图如下：
 
 <div align="center">
-<img src="pictures/trigger_model.png" width="500" height="400" alt="基于序列标注的触发词抽取模型" align=center />
+<img src="pictures/trigger_model.png" width="600" height="400" alt="基于序列标注的触发词抽取模型" align=center />
 </div>
 
 > 上述样例中模型通过模型识别出触发词"求婚"，并分配给"B-结婚"、"I-结婚"标签，最终可以得到该句子中包含 “结婚”事件类型。
@@ -19,7 +19,7 @@ EE-Baseline是在事件抽取数据集（DuEE 1.0）上进行事件抽取的基�
 基于序列标注的论元抽取模型也是整体模型的一部分，该部分主要是识别出事件中的论元以及对应论元角色，该模型是基于ERNIE开发序列标注模型，采用ERNIE+CRF实现，模型原理图如下：
 
 <div align="center">
-<img src="pictures/role_model.png" width="500" height="400" alt="基于序列标注的论元抽取模型" align=center />
+<img src="pictures/role_model.png" width="600" height="400" alt="基于序列标注的论元抽取模型" align=center />
 </div>
 
 > 上述样例中通过模型识别出：1）论元"李荣浩"，并分配标签"B-求婚者"、"I-求婚者"、"I-求婚者"；2）论元"杨丞琳", 并分配标签"B-求婚对象"、"I-求婚对象"、"I-求婚对象"。最终识别出句子中包含的论元角色和论元对是<求婚者，李荣浩>、<求婚对象，杨丞琳>
@@ -27,6 +27,10 @@ EE-Baseline是在事件抽取数据集（DuEE 1.0）上进行事件抽取的基�
 #### 抽取结果处理策略
 
 根据触发词抽取模型识别到的事件类型对应的所有论元角色关联论元抽取模型的结果，得到最终模型的输出结果
+
+#### 其他版本
+
+- [DuEE-PaddleHub](./DuEE-PaddleHub): 基于PaddleHub的代码简化版
 
 
 ## 快速开始

@@ -9,7 +9,7 @@ EE-Baseline is a event extraction baseline model for the event extraction datase
 Trigger extraction aims to predict whether a token triggers an event. We formulates trigger extraction as a sequence labeling problem with labels indicate the event types. This model is built upon a pre-trained language model ERNIE combined with a CRF layer.
 
 <div align="center">
-<img src="pictures/trigger_model.png" width="500" height="400" alt="Trigger extraction model based on sequence labeling" align=center />
+<img src="pictures/trigger_model.png" width="600" height="400" alt="Trigger extraction model based on sequence labeling" align=center />
 </div>
 
 > For above example, the model recognizes the trigger "求婚" and assigns it to the label "B-结婚" "I-结婚", finally, we get event type is "结婚"。
@@ -19,10 +19,15 @@ Trigger extraction aims to predict whether a token triggers an event. We formula
 Argument extraction aims to extract arguments and corresponding argument roles they play. We formulates argument extraction as a sequence labeling problem with labels indicate the argument roles. This model is also built upon a pre-trained language model ERNIE combined with a CRF layer.
 
 <div align="center">
-<img src="pictures/role_model.png" width="500" height="400" alt="Argument extraction model based on Sequence labeling" align=center />
+<img src="pictures/role_model.png" width="600" height="400" alt="Argument extraction model based on Sequence labeling" align=center />
 </div>
 
 > For above example,  the model recognizes the arguments: 1) "李荣浩", assigns it labels "B-求婚者"、"I-求婚者" "I-求婚者"; 2) "杨丞琳", assigns it labels "B-求婚对象" "I-求婚对象" "I-求婚对象". Finally, we get argument roles and argument pairs is <求婚者, 李荣浩> <求婚对象, 杨丞琳>.
+
+
+#### other versions
+
+- [DuEE-PaddleHub](./DuEE-PaddleHub): Code simplified version base on PaddleHub
 
 
 ## Getting Started
