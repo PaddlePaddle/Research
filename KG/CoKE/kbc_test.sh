@@ -20,10 +20,9 @@ export FLAGS_sync_nccl_allreduce=1
 export LD_LIBRARY_PATH=$(pwd)/env/lib/nccl2.3.7_cuda9.0/lib:/home/work/cudnn/cudnn_v7/cuda/lib64:/home/work/cuda-9.0/extras/CUPTI/lib64/:/home/work/cuda-9.0/lib64/:$LD_LIBRARY_PATH
 
 #======beging train
-if [ -d $OUTPUT ]; then
-    rm -rf $OUTPUT 
+if [ ! -d $OUTPUT ]; then
+    mkdir $OUTPUT 
 fi
-mkdir $OUTPUT 
 
 
 max_step_id=`ls $INIT_CHECKPOINTS | grep "step" | awk -F"_" '{print $NF}' | grep -v "Found"  |sort -n |tail -1`
@@ -33,7 +32,8 @@ echo "init_checkpoints_steps: $max_step_id"
 
 #--init_checkpoint ${INIT_CHECKPOINT}
 echo ">> Begin kbc test now, log file: $LOG_EVAL_FILE"
-python3 -u ./bin/run.py \
+python3="/home/work/utils/python367_tf1.8_gpu_torch_bert/bin/python3.6"
+$python3 -u ./bin/run.py \
  --dataset $TASK \
  --vocab_size $NUM_VOCAB \
  --num_relations $NUM_RELATIONS \
