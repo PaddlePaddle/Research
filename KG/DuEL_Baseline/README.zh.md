@@ -47,7 +47,12 @@ wget --no-check-certificate https://ernie.bj.bcebos.com/ERNIE_1.0_max-len-512.ta
 
 tar -zxvf ERNIE_1.0_max-len-512.tar.gz
 
-解压后,路径./pretrained_model/ERNIE_1.0_max-len-512 中包含文件：ernie_config.json、params、vocab.txt
+解压后,路径./pretrained_model/ERNIE_1.0_max-len-512 中包含文件：
+    
+    ernie_config.json
+    params
+    vocab.txt
+
 ## 数据格式转换
 生成的数据在./data/generated/目录中
 
