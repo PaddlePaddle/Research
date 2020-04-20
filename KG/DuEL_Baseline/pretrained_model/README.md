@@ -1,0 +1,1 @@
+pretrained ernie model path
