@@ -85,7 +85,7 @@ if __name__ == '__main__':
         strategy=strategy)
 
     # 定义阅读理解Fine-tune Task
-    # 由于竞赛数据集与cmrc2018数据集各式比较相似，此处sub_task应为cmrc2018
+    # 由于竞赛数据集与cmrc2018数据集格式比较相似，此处sub_task应为cmrc2018
     # 否则运行可能出错
     reading_comprehension_task = hub.ReadingComprehensionTask(
         data_reader=reader,
