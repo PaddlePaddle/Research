@@ -27,13 +27,12 @@ class DuReader(BaseNLPDataset):
     """
     2020语言与智能技术竞赛：机器阅读理解任务数据集
     """
-    def __init__(self):
-        dataset_dir = './dureader_robust-data'
+    def __init__(self, dataset_path):
+        dataset_dir = dataset_path
         super(DuReader, self).__init__(
             base_path=dataset_dir,
             train_file="train.json",
-            dev_file="dev.json",
-            predict_file='test1.json'
+            dev_file="dev.json"
         )
 
     def _read_file(self, input_file, phase=False):
@@ -158,7 +157,7 @@ class DuReader(BaseNLPDataset):
 
 
 if __name__ == "__main__":
-    ds = DuReader()
+    ds = DuReader('../data')
     print("train")
     examples = ds.get_train_examples()
     for index, e in enumerate(examples):
