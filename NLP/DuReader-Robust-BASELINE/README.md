@@ -5,6 +5,11 @@ To comprehensively evaluate the robustness of MRC models, we create a Chinese da
 
 For more details about the dataset, please refer to this [paper](#).
 
+Note that we release two equivalent versions of the baseline for DuReader<sub>robust</sub> dataset. One is the [DuReader<sub>robust</sub> Baseline System](#dureaderrobust-baseline-system) and the other is [PaddleHub Baseline](#paddlehub-baseline). The two baseline systems implement the same ERNIE 1.0 based MRC model, while the main differences are 
+
+* DuReader<sub>robust</sub> Baseline System is more flexible and unconstrained to secondary development.
+* PaddleHub Baseline is easier to get started as PaddleHub integrates some simplified fine-tune api packaged for ERNIE. 
+
 # DuReader<sub>robust</sub> Baseline System
 In this repository, we release a baseline system for DuReader<sub>robust</sub> dataset. The baseline system is based on [ERNIE 1.0](https://arxiv.org/abs/1904.09223), and is implemented with [PaddlePaddle](https://www.paddlepaddle.org.cn/) framework. To run the baseline system, please follow the instructions below.
 
@@ -88,6 +93,30 @@ The performance of our baseline model (i.e. the fine-tuned model we provided abo
 | basic dev | 80.84 | 69.02 |
 
 
+## PaddleHub Baseline
+
+To get the competition started quickly, we also release the baseline based on PaddleHub (https://github.com/PaddlePaddle/PaddleHub). PaddleHub is an application toolkit for pre-trained models of PaddlePaddle(『飞桨』预训练模型应用工具).
+
+What's your need is to install the latest paddlehub toolkit by the command 
+```shell
+pip install --upgrade paddlehub
+```
+
+Then, run 
+
+```shell
+cd paddlehub_baseline
+sh paddlehub_reading_comprehension.sh
+```
+
+You will fine-tune the ERNIE pretrained model on the competition dataset and get the final prediction results.
+
+Now, you can submit the results to the competition.
+
+All questions about [PaddleHub](https://github.com/PaddlePaddle/PaddleHub), 
+you can raise an issue (https://github.com/PaddlePaddle/PaddleHub/issues). We will reply as soon as possible.
+
+The same codes also are released on the [demo](https://aistudio.baidu.com/aistudio/projectdetail/434707).
 
 ## Copyright and License
 Copyright 2020 Baidu.com, Inc. All Rights Reserved
