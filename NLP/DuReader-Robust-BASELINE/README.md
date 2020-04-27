@@ -5,10 +5,10 @@ To comprehensively evaluate the robustness of MRC models, we create a Chinese da
 
 For more details about the dataset, please refer to this [paper](#).
 
-Note that we release two versions of the baseline for DuReader<sub>robust</sub> dataset. One is the [DuReader<sub>robust</sub> Baseline System](#dureaderrobust-baseline-system) and other is [PaddleHub Baseline](#paddlehub-baseline). The two versions do the same thing. The main difference is
+Note that we release two equivalent versions of the baseline for DuReader<sub>robust</sub> dataset. One is the [DuReader<sub>robust</sub> Baseline System](#dureaderrobust-baseline-system) and the other is [PaddleHub Baseline](#paddlehub-baseline). The two baseline systems implement the same ERNIE 1.0 based MRC model, while the main differences are 
 
 * DuReader<sub>robust</sub> Baseline System is more flexible and unconstrained to secondary development.
-* PaddleHub Baseline is more easy to use as PaddleHub has some fine-tune api packaged with ERNIE. It tend to be suitable for those who want to get started quickly.
+* PaddleHub Baseline is easier to get started as PaddleHub integrates some simplified fine-tune api packaged for ERNIE. 
 
 # DuReader<sub>robust</sub> Baseline System
 In this repository, we release a baseline system for DuReader<sub>robust</sub> dataset. The baseline system is based on [ERNIE 1.0](https://arxiv.org/abs/1904.09223), and is implemented with [PaddlePaddle](https://www.paddlepaddle.org.cn/) framework. To run the baseline system, please follow the instructions below.
