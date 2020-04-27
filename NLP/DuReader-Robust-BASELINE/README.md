@@ -5,6 +5,11 @@ To comprehensively evaluate the robustness of MRC models, we create a Chinese da
 
 For more details about the dataset, please refer to this [paper](#).
 
+Note that we release two versions of the baseline for DuReader<sub>robust</sub> dataset. One is the [DuReader<sub>robust</sub> Baseline System](#dureaderrobust-baseline-system) and other is [PaddleHub Baseline](#paddlehub-baseline). The two versions do the same thing. The main difference is
+
+* DuReader<sub>robust</sub> Baseline System is more flexible and unconstrained to secondary development.
+* PaddleHub Baseline is more easy to use as PaddleHub has some fine-tune api packaged with ERNIE. It tend to be suitable for those who want to get started quickly.
+
 # DuReader<sub>robust</sub> Baseline System
 In this repository, we release a baseline system for DuReader<sub>robust</sub> dataset. The baseline system is based on [ERNIE 1.0](https://arxiv.org/abs/1904.09223), and is implemented with [PaddlePaddle](https://www.paddlepaddle.org.cn/) framework. To run the baseline system, please follow the instructions below.
 
@@ -89,12 +94,6 @@ The performance of our baseline model (i.e. the fine-tuned model we provided abo
 
 
 ## PaddleHub Baseline
-
-The referred two baselines (DuReader<sub>robust</sub> Baseline System and PaddleHub Baseline) do the same thing. 
-The main difference is
-
-* DuReader<sub>robust</sub> Baseline System is more flexible and unconstrained to secondary development.
-* PaddleHub Baseline is more easy to use as PaddleHub has some fine-tune api packaged with ERNIE. It tend to be suitable for those who want to get started quickly.
 
 To get the competition started quickly, we also release the baseline based on PaddleHub (https://github.com/PaddlePaddle/PaddleHub). PaddleHub is an application toolkit for pre-trained models of PaddlePaddle(『飞桨』预训练模型应用工具).
 
