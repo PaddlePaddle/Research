@@ -90,6 +90,12 @@ The performance of our baseline model (i.e. the fine-tuned model we provided abo
 
 ## PaddleHub Baseline
 
+The referred two baselines (DuReader<sub>robust</sub> Baseline System and PaddleHub Baseline) do the same thing. 
+The main difference is
+
+* DuReader<sub>robust</sub> Baseline System is more flexible and unconstrained to secondary development.
+* PaddleHub Baseline is more easy to use as PaddleHub has some fine-tune api packaged with ERNIE. It tend to be suitable for those who want to get started quickly.
+
 To get the competition started quickly, we also release the baseline based on PaddleHub (https://github.com/PaddlePaddle/PaddleHub). PaddleHub is an application toolkit for pre-trained models of PaddlePaddle(『飞桨』预训练模型应用工具).
 
 What's your need is to install the latest paddlehub toolkit by the command 
