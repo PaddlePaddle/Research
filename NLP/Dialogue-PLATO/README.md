@@ -9,13 +9,14 @@ Nov. 14: Support new APIs in paddlepaddle 1.6.0 (model files in the link have be
 ## Requirements
 ```
 - python >= 3.6
-- paddlepaddle >= 1.6.0
+- paddlepaddle >= 1.6.0 and < 1.7.0
 - numpy
 - nltk
 - tqdm
 - visualdl >= 1.3.0 (optional)
 - regex
 ```
+Recommend you install to python packages by command: `pip install -r requirement.txt`
 
 ## Pre-trained dialogue generation model
 A novel pre-training model for dialogue generation is introduced in this work, incorporated with latent discrete variables for one-to-many relationship modeling. Our model is flexible enough to support various kinds of conversations, including chit-chat, knowledge grounded dialogues, and conversational question answering. The pre-training is carried out with Reddit and Twitter corpora. You can download the uncased pre-trained model from:
