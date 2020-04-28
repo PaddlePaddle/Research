@@ -1,0 +1,5 @@
+paddlepaddle-gpu == 1.6.1.post107
+numpy == 1.15.4
+nltk == 3.4
+tqdm
+regex

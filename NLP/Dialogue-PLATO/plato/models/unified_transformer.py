@@ -272,7 +272,6 @@ class UnifiedTransformer(ModelBase):
         @param : auto_regressive
         @type : bool
         """
-        input_mask = fluid.layers.unsqueeze(input=input_mask, axes=[2])
         seq_len = input_mask.shape[1]
 
         input_mask = layers.cast(input_mask, self._dtype)
