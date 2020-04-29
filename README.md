@@ -12,6 +12,7 @@
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
 | 车辆再识别 | [PaddleReid](https://github.com/PaddlePaddle/Research/tree/master/CV/PaddleReid) | 给定目标车辆，在检索库中检索同id车辆，支持多种特征子网络。 | |
+| 车辆异常检测 | [AICity2020-Anomaly-Detection](https://github.com/PaddlePaddle/Research/tree/master/CV/AICity2020-Anomaly-Detection) |  在监控视频中检测车辆异常情况，例如车辆碰撞、失速等。| |
 
 ## 自然语言处理
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
