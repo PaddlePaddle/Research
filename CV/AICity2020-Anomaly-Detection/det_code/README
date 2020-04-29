@@ -1,0 +1,15 @@
+Detection 
+
+Paddle1.7-gpu-post97
+cuda9 and cudnn7.5
+
+train:
+cd PaddleDetection
+sh train.sh
+
+infer:
+cd PaddleDetection
+sh infer.sh
+
+
+
