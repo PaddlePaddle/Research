@@ -21,8 +21,7 @@ import glob
 
 import numpy as np
 from PIL import Image
-import sys
-sys.path.append("./")
+
 
 def set_paddle_flags(**kwargs):
     for key, value in kwargs.items():
@@ -75,23 +74,20 @@ def get_test_images(infer_dir, infer_img):
             "{} is not a file".format(infer_img)
     assert infer_dir is None or os.path.isdir(infer_dir), \
             "{} is not a directory".format(infer_dir)
-    images = []
 
     # infer_img has a higher priority
     if infer_img and os.path.isfile(infer_img):
-        images.append(infer_img)
-        return images
+        return [infer_img]
 
+    images = set()
     infer_dir = os.path.abspath(infer_dir)
     assert os.path.isdir(infer_dir), \
         "infer_dir {} is not a directory".format(infer_dir)
     exts = ['jpg', 'jpeg', 'png', 'bmp']
     exts += [ext.upper() for ext in exts]
     for ext in exts:
-        images.extend(glob.glob('{}/*.{}'.format(infer_dir, ext)))
-        images.extend(glob.glob('{}/*/*.{}'.format(infer_dir, ext)))
-        images.extend(glob.glob('{}/*/*/*.{}'.format(infer_dir, ext)))
-        images.extend(glob.glob('{}/*/*/*/*.{}'.format(infer_dir, ext)))
+        images.update(glob.glob('{}/*.{}'.format(infer_dir, ext)))
+    images = list(images)
 
     assert len(images) > 0, "no image found in {}".format(infer_dir)
     logger.info("Found {} inference images in total.".format(len(images)))
@@ -134,7 +130,7 @@ def main():
             test_fetches = model.test(feed_vars)
     infer_prog = infer_prog.clone(True)
 
-    reader = create_reader(cfg.TestReader)
+    reader = create_reader(cfg.TestReader, devices_num=1)
     loader.set_sample_list_generator(reader, place)
 
     exe.run(startup_prog)
@@ -183,13 +179,10 @@ def main():
 
     imid2path = dataset.get_imid2path()
     for iter_id, data in enumerate(loader()):
-        try:
-            outs = exe.run(infer_prog,
+        outs = exe.run(infer_prog,
                        feed=data,
                        fetch_list=values,
                        return_numpy=False)
-        except:
-            continue
         res = {
             k: (np.array(v), v.recursive_sequence_lengths())
             for k, v in zip(keys, outs)
@@ -204,20 +197,10 @@ def main():
             mask_results = mask2out([res], clsid2catid,
                                     model.mask_head.resolution)
 
-        video_name = FLAGS.infer_dir.split("/")[-1]
-        
-        if not os.path.exists(os.path.join(FLAGS.output_dir + '/output/',video_name)):
-            os.makedirs(os.path.join(FLAGS.output_dir + '/output/',video_name))
-        if not os.path.exists(os.path.join(FLAGS.output_dir + '/output_npy/',video_name)):
-            os.makedirs(os.path.join(FLAGS.output_dir + '/output_npy/',video_name))
-        
         # visualize result
         im_ids = res['im_id'][0]
-        
         for im_id in im_ids:
-            
             image_path = imid2path[int(im_id)]
-            
             image = Image.open(image_path).convert('RGB')
 
             # use tb-paddle to log original image           
@@ -246,32 +229,10 @@ def main():
                 if tb_image_step % 10 == 0:
                     tb_image_step = 0
                     tb_image_frame += 1
-            save_name = get_save_image_name(FLAGS.output_dir + '/output/'+ video_name, image_path.split("/")[-1])
-            #save_name = get_save_image_name(FLAGS.output_dir, image_path)
-            logger.info("Detection bbox results save in {}".format(save_name))
-            image.save(save_name, quality=100)
 
-        
-    
-            bboxes = bbox_results
-            box_np = []
-            for dt in np.array(bboxes):
-                if im_id != dt['image_id']:
-                    continue
-                catid, bbox, score = dt['category_id'], dt['bbox'], dt['score']
-                
-                xmin, ymin, w, h = bbox
-                box_re = []
-                box_re.append(bbox)
-                box_re.append(catid)
-                box_re.append(score)
-                box_np.append(box_re)
-                
-            np_path = os.path.join(FLAGS.output_dir + '/output_npy/',video_name, image_path.split("/")[-1]+ '.npy')
-            np.save(np_path,np.array(box_np))
-                
-            
-            
+            save_name = get_save_image_name(FLAGS.output_dir, image_path)
+            logger.info("Detection bbox results save in {}".format(save_name))
+            image.save(save_name, quality=95)
 
 
 if __name__ == '__main__':
@@ -294,7 +255,7 @@ if __name__ == '__main__':
     parser.add_argument(
         "--draw_threshold",
         type=float,
-        default=0.1,
+        default=0.5,
         help="Threshold to reserve the result for visualization.")
     parser.add_argument(
         "--use_tb",
@@ -308,5 +269,3 @@ if __name__ == '__main__':
         help='Tensorboard logging directory for image.')
     FLAGS = parser.parse_args()
     main()
-
-    

@@ -3,12 +3,15 @@ Detection
 Paddle1.7-gpu-post97
 cuda9 and cudnn7.5
 
+mv aicity2020-track4 ./paddledetection/configs/
+mv *.sh ./paddledetection/
+
 train:
-cd PaddleDetection
+cd paddledetection
 sh train.sh
 
 infer:
-cd PaddleDetection
+cd paddledetection
 sh infer.sh
 
 
