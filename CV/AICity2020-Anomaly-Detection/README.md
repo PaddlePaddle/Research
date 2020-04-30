@@ -27,7 +27,6 @@ corresponding is (annotation_number - 1)\*2\*30 = frame_number
 #### Train the detection model
 
 ```
-unzip det_code.zip
 cd det_code/PaddleDetection
 sh train.sh
 ```

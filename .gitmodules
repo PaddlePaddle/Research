@@ -1,0 +1,3 @@
+[submodule "CV/AICity2020-Anomaly-Detection/det_code/PaddleDetection"]
+	path = CV/AICity2020-Anomaly-Detection/det_code/PaddleDetection
+	url = https://github.com/PaddlePaddle/PaddleDetection.git
