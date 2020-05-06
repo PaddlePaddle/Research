@@ -31,6 +31,7 @@ We implement our knowledge selection model based on the code of  [MINERVA](https
 ## Results
 
 **Metrics for Automatic evaluations**: following the work of *(Moghe et al., 2018)*, we adopt BLEU-4, ROUGE-2 and ROUGE-L to evaluate how similar the output response is to the reference text. We use Hit@1 (the top 1 accuracy) to evaluate the performance of knowledge selection.
+
 **Metrics for Human evaluations**: we resort to a web crowdsourcing service for human evaluations. We randomly sample 200 messages from test set and run each model to generate responses, and then we conduct pair-wise comparison between the response by AKGCM and the one by a baseline for the same message. In total, we have 1400 pairs on each dataset since there are seven baselines. For each pair, we ask five evaluators to give a preference between the two responses, in terms of the following two metrics: (1) appropriateness (Appr.), e.g., whether the response is appropriate in relevance, and logic, (2) informativeness (Infor.), whether the response provides new information and knowledge in addition to the input message, instead of generic responses such as “This movie is amazing”. Tie is allowed. Notice that system identifiers are masked during evaluation.
 
 ### EMNLP dialog dataset: Automatic evaluations
