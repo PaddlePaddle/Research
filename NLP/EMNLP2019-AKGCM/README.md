@@ -90,7 +90,6 @@ BiDAF+G | 0.04/0.61/0.35 | 0.04/0.56/0.40
 TMemNet | 0.01/0.25/0.74 | 0.01/0.21/0.78
 
 
-
 ## Citation
 If you find AKGCM useful in your work, please cite the following paper:
 ```
