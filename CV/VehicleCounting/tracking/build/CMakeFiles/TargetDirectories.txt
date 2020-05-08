@@ -1,0 +1,4 @@
+/home/task1_code/online_mot/build/CMakeFiles/rebuild_cache.dir
+/home/task1_code/online_mot/build/CMakeFiles/aicity_task1_tracking.dir
+/home/task1_code/online_mot/build/CMakeFiles/edit_cache.dir
+/home/task1_code/online_mot/build/CMakeFiles/VideoTracker.dir
