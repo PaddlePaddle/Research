@@ -9,6 +9,10 @@
 * [时空数据挖掘(Spatial-Temporal Data-Mining)](#时空数据挖掘)
 
 ## 计算机视觉
+| 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
+| ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| AICITY2020-车流统计 | [LAC(Lexical Analysis of Chinese)](https://github.com/PaddlePaddle/Research/tree/master/CV/VehicleCounting/) | AICITY2020 车流统计竞赛datasetA TOP1 方案 | - |
+
 
 
 ## 自然语言处理
