@@ -11,7 +11,7 @@
 ## 计算机视觉
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| 车流统计 | [VehicleCount](https://github.com/PaddlePaddle/Research/tree/master/CV/VehicleCount/) | AICITY2020 车流统计竞赛datasetA TOP1 方案 | - |
+| 车流统计 | [VehicleCounting](https://github.com/PaddlePaddle/Research/tree/master/CV/VehicleCounting/) | AICITY2020 车流统计竞赛datasetA TOP1 方案 | - |
 
 
 
