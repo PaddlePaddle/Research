@@ -1,0 +1,3 @@
+[submodule "CV/VehicleCounting/PaddleDetection/PaddleDetection"]
+	path = CV/VehicleCounting/PaddleDetection/PaddleDetection
+	url = https://github.com/PaddlePaddle/PaddleDetection.git

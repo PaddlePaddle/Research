@@ -37,15 +37,15 @@ set_paddle_flags(
 
 from paddle import fluid
 
-from ppdet.core.workspace import load_config, merge_config, create
+from PaddleDetection.ppdet.core.workspace import load_config, merge_config, create
 
-from ppdet.utils.eval_utils import parse_fetches
-from ppdet.utils.cli import ArgsParser
-from ppdet.utils.check import check_gpu, check_version
-from ppdet.utils.visualizer import visualize_results
-import ppdet.utils.checkpoint as checkpoint
+from PaddleDetection.ppdet.utils.eval_utils import parse_fetches
+from PaddleDetection.ppdet.utils.cli import ArgsParser
+from PaddleDetection.ppdet.utils.check import check_gpu, check_version
+from PaddleDetection.ppdet.utils.visualizer import visualize_results
+import PaddleDetection.ppdet.utils.checkpoint as checkpoint
 
-from ppdet.data.reader import create_reader
+from PaddleDetection.ppdet.data.reader import create_reader
 
 import logging
 FORMAT = '%(asctime)s-%(levelname)s: %(message)s'
@@ -180,13 +180,13 @@ def main():
 
     # parse dataset category
     if cfg.metric == 'COCO':
-        from ppdet.utils.coco_eval import bbox2out, mask2out, get_category_info
+        from PaddleDetection.ppdet.utils.coco_eval import bbox2out, mask2out, get_category_info
     if cfg.metric == 'OID':
-        from ppdet.utils.oid_eval import bbox2out, get_category_info
+        from PaddleDetection.ppdet.utils.oid_eval import bbox2out, get_category_info
     if cfg.metric == "VOC":
-        from ppdet.utils.voc_eval import bbox2out, get_category_info
+        from PaddleDetection.ppdet.utils.voc_eval import bbox2out, get_category_info
     if cfg.metric == "WIDERFACE":
-        from ppdet.utils.widerface_eval_utils import bbox2out, get_category_info
+        from PaddleDetection.ppdet.utils.widerface_eval_utils import bbox2out, get_category_info
 
     anno_file = dataset.get_anno()
     with_background = dataset.with_background
