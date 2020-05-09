@@ -1,6 +1,9 @@
 ### AICITY2020-track1
 In this repo, we include the 1st Place submission to [Aicity Challenge](https://www.aicitychallenge.org/) 2020 vehicle counting track(Baidu submission).
 
+Zhongji Liu, Wei Zhang, Xu Gao, Hao Meng, Zhan Xue, Xiao Tan, Xiaoxing Zhu, Hongwu Zhang, Shilei Wen, and Errui Ding. Robust movement-specific vehicle counting at crowded intersections. In Proc. CVPR Workshops, Seattle, WA, USA, 2020.
+Contact: zhangwei99@baidu.com, liuzhongji@baidu.com. Any questions or discussion are welcome!
+
 #### Performance:
 
 AICITY2020 Challange Track1 Leaderboard
@@ -22,10 +25,11 @@ This repo is developed under the following configurations:
 + Software: Python=3.6.7 GCC 5.4.0 paddle=1.7.0 CUDA=9.0
 
 We provide a docker image for official test for track-1 datasetB. 
+Download via Baidu Cloud: [https://pan.baidu.com/s/1tpP_up75xfSJnKdphDxn0A passwd:c4v6]
 
 The related repos:
 
- [paddle detection] https://github.com/PaddlePaddle/PaddleDetection/tree/release/0.2
+[paddle detection] https://github.com/PaddlePaddle/PaddleDetection/tree/release/0.2
 
 [py-hausdorff] https://github.com/mavillan/py-hausdorff
 
