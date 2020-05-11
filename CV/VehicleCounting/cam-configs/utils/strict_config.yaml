@@ -1,0 +1,795 @@
+cam_1:
+  movement_1:
+    dst:
+      - 2_s
+  movement_2:
+    src:
+      - 4_s
+  movement_3:
+    src:
+      - 4_e
+    dst:
+      - 2_e
+  movement_4:
+    src:
+      - 2_s
+    dst:
+      - 3_s
+
+cam_2:
+  movement_2:
+    dst:
+      - 1_s
+
+cam_3:
+  movement_1:
+    src:
+      - 2_e
+      - 4_e
+  movement_2:
+    src:
+      - 3_s
+    dst:
+      - 4_e
+  movement_3:
+    src:
+      - 2_s
+    dst:
+      - 4_s
+  movement_4:
+    src:
+      - 3_e
+    dst:
+      - 2_e
+
+cam_4:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 5_e
+      - 9_e
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 6_e
+      - 10_e
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 7_e
+      - 11_e
+  movement_4:
+    src:
+      - 5_s
+      - 6_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 8_e
+      - 12_e
+  movement_5:
+    src:
+      - 4_s
+      - 6_s
+    dst:
+      - 1_e
+      - 9_e
+  movement_6:
+    src:
+      - 4_s
+      - 5_s
+    dst:
+      - 2_e
+      - 10_e
+  movement_7:
+    src:
+      - 8_s
+      - 9_s
+    dst:
+      - 3_e
+      - 11_e
+  movement_8:
+    src:
+      - 7_s
+      - 9_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 4_e
+      - 12_e
+  movement_9:
+    src:
+      - 7_s
+      - 8_s
+    dst:
+      - 1_e
+      - 5_e
+  movement_10:
+    src:
+      - 11_s
+      - 12_s
+    dst:
+      - 2_e
+      - 6_e
+  movement_11:
+    src:
+      - 10_s
+      - 12_s
+    dst:
+      - 3_e
+      - 7_e
+  movement_12:
+    src:
+      - 11_s
+      - 10_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 4_e
+      - 8_e
+cam_5:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 5_e
+      - 9_e
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 6_e
+      - 10_e
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 7_e
+      - 11_e
+  movement_4:
+    src:
+      - 5_s
+      - 6_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 8_e
+      - 12_e
+  movement_5:
+    src:
+      - 4_s
+      - 6_s
+    dst:
+      - 1_e
+      - 9_e
+  movement_6:
+    src:
+      - 4_s
+      - 5_s
+    dst:
+      - 2_e
+      - 10_e
+  movement_7:
+    src:
+      - 8_s
+      - 9_s
+    dst:
+      - 3_e
+      - 11_e
+  movement_8:
+    src:
+      - 7_s
+      - 9_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 4_e
+      - 12_e
+  movement_9:
+    src:
+      - 7_s
+      - 8_s
+    dst:
+      - 1_e
+      - 5_e
+  movement_10:
+    src:
+      - 11_s
+      - 12_s
+    dst:
+      - 2_e
+      - 6_e
+  movement_11:
+    src:
+      - 10_s
+      - 12_s
+    dst:
+      - 3_e
+      - 7_e
+  movement_12:
+    src:
+      - 11_s
+      - 10_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 4_e
+      - 8_e
+cam_6:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 5_e
+      - 9_e
+      - 12_s
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 6_e
+      - 10_e
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 7_e
+      - 11_e
+  movement_4:
+    src:
+      - 5_s
+      - 6_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 8_e
+      - 12_e
+  movement_5:
+    src:
+      - 4_s
+      - 6_s
+    dst:
+      - 1_e
+      - 9_e
+      - 12_s
+  movement_6:
+    src:
+      - 4_s
+      - 5_s
+    dst:
+      - 2_e
+      - 10_e
+  movement_7:
+    src:
+      - 8_s
+      - 9_s
+    dst:
+      - 3_e
+      - 11_e
+  movement_8:
+    src:
+      - 7_s
+      - 9_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 4_e
+      - 12_e
+  movement_9:
+    src:
+      - 7_s
+      - 8_s
+    dst:
+      - 1_e
+      - 5_e
+      - 12_s
+  movement_10:
+    src:
+      - 11_s
+      - 12_s
+    dst:
+      - 2_e
+      - 6_e
+  movement_11:
+    src:
+      - 10_s
+      - 12_s
+    dst:
+      - 3_e
+      - 7_e
+  movement_12:
+    src:
+      - 11_s
+      - 10_s
+    dst:
+      - 1_s
+      - 3_s
+      - 2_s
+      - 4_e
+      - 8_e
+# TODO
+cam_7:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+    dst:
+      - 5_e
+      - 9_e
+      - 10_s
+      - 11_s
+      - 12_s
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+    dst:
+      - 6_e
+      - 10_e
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+    dst:
+      - 4_s
+      - 5_s
+      - 6_s
+      - 7_e
+      - 11_e
+  movement_4:
+    src:
+      - 3_e
+      - 5_s
+      - 6_s
+      - 7_e
+      - 11_e
+    dst:
+      - 8_e
+      - 12_e
+  movement_5:
+    src:
+      - 3_e
+      - 4_s
+      - 6_s
+      - 7_e
+      - 11_e
+    dst:
+      - 1_e
+      - 9_e
+      - 10_s
+      - 11_s
+      - 12_s
+  movement_6:
+    src:
+      - 3_e
+      - 4_s
+      - 5_s
+      - 7_e
+      - 11_e
+    dst:
+      - 2_e
+      - 10_e
+  movement_7:
+    src:
+      - 8_s
+      - 9_s
+    dst:
+      - 3_e
+      - 4_s
+      - 5_s
+      - 6_s
+      - 11_e
+  movement_8:
+    src:
+      - 7_s
+      - 9_s
+    dst:
+      - 4_e
+      - 12_e
+  movement_9:
+    src:
+      - 7_s
+      - 8_s
+    dst:
+      - 5_e
+      - 1_e
+      - 10_s
+      - 11_s
+      - 12_s
+  movement_10:
+    src:
+      - 5_e
+      - 1_e
+      - 9_e
+      - 11_s
+      - 12_s
+    dst:
+      - 2_e
+      - 6_e
+  movement_11:
+    src:
+      - 5_e
+      - 1_e
+      - 9_e
+      - 10_s
+      - 12_s
+    dst:
+      - 3_e
+      - 5_s
+      - 6_s
+      - 7_e
+      - 4_s
+  movement_12:
+    src:
+      - 5_e
+      - 1_e
+      - 9_e
+      - 10_s
+      - 11_s
+    dst:
+      - 4_e
+      - 8_e
+
+cam_8:
+  movement_1:
+    src:
+      - 2_s
+    dst:
+      - 4_e
+      - 5_s
+      - 6_s
+  movement_2:
+    src:
+      - 1_s
+      - 3_e
+      - 6_e
+    dst:
+      - 5_e
+  movement_3:
+    src:
+      - 4_s
+    dst:
+      - 6_e
+  movement_4:
+    src:
+      - 3_s
+    dst:
+      - 1_e
+      - 5_s
+      - 6_s
+  movement_5:
+    src:
+      - 6_s
+      - 1_e
+    dst:
+      - 2_e
+  movement_6:
+    src:
+      - 5_s
+      - 1_e
+    dst:
+      - 3_e
+cam_9:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 10_s
+      - 11_s
+      - 12_s
+      - 5_e
+      - 9_e
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+      - 4_e
+      - 8_e
+    dst:
+      - 6_e
+      - 7_s
+      - 8_s
+      - 9_s
+      - 10_e
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+      - 4_e
+      - 8_e
+      - 12_e
+    dst:
+      - 4_s
+      - 5_s
+      - 6_s
+      - 7_e
+      - 11_e
+  movement_4:
+    src:
+      - 5_s
+      - 6_s
+      - 3_e
+      - 7_e
+      - 11_e
+    dst:
+      - 1_s
+      - 2_s
+      - 3_s
+      - 8_e
+      - 12_e
+  movement_5:
+    src:
+      - 4_s
+      - 6_s
+      - 3_e
+      - 7_e
+      - 11_e
+    dst:
+      - 10_s
+      - 11_s
+      - 12_s
+      - 1_e
+      - 9_e
+  movement_6:
+    src:
+      - 4_s
+      - 5_s
+      - 3_e
+      - 7_e
+      - 11_e
+    dst:
+      - 2_e
+      - 7_s
+      - 8_s
+      - 9_s
+      - 10_e
+  movement_7:
+    src:
+      - 6_e
+      - 2_e
+      - 8_s
+      - 9_s
+      - 10_e
+    dst:
+      - 4_s
+      - 5_s
+      - 3_e
+      - 6_s
+      - 11_e
+  movement_8:
+    src:
+      - 2_e
+      - 7_s
+      - 6_e
+      - 9_s
+      - 10_e
+    dst:
+      - 1_s
+      - 2_s
+      - 3_s
+      - 4_e
+      - 12_e
+  movement_9:
+    src:
+      - 2_e
+      - 7_s
+      - 6_e
+      - 8_s
+      - 10_e
+    dst:
+      - 10_s
+      - 11_s
+      - 12_s
+      - 5_e
+      - 1_e
+  movement_10:
+    src:
+      - 9_e
+      - 11_s
+      - 12_s
+      - 5_e
+      - 1_e
+    dst:
+      - 2_e
+      - 7_s
+      - 6_e
+      - 8_s
+      - 9_s
+  movement_11:
+    src:
+      - 9_e
+      - 10_s
+      - 12_s
+      - 5_e
+      - 1_e
+    dst:
+      - 4_s
+      - 5_s
+      - 3_e
+      - 6_s
+      - 7_e
+  movement_12:
+    src:
+      - 9_e
+      - 10_s
+      - 11_s
+      - 5_e
+      - 1_e
+    dst:
+      - 1_s
+      - 2_s
+      - 3_s
+      - 4_e
+      - 8_e
+cam_10:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+cam_11:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+cam_12:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+cam_13:
+  movement_1:
+    src:
+      - 2_s
+      - 3_s
+  movement_2:
+    src:
+      - 1_s
+      - 3_s
+  movement_3:
+    src:
+      - 1_s
+      - 2_s
+cam_14:
+  movement_1:
+    src:
+      - 2_e
+  movement_2:
+    src:
+      - 1_s
+cam_15:
+  movement_1:
+    src:
+      - 2_e
+    dst:
+      - 2_s
+  movement_2:
+    src:
+      - 1_e
+    dst:
+      - 1_s
+cam_16:
+  movement_1:
+    src:
+      - 2_e
+    dst:
+      - 2_s
+  movement_2:
+    src:
+      - 1_e
+    dst:
+      - 1_s
+cam_17:
+  movement_1:
+    src:
+      - 2_e
+    dst:
+      - 2_s
+  movement_2:
+    src:
+      - 1_e
+    dst:
+      - 1_s
+cam_18:
+  movement_1:
+    src:
+      - 2_e
+    dst:
+      - 2_s
+  movement_2:
+    src:
+      - 1_e
+    dst:
+      - 1_s
+cam_19:
+  movement_1:
+    src:
+      - 2_e
+    dst:
+      - 2_s
+  movement_2:
+    src:
+      - 1_e
+    dst:
+      - 1_s
+cam_20:
+  movement_1:
+    src:
+      - 2_e
+  movement_2:
+    dst:
+      - 1_s
