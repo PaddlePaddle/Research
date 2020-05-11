@@ -25,7 +25,15 @@ This repo is developed under the following configurations:
 + Software: Python=3.6.7 GCC 5.4.0 paddle=1.7.0 CUDA=9.0
 
 We provide a docker image for official test for track-1 datasetB. 
-Download via Baidu Cloud: [https://pan.baidu.com/s/1tpP_up75xfSJnKdphDxn0A passwd:c4v6]
+Download via https://bj.bcebos.com/v1/baixue/liuzhongji/aicity2020_task1_counting.tar 
+
+We also provide our label of datasetA for fineturning vehicle detector.
+Download via Baidu Cloud: [https://pan.baidu.com/s/1o8QMCubHCO6dTTSELCcNuA  passwd: r08r]
+where:
+train.tar -- selected frames from datasetA
+1584811984_train_final.json -- label 
+faster_rcnnn_r50_track1.tar -- configurations for fineturning
+
 
 The related repos:
 
