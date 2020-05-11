@@ -25,21 +25,21 @@ This repo is developed under the following configurations:
 + Software: Python=3.6.7 GCC 5.4.0 paddle=1.7.0 CUDA=9.0
 
 We provide a docker image for official test for track-1 datasetB. 
+
 Download via https://bj.bcebos.com/v1/baixue/liuzhongji/aicity2020_task1_counting.tar 
 
 We also provide our label of datasetA for fineturning vehicle detector.
+
 Download via Baidu Cloud: [https://pan.baidu.com/s/1o8QMCubHCO6dTTSELCcNuA  passwd: r08r]
+
 where:
+
 train.tar -- selected frames from datasetA
+
 1584811984_train_final.json -- label 
+
 faster_rcnnn_r50_track1.tar -- configurations for fineturning
 
-
-The related repos:
-
-[paddle detection] https://github.com/PaddlePaddle/PaddleDetection/tree/release/0.2
-
-[py-hausdorff] https://github.com/mavillan/py-hausdorff
 
 ####How to run:
 
@@ -65,3 +65,9 @@ the steps and related folders included in the whole pipeline:
 2. **run_detection.sh: ** /home/task1_code/PaddleDetection is the folder where we run detection model, the origional /tools/infer.py, which you can find at [paddle detection](https://github.com/PaddlePaddle/PaddleDetection/tree/release/0.2/tools) is modified to save detection results in txt format. The detection results will be saved in /home/task1_code/det_results/
 3. **run_tracking.sh: ** /home/task1_code/tracking is the folder where we run online tracking method, the tracking results will be saved to txt files in /home/task1_code/track_results/
 4. **run_counting.sh: **/home/task1_code/vehicle_counting is the folder wher we run counting method, the final counting results will be saved to txt files in /home/task1_code/vehicle_counting_results/
+
+The related repos:
+
+[paddle detection] https://github.com/PaddlePaddle/PaddleDetection/tree/release/0.2
+
+[py-hausdorff] https://github.com/mavillan/py-hausdorff
