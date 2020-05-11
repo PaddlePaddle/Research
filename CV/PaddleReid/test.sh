@@ -1,0 +1,2 @@
+python -u test_query_gallery.py --model_arch 'ResNeXt101_32x8d_wsl' --weights 'model_final' --test_batch_size 32 --big_height 384 --big_width 384 --target_height 384 --target_width 384
+#python -u test_query_gallery.py --model_arch 'ResNeXt101_vd_64x4d_MB' --weights 'model_final' --test_batch_size 32 --big_height 288 --big_width 384 --target_height 288 --target_width 384 --use_multi_branch True --num_features 170
