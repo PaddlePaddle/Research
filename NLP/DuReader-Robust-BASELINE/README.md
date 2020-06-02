@@ -3,7 +3,7 @@ Machine Reading Comprehension (MRC) is a crucial and challenging task in natural
 
 To comprehensively evaluate the robustness of MRC models, we create a Chinese dataset, namely DuReader<sub>robust</sub>. It is designed to challenge MRC models from the following aspects: (1) over-sensitivity, (2) over-stability and (3) generalization. Besides, DuReader<sub>robust</sub> has another advantage over previous datasets: questions and documents are from Baidu Search. It presents the robustness issues of MRC models when applying them to real-world applications.  
 
-For more details about the dataset, please refer to this [paper](#).
+For more details about the dataset, please refer to this [paper](https://arxiv.org/abs/2004.11142).
 
 Note that we release two equivalent versions of the baseline for DuReader<sub>robust</sub> dataset. One is the [DuReader<sub>robust</sub> Baseline System](#dureaderrobust-baseline-system) and the other is [PaddleHub Baseline](#paddlehub-baseline). The two baseline systems implement the same ERNIE 1.0 based MRC model, while the main differences are 
 
