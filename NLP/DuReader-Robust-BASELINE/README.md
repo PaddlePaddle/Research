@@ -93,7 +93,7 @@ The performance of our baseline model (i.e. the fine-tuned model we provided abo
 | basic dev | 80.84 | 69.02 |
 
 
-## PaddleHub Baseline
+# PaddleHub Baseline
 
 To get the competition started quickly, we also release the baseline based on PaddleHub (https://github.com/PaddlePaddle/PaddleHub). PaddleHub is an application toolkit for pre-trained models of PaddlePaddle(『飞桨』预训练模型应用工具).
 
@@ -118,7 +118,7 @@ you can raise an issue (https://github.com/PaddlePaddle/PaddleHub/issues). We wi
 
 The same codes also are released on the [demo](https://aistudio.baidu.com/aistudio/projectdetail/434707).
 
-## Copyright and License
+# Copyright and License
 Copyright 2020 Baidu.com, Inc. All Rights Reserved
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at

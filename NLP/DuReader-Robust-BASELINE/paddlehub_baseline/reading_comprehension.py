@@ -1,5 +1,5 @@
-#coding:utf-8
-#   Copyright (c) 2019 PaddlePaddle Authors. All Rights Reserved.
+# coding:utf-8
+# Copyright (c) 2019 PaddlePaddle Authors. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -26,6 +26,7 @@ from demo_dataset import DuReader
 
 # yapf: disable
 parser = argparse.ArgumentParser(__doc__)
+parser.add_argument("--dataset_path", type=str, default=None, help="The diretory to DuReader robust dataset")
 parser.add_argument("--num_epoch", type=int, default=1, help="Number of epoches for fine-tuning.")
 parser.add_argument("--use_gpu", type=ast.literal_eval, default=True, help="Whether use GPU for finetuning, input should be True or False")
 parser.add_argument("--learning_rate", type=float, default=3e-5, help="Learning rate used to train with warmup.")
@@ -48,7 +49,7 @@ if __name__ == '__main__':
         trainable=True, max_seq_len=args.max_seq_len)
 
     # 加载竞赛数据集并使用ReadingComprehensionReader读取数据
-    dataset = DuReader()
+    dataset = DuReader(dataset_path=args.dataset_path)
     reader = hub.reader.ReadingComprehensionReader(
         dataset=dataset,
         vocab_path=module.get_vocab_path(),
@@ -82,6 +83,7 @@ if __name__ == '__main__':
         num_epoch=args.num_epoch,
         batch_size=args.batch_size,
         checkpoint_dir=args.checkpoint_dir,
+        save_ckpt_interval=500,
         strategy=strategy)
 
     # 定义阅读理解Fine-tune Task
@@ -98,9 +100,9 @@ if __name__ == '__main__':
     # 调用finetune_and_eval API，将会自动进行训练、评估以及保存最佳模型
     reading_comprehension_task.finetune_and_eval()
     
-    # 竞赛数据集测试集部分数据用于预测
-    data = dataset.predict_examples
+    # 数据集验证集部分数据用于预测
+    data = dataset.get_dev_examples()
     # 调用predict接口, 打开return_result(True)，将自动返回预测结果
-    all_prediction = reading_comprehension_task.predict(data=data, return_result=True)
+    all_prediction = reading_comprehension_task.predict(data=data, load_best_model=False, return_result=True)
     # 写入预测结果
     json.dump(all_prediction, open('submit.json', 'w'), ensure_ascii=False)
