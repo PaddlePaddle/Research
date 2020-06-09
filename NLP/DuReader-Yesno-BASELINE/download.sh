@@ -18,6 +18,7 @@ echo "Download DuReader-yesno dataset"
 # rm dureader_robust-data.tar.gz
 
 echo "Download fine-tuned parameters"
-wget --no-check-certificate "http://bj.bcebos.com/v1/ai-studio-online/59b27b6ab663464a95683963a68ba16a1995c679b6e44c5aa8056f47b3365944?responseContentDisposition=attachment%3B%20filename%3Dbaseline.tar.gz&authorization=bce-auth-v1%2F0ef6765c1e494918bc0d4c3ca3e5c6d1%2F2020-02-21T05%3A49%3A52Z%2F-1%2F%2Fe719555655a0314555aed5d033b16b3154b16b8b9b8b5ffec712edc94e9ca1d3"
+wget --no-check-certificate
+"http://bj.bcebos.com/v1/ai-studio-online/59b27b6ab663464a95683963a68ba16a1995c679b6e44c5aa8056f47b3365944?responseContentDisposition=attachment%3B%20filename%3Dbaseline.tar.gz&authorization=bce-auth-v1%2F0ef6765c1e494918bc0d4c3ca3e5c6d1%2F2020-02-21T05%3A49%3A52Z%2F-1%2F%2Fe719555655a0314555aed5d033b16b3154b16b8b9b8b5ffec712edc94e9ca1d3" -O baseline.tar.gz
 tar -zxvf baseline.tar.gz
 rm baseline.tar.gz
