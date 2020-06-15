@@ -91,8 +91,8 @@ The generated summaries for GraphSum on the MultiNews dataset can be downloaded 
 
 Trained Models
 ---
-The trained GraphSum model on the WikiSum dataset can be downloaded [graphsum_wikisum_trained_model](https://graphsum.bj.bcebos.com/trained_models/graphsum_wikisum/step_308000.tar.gz)  
-The trained GraphSum model on the MultiNews dataset can be downloaded [graphsum_multinews_trained_model](https://graphsum.bj.bcebos.com/trained_models/graphsum_multinews/step_42976.tar.gz)  
+The trained GraphSum model on the WikiSum dataset can be downloaded from [graphsum_wikisum_trained_model](https://graphsum.bj.bcebos.com/trained_models/graphsum_wikisum/step_308000.tar.gz)  
+The trained GraphSum model on the MultiNews dataset can be downloaded from [graphsum_multinews_trained_model](https://graphsum.bj.bcebos.com/trained_models/graphsum_multinews/step_42976.tar.gz)  
 To predict with our trained models, firstly unzip them and then set parameter $init_checkpoint in ./scripts/predict_graphsum_local_wikisum.sh and ./scripts/predict_graphsum_local_multinews.sh to the path of trained models, respectively.
 
 Citation
