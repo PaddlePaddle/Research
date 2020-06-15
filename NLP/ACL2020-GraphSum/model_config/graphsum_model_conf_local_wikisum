@@ -1,0 +1,22 @@
+task="GraphSum_MDS"
+
+VOCAB_PATH="./vocab/spm9998_3.model"
+CONFIG_PATH="./model_config/graphsum_config.json"
+TASK_DATA_PATH="/root/liwei85/projects/data/WikiSum_data_tfidf_paddle"
+
+#model_based
+lr_scheduler="noam_decay"
+use_fp16="False"
+use_fuse="True"
+use_hierarchical_allreduce="True"
+nccl_comm_num=3
+loss_scaling=12800
+
+#for optimizer
+WARMUP_PROP=0.01
+WARMUP_STEPS=8000
+beta1=0.9
+beta2=0.998
+eps=1e-9
+LR_RATE=2.0
+WEIGHT_DECAY=0.01
