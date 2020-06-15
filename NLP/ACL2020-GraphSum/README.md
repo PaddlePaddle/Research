@@ -9,7 +9,7 @@ The model can leverage graph to better encode long input from multiple documents
 The model is proposed in ACL2020 paper [Leveraging Graph to Improve Abstractive Multi-Document Summarization](https://arxiv.org/pdf/2005.10043.pdf). 
 The overall architecture of the model is shown as follows:
 
-![image](https://github.com/PaddlePaddle/Research/tree/master/NLP/ACL2020-GraphSum/images/GraphSumm.pdf)
+![image](./images/GraphSumm.pdf)
 
 
 Dependencies
@@ -83,7 +83,7 @@ Results
 |   WikiSum   |  43.23  |  27.25  |  40.99  |
 
 We re-trained the model by tuning some parameters, and got the above results which were a little better than the results reported in the paper.  
-\*\*Note that, the above ROUGEL-L results are **sentence-level** ROUGE-L scores which are most widely used in summarization research.
+\*\*Note that, the above ROUGEL-L results are **sentence-level** ROUGE-L scores which are the most widely used in summarization research.
 
 
 Generated Summaries
