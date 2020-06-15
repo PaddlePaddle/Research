@@ -7,9 +7,6 @@ Introduction
 GraphSum is a multi-document abstractive summarization model which integrates explicit graph representations of documents such as lexical similarity and discourse graph into transformer-based end-to-end neural generation model. 
 The model can leverage graph to better encode long input from multiple documents and model the intra- and cross-document relations more effectively.
 The model is proposed in ACL2020 paper [Leveraging Graph to Improve Abstractive Multi-Document Summarization](https://arxiv.org/pdf/2005.10043.pdf). 
-The overall architecture of the model is shown as follows:
-
-![GraphSum](https://github.com/weili-ict/Research/blob/master/NLP/ACL2020-GraphSum/images/GraphSumm.pdf)
 
 
 Dependencies
