@@ -9,7 +9,7 @@ The model can leverage graph to better encode long input from multiple documents
 The model is proposed in ACL2020 paper [Leveraging Graph to Improve Abstractive Multi-Document Summarization](https://arxiv.org/pdf/2005.10043.pdf). 
 The overall architecture of the model is shown as follows:
 
-![GraphSum](https://graphsum.bj.bcebos.com/images/GraphSumm.pdf)
+![GraphSum](https://github.com/weili-ict/Research/blob/master/NLP/ACL2020-GraphSum/images/GraphSumm.pdf)
 
 
 Dependencies
