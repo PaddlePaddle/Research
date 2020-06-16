@@ -40,7 +40,7 @@
 | 阅读理解 | [MRQA2019-BASELINE](NLP/MRQA2019-BASELINE) | 机器阅读理解任务的基线模型，基于[ERNIE](https://arxiv.org/abs/1904.09223)预训练模型，支持多GPU微调预测。 | - |
 | 阅读理解 | [D-NET](NLP/MRQA2019-D-NET) | 预训练及微调框架，包含多任务学习及多预训练模型的融合，用于阅读理解模型的生成。 | https://www.aclweb.org/anthology/D19-5828/ |
 | 建议挖掘 | [MPM](NLP/NAACL2019-MPM) | 利用多视角架构来学习表示和双向transformer编码器进行论坛评论建议挖掘。 | https://www.aclweb.org/anthology/S19-2216/ |
-| 多文档摘要 | [GraphSum](NLP/ACL2020-GraphSum) | 基于图表示的生成式多文档摘要模型，将显式图结构信息引入到端到端摘要生成过程中。 | https://arxiv.org/abs/2005.10043 |
+| 多文档摘要 | [ACL2020-GraphSum](NLP/ACL2020-GraphSum) | 基于图表示的生成式多文档摘要模型，将显式图结构信息引入到端到端摘要生成过程中。 | https://arxiv.org/abs/2005.10043 |
 
 ## 知识图谱
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
