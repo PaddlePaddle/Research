@@ -1,5 +1,5 @@
 自定义OP编译:
-1. 使用paddle develop 12月1日之后的版本
+1. 使用paddle develop 12月1日之后的版本（推荐commit id：cdba41af4dfd7d58cf90）
 2. sh make.sh编译成correlation_lib.so动态库
 3. 添加动态库路径到LD_LIBRARY_PATH：
 ```

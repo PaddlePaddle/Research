@@ -3,7 +3,7 @@ PWC-Net: CNNs for Optical Flow Using Pyramid, Warping, and Cost Volume.
 # Environment 
 ```
 cenntos7
-paddle develop version (after 20191201) install from source
+paddle develop version (after 20191201, recommended commit id: cdba41af4dfd7d58cf90) install from source
 python3.7
 SciPy 1.1.0
 ```
