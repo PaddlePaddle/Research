@@ -18,10 +18,12 @@ TODO
     ```
     git clone https://github.com/PaddlePaddle/epep.git
     cd epep
-    git clone https://github.com/PaddlePaddle/models.git
-    ln -s models/PaddleST/Research/KDD2020-P3AC/conf/poi_qac_personalized conf/poi_qac_personalized
-    ln -s models/PaddleST/Research/KDD2020-P3AC/datasets/poi_qac_personalized datasets/poi_qac_personalized
-    ln -s models/PaddleST/Research/KDD2020-P3AC/nets/poi_qac_personalized nets/poi_qac_personalized
+    git clone https://github.com/PaddlePaddle/Research.git
+    ln -s Research/ST_DM/KDD2020-P3AC/conf/poi_qac_personalized conf/poi_qac_personalized
+    ln -s Research/ST_DM/KDD2020-P3AC/datasets/poi_qac_personalized datasets/poi_qac_personalized
+    ln -s Research/ST_DM/KDD2020-P3AC/nets/poi_qac_personalized nets/poi_qac_personalized
+    ln -s Research/ST_DM/KDD2020-P3AC/test test/poi_qac_personalized
+    cp Research/ST_DM/KDD2020-P3AC/epep_main.sh epep_main.sh
     ```
 
 3. 环境依赖
@@ -33,33 +35,26 @@ TODO
 
 1. 数据准备
 
-    TODO
+    
     ```
-    #script to download 
+    https://github.com/anpark/Research/blob/master/ST_DM/KDD2020-P3AC/test
+    train.dat
+    dev.dat
+    test.dat
     ```
 
 2. 模型训练 (Model Training)
 
     ```
-    cp conf/poi_qac_personalized/poi_qac_personalized.local.conf.template conf/poi_qac_personalized/poi_qac_personalized.local.conf
-    sh run.sh -c conf/poi_qac_personalized/poi_qac_personalized.local.conf -m train [ -g 0 ]
+    #如果要gpu, 编辑conf/poi_qac_personalized/poi_qac_personalized.local.conf.template, platform: local-cpu 改为 local-gpu
+    sh epep_main.sh train
     ```
 
 3. 模型评估 (Model Testing)
     ```
-    pred_gpu=$1
-    mode=$2 #query, poi, eval
+    #如果要gpu, 编辑conf/poi_qac_personalized/poi_qac_personalized.local.conf.template, platform: local-cpu 改为 local-gpu
+    sh epep_main.sh eval
 
-    if [ $# -lt 2 ];then
-        exit 1
-    fi
-
-    #编辑conf/poi_qac_personalized/poi_qac_personalized.local.conf.template，打开 CUDA_VISIBLE_DEVICES: <pred_gpu>
-    cp conf/poi_qac_personalized/poi_qac_personalized.local.conf.template conf/poi_qac_personalized/poi_qac_personalized.local.conf
-    sed -i "s#<pred_gpu>#$pred_gpu#g" conf/poi_qac_personalized/poi_qac_personalized.local.conf
-    sed -i "s#<mode>#$mode#g" conf/poi_qac_personalized/poi_qac_personalized.local.conf
-
-    sh run.sh -c poi_qac_personalized.local -m predict 1>../tmp/$mode-pred$pred_gpu.out 2>../tmp/$mode-pred$pred_gpu.err
     ```
 
 ## 论文下载(Paper Download)
