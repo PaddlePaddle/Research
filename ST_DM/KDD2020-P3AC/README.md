@@ -37,10 +37,13 @@ TODO
 
     
     ```
-    https://github.com/anpark/Research/blob/master/ST_DM/KDD2020-P3AC/test
+    链接: https://pan.baidu.com/s/1c1Y7Cf2SN3PPX40Pm-WnHw 提取码: 3wd3
     train.dat
     dev.dat
     test.dat
+
+    qid \t geoid \t prefix \t pos \t neg
+    下载到目录：Research/ST_DM/KDD2020-P3AC/test
     ```
 
 2. 模型训练 (Model Training)
