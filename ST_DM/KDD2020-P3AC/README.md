@@ -43,7 +43,7 @@ TODO
     test.dat
 
     qid \t geoid \t prefix \t pos \t neg
-
+    下载到目录：Research/ST_DM/KDD2020-P3AC/test
     ```
 
 2. 模型训练 (Model Training)
