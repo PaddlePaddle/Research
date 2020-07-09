@@ -1,10 +1,12 @@
 # PLATO
 **PLATO: Pre-trained Dialogue Generation Model with Discrete Latent Variable**
-[paper link](http://arxiv.org/abs/1910.07931)
+[paper link](https://www.aclweb.org/anthology/2020.acl-main.9.pdf)
 
 **\*\*\*\*\* Update \*\*\*\*\***
 
-Nov. 14: Support new APIs in paddlepaddle 1.6.0 (model files in the link have been updated accordingly), multi-GPU training and decoding strategy of top-k sampling. Release our baseline model `PLATO w/o latent`.
+Jul. 9, 2020: We are opening [PLATO-2](https://github.com/PaddlePaddle/Knover/tree/master/plato-2), a large-scale generative model with latent space for open-domain dialogue systems.
+
+Nov. 14, 2019: Support new APIs in paddlepaddle 1.6.0 (model files in the link have been updated accordingly), multi-GPU training and decoding strategy of top-k sampling. Release our baseline model `PLATO w/o latent`.
 
 ## Requirements
 ```
@@ -131,11 +133,12 @@ Note: In the experiments on `DSTC7_AVSD`, the response selection of our method i
 ## Citation
 If you find PLATO useful in your work, please cite the following Arxiv paper:
 ```
-@article{bao2019plato,
+@inproceedings{bao2019plato,
     title={PLATO: Pre-trained Dialogue Generation Model with Discrete Latent Variable},
     author={Bao, Siqi and He, Huang and Wang, Fan and Wu, Hua and Wang, Haifeng},
-    journal={arXiv preprint arXiv:1910.07931},
-    year={2019}
+    booktitle={Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics},
+    pages={85--96},
+    year={2020}
 }
 ```
 
