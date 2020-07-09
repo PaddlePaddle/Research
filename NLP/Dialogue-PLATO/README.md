@@ -131,7 +131,7 @@ Our Method Upper Bound | 0.925 | 0.843 | 0.767 | 0.689 | 0.361 | 0.731 | 1.716
 Note: In the experiments on `DSTC7_AVSD`, the response selection of our method is strengthened with an extra ranking step, which ranks the candidates according to the automatic scores and selects the top one as the final answer.
 
 ## Citation
-If you find PLATO useful in your work, please cite the following Arxiv paper:
+If you find PLATO useful in your work, please cite the following paper:
 ```
 @inproceedings{bao2019plato,
     title={PLATO: Pre-trained Dialogue Generation Model with Discrete Latent Variable},
