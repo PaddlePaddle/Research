@@ -28,10 +28,12 @@ This code has been tested on python3.6 environment with the folloing site-packag
     opencv-python==3.4.3
     paddlepaddle-gpu==1.6.2
     
-To execute the vessel segmentation demo, you should download the inference model weights [here](https://pan.baidu.com/s/1PrA0KyYNamfm9UrDO3nLVA) (fetch code: 63kp), and put them into the pdl_assets directory.
-After that, run the following scripts:
+To execute the vessel segmentation demo, you should download the inference model weights [here](https://pan.baidu.com/s/1PrA0KyYNamfm9UrDO3nLVA) (fetch code: 63kp), and then put them into the pdl_assets directory.
+After that, run the following script:
 
     python vessel_segmentation_demo.py
+    
+This demo takes the domo.jpg (a compressed image from the DRIVE test set) as input and generates an image with the extracted vessel mask.
 
 ## Citation request
 
