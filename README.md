@@ -20,6 +20,7 @@
 | 轻量化检测 | [astar2019](CV/astar2019) | 百度之星轻量化检测比赛评测工具。 | - |
 | 地标检索与识别 | [landmark](CV/landmark) | 基于检索的地标检索与识别系统，支持地标型与非地标型识别、识别与检索结果相结合的多重识别结果投票和重新排序。 | https://arxiv.org/abs/1906.03990 |
 | 图像分类 | [webvision2018](CV/webvision2018) | 模型利用重加权网络(URNet)缓解web数据中偏倚和噪声的影响，进行web图像分类。 | https://arxiv.org/abs/1811.00700 |
+| 图像分类 | [CLPI](CV/CLPI-Collaborative-Learning-for-Diabetic-Retinopathy-Grading) | 模型利用一个Lesion Generator改善了糖尿病视网膜病变图像分级的模型性能，理论上可用于所有希望实现局部+整体模型分析的场景 | - |
 
 ## 自然语言处理
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
