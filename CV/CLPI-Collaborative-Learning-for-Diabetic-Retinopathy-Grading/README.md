@@ -11,10 +11,6 @@ In this paper, we present a robust framework, which can collaboratively utilize 
     - scikit-learn (optional, for kappa evaluation)
  
 # Preparation
-Download weights via Baidu Cloud: [https://pan.baidu.com/s/1m_7FQkJJCER9WrhByqlNqw passwd: h36i]
-
-And put `messidor_densenet_full_best.zip` to `./demo/`
-
 For uncompressing model weights:
 ```
 cd ./demo/
@@ -32,6 +28,9 @@ demo/images/20051021_59136_0100_PP.png
 demo/images/20051214_40719_0100_PP.png
 demo/images/20051205_31994_0400_PP.png
 ```
+
+### Put images into `./demo/images/`
+Due to the limitation of the size of the images, we can not upload unmodified images from Messidor-2, please download Messidor-2 dataset and put the four images listed above into `./demo/images/`.
 
 ### Run inference
 ```
