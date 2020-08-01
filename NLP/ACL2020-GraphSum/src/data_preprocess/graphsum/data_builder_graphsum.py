@@ -20,7 +20,6 @@ import math
 from collections import namedtuple
 from os.path import join as pjoin
 import codecs
-# import torch
 from multiprocessing import Pool
 import multiprocessing.pool
 import numpy as np
