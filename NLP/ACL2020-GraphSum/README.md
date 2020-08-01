@@ -27,6 +27,9 @@ The sentencepiece vocab file can be downloaded from [https://graphsum.bj.bcebos.
 To process the dataset and build graph by yourself, you can get the raw version of the WikiSum dataset from [here](https://github.com/tensorflow/tensor2tensor/tree/5acf4a44cc2cbe91cd788734075376af0f8dd3f4/tensor2tensor/data_generators/wikisum)
 and the ranked version of the dataset from [here](https://github.com/nlpyang/hiersumm). The raw version of the MultiNews dataset can be obtained from [this link](https://github.com/Alex-Fabbri/Multi-News)
 
+Our data preprocess code (contains the code to build similarity graph and topic graph) has also been open [link](https://github.com/weili-ict/Research/tree/master/NLP/ACL2020-GraphSum/src/data_preprocess/graphsum).
+
+
 Model Configuration
 ---
 Global Configuration for GraphSum model, such as hidden size, num of layers, head size etc.: 
