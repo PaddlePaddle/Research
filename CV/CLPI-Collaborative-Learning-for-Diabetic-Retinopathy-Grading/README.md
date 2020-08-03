@@ -80,5 +80,3 @@ python3 -u get_cam_heatmap.py \
 
 # Appendix
 - For reproducible, we provide our train / validation / test split on Messidor-2 following `6 / 2 / 2`, because of the lack of official test set. Please refer to `demo/partition/`
-
-- The patch-level annotations of IDRiD and the name list of LIQ-EyePACs can be accessed upon request.
