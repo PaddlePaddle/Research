@@ -80,3 +80,16 @@ python3 -u get_cam_heatmap.py \
 
 # Appendix
 - For reproducible, we provide our train / validation / test split on Messidor-2 following `6 / 2 / 2`, because of the lack of official test set. Please refer to `demo/partition/`
+
+# Citation
+If you use this code for your research, please cite our papers.
+```
+@misc{yang2020robust,
+    title={Robust Collaborative Learning of Patch-level and Image-level Annotations for Diabetic Retinopathy Grading from Fundus Image},
+    author={Yehui Yang and Fangxin Shang and Binghong Wu and Dalu Yang and Lei Wang and Yanwu Xu and Wensheng Zhang and Tianzhu Zhang},
+    year={2020},
+    eprint={2008.00610},
+    archivePrefix={arXiv},
+    primaryClass={cs.CV}
+}
+```
