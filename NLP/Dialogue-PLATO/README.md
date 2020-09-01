@@ -6,12 +6,12 @@
 
 Jul. 9, 2020: We are opening [PLATO-2](https://github.com/PaddlePaddle/Knover/tree/master/plato-2), a large-scale generative model with latent space for open-domain dialogue systems.
 
-Nov. 14, 2019: Support new APIs in paddlepaddle 1.6.0 (model files in the link have been updated accordingly), multi-GPU training and decoding strategy of top-k sampling. Release our baseline model `PLATO w/o latent`.
+Nov. 14, 2019: Support new APIs in paddlepaddle 1.6 (model files in the link have been updated accordingly), multi-GPU training and decoding strategy of top-k sampling. Release our baseline model `PLATO w/o latent`.
 
 ## Requirements
 ```
 - python >= 3.6
-- paddlepaddle >= 1.6.0 and < 1.7.0
+- paddlepaddle == 1.6.1
 - numpy
 - nltk
 - tqdm
