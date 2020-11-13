@@ -70,7 +70,7 @@ The dataset is available at https://baidu-nlp.bj.bcebos.com/DuRecDial.zip. Each 
 
 
 # Model
-Due to some problems in the internal process, the model cannot be open source for the time being. As an alternative, you can use the baseline model of the [LIC 2020 competition](https://github.com/cstghitpku/Research/tree/master/NLP/Conversational-Recommendation-BASELINE).
+Due to some problems in the internal process, the model cannot be open source for the time being. As an alternative, you can use the baseline model of the [LIC 2020 competition](NLP/Conversational-Recommendation-BASELINE).
 
 
 # Competitions
