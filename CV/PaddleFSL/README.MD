@@ -1,6 +1,6 @@
 # PaddleFSL
 
-PaddleFSL provides examples for few-shot learning, building on top of [PaddlePaddle](https://github.com/PaddlePaddle/Paddle).
+PaddleFSL provides examples for few-shot learning (FSL), building on top of [PaddlePaddle](https://github.com/PaddlePaddle/Paddle).
 Currently, it contains two backbone embedding networks, two popularly used baselines and six benchmark datasets for FSL image classification. 
 
 ## Datasets
