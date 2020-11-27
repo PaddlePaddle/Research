@@ -16,7 +16,7 @@ The following benckmark FSL image classification datasets are used:
 
 We use the train / test splits as mentioned in the respective papers.
 
-Except Tiered-ImageNet which is too large, we provide pickle files in the data folder.
+We provide pickle files of Omniglot and CUB. Other datasets exceed the file limit of Github, thus please download them from the aforementioned datasets and put them into the respective data/{dataset name} folder.
 
 ## Backbones 
 
@@ -47,7 +47,6 @@ The codes have been tested on:
 ### Training
 
 ~~~bash
-python train.py --dataset=cifarfs --backbone='Conv4' --method='protonet' --epochs=200 --k_shot=1 --n_way=5
 python train.py --dataset=miniimagenet --backbone='Conv4' --method='protonet' --epochs=200 --k_shot=5 --n_way=5
 ~~~
 
@@ -71,7 +70,6 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    | 97.4|99.45 ± 0.04|99.3|99.67 ± 0.03  |
 |          | RelationNet | 99.6 ± 0.2|99.23 ± 0.05|99.8± 0.1|99.83 ± 0.02  |
 | ResNet12 | ProtoNet    |                 | 99.40 ± 0.04   |                 |  99.63 ± 0.03   |
-|          | RelationNet |                 |      |                 |      |
 
 
 **Mini-ImageNet**
@@ -82,7 +80,7 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    |   46.61 ± 0.78|49.75 ± 0.25|65.77 ± 0.70|66.53 ± 0.21    |
 |          | RelationNet |  50.44 ± 0.82|50.04 ± 0.26|65.32 ± 0.70|65.60 ± 0.21  |
 | ResNet12 | ProtoNet    |                 |  54.08 ± 0.29    |                 |   68.44 ± 0.23   |
-|          | RelationNet |                 |      |                 |      |
+
 
 **Tiered-ImageNet**
 
@@ -92,7 +90,6 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    |  53.31 ± 0.89|52.14 ± 0.28|72.69 ± 0.74|71.07 ± 0.24    |
 |          | RelationNet |  54.48 ± 0.93|53.81± 0.29|71.32 ± 0.78|70.04 ± 0.25 |
 | ResNet12 | ProtoNet    |                 |   53.51 ± 0.30   |                 |   71.04 ± 0.26   |
-|          | RelationNet |                 |      |                 |      |
 
 
 **CIFAR-FS**
@@ -103,7 +100,6 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    | 55.5 ± 0.70|55.96 ± 0.29|72.0 ± 0.60|72.27 ± 0.23   |
 |          | RelationNet | 55.0 ± 1.00|55.56 ± 0.30|69.3 ± 0.80|71.45 ± 0.24     |
 | ResNet12 | ProtoNet    |                 |  63.67 ± 0.31    |                 |   78.16 ± 0.23   |
-|          | RelationNet |                 |      |                 |      |
 
 
 **FC100**
@@ -114,7 +110,6 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    |  35.3 ± 0.60|36.68 ± 0.22|48.6 ± 0.60|49.45 ± 0.22  |
 |          | RelationNet |                 |   36.74 ± 0.23 |                 |  47.14 ± 0.22    |
 | ResNet12 | ProtoNet    |                 |35.99 ± 0.23    |                 |  46.22 ± 0.22    |
-|          | RelationNet |                 |      |                 |      |
 
 
 **CUB**
@@ -125,7 +120,6 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    | 51.31 ± 0.91|53.30 ± 0.29|70.77 ± 0.69|69.08 ± 0.22  |
 |          | RelationNet | 62.45 ± 0.98|60.31 ± 0.31|76.11 ± 0.69|73.02 ± 0.23 |
 | ResNet12 | ProtoNet    |                 | 60.75 ± 0.32     |                 | 71.42 ± 0.24     |
-|          | RelationNet |                 |      |                 |      |
 
 
 ## Contributors 
