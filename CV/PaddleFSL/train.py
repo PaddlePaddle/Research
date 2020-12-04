@@ -35,8 +35,9 @@ def train():
         # prepare dataloader
         train_data_batches, val_data_batches = prepare_dataloader(args)
 
+        save_name = args.method+'_'+args.backbone+'_'+str(args.k_shot)+'shot_'+str(args.n_way)+'way'
         best_val_acc = 0
-        with LogWriter(logdir=args.log_dir+'train/') as writer:
+        with LogWriter(logdir=args.log_dir+'logs/'+args.dataset+'/', filename_suffix='_'+save_name) as writer:
             for epoch in range(args.epochs):
                 train_loss, train_acc = [], []
                 for batch_id, batch in enumerate(train_data_batches):
@@ -77,9 +78,7 @@ def train():
 
                 if acc_avg_val > best_val_acc:
                     # save params of model
-                    fluid.save_dygraph(model.state_dict(), args.log_dir+args.method+'_'+args.backbone+'_'+str(args.k_shot)+'shot_'+str(args.n_way)+'way'+str(epoch))
-                    # save optimizer state
-                    # fluid.save_dygraph(opt.state_dict(), args.log_dir+args.method+'_'+args.backbone+'_'+str(args.k_shot)+'shot_'+str(args.n_way)+'way'+str(epoch))
+                    fluid.save_dygraph(model.state_dict(), args.log_dir+'checkpoint/'+args.dataset+'/'+save_name) 
                     best_val_acc = acc_avg_val
 
 if __name__ == "__main__":

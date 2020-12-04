@@ -20,8 +20,9 @@ def parse_args():
     parser.add_argument('--n_way', default=5, type=int, help='number of classes in a task')
     parser.add_argument('--k_shot', default=1, type=int, help='number of training sample per class')
     parser.add_argument('--n_query', default=15, type=int, help='number of queries per class')
-    parser.add_argument('--train_aug', default=False, type=bool, help='perform data augmentation or not during training')
-    parser.add_argument('--meta_batch', default=1, type=int, help='number of meta batch')
+    # belowings are currently not used
+    # parser.add_argument('--train_aug', default=False, type=bool, help='perform data augmentation or not during training')
+    # parser.add_argument('--meta_batch', default=1, type=int, help='number of meta batch')
 
     parser.add_argument('--use_gpu', default=1, type=int, help='whether gpu is used')
     # for backbones
@@ -31,7 +32,6 @@ def parse_args():
 
     # testing
     parser.add_argument('--test_mode', default=False, type=bool, help='if in test mode')
-    parser.add_argument('--test_model_epoch', default=1, type=int, help='test model epoch')
     parser.add_argument('--test_episodes', default=600, type=int, help='number of testing episodes')
 
     # for Protonet

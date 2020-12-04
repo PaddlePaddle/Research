@@ -7,23 +7,23 @@ Currently, it contains two backbone embedding networks, two popularly used basel
 
 The following benckmark FSL image classification datasets are used:
 
-- **Omniglot** ([B. M. Lake et al., 2015](http://www.sciencemag.org/content/350/6266/1332.short)), which is downloaded from (https://github.com/brendenlake/omniglot)
+- **Omniglot** ([B. M. Lake et al., 2015](http://www.sciencemag.org/content/350/6266/1332.short)), which is downloaded from (https://drive.google.com/file/d/1iM5KOxzgGT3i3sxIvhwoh_Mrhuz2keG0/view)
 - **Mini-ImageNet** ([O. Vinyals et al., 2016](https://arxiv.org/abs/1606.04080)), which is downloaded from (https://drive.google.com/file/d/1g1aIDy2Ar_MViF2gDXFYDBTR-HYecV07/view)
 - **Tiered-ImageNet** ([M. Ren et al., 2018](https://arxiv.org/abs/1803.00676)), which is downloaded from (https://drive.google.com/file/d/16V_ZlkW4SsnNDtnGmaBRq2OoPmUOc5mY/view)
 - **CIFAR-FS** ([L. Bertinetto et al., 2018](https://arxiv.org/abs/1805.08136)), which is downloaded from (https://drive.google.com/file/d/1GjGMI0q3bgcpcB_CjI40fX54WgLPuTpS/view)
 - **FC100** ([B. N. Oreshkin et al., 2018](https://arxiv.org/abs/1805.10123)), which is downloaded from (https://drive.google.com/file/d/1_ZsLyqI487NRDQhwvI7rg86FK3YAZvz1/view)
 - **CUB** ([W.-Y. Chen et al., 2019](https://arxiv.org/abs/1904.04232)) , which is downloaded from (https://drive.google.com/file/d/1hbzc_P1FuxMkcabkgn9ZKinBwW683j45/view)
 
-We use the train / test splits as mentioned in the respective papers.
+We use the train / val / test splits as mentioned in the respective papers. Note there is no specific split for Omniglot, thus we use random train / val / test splits.
 
-We provide pickle files of Omniglot and CUB. Other datasets exceed the file limit of Github, thus please download them from the aforementioned datasets and put them into the respective data/{dataset name} folder.
+The above datasets exceed the file limit of Github, thus please download them from the aforementioned datasets and put them into the respective data/{dataset name} folder.
 
 ## Backbones 
 
 The following popularly used embedding architecures are used:
 
 - **Conv4** ([O. Vinyals et al., 2016](https://arxiv.org/abs/1606.04080)), which consists of four convolutional blocks. 
-- **ResNet12** ([N. Mishra et al., 2018](https://arxiv.org/abs/1707.03141)), 
+- **ResNet12** ([N. Mishra et al., 2018](https://arxiv.org/abs/1707.03141)), which consists of four residual blocks. Note that our architecture is slightly different from theirs. We do not employ any projection layer after the four residual blocks, instead, directly use global average pooling to obtain final embeddings. Besides the number of filters in each residual block are 64, 128, 256, 512 respectively, following [B. Oreshkin et al., 2019](https://arxiv.org/pdf/1805.10123).
 
 ## Baselines
 
@@ -47,18 +47,34 @@ The codes have been tested on:
 ### Training
 
 ~~~bash
-python train.py --dataset=miniimagenet --backbone='Conv4' --method='protonet' --epochs=200 --k_shot=5 --n_way=5
+python train.py --dataset=miniimagenet --backbone='Conv4' --method='protonet' --epochs=200 --k_shot=5 --n_way=5 --lr=0.001
+~~~
+
+~~~bash
+python train.py --dataset=cifarfs --backbone='Resnet12' --method='relationnet' --epochs=200 --k_shot=1 --n_way=5 --lr=0.1 --lr_scheduler=True
 ~~~
 
 ### Testing
 
 ~~~bash
-python test.py --dataset=miniimagenet --backbone='Conv4' --method='protonet' --test_mode=True --test_episodes=6000 --test_model_epoch=66 --k_shot=1 --n_way=5
+python test.py --dataset=miniimagenet --backbone='Conv4' --method='protonet' --k_shot=5 --n_way=5 --test_mode=True --test_episodes=6000
+~~~
+
+~~~bash
+python train.py --dataset=cifarfs --backbone='Resnet12' --method='relationnet' --k_shot=1 --n_way=5 --test_mode=True --test_episodes=6000
+~~~
+
+### Visualization of training logs
+
+~~~bash
+visualdl --logdir ./logs/logs/miniimagenet
 ~~~
 
 ## Results
 
 Using this codes, we can reproduce the reported results of respecitve papers. 
+
+All the tasks are tested for 6,000 episodes. Average accuracy and 95% confidence interval are reported.
 
 Blanks mean that public results are not avaliable.
 

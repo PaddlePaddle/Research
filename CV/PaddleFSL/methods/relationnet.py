@@ -9,6 +9,7 @@ class RelationNet(Template):
     def __init__(self, args):
         super(RelationNet, self).__init__(args)
         self.reslation_module = Relation_module(self.args)
+        self.mse_loss = fluid.dygraph.MSELoss(reduction='sum')
 
     def specific_method(self, embeddings, labels):
         x_train, x_query, y_train, y_query = self.split_train_query(embeddings, labels)
@@ -26,8 +27,11 @@ class RelationNet(Template):
     def loss(self, x, y):
         relation_scores, query_labels = self.forward(x, y)
         query_labels_onehot = fluid.layers.one_hot(query_labels, depth=self.args.n_way)
-        mse_loss = fluid.dygraph.MSELoss(reduction='sum')
-        loss = mse_loss(relation_scores, query_labels_onehot)
+        if self.args.backbone == 'Conv4':
+            loss = self.mse_loss(relation_scores, query_labels_onehot)
+        elif self.args.backbone == 'Resnet12':
+            relation_scores = fluid.layers.reshape(relation_scores, [self.args.n_way*self.args.n_query, self.args.n_way])
+            loss = fluid.layers.softmax_with_cross_entropy(relation_scores, query_labels)
         pred = fluid.layers.softmax(relation_scores) # [75,5]
         acc = fluid.layers.accuracy(pred, query_labels)
         return loss, acc
@@ -59,14 +63,15 @@ class Relation_module(fluid.dygraph.Layer):
         self.conv0 = Conv_block(num_channels=inp_channels, num_filters=64, padding=padding, pooltype=self.args.pooling_type)
         self.conv1 = Conv_block(num_channels=64, num_filters=64, padding=padding, pooltype=self.args.pooling_type)
         self.fc0 = Linear(linear_dim, 8, act='relu')
-        self.fc1 = Linear(8, 1, act='sigmoid')
+        self.fc1 = Linear(8, 1)
     
     def forward(self, inputs):
         # print(inputs.shape)
         x = self.conv0(inputs)
         x = self.conv1(x)
-        # print(x.shape)
         x = fluid.layers.flatten(x)
         x = self.fc0(x)
         x = self.fc1(x)
+        if self.args.backbone == 'Conv4':
+            x = fluid.layers.sigmoid(x)
         return x

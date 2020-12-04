@@ -30,10 +30,9 @@ def test():
 
         # load checkpoint
         # model_dict, _ = fluid.dygraph.load_persistables("log/")
-        params_dict, opt_dict = fluid.load_dygraph(args.log_dir+args.method+'_'+args.backbone+'_'+str(args.k_shot)+'shot_'+str(args.n_way)+'way'+str(args.test_model_epoch))
+        params_dict, opt_dict = fluid.load_dygraph(args.log_dir+'checkpoint/'+args.dataset+'/'+args.method+'_'+args.backbone+'_'+str(args.k_shot)+'shot_'+str(args.n_way)+'way')
         model.load_dict(params_dict)
         print("checkpoint loaded")
-        # model.eval()
 
         # prepare optimizer
         opt = prepare_optimizer(args, model)
@@ -45,14 +44,12 @@ def test():
         accuracies = []
         losses = []
         for batch_id, batch in enumerate(test_data_batches):
-            #print(batch_id)
             samples, label = batch
             samples = fluid.dygraph.to_variable(samples)
             labels = fluid.dygraph.to_variable(label)
             loss, acc = model.loss(samples, labels)
             avg_loss = fluid.layers.mean(loss)
             accuracies.append(acc.numpy())
-            # losses.append(loss.numpy())
 
         mean = np.mean(accuracies)
         stds = np.std(accuracies)
