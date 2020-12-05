@@ -37,7 +37,7 @@ class RelationNet(Template):
         return loss, acc
 
 class Conv_block(fluid.dygraph.Layer):
-    def __init__(self, num_channels=64, num_filters=64, padding=0, pooltype=None):
+    def __init__(self, num_channels=64, num_filters=64, padding=0, pooltype=None, args=None):
         
         super(Conv_block, self).__init__()
         self.conv = Conv2D(num_channels=num_channels, num_filters=num_filters, filter_size=3, stride=1, padding=padding)
@@ -47,9 +47,9 @@ class Conv_block(fluid.dygraph.Layer):
     def forward(self, inputs):
         x = self.conv(inputs)
         x = self.batch_norm(x)
-        if self.args.backbone == 'Conv4':
+        if args.backbone == 'Conv4':
             x = fluid.layers.relu(x)
-        elif self.args.backbone == 'Resnet12':
+        elif args.backbone == 'Resnet12':
             x = fluid.layers.leaky_relu(x, 0.1)
         x = self.pooling(x)
         return x
@@ -64,8 +64,8 @@ class Relation_module(fluid.dygraph.Layer):
             linear_dim = self.args.num_filters
         inp_channels = self.args.num_filters*2 if self.args.backbone=='Conv4' else self.args.resnet12_num_filters[-1]*2
         padding = 1 if self.args.dataset=='omniglot' else 0
-        self.conv0 = Conv_block(num_channels=inp_channels, num_filters=64, padding=padding, pooltype=self.args.pooling_type)
-        self.conv1 = Conv_block(num_channels=64, num_filters=64, padding=padding, pooltype=self.args.pooling_type)
+        self.conv0 = Conv_block(num_channels=inp_channels, num_filters=64, padding=padding, pooltype=self.args.pooling_type, args=args)
+        self.conv1 = Conv_block(num_channels=64, num_filters=64, padding=padding, pooltype=self.args.pooling_type, args=args)
         self.fc0 = Linear(linear_dim, 8)
         self.fc1 = Linear(8, 1)
     
