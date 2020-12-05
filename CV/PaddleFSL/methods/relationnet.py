@@ -41,12 +41,16 @@ class Conv_block(fluid.dygraph.Layer):
         
         super(Conv_block, self).__init__()
         self.conv = Conv2D(num_channels=num_channels, num_filters=num_filters, filter_size=3, stride=1, padding=padding)
-        self.batch_norm = BatchNorm(num_filters, act='relu')
+        self.batch_norm = BatchNorm(num_filters)
         self.pooling = Pool2D(pool_size=2, pool_stride=2, pool_type=pooltype)
 
     def forward(self, inputs):
         x = self.conv(inputs)
         x = self.batch_norm(x)
+        if self.args.backbone == 'Conv4':
+            x = fluid.layers.relu(x)
+        elif self.args.backbone == 'Resnet12':
+            x = fluid.layers.leaky_relu(x, 0.1)
         x = self.pooling(x)
         return x
 
@@ -62,7 +66,7 @@ class Relation_module(fluid.dygraph.Layer):
         padding = 1 if self.args.dataset=='omniglot' else 0
         self.conv0 = Conv_block(num_channels=inp_channels, num_filters=64, padding=padding, pooltype=self.args.pooling_type)
         self.conv1 = Conv_block(num_channels=64, num_filters=64, padding=padding, pooltype=self.args.pooling_type)
-        self.fc0 = Linear(linear_dim, 8, act='relu')
+        self.fc0 = Linear(linear_dim, 8)
         self.fc1 = Linear(8, 1)
     
     def forward(self, inputs):
@@ -71,6 +75,10 @@ class Relation_module(fluid.dygraph.Layer):
         x = self.conv1(x)
         x = fluid.layers.flatten(x)
         x = self.fc0(x)
+        if self.args.backbone == 'Conv4':
+            x = fluid.layers.relu(x)
+        elif self.args.backbone == 'Resnet12':
+            x = fluid.layers.leaky_relu(x, 0.1)
         x = self.fc1(x)
         if self.args.backbone == 'Conv4':
             x = fluid.layers.sigmoid(x)
