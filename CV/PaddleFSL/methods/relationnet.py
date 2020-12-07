@@ -40,6 +40,7 @@ class Conv_block(fluid.dygraph.Layer):
     def __init__(self, num_channels=64, num_filters=64, padding=0, pooltype=None, args=None):
         
         super(Conv_block, self).__init__()
+        self.args = args
         self.conv = Conv2D(num_channels=num_channels, num_filters=num_filters, filter_size=3, stride=1, padding=padding)
         self.batch_norm = BatchNorm(num_filters)
         self.pooling = Pool2D(pool_size=2, pool_stride=2, pool_type=pooltype)
@@ -47,9 +48,9 @@ class Conv_block(fluid.dygraph.Layer):
     def forward(self, inputs):
         x = self.conv(inputs)
         x = self.batch_norm(x)
-        if args.backbone == 'Conv4':
+        if self.args.backbone == 'Conv4':
             x = fluid.layers.relu(x)
-        elif args.backbone == 'Resnet12':
+        elif self.args.backbone == 'Resnet12':
             x = fluid.layers.leaky_relu(x, 0.1)
         x = self.pooling(x)
         return x

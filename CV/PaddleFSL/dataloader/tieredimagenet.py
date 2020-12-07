@@ -11,8 +11,8 @@ from tqdm import tqdm
 class LoadData():
     def __init__(self,mode):
         self.mode = mode
-        self.datafile = 'data/tiered-imagenet/data/tiered-imagenet/' + self.mode + '_images_png.pkl'
-        self.labelfile = 'data/tiered-imagenet/data/tiered-imagenet/' + self.mode + '_labels.pkl'
+        self.datafile = 'data/tiered-imagenet/' + self.mode + '_images_png.pkl'
+        self.labelfile = 'data/tiered-imagenet/' + self.mode + '_labels.pkl'
         print('loading tiered-imagenet dataset from {} ......'.format(self.datafile))
         with open(self.datafile, 'rb') as f:
             images_raw = pkl.load(f)                # [448695--[n]]

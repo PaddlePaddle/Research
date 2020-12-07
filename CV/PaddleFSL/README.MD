@@ -30,7 +30,7 @@ The following popularly used embedding architecures are used:
 The following baselines are provided:
 
 - **Prototypical Networks (ProtoNet)** ([J. Snell et al., 2017](https://arxiv.org/abs/1703.05175))
-- **Relation Network (RelationNet)** ([F. Sung et al., 2018](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf))
+- **Relation Network (RelationNet)** ([F. Sung et al., 2018](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf)). (Note that the relation network is not designed for ResNet12 backbone, therefore, we change a bit the configuration for stable training when employing ResNet12 backbone. Specifically, we replace ReLU by Leaky_ReLU and use cross entropy loss instead of MSE loss.)
 
 
 ## Dependencies
@@ -80,13 +80,13 @@ Blanks mean that public results are not avaliable.
 
 **Omniglot**
 
-|          |             | 1-shot-5-way(%) |      | 5-shot-5-way(%) |      |
-|----------|-------------|-----------------|------|-----------------|------|
-|          |             | reported        | ours | reported        | ours |
-| Conv4    | ProtoNet    | 97.4|99.45 ± 0.04|99.3|99.67 ± 0.03  |
-|          | RelationNet | 99.6 ± 0.2|99.23 ± 0.05|99.8± 0.1|99.83 ± 0.02  |
-| ResNet12 | ProtoNet    |                 | 99.40 ± 0.04   |                 |  99.63 ± 0.03   |
-
+|          |             | 1-shot-5-way(%) |      | 5-shot-5-way(%) |      |1-shot-20-way(%) |      | 5-shot-20-way(%) |      |
+|----------|-------------|-----------------|------|-----------------|------|----------------|------|-----------------|------|
+|          |             | reported        | ours | reported        | ours | reported       | ours | reported        | ours |
+| Conv4    | ProtoNet    | 97.4|99.45 ± 0.04|99.3|99.67 ± 0.03  | 96.0|98.51 ± 0.04|98.9|99.00 ± 0.03  |
+|          | RelationNet | 99.6 ± 0.2|99.23 ± 0.05|99.8± 0.1|99.83 ± 0.02  | 97.6 ± 0.2|98.64 ± 0.04|99.1± 0.1|99.19 ± 0.02  |
+| ResNet12 | ProtoNet    |                 | 99.40 ± 0.04   |                 |  99.63 ± 0.03   |                 | 98.35 ± 0.04   |                 |  99.40 ± 0.02   |
+|          | RelationNet    |                 | 99.36 ± 0.04   |                 |  99.80 ± 0.02   |                 | 98.65 ± 0.04   |                 |  99.54 ± 0.02   |
 
 **Mini-ImageNet**
 
@@ -96,6 +96,7 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    |   46.61 ± 0.78|49.75 ± 0.25|65.77 ± 0.70|66.53 ± 0.21    |
 |          | RelationNet |  50.44 ± 0.82|50.04 ± 0.26|65.32 ± 0.70|65.60 ± 0.21  |
 | ResNet12 | ProtoNet    |                 |  54.08 ± 0.29    |                 |   68.44 ± 0.23   |
+|          | RelationNet |                 |  53.82 ± 0.27    |                 |   69.02 ± 0.21   |
 
 
 **Tiered-ImageNet**
@@ -105,7 +106,8 @@ Blanks mean that public results are not avaliable.
 |          |             | reported        | ours | reported        | ours |
 | Conv4    | ProtoNet    |  53.31 ± 0.89|52.14 ± 0.28|72.69 ± 0.74|71.07 ± 0.24    |
 |          | RelationNet |  54.48 ± 0.93|53.81± 0.29|71.32 ± 0.78|70.04 ± 0.25 |
-| ResNet12 | ProtoNet    |                 |   53.51 ± 0.30   |                 |   71.04 ± 0.26   |
+| ResNet12 | ProtoNet    |                 |   54.23 ± 0.31   |                 |   71.82 ± 0.26   |
+|          | RelationNet |                 |   56.76 ± 0.29   |                 |   77.02 ± 0.23   |
 
 
 **CIFAR-FS**
@@ -116,6 +118,7 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    | 55.5 ± 0.70|55.96 ± 0.29|72.0 ± 0.60|72.27 ± 0.23   |
 |          | RelationNet | 55.0 ± 1.00|55.56 ± 0.30|69.3 ± 0.80|71.45 ± 0.24     |
 | ResNet12 | ProtoNet    |                 |  63.67 ± 0.31    |                 |   78.16 ± 0.23   |
+|          | RelationNet |                 |  63.46 ± 0.31    |                 |   78.61 ± 0.22   |
 
 
 **FC100**
@@ -125,7 +128,8 @@ Blanks mean that public results are not avaliable.
 |          |             | reported        | ours | reported        | ours |
 | Conv4    | ProtoNet    |  35.3 ± 0.60|36.68 ± 0.22|48.6 ± 0.60|49.45 ± 0.22  |
 |          | RelationNet |                 |   36.74 ± 0.23 |                 |  47.14 ± 0.22    |
-| ResNet12 | ProtoNet    |                 |35.99 ± 0.23    |                 |  46.22 ± 0.22    |
+| ResNet12 | ProtoNet    |                 |   36.99 ± 0.23 |                 |  49.41 ± 0.23    |
+|          | RelationNet |                 |   37.51 ± 0.23 |                 |  51.51 ± 0.23    |
 
 
 **CUB**
@@ -136,6 +140,7 @@ Blanks mean that public results are not avaliable.
 | Conv4    | ProtoNet    | 51.31 ± 0.91|53.30 ± 0.29|70.77 ± 0.69|69.08 ± 0.22  |
 |          | RelationNet | 62.45 ± 0.98|60.31 ± 0.31|76.11 ± 0.69|73.02 ± 0.23 |
 | ResNet12 | ProtoNet    |                 | 60.75 ± 0.32     |                 | 71.42 ± 0.24     |
+|          | RelationNet |                 | 60.79 ± 0.31     |                 | 75.69 ± 0.22     |
 
 
 ## Contributors 
