@@ -23,14 +23,14 @@ The above datasets exceed the file limit of Github, thus please download them fr
 The following popularly used embedding architecures are used:
 
 - **Conv4** ([O. Vinyals et al., 2016](https://arxiv.org/abs/1606.04080)), which consists of four convolutional blocks. 
-- **ResNet12** ([N. Mishra et al., 2018](https://arxiv.org/abs/1707.03141)), which consists of four residual blocks. Note that our architecture is slightly different from theirs. We do not employ any projection layer after the four residual blocks, instead, directly use global average pooling to obtain final embeddings. Besides the number of filters in each residual block are 64, 128, 256, 512 respectively, following [B. Oreshkin et al., 2019](https://arxiv.org/pdf/1805.10123).
+- **ResNet12** ([N. Mishra et al., 2018](https://arxiv.org/abs/1707.03141)), which consists of four residual blocks. Note that our architecture is slightly different from theirs. We do not employ any projection layer after the four residual blocks, instead, directly use global average pooling to obtain final embeddings. Besides, the number of filters in each residual block are 64, 128, 256, 512 respectively, following [B. Oreshkin et al., 2019](https://arxiv.org/pdf/1805.10123).
 
 ## Baselines
 
 The following baselines are provided:
 
-- **Prototypical Networks (ProtoNet)** ([J. Snell et al., 2017](https://arxiv.org/abs/1703.05175))
-- **Relation Network (RelationNet)** ([F. Sung et al., 2018](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf)). (Note that the relation network is not designed for ResNet12 backbone, therefore, we change a bit the configuration for stable training when employing ResNet12 backbone. Specifically, we replace ReLU by Leaky_ReLU and use cross entropy loss instead of MSE loss.)
+- **Prototypical Networks (ProtoNet)** ([J. Snell et al., 2017](https://arxiv.org/abs/1703.05175)).
+- **Relation Network (RelationNet)** ([F. Sung et al., 2018](https://openaccess.thecvf.com/content_cvpr_2018/papers/Sung_Learning_to_Compare_CVPR_2018_paper.pdf)). Note that the relation network is not designed for ResNet12 backbone, therefore, we change a bit the configuration for stable training when employing ResNet12 backbone. Specifically, we replace ReLU by Leaky_ReLU and use cross entropy loss instead of MSE loss.
 
 
 ## Dependencies
