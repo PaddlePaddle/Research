@@ -1,0 +1,4 @@
+please create symlinks for datasets
+
+cityscapes -> /ssd1/dataset/cityscapes/
+pascal_context -> /ssd1/dataset/pascal_context/
