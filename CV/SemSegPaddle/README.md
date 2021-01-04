@@ -28,7 +28,7 @@ Decoder:
   - PSPNet: [Pyramid Scene Parsing Network](http://openaccess.thecvf.com/content_cvpr_2017/papers/Zhao_Pyramid_Scene_Parsing_CVPR_2017_paper.pdf)
   - DeepLabv3: [Rethinking Atrous Convolution for Semantic Image Segmentation](https://arxiv.org/abs/1706.05587)
   - GloRe: [Graph-Based Global Reasoning Networks](http://openaccess.thecvf.com/content_CVPR_2019/papers/Chen_Graph-Based_Global_Reasoning_Networks_CVPR_2019_paper.pdf)
-  - GINet: [GINet: Graph Interaction Netowrk for Scene Parsing]()
+  - GINet: [GINet: Graph Interaction Netowrk for Scene Parsing](https://arxiv.org/pdf/2009.06160.pdf)
   
 
 
