@@ -1,0 +1,55 @@
+DATAAUG:
+    RAND_SCALE_MIN: 0.5
+    RAND_SCALE_MAX: 2.0
+    BASE_SIZE: 520
+    CROP_SIZE: 520
+    EXTRA: True
+TRAIN_BATCH_SIZE: 16
+TRAIN_BATCH_SIZE_PER_GPU: 4
+VAL_BATCH_SIZE: 4
+NUM_TRAINERS: 4
+EVAL_BATCH_SIZE: 1
+DATASET:
+    DATASET_NAME: "pascal_context"
+    DATA_DIR: "./data/pascal_context/"
+    DATA_ROOT: "./data/pascal_context"
+    IMAGE_TYPE: "rgb"  # choice rgb or rgba
+    NUM_CLASSES: 59
+    TEST_FILE_LIST: "./data/pascal_context/ImageSets/val.txt"
+    TRAIN_FILE_LIST: "./data/pascal_context/ImageSets/train.txt"
+    VAL_FILE_LIST: "./data/pascal_context/ImageSets/val.txt"
+    IGNORE_INDEX: 255
+    DATA_DIM: 3
+MODEL:
+    MODEL_NAME: "glore"
+    DEFAULT_NORM_TYPE: "bn"
+    MULTI_LOSS_WEIGHT: [1.0, 0.4]
+    BACKBONE: "resnet"
+    BACKBONE_LAYERS: 101
+    BACKBONE_MULTI_GRID: False
+    PSPNET:
+        DEPTH_MULTIPLIER: 1
+        AuxHead: True
+TRAIN:
+    PRETRAINED_MODEL_FILE: "./pretrained_model/resnet101_pretrained.pdparams"
+    MODEL_SAVE_DIR:  "snapshots/glore_res101_pascal_context/"
+    MODEL_SAVE_LAST: "snapshots/glore_res101_pascal_context/glore_res101_pascal_context_last"
+    MODEL_SAVE_BEST: "snapshots/glore_res101_pascal_context/glore_res101_pascal_context_best"
+    SNAPSHOT_EPOCH: 1
+TEST:
+    TEST_MODEL_FILE: "snapshots/glore_res101_pascal_context/glore_res101_pascal_context_best.pdparams"
+    BASE_SIZE: 520
+    CROP_SIZE: 520
+    SLIDE_WINDOW: True
+    MULTI_SCALE: False
+    FLIP: False
+SOLVER:
+    LR: 0.005
+    POWER: 0.9
+    WEIGHT_DECAY: 0.0001                                                                                                                               
+    LR_POLICY: "poly"
+    OPTIMIZER: "sgd"
+    NUM_EPOCHS: 80
+    LOSS: "['softmax_loss']"
+
+
