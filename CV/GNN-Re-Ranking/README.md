@@ -11,13 +11,13 @@ i.e., VeRi-776, Oxford-5k, Paris-6k and University-1652, with limited time cost.
 * cuDNN >=7.3
 * paddlepaddle-gpu == 1.6.3
 
-## 2. Process aicity 2020 re-id data
+To compile it:
 ```shell
 cd lib
 sh make.sh
 ```
 
-## 3. Demo
+## 2. Demo
 
 The demo script  `main.py` provides the gnn re-ranking  method using the prepared feature. 
 
@@ -26,7 +26,7 @@ source set_env.sh
 python main.py --data_path PATH_TO_DATA --k1 26 --k2 7
 ```
 
-## 4. Citation
+## 3. Citation
 ```bibtex
 @article{zhang2020understanding,
   title={Understanding Image Retrieval Re-Ranking: A Graph Neural Network Perspective},
