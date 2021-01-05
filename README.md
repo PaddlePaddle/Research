@@ -11,6 +11,7 @@
 ## 计算机视觉
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
+| 图像检索 | [GNN-Re-Ranking](CV/GNN-Re-Ranking/) | 基于GNN的快速图像检索Re-Ranking。 | https://arxiv.org/abs/2012.07620v2 |
 | 车流统计 | [VehicleCounting](CV/VehicleCounting/) | AICITY2020 车流统计竞赛datasetA TOP1 方案。 | - |
 | 车辆再识别 | [PaddleReid](CV/PaddleReid) | 给定目标车辆，在检索库中检索同id车辆，支持多种特征子网络。 | - |
 | 车辆异常检测 | [AICity2020-Anomaly-Detection](CV/AICity2020-Anomaly-Detection) |  在监控视频中检测车辆异常情况，例如车辆碰撞、失速等。| - |
