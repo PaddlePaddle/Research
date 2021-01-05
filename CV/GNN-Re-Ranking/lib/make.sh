@@ -1,8 +1,8 @@
 include_dir=$( python -c 'import paddle; print(paddle.sysconfig.get_include())' )
 lib_dir=$( python -c 'import paddle; print(paddle.sysconfig.get_lib())' )
 
-CUDNN_dir=/home/vis/jiangminyue/dependency_cuda10_py3/cudnn_v7.6/cuda/include
-CUDA_dir=/home/vis/jiangminyue/dependency_cuda10_py3/cuda-10.1//lib64
+CUDNN_dir=YOUR_CUDNN_DIR
+CUDA_dir=YOUR_CUDA_DIR
 
 echo $include_dir
 echo $lib_dir
