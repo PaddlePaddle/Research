@@ -9,7 +9,11 @@ The sampled train and test sets for ST-PAC
 ### MST-PAC: 
 The sampled train and test sets for MST-PAC
 
+## Code
 
+The source codes of ST-PAC and MST-PAC
+
+Please run main.sh 
 
 
 
