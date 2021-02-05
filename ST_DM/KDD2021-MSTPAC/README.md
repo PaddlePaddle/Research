@@ -6,8 +6,6 @@
 
 ### 安装说明(Install Guide)
 
-1. 环境准备 (Enviornment Setup)
-
 paddle安装 (Install Paddle)
 
     本项目依赖于Paddle Fluid 1.6.1 及以上版本，请参考[安装指南](http://www.paddlepaddle.org/#quick-start)进行安装
@@ -29,7 +27,7 @@ paddle安装 (Install Paddle)
 
     python版本依赖python 2.7
 
-
+### 运行说明（Running Guide）
 
 
 
