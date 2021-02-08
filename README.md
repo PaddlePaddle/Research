@@ -44,6 +44,8 @@
 | 阅读理解 | [D-NET](NLP/MRQA2019-D-NET) | 预训练及微调框架，包含多任务学习及多预训练模型的融合，用于阅读理解模型的生成。 | https://www.aclweb.org/anthology/D19-5828/ |
 | 建议挖掘 | [MPM](NLP/NAACL2019-MPM) | 利用多视角架构来学习表示和双向transformer编码器进行论坛评论建议挖掘。 | https://www.aclweb.org/anthology/S19-2216/ |
 | 多文档摘要 | [ACL2020-GraphSum](NLP/ACL2020-GraphSum) | 基于图表示的生成式多文档摘要模型，将显式图结构信息引入到端到端摘要生成过程中。 | https://www.aclweb.org/anthology/2020.acl-main.555.pdf |
+| 融合多种对话类型的对话式推荐 | [ACL2020-DuRecDial](NLP/ACL2020-DuRecDial) | 提出新任务：融合闲聊、任务型对话、问答和推荐等多种对话类型的对话式推荐，构建DuRecDial数据集，提出具有多对话目标驱动策略机制的对话生成框架。 | https://www.aclweb.org/anthology/2020.acl-main.98/ |
+| 面向推荐的对话 | [Conversational-Recommendation-BASELINE](NLP/Conversational-Recommendation-BASELINE) | 融合人机对话系统和个性化推荐系统，定义新一代智能推荐技术，该系统先通过问答或闲聊收集用户兴趣和偏好，然后主动给用户推荐其感兴趣的内容，比如餐厅、美食、电影、新闻等。 | - |
 
 ## 知识图谱
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
