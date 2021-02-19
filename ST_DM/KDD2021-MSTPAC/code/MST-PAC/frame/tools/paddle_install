@@ -1,0 +1,131 @@
+#!/bin/bash 
+
+function init_global() {
+    PADDLE_HTTP_PROXY="http://10.95.178.165:8007"
+    WHL_VERSION=1.6.1
+    PLATEFORM=cpu
+    mkdir paddle_frame_env
+    cd paddle_frame_env 
+    ROOT_DIR=$(pwd)
+}
+
+function parse_args() {
+    if [[ $1 == "gpu" ]]; then
+        PLATEFORM="gpu"
+    fi
+    
+    if [[ $2 != "" ]]; then
+        WHL_VERSION=$2
+    fi
+    cpu_whl_pkg_url="curl -s ${PADDLE_HTTP_PROXY}/paddlepaddle-${WHL_VERSION}-cp27-cp27mu-linux_x86_64.whl > paddlepaddle-${WHL_VERSION}-cp27-cp27mu-linux_x86_64.whl"
+    gpu_whl_pkg_url="curl -s ${PADDLE_HTTP_PROXY}/paddlepaddle_gpu-${WHL_VERSION}-cp27-cp27mu-linux_x86_64.whl > paddlepaddle_gpu-${WHL_VERSION}-cp27-cp27mu-linux_x86_64.whl"
+
+    return 0
+}
+
+function get_code() {
+    curl -s ${PADDLE_HTTP_PROXY}/paddle-frame.tar.gz > paddle_frame.tar.gz
+    if [[ $? -ne 0 ]]; then
+        echo "[FATAL] $(date) get code from ${PADDLE_HTTP_PROXY} failure."
+        return 1
+    fi
+    tar zxvf paddle_frame.tar.gz 2>&1 >/dev/null 
+    rm paddle_frame.tar.gz
+
+    fluid_bin="${ROOT_DIR}/.bin/${PLATEFORM}/paddle_release_home/python/bin/python"
+    sed -i "/^fluid_bin=/cfluid_bin=${fluid_bin}" ${ROOT_DIR}/paddle-frame/conf/var_sys.conf
+    hadoop_bin=$(which hadoop)
+    if [[ -e ${hadoop_bin} ]]; then
+        sed -i "/^hadoop_home=/chadoop_home=$(dirname $(dirname ${hadoop_bin}))" ${ROOT_DIR}/paddle-frame/conf/var_sys.conf
+    else
+        mkdir -p ${ROOT_DIR}/.bin/hadoop_client/
+        curl -s ${PADDLE_HTTP_PROXY}/hadoop_client.tar.gz > hadoop_client.tar.gz
+        tar zxvf hadoop_client.tar.gz -C ${ROOT_DIR}/.bin/hadoop_client/ 2>&1 >/dev/null 
+        rm hadoop_client.tar.gz
+        sed -i "/^hadoop_home=/chadoop_home=${ROOT_DIR}/.bin/hadoop_client/hadoop/" ${ROOT_DIR}/paddle-frame/conf/var_sys.conf
+        export PATH=${ROOT_DIR}/.bin/hadoop_client/hadoop/bin/:${PATH}
+    fi
+
+    return 0
+}
+
+function install_paddle() {
+    mkdir -p .bin/cpu .bin/gpu
+    curl -s ${PADDLE_HTTP_PROXY}/paddle_release_home.tar.gz > paddle_release_home.tar.gz
+
+    mkdir -p ~/.pip/
+    if [[ ! -e ~/.pip/pip.conf ]]; then
+        curl -s ${PADDLE_HTTP_PROXY}/pip.conf > ~/.pip/pip.conf  
+    fi
+
+    if [[ $PLATEFORM == "gpu" ]]; then
+        tar zxvf paddle_release_home.tar.gz -C .bin/gpu/ 2>&1 >/dev/null
+        ./.bin/gpu/paddle_release_home/python/bin/python -m pip install --upgrade pip
+        cd ${ROOT_DIR}/.bin/gpu/
+        eval ${gpu_whl_pkg_url}
+        ./paddle_release_home/python/bin/python -m pip install paddlepaddle_gpu-${WHL_VERSION}-cp27-cp27mu-linux_x86_64.whl
+    else
+        tar zxvf paddle_release_home.tar.gz -C .bin/cpu/ 2>&1 >/dev/null
+        ./.bin/cpu/paddle_release_home/python/bin/python -m pip install --upgrade pip
+        cd ${ROOT_DIR}/.bin/cpu/
+        eval ${cpu_whl_pkg_url}
+        ./paddle_release_home/python/bin/python -m pip install paddlepaddle-${WHL_VERSION}-cp27-cp27mu-linux_x86_64.whl
+    fi
+    cd ${ROOT_DIR}
+    rm paddle_release_home.tar.gz 2>&1 >/dev/null
+    echo "export LIBRARY_PATH=${ROOT_DIR}/.bin/${PLATEFORM}/paddle_release_home/python/lib64:$LIBRARY_PATH" >> .fluid_env
+    echo "export PADDLE_ROOT=${ROOT_DIR}/.bin/${PLATEFORM}/paddle_release_home/" >> .fluid_env
+    export PATH=${ROOT_DIR}/.bin/${PLATEFORM}/paddle_release_home/python/bin/:$PATH
+    return 0
+}
+
+function install_paddlecloud() {
+    mkdir -p ${ROOT_DIR}/.bin/paddlecloud/
+
+    cd ${ROOT_DIR}/.bin/paddlecloud/
+    curl -s ${PADDLE_HTTP_PROXY}/paddlecloud-cli.tar.gz > paddlecloud-cli.tar.gz
+    tar zxvf paddlecloud-cli.tar.gz 2>&1 >/dev/null 
+    cd paddlecloud-cli
+    if [[ $PLATEFORM == "gpu" ]]; then
+        PYTHON_PATH=${ROOT_DIR}/.bin/gpu/paddle_release_home/python/bin/
+    else
+        PYTHON_PATH=${ROOT_DIR}/.bin/cpu/paddle_release_home/python/bin/
+    fi
+    ${PYTHON_PATH}/python setup.py install
+    cd ${ROOT_DIR}/paddle-frame/
+    export PATH=${PYTHON_PATH}:${PATH}
+    echo "export PATH=${PATH}" >> ${ROOT_DIR}/.fluid_env 
+    source ${ROOT_DIR}/.fluid_env
+    echo "$(which paddlecloud)"
+
+    #paddlecloud config --ak 12518ec7039b5caa9bc498f9fa124b5d --sk 7ba2beff2eeb503ab0b58ab923117be5
+
+    return 0
+}
+
+function get_sample() {
+    curl -s ${PADDLE_HTTP_PROXY}/tmp.tar.gz > tmp.tar.gz
+    tar zxvf tmp.tar.gz 2>&1 >/dev/null
+    rm tmp.tar.gz
+
+    return 0
+}
+
+function set_env() {
+    rm ${ROOT_DIR}/../paddle_install
+    echo "source ${ROOT_DIR}/.fluid_env 2>&1 >/dev/null" >> ~/.bashrc 
+    source ~/.bashrc
+    return 0
+}
+
+function main() {
+    init_global
+    parse_args "$@"
+    get_code
+    install_paddle
+    set_env
+    get_sample 
+    install_paddlecloud
+}
+
+main "$@"

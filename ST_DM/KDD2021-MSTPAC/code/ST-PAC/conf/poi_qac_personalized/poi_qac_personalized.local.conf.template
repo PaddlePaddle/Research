@@ -1,0 +1,260 @@
+[DEFAULT]
+sample_seed: 1234
+# The value in `DEFAULT` section will be referenced by other sections.
+# For convinence, we will put the variables which changes frequently here and 
+# let other section refer them
+debug_mode: False
+#reader: dataset |  pyreader | async | datafeed | sync
+#data_reader: dataset
+dataset_mode: Memory
+#data_reader: datafeed
+data_reader: pyreader
+py_reader_iterable: True
+
+#model_type: bilstm_net 
+model_type: cnn_net 
+#vocab_size: 20209
+vocab_size: 93897
+#emb_dim: 200
+emb_dim: 128
+fc_dim: 64
+max_seq_len: 128
+
+emb_lr: 1.0
+base_lr: 0.001
+margin: 0.35
+window_size: 3
+pooling_type: max 
+#activate: sigmoid,tanh
+activate: None
+dropout: 0.1
+use_attention: <attention> 
+attention_pool: <poi_att>
+use_geohash: <geohash>
+prefix_word_id: <prefix_word> 
+poi_word_id: <poi_word>
+use_dayid: <day_id>
+prefix_mlp: prefix
+poi_mlp: field
+#print_period: 200
+#TODO personal_resident_drive + neg_only_sample
+#query cityid trendency, poi tag/alias
+#local-cpu | local-gpu | pserver-local
+platform: local-gpu
+# Input settings
+dataset_name: PoiQacPersonalized
+
+CUDA_VISIBLE_DEVICES: 0
+
+train_batch_size: 128
+#train_batch_size: 2
+eval_batch_size: 128
+file_list: ../../data/P3AC/train.dat
+kv_path: None
+qac_dict_path: None 
+
+# Model settings
+model_name: PoiQacPersonalized
+preprocessing_name: None 
+#file_pattern: %s-part-*
+file_pattern: part-
+num_in_dimension: 3
+num_out_dimension: 4
+
+# Learning options
+num_samples_train: 100
+num_samples_eval: 10
+max_number_of_steps: 600000
+
+
+[Train]
+#######################
+#  Dataset Configure  #
+#######################
+# dataset_split_name
+dataset_split_name: train
+
+batch_shuffle_size: 128
+#log_exp or hinge
+#loss_func: hinge
+loss_func: log_exp
+neg_sample_num: 5
+reader_batch: True
+drop_last_batch: False
+
+# The file type text or record
+file_type: text
+
+# The number of input sample for training
+num_samples: ${num_samples_train}
+
+# The number of parallel readers that read data from the dataset
+num_readers: 2
+
+# The number of threads used to create the batches
+num_preprocessing_threads: 1
+
+# Number of epochs from dataset source
+num_epochs_input: 10
+
+###########################
+#  Basic Train Configure  #
+###########################
+# Directory where checkpoints and event logs are written to.
+train_dir: ../tmp/model/poi/qac/save_model_logexp_att<attention>_prew<prefix_word>_geo<geohash>_poia<poi_att>_poiw<poi_word>
+
+# The max number of ckpt files to store variables
+save_max_to_keep: 40
+
+# The frequency with which the model is saved, in seconds.
+save_model_secs: None
+
+# The frequency with which the model is saved, in steps.
+save_model_steps: 500
+
+#####################################
+#  Training Optimization Configure  #
+#####################################
+# The number of samples in each batch
+batch_size: ${train_batch_size}
+
+# The weight decay on the model weights
+#weight_decay: 0.00000001
+weight_decay: None
+
+# The decay to use for the moving average. If left as None, then moving averages are not used
+moving_average_decay: None
+
+# ***************** learning rate options ***************** #
+
+# Specifies how the learning rate is decayed. One of "fixed", "exponential" or "polynomial"
+learning_rate_decay_type: fixed 
+
+# Learning rate decay factor
+learning_rate_decay_factor: 0.1
+
+# Proportion of training steps to perform linear learning rate warmup for
+learning_rate_warmup_proportion: 0.1
+
+init_learning_rate: 0
+
+learning_rate_warmup_steps: 10000
+
+# The minimal end learning rate used by a polynomial decay learning rate
+end_learning_rate: 0.0001
+
+# Number of epochs after which learning rate decays
+num_epochs_per_decay: 10
+
+# A boolean, whether or not it should cycle beyond decay_steps
+learning_rate_polynomial_decay_cycle: False
+
+# ******************* optimizer options ******************* #
+# The name of the optimizer, one of the following:
+# "adadelta", "adagrad", "adam", "ftrl", "momentum", "sgd" or "rmsprop"
+#optimizer: weight_decay_adam
+optimizer: adam
+#optimizer: sgd
+# Epsilon term for the optimizer, used for adadelta, adam, rmsprop
+opt_epsilon: 1e-8
+
+# conf for adadelta
+# The decay rate for adadelta
+adadelta_rho: 0.95
+# Starting value for the AdaGrad accumulators
+adagrad_initial_accumulator_value: 0.1
+
+# conf for adam
+# The exponential decay rate for the 1st moment estimates
+adam_beta1: 0.9
+# The exponential decay rate for the 2nd moment estimates
+adam_beta2: 0.997
+
+adam_weight_decay: 0.01
+#adam_exclude_from_weight_decay: LayerNorm,layer_norm,bias
+# conf for ftrl
+# The learning rate power
+ftrl_learning_rate_power: -0.1
+# Starting value for the FTRL accumulators
+ftrl_initial_accumulator_value: 0.1
+# The FTRL l1 regularization strength
+ftrl_l1: 0.0
+# The FTRL l2 regularization strength
+ftrl_l2: 0.01
+
+# conf for momentum
+# The momentum for the MomentumOptimizer and RMSPropOptimizer
+momentum: 0.9
+
+# conf for rmsprop
+# Decay term for RMSProp
+rmsprop_decay: 0.9
+
+#############################
+#  Log and Trace Configure  #
+#############################
+# The frequency with which logs are print
+log_every_n_steps: 20
+
+# The frequency with which logs are trace.
+trace_every_n_steps: 1
+
+
+[Evaluate]
+# process mode: pred, eval or export
+#proc_name: eval
+proc_name: pred
+
+#data_reader: datafeed
+py_reader_iterable: True
+#platform: hadoop
+platform: local-gpu
+#kv_path: ../tmp/data/poi/qac/kv
+# The directory where the dataset files are stored
+file_list: ../../data/P3AC/<test_file>.dat
+#dataset_dir: stream_record
+# The directory where the model was written to or an absolute path to a checkpoint file
+init_pretrain_model: ${Train:train_dir}/checkpoint_final
+#init_pretrain_model: ../tmp/model/poi/qac/save_model_logexp/checkpoint_final
+#init_pretrain_model: ../tmp/model/poi/qac/save_model_logexp_nogeohash/checkpoint_final
+dropout: None
+
+#dump_vec: query
+#dump_vec: <mode>
+dump_vec: eval
+# The number of samples in each batch
+batch_size: ${eval_batch_size}
+
+# The file type text or record
+#file_type: record
+file_type: text
+
+reader_batch: False
+
+# only exectute evaluation once
+eval_once: True
+
+#######################
+#  Dataset Configure  #
+#######################
+
+# The name of the train/test split
+dataset_split_name: validation
+
+# The number of input sample for evaluation
+num_samples: ${num_samples_eval}
+
+# The number of parallel readers that read data from the dataset
+num_readers: 2
+
+# The number of threads used to create the batches
+num_preprocessing_threads: 1
+
+# Number of epochs from dataset source
+num_epochs_input: 1
+
+# Directory where the results are saved to
+eval_dir: ${Train:train_dir}/checkpoint_1
+
+# Directory where the results are exported to
+export_dir: ${Train:train_dir}
