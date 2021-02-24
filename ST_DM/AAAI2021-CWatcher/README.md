@@ -7,7 +7,21 @@ The novel coronavirus disease (COVID-19) has crushed daily routines and is still
 
     The project depends on Paddle2.0. 
     
-    Installing Paddle2.0: [Paddle2.0](https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/zh/2.0/install/pip/linux-pip.html)
+    Installing Paddle2.0 with for linux system with CUDA 10.2:
+
+    ```
+    python -m pip install paddlepaddle-gpu==2.0.0 -i https://mirror.baidu.com/pypi/simple
+    ```
+
+    For more information about how to install Paddle for other systems and CUDA versions, please refer to:
+
+    
+    [Paddle2.0 Installation Manuals in Chinese](https://www.paddlepaddle.org.cn/install/quick?docurl=/documentation/docs/en/2.0/install/pip/linux-pip_en.html)
+
+
+    [Paddle2.0 Installation Manuals in English](https://www.paddlepaddle.org.cn/documentation/docs/en/install/pip/linux-pip_en.html)
+
+  
     
     
 2. Operating systems
@@ -44,6 +58,7 @@ The novel coronavirus disease (COVID-19) has crushed daily routines and is still
 
     - label: int 1 / 0
 
+3. The training data of epicenter cities and target cities should be split in advance and stored in the "data" directory.
 
 ## Model Training
 
@@ -57,6 +72,7 @@ For other parameters run:
 ```
     python code/train.py -h
 ```
+The trained model will be saved in the "model" directory.
 
 ## Model Test
 
