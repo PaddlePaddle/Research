@@ -34,9 +34,9 @@ The novel coronavirus disease (COVID-19) has crushed daily routines and is still
 
 
 ## Data Preparation
-1. Download the labeled data
+1. The labeled data
 
-    Here is the link to the labeled data of high/low-risk neighborhoods in Wuhan used in the paper: xxxxxxxxxxxxxxxxxx
+    The labeled data of high/low-risk neighborhoods in Wuhan used in this paper are in the "labeled_data" directory.
 
     Four feilds of labeled data are split by '\t': 
     
