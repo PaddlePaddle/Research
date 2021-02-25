@@ -58,7 +58,7 @@ Results on DocRED datasets:
 |ERNIE Base Baseline | 58.54 | 55.58 | 57.71 |
 |SSAN<sub>Biaffine</sub> | 59.12(+0.58) | 57.07(+1.49) | 59.05(+1.34) |
 |ERNIE Large Baseline | 60.25 | 57.87 | 60.11 |
-|SSAN<sub>Biaffine</sub> | 61.58(+1.33) | 58.96(+1.09) | 61.17(+1.06) |
+|SSAN<sub>Biaffine</sub> | 61.58(+1.33) | 58.96(+1.09) | 61.17(+1.06) |  
 We set learning rate = 3e-5, batch size = 4, and search for the best epochs among (40, 60, 80, 100) on development set.
 
 
