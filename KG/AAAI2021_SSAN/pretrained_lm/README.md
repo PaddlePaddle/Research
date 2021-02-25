@@ -1,0 +1,1 @@
+The directory for downloaded ERNIE model.
