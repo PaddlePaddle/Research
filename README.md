@@ -55,6 +55,7 @@
 | 事件抽取 |[DuEE\_baseline](hKG/DuEE_baseline)| 语言与智能技术竞赛事件抽取任务DuEE 1.0基线系统，实现基于[ERNIE](https://arxiv.org/abs/1904.09223)+CRF的Pipeline事件抽取模型。| - |
 | 实体链指 |[DuEL\_baseline](KG/DuEL_baseline)| 面向中文短文本的实体链指任务(CCKS 2020)的基线系统，实现基于[ERNIE](https://arxiv.org/abs/1904.09223)和多任务机制的实体链指模型。| - |
 | 辅助诊断 |[SignOrSymptom\_Relationship](KG/ACL2020_SignOrSymptom_Relationship)| 针对EMR具有无结构化文本和结构化信息并存的特点，结合医疗NLU，以深度学习模型实现EMR的向量化表示、诊断预分类和概率计算。| - |
+| 文档级关系抽取 | [SSAN](KG/AAAI2021_SSAN) | 引入并建模实体间的依赖结构，在文档级关系抽取任务上取得学界领先效果。| [https://arxiv.org/abs/2102.10249](https://arxiv.org/abs/2102.10249) |
 
 
 ## 时空数据挖掘
