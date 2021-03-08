@@ -12,10 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import collections
 import os
 import random
 import time
 
+from functools import partial
 import numpy as np
 import paddle
 import glob
@@ -136,6 +138,8 @@ def run(args):
         # Tokenize our examples with truncation and maybe padding, but keep the overflows using a stride. This results
         # in one example possible giving several features when a context is long, each of those features having a
         # context that overlaps a bit the context of the previous feature.
+        #NOTE: Almost the same functionality as HuggingFace's prepare_train_features function. The main difference is 
+        # that HugggingFace uses ArrowTable as basic data structure, while we use list of dictionary instead.
         contexts = [examples[i]['context'] for i in range(len(examples))]
         questions = [examples[i]['question'] for i in range(len(examples))]
 
@@ -145,6 +149,7 @@ def run(args):
             stride=args.doc_stride,
             max_seq_len=args.max_seq_length)
 
+        # Let's label those examples!
         for i, tokenized_example in enumerate(tokenized_examples):
             # We will label impossible answers with the index of the CLS token.
             input_ids = tokenized_example["input_ids"]
@@ -161,7 +166,7 @@ def run(args):
             sample_index = tokenized_example['overflow_to_sample']
             answers = examples[sample_index]['answers']
             answer_starts = examples[sample_index]['answer_starts']
-
+            
             # If no answers are given, set the cls_index as answer.
             if len(answer_starts) == 0:
                 tokenized_examples[i]["start_positions"] = cls_index
@@ -178,9 +183,11 @@ def run(args):
                     token_start_index += 1
 
                 # End token index of the current span in the text.
-                token_end_index = len(input_ids) - 2
+                token_end_index = len(input_ids) - 1
                 while sequence_ids[token_end_index] != 1:
                     token_end_index -= 1
+                # Minus one more to reach actual text
+                token_end_index -= 1
 
                 # Detect if the answer is out of the span (in which case this feature is labeled with the CLS index).
                 if not (offsets[token_start_index][0] <= start_char and
@@ -206,13 +213,13 @@ def run(args):
     if args.do_train:
         assert args.train_file != None, "--train_file should be set when training!"
         train_ds = DuReaderChecklist().read(args.train_file)
-        train_ds.map(prepare_train_features, lazy=False)
+        train_ds.map(prepare_train_features, batched=True)
 
         train_batch_sampler = paddle.io.DistributedBatchSampler(
             train_ds, batch_size=args.batch_size, shuffle=True)
         train_batchify_fn = lambda samples, fn=Dict({
             "input_ids": Pad(axis=0, pad_val=tokenizer.pad_token_id), 
-            "token_type_ids": Pad(axis=0, pad_val=tokenizer.pad_token_type_id),
+            "token_type_ids": Pad(axis=0, pad_val=tokenizer.pad_token_type_id),  
             "start_positions": Stack(dtype="int64"),  
             "end_positions": Stack(dtype="int64"),  
             "answerable_label": Stack(dtype="int64")  
@@ -285,6 +292,8 @@ def run(args):
         # Tokenize our examples with truncation and maybe padding, but keep the overflows using a stride. This results
         # in one example possible giving several features when a context is long, each of those features having a
         # context that overlaps a bit the context of the previous feature.
+        #NOTE: Almost the same functionality as HuggingFace's prepare_train_features function. The main difference is 
+        # that HugggingFace uses ArrowTable as basic data structure, while we use list of dictionary instead.
         contexts = [examples[i]['context'] for i in range(len(examples))]
         questions = [examples[i]['question'] for i in range(len(examples))]
 
@@ -323,7 +332,7 @@ def run(args):
             prefix = os.path.basename(input_file)
             prefix = re.sub('.json', '', prefix)
             dev_ds = DuReaderChecklist().read(input_file)
-            dev_ds.map(prepare_validation_features, lazy=False)
+            dev_ds.map(prepare_validation_features, batched=True)
 
             dev_batch_sampler = paddle.io.BatchSampler(
                 dev_ds, batch_size=args.batch_size, shuffle=False)
