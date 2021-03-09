@@ -7,7 +7,6 @@ And in the scenerio of document-level relation extraction, we consider the **str
 Specificly, we propose a transformation module, that produces attentive biases based on the structure prior so as to adaptively regularize the attention flow within and throughout the encoding stage.
 We achieve SOTA results on several document-level relation extraction tasks.  
 This implementation is adapted based on [ERNIE repo](https://github.com/PaddlePaddle/ERNIE), you can find the main revision for SSAN model in [`./model/SSAN_encoder.py#L123-L150`](./model/SSAN_encoder.py#L123-L150).
-You can also find our pytorch implementation in [here](https://github.com/BenfengXu/SSAN).
 <div  align="center">  
 <img src="./SSAN.png" width = "466.4" height = "294.4" alt="Tagging Strategy" align=center />
 </div>  
