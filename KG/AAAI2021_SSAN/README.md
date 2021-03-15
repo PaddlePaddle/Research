@@ -62,16 +62,14 @@ Results on DocRED datasets:
 We set learning rate = 3e-5, batch size = 4, and search for the best epochs among (40, 60, 80, 100) on development set.
 
 
-## Citation (Arxiv version, waiting for the official proceeding.)
+## Citation
 If you use any source code included in this project in your work, please cite the following paper:
 ```
-@misc{xu2021entity,
-      title={Entity Structure Within and Throughout: Modeling Mention Dependencies for Document-Level Relation Extraction}, 
-      author={Benfeng Xu and Quan Wang and Yajuan Lyu and Yong Zhu and Zhendong Mao},
-      year={2021},
-      eprint={2102.10249},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL}
+@article{xu2021entity,
+  title={Entity Structure Within and Throughout: Modeling Mention Dependencies for Document-Level Relation Extraction},
+  author={Xu, Benfeng and Wang, Quan and Lyu, Yajuan and Zhu, Yong and Mao, Zhendong},
+  journal={arXiv preprint arXiv:2102.10249},
+  year={2021}
 }
 ```
 
