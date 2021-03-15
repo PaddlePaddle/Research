@@ -123,20 +123,25 @@ def multi_head_attention(queries,
         if with_ent_structure:
             # TRANSFORMATION
             # 1.reshape input
-            # q: [bs, n_head, seq, hidden] -> [bs, 1, n_head, seq, hidden]
-            # transformation: [dependencies(5), n_head, hidden, hidden] -> [1, dependencies(5), n_head, hidden, hidden]
+            # q: [bs, n_head, seq, hidden] -> [bs, 1, n_head, seq, hidden] -> [bs, 5, n_head, seq, hidden]
+            # -> [5, n_head, bs, seq, hidden] -> [5, n_head, bs * seq, hidden]
+            # transformation: [dependencies(5), n_head, hidden, hidden]
             # k: [bs, n_head, seq, hidden] -> [bs, 1, n_head, seq, hidden]
             q_ = layers.unsqueeze(scaled_q, [1])
             q_ = layers.expand(q_, [1, biaffine_transformation.shape[0], 1, 1, 1])
-            biaffine_transformation_ = layers.unsqueeze(biaffine_transformation, [0])
-            biaffine_transformation_ = layers.expand(biaffine_transformation_, [q_.shape[0], 1, 1, 1, 1])
+            q_ = layers.transpose(q_, perm=[1, 2, 0, 3, 4])
+            q_ = layers.reshape(q_, shape=[0, 0, -1, biaffine_transformation.shape[3]], inplace=True)
             k_ = layers.unsqueeze(k, [1])
             k_ = layers.expand(k_, [1, biaffine_transformation.shape[0], 1, 1, 1])
 
             # 2.implement matmul
-            # q * transformation: [bs, dependencies(5), n_head, seq, hidden]
+            # q * transformation: [5, n_head, bs * seq, hidden]
+            # q * transformation: [5, n_head, bs * seq, hidden] -> [5, n_head, bs, seq, hidden]
+            # -> [bs, dependencies(5), n_head, seq, hidden]
             # q * transformation * k: [bs, dependencies(5), n_head, seq, seq]
-            structured_bias = layers.matmul(x=q_, y=biaffine_transformation_)
+            structured_bias = layers.matmul(x=q_, y=biaffine_transformation)
+            structured_bias = layers.reshape(structured_bias, shape=[0, 0, -1, k_.shape[3], k_.shape[4]], inplace=True)
+            structured_bias = layers.transpose(structured_bias, perm=[2, 0, 1, 3, 4])
             structured_bias = layers.matmul(x=structured_bias, y=k_, transpose_y=True)
 
             structured_bias = layers.elementwise_add(structured_bias, biaffine_transformation_bias, axis=1)

@@ -215,8 +215,8 @@ class DocREDReader(BaseReader):
                 batch_records, max_len = [record], len(record.token_ids)
 
         # drop last batch!
-        # if batch_records:
-            # yield self._batch_records(batch_records)
+        if batch_records:
+            yield self._batch_records(batch_records)
 
     def _batch_records(self, batch_records):
         batch_token_ids = [record.token_ids for record in batch_records]

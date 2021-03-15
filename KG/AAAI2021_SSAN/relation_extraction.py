@@ -38,18 +38,18 @@ log = logging.getLogger(__name__)
 
 
 def create_model(args, pyreader_name, ernie_config, is_prediction=False):
-    src_ids = fluid.layers.data(name='1', shape=[args.batch_size, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
-    input_mask = fluid.layers.data(name='2', shape=[args.batch_size, args.max_seq_len, 1], append_batch_size=False, dtype='float32')
-    sent_ids = fluid.layers.data(name='3', shape=[args.batch_size, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
-    pos_ids = fluid.layers.data(name='4', shape=[args.batch_size, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
-    task_ids = fluid.layers.data(name='5', shape=[args.batch_size, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
-    ent_masks = fluid.layers.data(name='6', shape=[args.batch_size, args.max_ent_cnt, args.max_seq_len], append_batch_size=False, dtype='float32')
-    label_ids = fluid.layers.data(name='7', shape=[args.batch_size, args.max_ent_cnt, args.max_ent_cnt, args.num_labels], append_batch_size=False, dtype='int64')
-    label_masks = fluid.layers.data(name='8', shape=[args.batch_size, args.max_ent_cnt, args.max_ent_cnt], append_batch_size=False, dtype='float32')
-    ent_ner = fluid.layers.data(name='9', shape=[args.batch_size, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
-    ent_pos = fluid.layers.data(name='10', shape=[args.batch_size, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
-    ent_distance = fluid.layers.data(name='11', shape=[args.batch_size, args.max_ent_cnt, args.max_ent_cnt, 1], append_batch_size=False, dtype='int64')
-    structure_mask = fluid.layers.data(name='12', shape=[args.batch_size, 5, args.max_seq_len, args.max_seq_len], append_batch_size=False, dtype='float32')
+    src_ids = fluid.layers.data(name='1', shape=[-1, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
+    input_mask = fluid.layers.data(name='2', shape=[-1, args.max_seq_len, 1], append_batch_size=False, dtype='float32')
+    sent_ids = fluid.layers.data(name='3', shape=[-1, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
+    pos_ids = fluid.layers.data(name='4', shape=[-1, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
+    task_ids = fluid.layers.data(name='5', shape=[-1, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
+    ent_masks = fluid.layers.data(name='6', shape=[-1, args.max_ent_cnt, args.max_seq_len], append_batch_size=False, dtype='float32')
+    label_ids = fluid.layers.data(name='7', shape=[-1, args.max_ent_cnt, args.max_ent_cnt, args.num_labels], append_batch_size=False, dtype='int64')
+    label_masks = fluid.layers.data(name='8', shape=[-1, args.max_ent_cnt, args.max_ent_cnt], append_batch_size=False, dtype='float32')
+    ent_ner = fluid.layers.data(name='9', shape=[-1, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
+    ent_pos = fluid.layers.data(name='10', shape=[-1, args.max_seq_len, 1], append_batch_size=False, dtype='int64')
+    ent_distance = fluid.layers.data(name='11', shape=[-1, args.max_ent_cnt, args.max_ent_cnt, 1], append_batch_size=False, dtype='int64')
+    structure_mask = fluid.layers.data(name='12', shape=[-1, 5, args.max_seq_len, args.max_seq_len], append_batch_size=False, dtype='float32')
 
     pyreader = fluid.io.DataLoader.from_generator(feed_list=[src_ids, input_mask, sent_ids, pos_ids, task_ids, ent_masks, label_ids,
                                                              label_masks, ent_ner, ent_pos, ent_distance, structure_mask],
