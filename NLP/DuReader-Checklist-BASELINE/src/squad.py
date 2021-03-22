@@ -9,6 +9,7 @@ class DuReaderChecklist(DatasetBuilder):
     def _read(self, filename):
         with open(filename, "r", encoding="utf8") as f:
             input_data = json.load(f)["data"]
+
         for entry in input_data:
             title = entry.get("title", "").strip()
             for paragraph in entry["paragraphs"]:
@@ -23,13 +24,12 @@ class DuReaderChecklist(DatasetBuilder):
                     if "is_impossible" in qa.keys():
                         is_impossible = qa["is_impossible"]
 
-                    if not is_impossible:
-                        answer_starts = [
-                            answer["answer_start"] for answer in qa["answers"]
-                        ]
-                        answers = [
-                            answer["text"].strip() for answer in qa["answers"]
-                        ]
+                    answer_starts = [
+                        answer["answer_start"] for answer in qa.get("answers",[])
+                    ]
+                    answers = [
+                        answer["text"].strip() for answer in qa.get("answers",[])
+                    ]
 
                     yield {
                         'id': qas_id,
@@ -77,15 +77,14 @@ def compute_prediction_checklist(examples,
         predictions
     ) == 3, "`predictions` should be a tuple with two elements (start_logits, end_logits, cls_logits)."
     all_start_logits, all_end_logits, all_cls_logits = predictions
-
+    
     assert len(predictions[0]) == len(
         features), "Number of predictions should be equal to number of features."
-
+    
     # Build a map example to its corresponding features.
-    example_id_to_index = {k['id']: i for i, k in enumerate(examples)}
     features_per_example = collections.defaultdict(list)
     for i, feature in enumerate(features):
-        features_per_example[example_id_to_index[feature["example_id"]]].append(
+        features_per_example[feature["example_id"]].append(
             i)
 
     # The dictionaries we have to fill.
@@ -96,12 +95,11 @@ def compute_prediction_checklist(examples,
     # Let's loop over all the examples!
     for example_index, example in enumerate(examples):
         # Those are the indices of the features associated to the current example.
-        feature_indices = features_per_example[example_index]
+        feature_indices = features_per_example[example['id']]
 
         min_null_prediction = None
         prelim_predictions = []
         score_answerable = -1
-
         # Looping through all the features associated to the current example.
         for feature_index in feature_indices:
             # We grab the predictions of the model for this feature.
