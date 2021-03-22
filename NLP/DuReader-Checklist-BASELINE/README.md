@@ -49,7 +49,7 @@ DuReader<sub>checklist</sub>数据集包含训练集、开发集以及测试集�
 * PaddleNLP 安装
 
    ```shell
-   pip install paddlenlp>=2.0.0b
+   pip install --upgrade paddlenlp -i https://pypi.org/simple
    ```
 
 * 环境依赖
