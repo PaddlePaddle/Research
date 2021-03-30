@@ -17,5 +17,4 @@ python -u src/run.py \
     --version_2_with_negative \
     --do_pred \
     --cls_threshold 0.7 \
-    --n_gpu 1 \
     $@

@@ -12,12 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-import collections
 import os
 import random
 import time
 
-from functools import partial
 import numpy as np
 import paddle
 import glob
@@ -87,6 +85,7 @@ def evaluate(model, data_loader, args, prefix=""):
                 print('time per 1000:', time.time() - tic_eval)
                 tic_eval = time.time()
 
+
             all_start_logits.append(start_logits_tensor.numpy()[idx])
             all_end_logits.append(end_logits_tensor.numpy()[idx])
             all_cls_logits.append(cls_logits_tensor.numpy()[idx])
@@ -117,7 +116,7 @@ def evaluate(model, data_loader, args, prefix=""):
 
 
 def run(args):
-    paddle.set_device("gpu" if args.n_gpu else "cpu")
+    paddle.set_device(args.device)
     if paddle.distributed.get_world_size() > 1:
         paddle.distributed.init_parallel_env()
 
@@ -126,7 +125,7 @@ def run(args):
     tokenizer = tokenizer_class.from_pretrained(args.model_name_or_path)
     set_seed(args)
 
-    if (not args.n_gpu > 1) or paddle.distributed.get_rank() == 0:
+    if paddle.distributed.get_rank() == 0:
         if os.path.exists(args.model_name_or_path):
             print("init checkpoint from %s" % args.model_name_or_path)
     model = model_class.from_pretrained(args.model_name_or_path)
@@ -138,8 +137,6 @@ def run(args):
         # Tokenize our examples with truncation and maybe padding, but keep the overflows using a stride. This results
         # in one example possible giving several features when a context is long, each of those features having a
         # context that overlaps a bit the context of the previous feature.
-        #NOTE: Almost the same functionality as HuggingFace's prepare_train_features function. The main difference is 
-        # that HugggingFace uses ArrowTable as basic data structure, while we use list of dictionary instead.
         contexts = [examples[i]['context'] for i in range(len(examples))]
         questions = [examples[i]['question'] for i in range(len(examples))]
 
@@ -149,7 +146,6 @@ def run(args):
             stride=args.doc_stride,
             max_seq_len=args.max_seq_length)
 
-        # Let's label those examples!
         for i, tokenized_example in enumerate(tokenized_examples):
             # We will label impossible answers with the index of the CLS token.
             input_ids = tokenized_example["input_ids"]
@@ -166,7 +162,7 @@ def run(args):
             sample_index = tokenized_example['overflow_to_sample']
             answers = examples[sample_index]['answers']
             answer_starts = examples[sample_index]['answer_starts']
-            
+
             # If no answers are given, set the cls_index as answer.
             if len(answer_starts) == 0:
                 tokenized_examples[i]["start_positions"] = cls_index
@@ -183,11 +179,9 @@ def run(args):
                     token_start_index += 1
 
                 # End token index of the current span in the text.
-                token_end_index = len(input_ids) - 1
+                token_end_index = len(input_ids) - 2
                 while sequence_ids[token_end_index] != 1:
                     token_end_index -= 1
-                # Minus one more to reach actual text
-                token_end_index -= 1
 
                 # Detect if the answer is out of the span (in which case this feature is labeled with the CLS index).
                 if not (offsets[token_start_index][0] <= start_char and
@@ -219,7 +213,7 @@ def run(args):
             train_ds, batch_size=args.batch_size, shuffle=True)
         train_batchify_fn = lambda samples, fn=Dict({
             "input_ids": Pad(axis=0, pad_val=tokenizer.pad_token_id), 
-            "token_type_ids": Pad(axis=0, pad_val=tokenizer.pad_token_type_id),  
+            "token_type_ids": Pad(axis=0, pad_val=tokenizer.pad_token_type_id),
             "start_positions": Stack(dtype="int64"),  
             "end_positions": Stack(dtype="int64"),  
             "answerable_label": Stack(dtype="int64")  
@@ -233,7 +227,7 @@ def run(args):
         num_training_steps = args.max_steps if args.max_steps > 0 else len(
             train_data_loader) * args.num_train_epochs
 
-        if (not args.n_gpu > 1) or paddle.distributed.get_rank() == 0:
+        if paddle.distributed.get_rank() == 0:
             dev_count = paddle.fluid.core.get_cuda_device_count()
             print("Device count: %d" % dev_count)
             print("Num train examples: %d" % len(train_ds.data))
@@ -276,7 +270,7 @@ def run(args):
                 optimizer.clear_gradients()
 
                 if global_step % args.save_steps == 0 or global_step == num_training_steps:
-                    if (not args.n_gpu > 1) or paddle.distributed.get_rank() == 0:
+                    if paddle.distributed.get_rank() == 0:
                         output_dir = os.path.join(args.output_dir,
                                                 "model_%d" % global_step)
                         if not os.path.exists(output_dir):
@@ -292,8 +286,6 @@ def run(args):
         # Tokenize our examples with truncation and maybe padding, but keep the overflows using a stride. This results
         # in one example possible giving several features when a context is long, each of those features having a
         # context that overlaps a bit the context of the previous feature.
-        #NOTE: Almost the same functionality as HuggingFace's prepare_train_features function. The main difference is 
-        # that HugggingFace uses ArrowTable as basic data structure, while we use list of dictionary instead.
         contexts = [examples[i]['context'] for i in range(len(examples))]
         questions = [examples[i]['question'] for i in range(len(examples))]
 
@@ -347,13 +339,14 @@ def run(args):
                 batch_sampler=dev_batch_sampler,
                 collate_fn=dev_batchify_fn,
                 return_list=True)
-            if (not args.n_gpu > 1) or paddle.distributed.get_rank() == 0:
+            if paddle.distributed.get_rank() == 0:
                 evaluate(model, dev_data_loader, args, prefix=prefix)
 
 
 if __name__ == "__main__":
     args = parse_args()
-    if args.n_gpu > 1:
-        paddle.distributed.spawn(run, args=(args, ), nprocs=args.n_gpu)
-    else:
-        run(args)
+    assert args.device in [
+        "cpu", "gpu", "xpu"
+    ], "Invalid device! Available device should be cpu, gpu, or xpu."
+
+    run(args)

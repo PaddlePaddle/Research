@@ -1,13 +1,11 @@
 #!/bin/bash
 export PYTHONIOENCODING=utf-8
 
-if [ -z "$CUDA_VISIBLE_DEVICES" ];then
-    export CUDA_VISIBLE_DEVICES=0
-fi
+unset CUDA_VISIBLE_DEVICES
 
 echo "CUDA_VISIBLE_DEVICES=$CUDA_VISIBLE_DEVICES"
 
-python -u src/run.py \
+python -m paddle.distributed.launch --gpus "0" src/run.py \
     --model_type ernie \
     --model_name_or_path ernie-1.0 \
     --max_seq_length 512 \
@@ -26,5 +24,5 @@ python -u src/run.py \
     --train_file dataset/train.json \
     --predict_file dataset/dev.json \
     --cls_threshold 0.7 \
-    --n_gpu 1 \
+    --device gpu \
     $@
