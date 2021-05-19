@@ -27,7 +27,7 @@
 ## 自然语言处理
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
-| 中文词法分析 | [LAC(Lexical Analysis of Chinese)](https://github.com/PaddlePaddle/models/tree/develop/PaddleNLP/lexical_analysis) | 百度自主研发中文特色模型词法分析任务，集成了中文分词、词性标注和命名实体识别任务。输入是一个字符串，而输出是句子中的词边界和词性、实体类别。 | - |
+| 中文词法分析 | [LAC(Lexical Analysis of Chinese)](https://github.com/baidu/lac) | 百度自主研发中文特色模型词法分析任务，集成了中文分词、词性标注和命名实体识别任务。输入是一个字符串，而输出是句子中的词边界和词性、实体类别。 | - |
 | 主动对话 | [DuConv](NLP/ACL2019-DuConv) | 机器根据给定知识信息主动引领对话进程完成设定的对话目标。 |https://www.aclweb.org/anthology/P19-1369/|
 | 语义解析 | [DuSQL-Baseline](NLP/DuSQL-Baseline) | 输入自然语言问题和相应的数据库，生成与问题对应的 SQL 查询语句，通过执行该 SQL 可得到问题的答案。 | - |
 | 多轮对话 | [DAM](NLP/ACL2018-DAM) | 开放领域多轮对话匹配的深度注意力机制模型，根据多轮对话历史和候选回复内容，排序出最合适的回复。 | http://aclweb.org/anthology/P18-1103 |
