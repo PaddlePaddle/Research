@@ -29,7 +29,7 @@
 | ------------ | ------------------------------------------------------------ | ------------------------------------------------------------ | -------- |
 | 中文词法分析 | [LAC(Lexical Analysis of Chinese)](https://github.com/baidu/lac) | 百度自主研发中文特色模型词法分析任务，集成了中文分词、词性标注和命名实体识别任务。输入是一个字符串，而输出是句子中的词边界和词性、实体类别。 | - |
 | 主动对话 | [DuConv](NLP/ACL2019-DuConv) | 机器根据给定知识信息主动引领对话进程完成设定的对话目标。 |https://www.aclweb.org/anthology/P19-1369/|
-| 语义解析 | [DuSQL-Baseline](NLP/DuSQL-Baseline) | 输入自然语言问题和相应的数据库，生成与问题对应的 SQL 查询语句，通过执行该 SQL 可得到问题的答案。 | - |
+| 语义解析 | [Text2SQL-BASELINE](NLP/Text2SQL-BASELINE) | 输入自然语言问题和相应的数据库，生成与问题对应的 SQL 查询语句，通过执行该 SQL 可得到问题的答案。 | - |
 | 多轮对话 | [DAM](NLP/ACL2018-DAM) | 开放领域多轮对话匹配的深度注意力机制模型，根据多轮对话历史和候选回复内容，排序出最合适的回复。 | http://aclweb.org/anthology/P18-1103 |
 | 阅读理解 | [DuReader](NLP/ACL2018-DuReader) | 数据集：大规模、面向真实应用、由人类生成的中文阅读理解数据集，聚焦于真实世界中的不限定领域的问答任务；基线系统：针对DuReader数据集实现的经典BiDAF模型。 | https://www.aclweb.org/anthology/W18-2605/ |
 | 关系抽取 | [ARNOR](NLP/ACL2019-ARNOR) | 数据集：用于对远程监督关系提取模型进行句子级别的评价；模型：基于注意力正则化识别噪声数据，通过bootstrap方法逐步选择出高质量的标注数据。| https://www.aclweb.org/anthology/P19-1135/ |
