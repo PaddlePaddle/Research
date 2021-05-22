@@ -5,6 +5,7 @@ This is a repository of the paper: [RocketQA: An Optimized Training Approach to 
 RocketQA is an optimized training approach to improving dense passage retrieval. The three major technical contributions include cross-batch negatives, denoised hard negative sampling and data augmentation. 
 The experiment results show that RocketQA significantly outperforms previous state-of-the-art models on both MSMARCO and Natural Questions (NQ), and the performance of end-to-end QA can be improved based on RocketQA retriever.  
 The pipeline of RocketQA training approach is shown as follows:
+![RocketQA-Pipeline](rocketqa-pipeline.jpg)
 
 ## Preparation
 ### Environment
@@ -138,9 +139,7 @@ The table below shows the results of our experiments with different steps.
 \*\*The result of the last step on NQ might be slightly different from the result reported in the paper, because we lost the original model file. We re-train the model and provide the checkpoint.  
 
 ## Passage Reading
-We verify whether the retrieval results of RocketQA can improve the performance of passage reading for extracting correct answers. We use the implement of extractive reader published in DPR(https://github.com/facebookresearch/DPR).  
-We first reuse the released reader model of DPR, and take 100 retrieved passages during inference (the same setting used in DPR), which achieve 42.0 EM.  
-Besides, we use the same setting to train a new extractive reader based on the retrieval results of RocketQA (except that we choose top 50 passages for training instead of 100). After reconstructing the training data and retraining, we get a result of 42.8.  
+We verify whether the retrieval results of RocketQA can improve the performance of passage reading for extracting correct answers. We use the implement of extractive reader published in [DPR](https://github.com/facebookresearch/DPR). We first reuse the released reader model of DPR, and take 100 retrieved passages during inference (the same setting used in DPR), which achieve 42.0 EM.  Besides, we use the same setting to train a new extractive reader based on the retrieval results of RocketQA (except that we choose top 50 passages for training instead of 100). After reconstructing the training data and retraining, we get a result of 42.8.  
 
 ## Copyright and License
 Copyright 2021 Baidu.com, Inc. All Rights Reserved Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
