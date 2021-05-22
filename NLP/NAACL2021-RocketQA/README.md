@@ -1,9 +1,9 @@
 # RocketQA
-Code for NAACL2021 paper: RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering
+This is a repository of the paper: [RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/pdf/2010.08191.pdf), NAACL 2021. 
 
 ## Introduction
 RocketQA is an optimized training approach to improving dense passage retrieval. The three major technical contributions include cross-batch negatives, denoised hard negative sampling and data augmentation. 
-The experiment results show that RocketQA significantly outperforms previous state-of-the-art models on both MS-MARCO and Natural Questions, and the performance of end-to-end QA can be improved based on our RocketQA retriever.  
+The experiment results show that RocketQA significantly outperforms previous state-of-the-art models on both MSMARCO and Natural Questions (NQ), and the performance of end-to-end QA can be improved based on RocketQA retriever.  
 The pipeline of RocketQA training approach is shown as follows:
 
 ## Preparation
@@ -18,7 +18,7 @@ To download the MSMARCO & NaturalQuestions corpus, as well as preprocessed train
 ```
 sh wget_data.sh
 ```
-The downloaded data will be saved into <u>`corpus`</u> (including MSMARCO & NQ training and development/test dataset, whole paragraph corpus, and unlabeled query dataset), <u>`data_train`</u> (including preprocessed training data for step 1, step3 and step 4).
+The downloaded data will be saved into <u>`corpus`</u> (including the training and development/test sets of MSMARCO & NQ, all the passages in MSMARCO and Wikipedia to be indexed, and an unlabeled query dataset), <u>`data_train`</u> (including preprocessed training data for step 1, step 3 and step 4 of RocketQA).
 ```
 ├── data_train/
 │   ├── marco_de0_denoise.tsv                   # Training examples for step 1, negatives are randomly sampled from whole MSMARCO corpus
@@ -44,7 +44,7 @@ The downloaded model parameters will be saved into <u>`checkpoint`</u>, includin
 │   ├── nq_cross_encoder_large                   # Cross-encoder model on NQ (MC of step 2)
 │   ├── nq_dual_encoder_v2                       # Dual-encoder model on NQ (MD2 of step 4, the final model)
 ```
-For a quick start, one can perform experiments from these fine-tuned checkpoints(ie. skip the first two steps).
+For a quick start, you can perform experiments from the fine-tuned checkpoints (i.e. skipping the first two steps).
 
 ## Training
 ### Data processing
@@ -135,7 +135,7 @@ The table below shows the results of our experiments with different steps.
 </tr>
 </table>
 
-\*\*The result of the last step on NQ is slightly different from the result in the paper, because we lost the original model file. Due to the randomness of the training process, there will be fluctuations between different checkpoints.  
+\*\*The result of the last step on NQ might be slightly different from the result reported in the paper, because we lost the original model file. We re-train the model and provide the checkpoint.  
 
 ## Passage Reading
 We verify whether the retrieval results of RocketQA can improve the performance of passage reading for extracting correct answers. We use the implement of extractive reader published in DPR(https://github.com/facebookresearch/DPR).  
@@ -145,3 +145,6 @@ Besides, we use the same setting to train a new extractive reader based on the r
 ## Copyright and License
 Copyright 2021 Baidu.com, Inc. All Rights Reserved Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at http://www.apache.org/licenses/LICENSE-2.0 Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
 
+## Contact Information
+For help or issues using RocketQA, please submit a GitHub issue.
+For other communications related to RocketQA, please contact Yingqi Qu (quyingqi@baidu.com), Jing Liu (liujing46@baidu.com).
