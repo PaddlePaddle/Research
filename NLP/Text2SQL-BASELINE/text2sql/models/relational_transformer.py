@@ -305,7 +305,7 @@ class RelationalPointerNet(nn.Layer):
         self.scores = F.softmax(scores)
         ## 为什么只返回 [0, 0] 位置的结果: 
         #  前两个纬度分别是 batch、head，这里的值都是1
-        return self.scores[0, 0]
+        return self.scores.squeeze([0, 1])
 
 
 class PositionwiseFeedForwardLayer(nn.Layer):
