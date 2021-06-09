@@ -75,7 +75,7 @@ The training pipeline of RocketQA consists of four steps, as described in Sectio
 *In our implementation to training dual-encoder models, each instance contains 1 query with 1 positive passage and 1 hard negative passage.* 
 
 - For MSMARCO:  
-    - Step 1: In this step, we construct the training data for first duel-encoder model (M<sub>D</sub><sup>(0)</sup>). *In our implementation, to keep the consistency with the step 3 and step 4, we add 4 negative passages randomly sampled from all candidate passages for each query, although there is no hard negative in this step. 
+    - Step 1: In this step, we construct the training data for first duel-encoder model (M<sub>D</sub><sup>(0)</sup>). *In our implementation, to keep the consistency with the step 3 and step 4, we add 4 negative passages randomly sampled from all candidate passages for each query, although there is no hard negative in this step.*
    
     - Step 2: In this step, we construct the training data for cross-encoder (MC). First, we retrieve the top K passages for each training query by M<sub>D</sub><sup>(0)</sup> (<u>`$recall_topk_file`</u>, file format: qid \t pid \t rank \t score). Then, we can obtain the training data by running the following command:
         ```
@@ -168,7 +168,7 @@ The table below shows the results of our experiments in different steps of Rocke
 </tr>
 </table>
 
-\*\*The result of the last step on NQ might be slightly different from the result reported in the paper, because we lost the original model file. We re-train the model and provide the corresponding checkpoint.  
+*The result of the last step on NQ might be slightly different from the result reported in the paper, because we lost the original model file. We re-train the model and provide the corresponding checkpoint.*
 
 ## Passage Reading
 We also examine that the retrieval results of RocketQA can improve the performance of passage reading for extracting correct answers. We use the implementation of extractive reader published in [DPR](https://github.com/facebookresearch/DPR). We first reuse the released reader model of DPR, and take 100 retrieved passages during inference (the same setting used in DPR), which achieve 42.0 EM.  Besides, we use the same setting to train a new extractive reader based on the retrieval results of RocketQA (except that we choose top 50 passages for training instead of 100). After reconstructing the training data and retraining the reader, we get a result of 42.8 EM.  
