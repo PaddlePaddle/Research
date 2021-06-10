@@ -47,4 +47,4 @@ python generate_submission.py
 
 ## Acknowledgement
 
-本项目基于[PaddleVideo](https://github.com/PaddlePaddle/PaddleVideo/tree/application/VideoTag)和[PaddleNLP](https://github.com/PaddlePaddle/PaddleVideo/tree/application/VideoTag)中的开源代码，特此感谢。
+本项目基于[PaddleVideo](https://github.com/PaddlePaddle/PaddleVideo/tree/application/VideoTag)和[PaddleNLP](https://github.com/PaddlePaddle/PaddleNLP/tree/develop/examples/information_extraction/msra_ner)中的开源代码，特此感谢。
