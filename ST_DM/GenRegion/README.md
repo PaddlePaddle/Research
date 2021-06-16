@@ -8,6 +8,10 @@ This is the raw road network and regions using road networks of beijing.
 <img src="https://github.com/PaddlePaddle/Research/blob/genregion/ST_DM/GenRegion/result/beijing_polygons.png" width="400" height="400" alt="processing"/>  
 This is regions using road networks of zhongguancun softwore park(zpark).  
 <img src="https://github.com/PaddlePaddle/Research/blob/genregion/ST_DM/GenRegion/result/ZPark.png" width="500" height="400" alt="Result of ZPARK" style="margin:0 auto"/>  
+<div style="display: flex; justify-content: center; align-items: center">
+    <img src="https://github.com/PaddlePaddle/Research/blob/genregion/ST_DM/GenRegion/result/ZPark.png" width="500"
+         height="400" alt="Result of ZPARK" />
+</div>
 Main advantages:  
 1、efficiently and fast.   
 2、full division through the global road network.  
@@ -17,12 +21,12 @@ Main advantages:
 https://figshare.com/articles/dataset/Urban_Road_Network_Data/2061897 Dataset posted on 20.01.2016, 02:21 by Urban Road Networks. data set of road networks for 80 of the most populated urban areas in the world. The data consist of a graph edge list for each city and two corresponding GIS shapefiles (i.e., links and nodes).
 
 ## Get Start
->1、clone the code from github <br> 
->2、cd ./Research/ST_DM/GenRegion/src  
->3、get the urban road network from the website, one possible is https://figshare.com/articles/dataset/Urban_Road_Network_Data/2061897.  
->4、run the program  
->>    python run.sh --in-file --out-file   
+1、clone the code from github <br> 
+2、cd ./Research/ST_DM/GenRegion/src  
+3、get the urban road network from the website, one possible is https://figshare.com/articles/dataset/Urban_Road_Network_Data/2061897.  
+4、run the program  
+&nbsp&nbsp    python run.sh --in-file --out-file   
 >>>    --in-file the file path of dataset of urban road network  
 >>>    --out-file the result path of blocks that the program deal segment urban space into proper regions using road networks  
->>>>    <img src="https://github.com/PaddlePaddle/Research/blob/genregion/ST_DM/GenRegion/result/process.png" width="400" height="200" alt="processing" style="display: flex;justify-content: center; align-items: center;"/>   
+>>>    <img src="https://github.com/PaddlePaddle/Research/blob/genregion/ST_DM/GenRegion/result/process.png" width="400" height="200" alt="processing" style="display: flex;justify-content: center; align-items: center;"/>   
 >5、when the "2021-06-16 14:53:32 finished " log message, congratulation, you can get the result now you can get the result file from --out-file path  
