@@ -99,6 +99,6 @@ def run_city(city, input_path, output_path):
     etl.output_regions(blocks, output_path)
     etl.log("finished")
 
-def run():
-    run_city("wuhan",Conf.wuhan_raw, Conf.exp_wh_file)
+def run(city_name, in_file, out_file):
+    run_city(city_name, in_file, out_file)
     
