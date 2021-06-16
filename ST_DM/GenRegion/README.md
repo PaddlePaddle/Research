@@ -13,9 +13,10 @@ This is the raw road network and regions using road networks of newyork.
 <br>This is regions using road networks of zhongguancun softwore park(zpark).  
 <p align="center">
 <img align="center" src="https://github.com/PaddlePaddle/Research/blob/genregion/ST_DM/GenRegion/result/ZPark.png" width="500" height="400" alt="Result of ZPARK" style="margin:0 auto"/>  
-</p>
-<br>
-##Main advantages:  
+</p>  
+
+## Main advantages:  
+
 * efficiently and fast.   
 * full division through the global road network.  
 * provide flexible interface to adapt to various road network format.  
