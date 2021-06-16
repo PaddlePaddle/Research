@@ -22,8 +22,8 @@ This is the raw road network and regions using road networks of newyork.
 * provide flexible interface to adapt to various road network format.  
 
 ## Download the dataset of urban road network
-https://figshare.com/articles/dataset/Urban_Road_Network_Data/2061897 
-Dataset posted on 20.01.2016, 02:21 by Urban Road Networks. 
+https://figshare.com/articles/dataset/Urban_Road_Network_Data/2061897  
+Dataset posted on 20.01.2016, 02:21 by Urban Road Networks.   
 offer data set of road networks for 80 of the most populated urban areas in the world. The data consist of a graph edge list for each city and two corresponding GIS shapefiles (i.e., links and nodes).
 
 ## Get Start
