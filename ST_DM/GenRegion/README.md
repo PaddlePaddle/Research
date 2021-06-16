@@ -15,10 +15,10 @@ This is the raw road network and regions using road networks of newyork.
 <img align="center" src="https://github.com/PaddlePaddle/Research/blob/genregion/ST_DM/GenRegion/result/ZPark.png" width="500" height="400" alt="Result of ZPARK" style="margin:0 auto"/>  
 </p>
 <br>
-Main advantages:  
-1、efficiently and fast.   
-2、full division through the global road network.  
-3、provide flexible interface to adapt to various road network format.  
+##Main advantages:  
+* efficiently and fast.   
+* full division through the global road network.  
+* provide flexible interface to adapt to various road network format.  
 
 ## Download the dataset of urban road network
 https://figshare.com/articles/dataset/Urban_Road_Network_Data/2061897 Dataset posted on 20.01.2016, 02:21 by Urban Road Networks. data set of road networks for 80 of the most populated urban areas in the world. The data consist of a graph edge list for each city and two corresponding GIS shapefiles (i.e., links and nodes).
