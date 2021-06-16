@@ -36,4 +36,4 @@ python run.sh --in-file --out-file
 >    --out-file the result path of blocks that the program deal segment urban space into proper regions using road networks <br>
 >   the log message:
   <img src="https://github.com/PaddlePaddle/Research/blob/genregion/ST_DM/GenRegion/result/process.png" width="400" height="200" alt="processing"/>  
-4、when the "yyyy-mm-dd hh:mm:ss finished " log message, congratulation, you can get the result now you can get the result file from --out-file path  
+4、when the "yyyy-mm-dd hh:mm:ss finished " log message, congratulation, now you can get the result file from --out-file path  
