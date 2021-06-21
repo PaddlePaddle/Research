@@ -39,11 +39,13 @@ pip install tqdm wget
 
 ## 生成预测结果提交文件
 
-合并上述视频分类标签模型和视频语义标签模型的测试结果，生成提交文件。
+合并上述视频分类标签模型和视频语义标签模型在`test_a`评测集的测试结果，生成提交文件。
 
 ```
 python generate_submission.py
 ```
+
+生成的结果文件提交至评测系统后，在`test_a`评测集上的整体结果约为`0.37`。
 
 ## Acknowledgement
 
