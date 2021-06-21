@@ -47,6 +47,15 @@ paddle-video-classify-tag
 ## 训练与验证
 
 我们微调模型中的`AttentionLSTM`部分，需要下载[预训练的AttentionLSTM网络参数](https://videotag.bj.bcebos.com/video_tag_lstm.tar)并存放在`weights`目录下。
+
+```
+paddle-video-classify-tag
+   |-- weights
+      |-- attention_lstm.pdmodel
+      |-- attention_lstm.pdopt
+      |-- attention_lstm.pdparams
+```
+
 可以参考原代码库中的[模型微调指南](https://github.com/PaddlePaddle/PaddleVideo/blob/application/VideoTag/FineTune.md)获取更多信息。
 
 ```bash
@@ -63,6 +72,8 @@ python train.py --model_name=AttentionLSTM --config=./configs/attention_lstm-sin
 | :----    | :--: |
 | 一级标签 | 0.62 |
 | 二级标签 | 0.45 |
+
+注：综合考虑一级标签和二级标签，验证集上的结果为`F1-score=0.54`。
 
 ## 生成分类标签结果
 

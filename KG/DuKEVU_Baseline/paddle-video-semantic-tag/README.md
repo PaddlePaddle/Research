@@ -2,7 +2,9 @@
 
 ## 数据处理
 
-首先将数据整理成模型所需格式，并划分训练集、验证集等。可以参考[PaddleNLP中文命名实体项目](https://github.com/PaddlePaddle/PaddleNLP/tree/develop/examples/information_extraction/msra_ner)。
+首先将数据整理成命名实体识别模型所需格式，并划分训练集、验证集等。可以参考[PaddleNLP中文命名实体项目](https://github.com/PaddlePaddle/PaddleNLP/tree/develop/examples/information_extraction/msra_ner)。
+
+注：我们在数据处理阶段去除了未在title中出现的语义标签。
 
 ```bash
 python prepare_ccks_semantic_tag.py
@@ -39,7 +41,7 @@ python train_semantic_tag.py \
 
 ## 实验结果
 
-通过2~3个epoch的训练后，整体效果如下：
+通过2~3个epoch的训练后，在验证集上的整体效果如下：
 
 |           | Eval  |
 | :----     | :--:  |
@@ -47,6 +49,7 @@ python train_semantic_tag.py \
 | Recall    | 0.551 |
 | F1-score  | 0.534 |
 
+注：上表中使用的指标与线上评测使用的指标不同。上表的结果为序列标注任务中的常用的评价指标（参考[`paddlenlp.metrics.ChunkEvaluator`](https://github.com/PaddlePaddle/PaddleNLP/tree/develop/paddlenlp/metrics)），不考虑未在title中出现的实体；若使用线上评测系统的计算方法，验证集上的结果为`Precision=0.586, Recall=0.222, F1-score=0.322`。
 
 ## 生成语义标签结果
 
