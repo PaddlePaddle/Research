@@ -3,7 +3,7 @@ Urban area of interest (AOI) is broadly defined as the area within an urban envi
 Raw road network and generated regions of New York  
 <p align="center">
     <img align="center" src="https://github.com/PaddlePaddle/Research/blob/master/ST_DM/GenRegion/result/newyork_link.png" width="400" height="400" alt="newyork_link" style="margin:0 auto"/>
-    <img align="center" src="https://github.com/PaddlePaddle/Research/blob/master/ST_DM/GenRegion/result/newyork_polygons.png" width="400" height="400" alt="newyork_polygons" style="margin:0 auto"/>  
+    <img align="center" src="https://github.com/PaddlePaddle/Research/blob/master/ST_DM/GenRegion/result/new york colored.png" width="400" height="400" alt="newyork_polygons" style="margin:0 auto"/>  
 </p>
 <br> Raw road network and generated regions of Beijing  
 <p align="center">
