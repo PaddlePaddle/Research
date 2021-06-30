@@ -8,7 +8,12 @@ Raw road network and generated regions of New York
 <br> Raw road network and generated regions of Beijing  
 <p align="center">
 <img align="center" src="https://github.com/PaddlePaddle/Research/blob/master/ST_DM/GenRegion/result/beijing_road_network.png" width="400" height="400" alt="processing" style="text-align:center"/>
-<img align="center" src="https://github.com/PaddlePaddle/Research/blob/master/ST_DM/GenRegion/result/beijing_polygons.png" width="400" height="400" alt="processing"/>  
+<img align="center" src="https://github.com/PaddlePaddle/Research/blob/master/ST_DM/GenRegion/result/beijing colored.png" width="400" height="400" alt="processing"/>  
+</p>
+<br> Raw road network and generated regions of Shanghai  
+<p align="center">
+<img align="center" src="https://github.com/PaddlePaddle/Research/blob/master/ST_DM/GenRegion/result/shanghai_links.png" width="400" height="400" alt="processing" style="text-align:center"/>
+<img align="center" src="https://github.com/PaddlePaddle/Research/blob/master/ST_DM/GenRegion/result/shanghai colored.png" width="400" height="400" alt="processing"/>  
 </p>
 <br>Example of zhongguancun softwore park(zpark).  
 <p align="center">
