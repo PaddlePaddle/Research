@@ -26,6 +26,6 @@ for fold in marco nq;do
     rm -rf corpus/${fold}/tp.tsv*
 done
 
-for file in corpus/marco/train.query.txt corpus/marco/dev.query.txt corpus/nq/train.query.txt corpus/nq/test.query.txt corpus/augment/orcas_yahoo_nq.query.txt corpus/augment/mrqa.query.txt;do
+for file in corpus/marco/train.query.txt corpus/marco/dev.query.txt corpus/nq/train.query.txt corpus/nq/test.query.txt;do
     awk -F'\t' '{print $2"\t-\t-\t0"}' $file > $file.format
 done
