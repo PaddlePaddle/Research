@@ -2,7 +2,7 @@ import sys
 import numpy as np
 sys.path.append('data_process/')
 sys.path.append('metric/')
-from dpr.utils.tokenizers import SimpleTokenizer
+from tokenizers import SimpleTokenizer
 import utils
 import unicodedata
 
