@@ -46,6 +46,7 @@
 | 多文档摘要 | [ACL2020-GraphSum](NLP/ACL2020-GraphSum) | 基于图表示的生成式多文档摘要模型，将显式图结构信息引入到端到端摘要生成过程中。 | https://www.aclweb.org/anthology/2020.acl-main.555.pdf |
 | 融合多种对话类型的对话式推荐 | [ACL2020-DuRecDial](NLP/ACL2020-DuRecDial) | 提出新任务：融合闲聊、任务型对话、问答和推荐等多种对话类型的对话式推荐，构建DuRecDial数据集，提出具有多对话目标驱动策略机制的对话生成框架。 | https://www.aclweb.org/anthology/2020.acl-main.98/ |
 | 面向推荐的对话 | [Conversational-Recommendation-BASELINE](NLP/Conversational-Recommendation-BASELINE) | 融合人机对话系统和个性化推荐系统，定义新一代智能推荐技术，该系统先通过问答或闲聊收集用户兴趣和偏好，然后主动给用户推荐其感兴趣的内容，比如餐厅、美食、电影、新闻等。 | - |
+| 稠密段落检索 | [ACL2021-PAIR](NLP/ACL2021-PAIR) | 基于以段落相似度为中心的相似度关系提升稠密段落检索，基于知识蒸馏进行采样，采用两阶段训练方式。 | https://aclanthology.org/2021.findings-acl.191/ |
 
 ## 知识图谱
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
