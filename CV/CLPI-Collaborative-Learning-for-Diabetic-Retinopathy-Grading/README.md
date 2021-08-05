@@ -82,14 +82,27 @@ python3 -u get_cam_heatmap.py \
 - For reproducible, we provide our train / validation / test split on Messidor-2 following `6 / 2 / 2`, because of the lack of official test set. Please refer to `demo/partition/`
 
 # Citation
-If you use this code for your research, please cite our papers.
-```
-@misc{yang2020robust,
-    title={Robust Collaborative Learning of Patch-level and Image-level Annotations for Diabetic Retinopathy Grading from Fundus Image},
-    author={Yehui Yang and Fangxin Shang and Binghong Wu and Dalu Yang and Lei Wang and Yanwu Xu and Wensheng Zhang and Tianzhu Zhang},
-    year={2020},
-    eprint={2008.00610},
-    archivePrefix={arXiv},
-    primaryClass={cs.CV}
+If you use CLPI in your research, please cite our work by using the following BibTeX entry:
+```latex
+@ARTICLE{yang2021robust,
+    author={Yang, Yehui and Shang, Fangxin and Wu, Binghong and Yang, Dalu and Wang, Lei and Xu, Yanwu and Zhang, Wensheng and Zhang, Tianzhu},
+    journal={IEEE Transactions on Cybernetics}, 
+    title={Robust Collaborative Learning of Patch-Level and Image-Level Annotations for Diabetic Retinopathy Grading From Fundus Image}, 
+    year={2021},
+    volume={},
+    number={},
+    pages={1-11},
+    doi={10.1109/TCYB.2021.3062638}
+}
+
+@inproceedings{yang2017lesion,
+    author = {Yang, Yehui and Li, Tao and Li, Wensi and Wu, Haishan and Fan, Wei and Zhang, Wensheng},
+    year = {2017},
+    month = {09},
+    pages = {533-540},
+    title = {Lesion Detection and Grading of Diabetic Retinopathy via Two-Stages Deep Convolutional Neural Networks},
+    booktitle = {Medical Image Computing and Computer Assisted Intervention {MICCAI}},
+    isbn = {978-3-319-66178-0},
+    doi = {10.1007/978-3-319-66179-7_61}
 }
 ```
