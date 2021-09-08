@@ -1,0 +1,25 @@
+{
+    "update_lr": 1e-3,
+    "meta_lr": 1e-3,
+    "update_step": 1,
+    "update_step_test": 1,
+
+    "task_batch_size": 4,
+
+    "train_qry_batch_size": 512,
+    "max_train_steps": 100000,
+    "few_num": 512,
+
+    "num_poi_types": 229,
+    "num_time": 25,
+    "embed_dim": 50,
+    "poiid_dim": 50,
+    "mlp_hidden": 300,
+    "local_fix_var": 1,
+    "global_fix_var": 1,
+
+
+    "sample_batch_size": 1024,
+    "test_task_batch_size": 1,
+    "num_epoch": 10
+}
