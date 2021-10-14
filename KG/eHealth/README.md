@@ -7,7 +7,7 @@ This repo introduces **eHealth**, a Chinese biomedical language model pre-traine
 eHealth is trained from scratch with a new self-supervised generator-discriminator framework. The generator is used to produce corrupted input and will be discarded after pre-training. The discriminator, which is the final target encoder, is trained via multi-level discrimination: (i) **token-level discrimination** that detects input tokens corrupted by the generator and selects original signals from plausible candidates; and (ii) **sequence-level discrimination** that further detects corruptions of a same original sequence from those of the others.
 
 <p align="center">
-<img src="eHealth.PNG" width = "400" height = "250" /> <br />
+<img src="eHealth.png" width = "400" height = "250" /> <br />
 Overall Framework of eHealth
 </p>
 
