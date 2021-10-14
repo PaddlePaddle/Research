@@ -17,7 +17,7 @@ Overall Framework of eHealth
 eHealth discriminator shares identical architecture with [ERNIE Base](https://github.com/PaddlePaddle/ERNIE/tree/repro/ernie/model), and can be simply employed by replacing the model file. Our pretrained checkpoint can be downloaded via the following link:
 |                                             Model                                              | Supported Version |
 |:----------------------------------------------------------------------------------------------:|:-----------------:|
-| [eHealth-base-discriminator](https://ernie-github.cdn.bcebos.com/model-ernie-gram-zh.1.tar.gz) | PaddlePaddle 1.8  |
+| [eHealth-base-discriminator](https://paddlenlp.bj.bcebos.com/models/transformers/electra/eHealth-base-discriminator.tar) | PaddlePaddle 1.8  |
 
 
 
