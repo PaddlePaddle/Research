@@ -1,7 +1,5 @@
 # Building Chinese Biomedical Language Models via Multi-Level Text Discrimination
 
-## Introduction
-
 This repo introduces **eHealth**, a Chinese biomedical language model pre-trained from in-domain text of de-identified online doctor-patient dialogues, electronic medical records, and textbooks.
 
 eHealth is trained from scratch with a new self-supervised generator-discriminator framework. The generator is used to produce corrupted input and will be discarded after pre-training. The discriminator, which is the final target encoder, is trained via multi-level discrimination: (i) **token-level discrimination** that detects input tokens corrupted by the generator and selects original signals from plausible candidates; and (ii) **sequence-level discrimination** that further detects corruptions of a same original sequence from those of the others.
@@ -23,7 +21,7 @@ eHealth discriminator shares identical architecture with [ERNIE Base](https://gi
 
 ## Benchmarking
 
-**Results on CBLUE Test**
+We provide eHealth's performance on [CBLUE](https://github.com/alibaba-research/ChineseBLUE) (Chinese Biomedical Language Understanding Evaluation) benchmark, which is composed of 8 diversified biomedical NLP tasks, ranging from medical text classification and matching to medical information extraction and medical term normalization.
 | Model                 | CMeEE | CMeIE | CDN  | CTC  | STS  | QIC  | QTR  | QQR  |   Avg.   |
 |:----------------------|:------|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|:--------:|
 | BERT-base             | 66.5  | 60.6  | 69.7 | 68.6 | 84.7 | 85.2 | 59.2 | 82.5 |   72.1   |
