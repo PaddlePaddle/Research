@@ -21,7 +21,7 @@ eHealth discriminator shares identical architecture with [ERNIE Base](https://gi
 
 ## Benchmarking
 
-We provide eHealth's performance on [CBLUE](https://github.com/alibaba-research/ChineseBLUE) (Chinese Biomedical Language Understanding Evaluation) benchmark, which is composed of 8 diversified biomedical NLP tasks, ranging from medical text classification and matching to medical information extraction and medical term normalization.
+We provide eHealth's performance on [CBLUE](https://github.com/CBLUEbenchmark/CBLUE) (Chinese Biomedical Language Understanding Evaluation) benchmark, which is composed of 8 diversified biomedical NLP tasks, ranging from medical text classification and matching to medical information extraction and medical term normalization.
 | Model                 | CMeEE | CMeIE | CDN  | CTC  | STS  | QIC  | QTR  | QQR  |   Avg.   |
 |:----------------------|:------|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|:--------:|
 | BERT-base             | 66.5  | 60.6  | 69.7 | 68.6 | 84.7 | 85.2 | 59.2 | 82.5 |   72.1   |
