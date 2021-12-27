@@ -1,6 +1,9 @@
 # PAIR
 This is a repository of the paper: [PAIR: Leveraging Passage-Centric Similarity Relation for Improving Dense Passage Retrieval](https://aclanthology.org/2021.findings-acl.191/), ACL 2021. 
 
+News: We have released a new repository for the RocketQA series: https://github.com/PaddlePaddle/RocketQA. The repo provides an easy-to-use toolkit for running and fine-tuning the state-of-the-art dense retrievers. We will continue to maintain that repo in the future.
+
+
 ## Introduction
 PAIR is a novel approach to improving dense passage retrieval. The three major technical contributions include introducing formal formulations of the two kinds of similarity relations, generating high-quality pseudo labeled data via knowledge distillation, and designing an effective two-stage training procedure that incorporates passage-centric similarity relation constraint.
 The experiment results show that PAIR significantly outperforms previous state-of-the-art models on both MSMARCO and Natural Questions (NQ).  
