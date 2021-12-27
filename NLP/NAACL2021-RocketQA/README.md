@@ -1,6 +1,8 @@
 # RocketQA
 This is a repository of the paper: [RocketQA: An Optimized Training Approach to Dense Passage Retrieval for Open-Domain Question Answering](https://arxiv.org/pdf/2010.08191.pdf), NAACL 2021. 
 
+News: We have released a new repository for the RocketQA series: https://github.com/PaddlePaddle/RocketQA. The repo provides an easy-to-use toolkit for running and fine-tuning the state-of-the-art dense retrievers. We will continue to maintain that repo in the future.
+
 ## Introduction
 RocketQA is an optimized training approach to improving dense passage retrieval. The three major technical contributions include cross-batch negatives, denoised hard negative sampling and data augmentation. 
 The experiment results show that RocketQA significantly outperforms previous state-of-the-art models on both MSMARCO and Natural Questions (NQ), and the performance of end-to-end QA can be improved based on RocketQA retriever.  
