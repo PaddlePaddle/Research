@@ -1,7 +1,7 @@
 # PAIR
 This is a repository of the paper: [PAIR: Leveraging Passage-Centric Similarity Relation for Improving Dense Passage Retrieval](https://aclanthology.org/2021.findings-acl.191/), ACL 2021. 
 
-News: We have released a new repository for the RocketQA series: https://github.com/PaddlePaddle/RocketQA. The repo provides an easy-to-use toolkit for running and fine-tuning the state-of-the-art dense retrievers. We will continue to maintain that repo in the future.
+***News: We have released a new repository for the RocketQA series: https://github.com/PaddlePaddle/RocketQA. The repo provides an easy-to-use toolkit for running and fine-tuning the state-of-the-art dense retrievers. We will continue to maintain that repo in the future.**
 
 
 ## Introduction
