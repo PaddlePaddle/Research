@@ -1,0 +1,129 @@
+# global configs
+Global:
+  pretrained_model: null
+  output_dir: "./output/"
+  device: 'cpu'
+  lr: 0.001
+  use_visualdl: True
+  save_interval: 2000
+  epochs: 120
+  # used for static mode and model export
+  image_shape: [3, 224, 224]
+
+# model architecture
+Arch:
+  name: "MMFModel"
+  Image2Vec:
+    name: "ResNetCustom"
+    pretrained: null
+    num_bottleneck: 256
+    droprate: 0.001
+    stop_layer: "feamap"
+  Word2Vec:
+    name: "GeoHash"
+    precious: 40
+    coor_type: "bd09mc"
+  FuseBody:
+    name: "AttentionFuse"
+    cls_nums: 40
+    num_bottleneck: 256
+    num_heads: 1
+  Neck:
+    name: "BottleNeck"
+    input_dim: 512
+    num_bottleneck: 512
+  Head:
+    name: "ArcMarginProduct"
+    in_features: 512
+    out_features: 69017
+    m: 0.3
+    s:  30
+
+# loss function config for traing/eval process
+Loss:
+  Train:
+    - CELoss:
+        weight: 1.0
+  
+# data loader for train and eval
+DataLoader:
+  Train:
+    dataset:
+        name: ImgGeoDataset
+        image_root: "/data3/data/imggeo"
+        cls_label_path: "/data3/data/imggeo/train.imggeo.mini.bak"
+    transform_ops:
+        - RandomCropResize:
+            size: [224, 224]
+            ratios: [0.8, 1]
+        - RandomHSV:
+            p: 0.5
+            h: 15
+            s: 0.5
+            v: 0.5
+        - RandomRotate90:
+            p: 0.5
+        - RandomRotation:
+            p: 0.5
+            angle: 15
+        - ToTensor: 
+        - Normalize:
+            mean: [0.5, 0.5, 0.5]
+            std: [0.5, 0.5, 0.5] 
+        - RandomErasing:
+            probability: 0.5
+            mean: [0, 0, 0]
+    sampler:
+        batch_size: 8
+
+    loader:
+        drop_last: False
+        num_workers: 16
+        shuffle: True
+        
+  Query:
+    dataset:
+      name: ImgGeoDataset
+      image_root: "/data3/data/data_home/sb_match_data2.4/"
+      cls_label_path: "/data3/data/imggeo/query.mini.bak"
+    transform_ops:
+        - Resize:
+            size: [224, 224]
+        - ToTensor: 
+        - Normalize:
+            mean: [0.5, 0.5, 0.5]
+            std: [0.5, 0.5, 0.5] 
+    sampler:
+        batch_size: 8
+    loader:
+        drop_last: False
+        num_workers: 16
+        shuffle: False
+
+  Gallery:
+    dataset:
+      name: ImgGeoDataset
+      image_root: "/data3/data/data_home/sb_match_data2.4/"
+      cls_label_path: "/data3/data/imggeo/index.mini.bak"
+    transform_ops:
+        - Resize:
+            size: [224, 224]
+        - ToTensor: 
+        - Normalize:
+            mean: [0.5, 0.5, 0.5]
+            std: [0.5, 0.5, 0.5] 
+    sampler:
+        batch_size: 8
+    loader:
+        drop_last: False
+        num_workers: 16
+        shuffle: False
+
+
+Metric:
+    Train:
+      name: TopkAcc
+      topk: [1, 2]
+    Eval:
+      name: TopKMAP
+      topk: 10
