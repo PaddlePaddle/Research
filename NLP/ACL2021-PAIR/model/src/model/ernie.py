@@ -191,6 +191,7 @@ class ErnieModel(object):
 #             param_attr=fluid.ParamAttr(
 #                 name="pooled_fc.w_0", initializer=self._param_initializer),
 #             bias_attr="pooled_fc.b_0")
+        next_sent_feat = fluid.layers.squeeze(next_sent_feat, axes=[1])
         return next_sent_feat
 
     def get_lm_output(self, mask_label, mask_pos):
