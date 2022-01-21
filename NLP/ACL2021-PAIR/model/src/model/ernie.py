@@ -184,13 +184,13 @@ class ErnieModel(object):
         """Get the first feature of each sequence for classification"""
         next_sent_feat = fluid.layers.slice(
             input=self._enc_out, axes=[1], starts=[0], ends=[1])
-        next_sent_feat = fluid.layers.fc(
-            input=next_sent_feat,
-            size=self._emb_size,
-            act="tanh",
-            param_attr=fluid.ParamAttr(
-                name="pooled_fc.w_0", initializer=self._param_initializer),
-            bias_attr="pooled_fc.b_0")
+#         next_sent_feat = fluid.layers.fc(
+#             input=next_sent_feat,
+#             size=self._emb_size,
+#             act="tanh",
+#             param_attr=fluid.ParamAttr(
+#                 name="pooled_fc.w_0", initializer=self._param_initializer),
+#             bias_attr="pooled_fc.b_0")
         return next_sent_feat
 
     def get_lm_output(self, mask_label, mask_pos):
