@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # coding=utf-8
 """
-Copyright (c) 2020 Baidu.com, Inc. All Rights Reserved
+Copyright (c) 2022 Baidu.com, Inc. All Rights Reserved
 File: train.py
 Author: fanmiao@baidu.com
 Date: 2022/01/09
