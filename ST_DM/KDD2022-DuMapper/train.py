@@ -3,9 +3,8 @@
 """
 Copyright (c) 2020 Baidu.com, Inc. All Rights Reserved
 File: train.py
-func: 训练启动代码 
-Author: yuwei09(yuwei09@baidu.com)
-Date: 2021/07/19
+Author: fanmiao@baidu.com
+Date: 2022/01/09
 """
 import os
 import sys
