@@ -1,11 +1,10 @@
 #!/usr/bin/env python
 # coding=utf-8
 """
-Copyright (c) 2020 Baidu.com, Inc. All Rights Reserved
+Copyright (c) 2022 Baidu.com, Inc. All Rights Reserved
 File: infer.py
-func: 测试启动代码 
-Author: yuwei09(yuwei09@baidu.com)
-Date: 2021/08/06
+Author: fanmiao@baidu.com
+Date: 2022/01/09
 """
 import os
 from tqdm import tqdm
