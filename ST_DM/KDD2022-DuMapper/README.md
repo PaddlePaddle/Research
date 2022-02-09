@@ -6,10 +6,12 @@ With the increased popularity of mobile devices, web mapping services have becom
 To save the tremendous labor costs, we devised DuMapper, an automatic system for large-scale POI verification with the multimodal street-view data at Baidu Maps. This paper presents not only DuMapper I, which imitates the process of POI verification conducted by expert mappers but also proposes DuMapper II, a highly efficient framework to accelerate POI verification by means of deep multimodal embedding and approximate nearest neighbor (ANN) search. DuMapper II takes the signboard image and the coordinates of a real-world place as input to generate a low-dimensional vector, which can be leveraged by ANN algorithms to conduct a more accurate search through billions of archived POIs in the database for verification within milliseconds. Compared with DuMapper I, experimental results demonstrate that DuMapper II can significantly increase the throughput of POI verification by 50 times. DuMapper has already been deployed to production since June 2018, which dramatically improves the productivity and efficiency of POI verification at Baidu Maps. As of December 31, 2021, it has made over 405 million times of POI verification within a 3.5-year period, representing an approximate workload of 800 high-performance expert mappers. We have also released the source code of DuMapper II at Github to both research and industrial communities for reproducibility tests.
 
 ### How to run
-train.py: 
-
-infer.py:
 
 DME:
 
 ANN:
+train.py: train and build DME model.
+
+infer.py: generate multimodal embedding of a POI.
+
+
