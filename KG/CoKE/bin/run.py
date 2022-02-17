@@ -29,6 +29,10 @@ import random
 
 import numpy as np
 import paddle
+
+if paddle.__version__.startswith('2.'):
+    paddle.enable_static() # into static mode
+
 import paddle.fluid as fluid
 
 from reader.coke_reader import KBCDataReader
