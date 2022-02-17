@@ -14,7 +14,7 @@ CoKE performs consistently better than, or at least equally well as current stat
 ## Requirements
 The code has been tested running under the following environments:
 - Python 3.6.5 with the following dependencies:
-    -  PaddlePaddle 1.5.0
+    -  PaddlePaddle 1.6.0 
     -  numpy 1.16.3
 - Python 2.7.14 for data_preprocess
 
