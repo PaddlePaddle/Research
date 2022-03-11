@@ -1,19 +1,19 @@
-本项目为[CCKS 2021《知识增强的视频语义理解》技术评测任务](https://www.biendata.xyz/competition/ccks_2021_videounderstanding)的基准模型。包括两部分：1）视频分类标签模型 [paddle-video-classify-tag](./paddle-video-classify-tag)；2）视频语义标签模型 [paddle-video-semantic-tag](./paddle-video-semantic-tag)。视频分类标签模型根据视频内容在封闭的二级标签体系上进行分类，得到描述视频的分类标签；视频语义标签模型 从视频的文本信息中抽取实体语义标签（选手可进行升级，如利用给定的知识库进行推理、融合多模信息提升标签理解效果，或生成标签等）。两部分模型产出的标签结果，分别对应技术评测数据集中提供的分类标签、语义标签。
+本项目为《知识增强的视频语义理解》技术评测任务的基准模型。包括两部分：1）视频分类标签模型 [paddle-video-classify-tag](./paddle-video-classify-tag)；2）视频语义标签模型 [paddle-video-semantic-tag](./paddle-video-semantic-tag)。视频分类标签模型根据视频内容在封闭的二级标签体系上进行分类，得到描述视频的分类标签；视频语义标签模型 从视频的文本信息中抽取实体语义标签（选手可进行升级，如利用给定的知识库进行推理、融合多模信息提升标签理解效果，或生成标签等）。两部分模型产出的标签结果，分别对应技术评测数据集中提供的分类标签、语义标签。
 
 ## 数据集预处理
 
-首先下载训练和测试数据，并如下组织目录结构（注意根目录和各子目录中的`CCKS_dataset`为同一个文件夹）：
+首先下载训练和测试数据，并如下组织目录结构（注意根目录和各子目录中的`dataset`为同一个文件夹）：
 
 ```
 DuKEVU_baseline
-   |-- CCKS_dataset
-      |-- ccks2021
+   |-- dataset
+      |-- dataset
          |-- train.json
          |-- test_a.json
    |-- paddle-video-classify-tag
-       |-- CCKS_dataset -> ../CCKS_dataset
+       |-- dataset -> ../dataset
    |-- paddle-video-semantic-tag
-       |-- CCKS_dataset -> ../CCKS_dataset
+       |-- dataset -> ../dataset
 ```
 
 ## 实验环境配置
@@ -27,7 +27,7 @@ conda create -n paddle2.0 python=3.8
 conda activate paddle2.0
 conda install paddlepaddle-gpu==2.0.2 cudatoolkit=10.0 -c paddle
 pip install opencv-python -i https://mirror.baidu.com/pypi/simple
-pip install --upgrade paddlenlp -i https://mirror.baidu.com/pypi/simple
+pip install paddlenlp==2.0.1 -i https://mirror.baidu.com/pypi/simple
 pip install tqdm wget
 ```
 

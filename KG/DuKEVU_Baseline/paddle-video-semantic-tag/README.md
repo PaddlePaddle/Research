@@ -7,7 +7,7 @@
 注：我们在数据处理阶段去除了未在title中出现的语义标签。
 
 ```bash
-python prepare_ccks_semantic_tag.py
+python prepare_semantic_tag.py
 ```
 
 得到如下的输出文件：
@@ -22,7 +22,6 @@ paddle-video-semantic-tag
 ```
 
 ## 训练与验证
-
 本模型使用了PaddleNLP模型库中的`bert-wwm-ext-chinese`模型，更多模型可参考[PaddleNLP Transformer API](https://github.com/PaddlePaddle/PaddleNLP/blob/develop/docs/transformers.md)。
 
 ```bash
@@ -35,7 +34,7 @@ python train_semantic_tag.py \
     --num_train_epochs 3 \
     --logging_steps 1 \
     --save_steps 500 \
-    --output_dir ./data/checkpoints/ccks_semantic_tag/ \
+    --output_dir ./data/checkpoints/semantic_tag/ \
     --device gpu
 ```
 
@@ -60,7 +59,7 @@ python predict_semantic_tag.py \
     --max_seq_length 128 \
     --batch_size 32 \
     --device gpu \
-    --init_checkpoint_path data/checkpoints/ccks_semantic_tag/model_2500.pdparams
+    --init_checkpoint_path data/checkpoints/semantic_tag/model_2500.pdparams
 ```
 
 生成的命名实体识别结果存储在`./predict_results/ents_results.json`

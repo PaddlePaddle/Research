@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Baidu.com, Inc. All Rights Reserved.
+# Copyright (c) 2022 Baidu.com, Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import argparse
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--test_path", type=str, default="CCKS_dataset/ccks2021/test_a.json")
+    "--test_path", type=str, default="dataset/dataset/test_a.json")
 parser.add_argument(
     "--category_level1_result",
     type=str,
