@@ -1,4 +1,4 @@
-# Copyright (c) 2021 Baidu.com, Inc. All Rights Reserved.
+# Copyright (c) 2022 Baidu.com, Inc. All Rights Reserved.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -23,17 +23,17 @@ import random
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--trainval_path", type=str, default="CCKS_dataset/ccks2021/train.json")
+    "--trainval_path", type=str, default="dataset/dataset/train.json")
 parser.add_argument(
-    "--test_path", type=str, default="CCKS_dataset/ccks2021/test_a.json")
+    "--test_path", type=str, default="dataset/dataset/test_a.json")
 parser.add_argument(
     "--trainval_tsn_feature_dir",
     type=str,
-    default="CCKS_dataset/tsn_features_train")
+    default="dataset/tsn_features_train")
 parser.add_argument(
     "--test_tsn_feature_dir",
     type=str,
-    default="CCKS_dataset/tsn_features_test_a")
+    default="dataset/tsn_features_test_a")
 
 
 def create_splits_indice(n_samples, SPLITS):

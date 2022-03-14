@@ -9,8 +9,8 @@
 
 ```
 DuKEVU_baseline
-   |-- CCKS_dataset
-      |-- ccks2021
+   |-- dataset
+      |-- dataset
          |-- train.json
          |-- test_a.json
       |--tsn_features_train
@@ -25,13 +25,13 @@ DuKEVU_baseline
 
 ```bash
 export CUDA_VISIBLE_DEVICES=0
-python tsn_extractor.py --model_name=TSN --config=./configs/tsn-single.yaml --weights=./weights/tsn.pdparams --filelist=./data/TsnExtractor.list --save_dir=./CCKS_dataset/tsn_features
+python tsn_extractor.py --model_name=TSN --config=./configs/tsn-single.yaml --weights=./weights/tsn.pdparams --filelist=./data/TsnExtractor.list --save_dir=./dataset/tsn_features
 ```
 
 如下准备视频语义理解数据集的label集合；准备训练、验证、测试的样本列表等。
 
 ```bash
-python prepare_ccks_videotag.py
+python prepare_videotag.py
 ```
 
 由于数据集上有两级标签，我们分别在一级标签（level1）和二级标签（level2）的设定下进行分类实验。
