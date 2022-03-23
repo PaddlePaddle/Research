@@ -1,0 +1,5 @@
+perpetrator | select date from perpetrator # 1
+perpetrator | group by country order by location asc # 1
+perpetrator | where killed no more than 30 # 1
+perpetrator | select date from perpetrator # 2
+perpetrator | order by location asc # 1

@@ -1,0 +1,937 @@
+a movie receive 4 or 5 star rating
+the years from oldest to most recently
+return the title of these movies
+movies with 5 star rating
+what are the names of the directors , and what was the name of those movies
+a movie with 5 star rating
+what is the average rating star for each reviewer
+what is the average number of stars that each reviewer
+Find the titles of all movies
+movies that have no ratings
+what are the titles of all movies
+movies that have not been rated
+Find the names of all reviewers
+ratings with a null
+what are the different names of all reviewers
+ratings do not have a date
+what is the average rating stars and title for the oldest movie
+what is its average rating and title
+the most recent movie
+what is the title of the movie
+the newest movie
+what is the maximum stars and year for the movie
+the most recent movie
+what is highest rating and when was it released
+the most recent movie
+what is the names of movies
+movies whose created year is after all movies
+movies directed steven spielberg
+what are the names of all movies
+created after the most recent
+what are the titles and directors of the movies
+star is greater than the average stars
+the movies directed by James Cameron
+what are the titles and directors of all movies
+rating higher than the average rating
+what is the reviewer name , film title , movie rating , and rating date for every movie
+ordered by reviewer name
+find the names of all reviewers
+what are the names of all reviewers
+Find the names of all reviewers
+gone with the wind
+what are the names of all the different
+Find the names of all directors
+movies are rated by Sarah Martinez
+What are the names of all directors
+movies have been reviewed by Sarah Martinez
+return the titles of all movies directed by them , along with the director name .
+sort by director name
+what are the titles and dates of release for all those movies
+what are the names of the directors
+what are the names of all directors
+what are the names of the directors
+excluding director null
+except for the director named null
+how many movie reviews does each director
+For each director, how many reviews have they received
+Return the movie titles and average rating
+movies with the highest average rating
+what are the movie titles and what are those ratings
+the movies with the highest average rating
+what are the movie titles and average rating of the movies
+the movies with the lowest average rating
+what are the titles and average ratings for all movies
+all movies that have the lowest average rating
+what are the names and years of the movies
+the movies that has the top 3 highest rating star
+what are the names and years released for the movies
+the movies with the top 3 highest ratings
+director , what is the title and score of their most poorly rated movie
+the movie that is rated by most of times
+what is the name of the movie
+the movie that has been reviewed the most
+what are the titles of all movies
+what are the titles of all movies
+find the names of reviewers
+who had given higher than 3 star ratings
+what are the names of the reviewers
+who have rated a movie more than 3 stars
+find the average rating star for each movie
+that are not reviewed by brittany harris
+what is the average rating for each movie
+been reviewed by brittany harris
+find the average rating star for each movie
+Find the ids of reviewers
+reviewers who didn't only give 4 star
+what are the ids of all reviewers
+reviewers who have not given 4 stars
+what are names of the movies
+reviewed by brittany harris
+what are the names of all movies
+reviewed by brittany harris
+what are names of the movies
+movies that are either made before 1980 or directed by James Cameron
+what are the names of all movies
+had james cameron as the director
+how many counties
+count the number of counties
+list the names of counties
+in descending order of population
+what are the names of the counties of public safety
+ordered by population descending
+list the distinct police forces of counties
+whose location is not on east side
+what are the different police forces of counties
+counties that are not located in the east
+what are the minimum and maximum crime rate
+return the minimum and maximum crime rates
+show the crime rates of counties
+in ascending order of number of police officers
+what are the crime rates of counties
+sorted by number of offices ascending
+what are the names of cities
+the names of cities in ascending alphabetical order
+return the names of cities
+the names of cities , ordered alphabetically
+What are the percentage of hispanics in cities
+cities with the black percentage higher than 10
+return the hispanic percentage for cities
+cities in which the black percentage is greater than 10
+list the name of the county
+the largest population
+what is the name of the county
+the greatest population
+list the names of the city
+the top 5 white percentages
+what are the names of the five cities
+the five cities with the greatest proportion of white people
+show names of cities and names of counties they are in
+what are the names of cities , as well as the names of the counties they correspond to
+show white percentages of cities and the crime rates of counties they are in
+what are the white percentages of cities , and the corresponding crime rates of the counties
+show the name of cities
+the largest number of police officers
+what are the names of cities
+the county with the most police officers
+show the number of cities in counties
+counties that have population more than 20000
+how many cities are in counties
+counties that have populations of over 20000
+show the crime rate of counties
+city having white percentage more than 90
+what are the crime rates of counties
+cities that have white percentages of over 90
+show the police forces and the number of counties with each police force
+how many counties correspond to each police force
+what is the location
+the location shared by most counties
+location has the most corresponding counties
+list the names of counties
+what are the names of counties
+counties that do not contain any cities
+show the names of cities in counties
+counties that have a crime rate less than 100
+what are the names of cities
+counties that have a crime rate below 100
+show the case burden of counties
+in descending order of population
+what are the case burdens of counties
+ordered descending by population
+find the names of all modern rooms
+with a base price below $ 160
+what are the names of modern rooms
+that have a base price lower than $ 160
+report room names and ids
+rooms that have a price higher than 160
+what are the room names and ids of all the rooms
+rooms that cost more than 160
+Find the most popular room in the hotel
+the room that had seen the largest number of reservations
+the largest number of reservations
+how many kids stay in the rooms
+Find the number of kids staying in the rooms
+by a person called ROY SWEAZ
+how many times
+find the number of times
+list the room 's full name , rate , check in and check out
+room has the highest rate
+return the name , rate , check in and check out date for the room
+room with the highest rate
+how many adults stay in the room
+checked in on Oct 23, 2010
+Find the number of adults for the room
+checked in on Oct 23, 2010
+how many kids stay in the room
+checked in on Sep 21, 2010
+Return the number of kids for the room
+how many king beds
+king beds
+find the total number of king beds
+king beds
+list the names and decor of rooms
+king bed
+Sort the list by their price
+what are the names and decor of rooms
+Sort them by their price
+List the room's name and the base price
+list the room 's name and the base price
+what are the room name and base price of the room
+the room with the lowest base price
+what is the decor of room
+Return the decor of the room
+room named recluse and defiance
+List bed type and average base price
+find the average base price of different bed type
+what is the total number of people who could stay in the modern rooms
+modern rooms
+how many people in total can stay in the modern rooms
+modern rooms
+what kind of decor
+decor has the least number of reservations
+the least popular kind of decor
+how many rooms
+what is the total number of rooms
+find the number of rooms
+rooms with a king bed
+how many rooms
+rooms have a king bed
+find the number of rooms for each bed type
+what are the number of rooms for each bed type
+find the name of the room
+the room with the maximum occupancy
+what is the name of the room
+room that can accommodate the most people
+find the id and name of the most expensive base price room
+the most expensive base price
+room has the highest base price
+list the type of bed and name of all rooms
+what are the bed type and name of all the rooms
+the rooms with traditional decor
+find the number of rooms with king bed for each decor
+report the number for each decor
+find the average and minimum price of the rooms in different decor
+what is the average minimum and price of the rooms for each different decor
+list the name of all rooms
+sorted by their prices
+just report the room names
+Sort all the rooms according to the price
+find the number of rooms with price higher than 120 for different decor
+rooms with price higher than 120
+how many rooms cost more than 120 , for each different decor
+rooms cost more than 120
+for each bed type , find the average room
+what is the average base price of rooms , for each bed type
+list the name of rooms
+what are the names of rooms
+how many different types of beds
+find the number of distinct bed types
+find the name and id of the rooms
+the top 3 expensive rooms
+what are the name and id of the rooms
+the three highest priced rooms
+find the name of rooms
+price is higher than the average price
+what are the name of rooms
+cost more than the average
+find the number of rooms
+find the number of rooms
+how many rooms
+how many rooms
+return the name and number of reservations made for each of the rooms
+find the names of rooms
+what are the names of rooms
+find the name of rooms
+give me the room names
+find the name of rooms
+customers whose first name contains roy
+what are the name of rooms
+whose first name has `` roy
+what are the details of the cmi masters
+cmi masters that have the cross reference code tax
+order by benifit id
+the customer master index whose detail is not ' Schmidt , Kertzmann and Lubowitz '
+the cross reference source system code ' Electoral '
+how many different source system code
+sort them by details in descending order
+list the council tax ids and their related cmi cross
+how many council taxes
+what are the distinct cross reference source system codes
+which distinct source system code
+source system code includes the substring en
+how many parties
+count the number of parties
+list the themes of parties
+in ascending order of number of hosts
+what are the themes of parties
+ordered by the number of hosts in ascending manner
+what are the themes and locations of parties
+give me the theme and location of each party
+show the first year and last year of parties
+parties with theme `` spring
+what are the first year and last year of the parties
+parties whose theme is `` spring
+what is the average number of hosts for parties
+compute the average number of hosts for parties
+what is the location of the party
+party with the most hosts
+Give me the party location
+party had the most hosts
+show different nationalities along with the number of hosts of each nationality
+how many hosts does each nationality have ? list the nationality
+show the most common nationality of hosts
+the most common nationality of hosts
+nationality has the most hosts
+show the themes of parties and the names of the party
+return its theme and the name of its host
+show the locations of parties and the names of the party
+in ascending order of the age of the host
+find its location and the name of its host
+sort the result in ascending order of the age of the host
+show the locations of parties
+parties with hosts older than 50
+Give me the party locations
+hosts of age above 50
+show the host names for parties
+parties with number of hosts greater than 20
+Give me the host names for these parties
+parties have more than 20 hosts
+show the name and the nationality
+the oldest host
+what are the name and the nationality of the host
+the highest age
+list the names of hosts
+hosts who did not serve as a host of any party
+what are the names of hosts
+hosts who did not host any party
+how many regions
+count the number of regions
+show all region code and region name
+sorted by the codes
+what are the codes and names for all regions
+sorted by codes
+list all region names
+region names in alphabetical order
+what are the names of the regions
+the names of the regions in alphabetical order
+show names for all regions
+names for all regions except for denmark
+return the names of all regions
+names of all regions other than denmark
+how many storms
+storms had death records
+count the number of storms
+storms in which at least 1 person died
+list name , dates active , and number of deaths for all storms
+number of deaths for all storms with at least 1 death
+what are the names , dates active , and number of deaths for storms
+number of deaths for storms that had 1 or more death
+show the average and maximum damage for all storms
+storms with max speed higher than 1000
+what is the average and maximum damage in millions for storms
+storms that had a max speed over 1000
+what is the total number of deaths and damage for all storms
+with a max speed greater than the average
+return the total number of deaths and total damange in millions for storms
+that had a max speed greater than the average
+list name and damage for all storms
+in a descending order of max speed
+what are the names and damage in millions for storms
+ordered by their max speeds descending
+how many regions
+count the number of different affected regions
+show the name for regions
+regions not affected
+what are the names of regions
+regions that were not affected
+show the name for regions and the number of storms for each region
+how many storms occured in each region
+list the name for storms and the number of affected regions for each storm
+how many regions were affected by each storm ?
+what is the storm name and max speed
+the storm which affected the greatest number of regions
+return the name and max speed of the storm
+the storm that affected the most regions
+show the name of storms
+storms which don't have affected region
+what are the names of storms
+storms that did not affect any regions
+what are the region names
+storm with a number of deaths of least 10
+return the names of the regions
+storms that had a death count of at least 10
+show all storm names
+affecting region `` denmark
+what are the names of the storms
+storms that affected denmark
+show the region name
+what are the names of regions
+find the names of the regions
+the storm that killed the greatest number of people
+what are the names of regions
+the storm in which the most people died
+how many counties are there in total
+count the total number of counties
+show the county name and population of all counties
+what are the name and population of each county
+show the average population of all counties
+on average how large is the population of the counties
+return the maximum and minimum population among all counties
+what are the maximum and minimum population of the counties
+show all the distinct districts for elections
+what are the distinct districts for elections
+show the zip code of the county
+county with name `` howard
+what is the zip code the county
+county named `` howard is located in
+show the delegate
+from district 1 in election
+who is the delegate in the elections
+district 1 in the elections
+show the delegate and committee information of elections
+what are the delegate and committee information for each election
+how many distinct governors
+count the number of distinct governors
+show the lieutenant governor and comptroller
+from the democratic party
+Who are the lieutenant governor and comptroller from the democratic party
+from the democratic party
+in which distinct years
+governor eliot spitzer
+find the distinct years
+governor was named eliot spitzer
+show the delegates and the names of county
+what are the delegate and name of the county they belong to , for each county
+counties with population smaller than 100000
+find the delegates
+counties with population below 100000
+how many distinct delegates
+counties with population larger than 50000
+count the number of distinct delegates
+counties with population above 50000
+what are the names of the county
+appropriations '' committee belong to
+give me the county names
+appropriations '' committee belong to
+show the delegates and the names of the party
+for each delegate , find the names of the party they are part
+who are the governors of the parties
+from district 1
+Who served as governors of the parties
+from district 1
+Who served as comptrollers of the parties
+return all the committees
+from democratic party
+from the democratic party
+show the name of each county along with the corresponding number of delegates from that county
+for each county , find the name of the county and the number of delegates from that county
+show the name of each party and the corresponding number of delegates from that party
+return the name of the party and the number of delegates from that party
+return the names of all counties
+sorted by population in ascending order
+counties in ascending order of population
+the most common nationality of hosts
+nationality has the most hosts
+the storm name which affected the greatest number of regions
+the storm that affected the most regions
+party that has the most delegates
+party has the largest number of delegates
+people that have been governor the most times
+people severed as governor most frequently
+comptroller the most times and the corresponding number of times
+people severed as comptroller most frequently
+the most common nationality for journalists
+advisor has most of students
+major has least number of students
+restaurant did the students spend the least amount of time
+student visited restaurant most often
+product that has been ordered the greatest number of times
+the payment method that is used most frequently
+route that has the highest number of deliveries
+the country that has published the most papers
+the country that the most papers are affiliated with
+the name of the organization that has published the largest number of papers
+institution has the most papers
+the most popular first name of the actors
+the most common first name among all actors
+city has the most addresses
+the city with the most addressed
+film has the most number of actors or actresses
+the movie with the greatest number of actors
+film actor ( actress ) starred the most films
+the actor or actress who starred in the greatest number
+store owns most items
+storm that has the most items in inventory
+customer , who has made at least one payment , has spent the least money
+the customer who has the lowest total amount of payment
+film has the most copies in the inventory
+the film that has the greatest number of copies in inventory
+inventory id of the item in the inventory which was rented most frequently
+inventory id of the film that is rented most often
+staff handled least number of payments
+the staff who has handled the fewest payments
+store has most the customers
+the store with the most customers
+the name of all different customers who have some loan sorted by their total loan amount
+the names of the different customers who have taken out a loan , ordered by the total amount
+the name of customer who has the highest amount of loans
+the name of the customer who has greatest total loan amount
+the state which has the most number of customers
+state has the greatest total number of bank customers
+the name of bank branch that provided the greatest total amount of loans
+the name of the bank branch that has lent the greatest amount
+the name of bank branch that provided the greatest total amount of loans
+the name of the bank branch that has lended the largest total amount in loans
+the student that has the most number of assessment notes
+the 3 teachers that have the most number of assessment notes
+the student that has the most behavior incidents
+the teacher that has the most detentions
+the student whose addresses have the highest average monthly rental
+the student address with the highest average monthly rental
+description of the most frequent behavior incident type
+description of the least frequent detention type
+engineer has visited the most times
+engineer visits are required at most for a single fault log
+part fault requires the most number of skills to fix ?
+part has the least number of faults
+engineer makes the least number of visits
+fault log included the most number of faulty parts
+skill is used in fixing the most number of faults
+gender makes up the majority of the staff
+train whose route runs through greatest number of stations
+the station with has the highest average high temperature
+code of the job has most employees
+code of the job with the most employee
+school has the smallest amount of professors
+school has the fewest professors
+department whose students have the highest average gpa
+department has the highest average student gpa
+the department that offers the largest number of credits
+department offers the most credits all together
+department that has the largest number of students enrolled
+the department with the most students enrolled
+department where has the smallest number of professors
+the department with the fewest professors
+department where has the largest number of professors
+department has the most professors
+the department that has the highest number of students
+the department with the most students
+the departments that have the top 3 highest number of students
+the departments that have the 3 most students
+the most common type of competition
+the most common competition type
+country did participated in the most number of competitions
+country that participated in the most competitions
+the most popular file format
+the file format that is used by the most files
+the language used most often in the songs
+the languages that are used most often in songs
+the language that was used most often in songs
+language , that has the most songs
+ordered alphabetically by language
+ordered by genre
+ordered alphabetically by genre
+the three artists who have produced the most songs
+the three artists who have produced the most songs
+the artist who made the least number of songs
+artist who made the fewest songs from
+the top 3 artists who have the largest number of songs
+the top 3 artists with the largest number of songs
+the college with the largest number of baseball players
+the college that has the most baseball players
+the player with the most all star game experiences
+player has the most all star game experiences
+the team that has the largest average number of attendance
+the team that has the highest average attendance
+who won the most manager award
+manager won the most manager award
+3 players won the most player awards
+the top three players won the most player won the most player awards
+three countries which are the origins of the least players
+the three countries that the least players are from
+the team offering the lowest average salary
+team offers the lowest average salary
+the team with the most victories postseason
+the team that won the most times in postseason
+year did the least people enter hall of fame
+the year in which the least people enter hall of fame
+cameras that have taken picture of the most mountains
+the program that is broadcast most frequently
+program is broadcast most frequently
+result in descending order of count
+the course author that teaches the most courses
+the course author who teaches the most courses
+sort by the course count in ascending order
+each subject in ascending order of the course counts
+the course that has the most student enrollment
+course is enrolled in by the most students
+the student with the most course enrollments
+the student who are enrolled in the most courses
+claim incurred the most number of settlements
+the claim that incurred the most settlement count
+the claim with the most recent claim settlement date ?
+the claim with the most recent settlement date
+the most popular payment method
+payment method is used the most
+payment method were the least number of payments
+the payment method that were used the least often
+policy type was chosen by the most customers
+the policy type the most customers choose
+department has the largest number of employees
+the department with the most employees
+department has the least number of employees
+the department with the least employees
+department has least number of employees
+the department with the least employees
+the nurse has the most appointments
+nurse who the largest number of appointments
+the most common type of ships
+the most common type of ships
+classroom has the most students
+the classroom that the most students use
+the most common headquarter for companies
+studio that have the most number of films
+studio that created the most films
+the role code with the largest number of employees
+the code of the role that have the most employees
+the role code with the least employees
+the role with the smallest number of employees
+the location code with the most documents
+the code of the location with the largest number of documents
+code with the least documents
+code of the location with the smallest number of documents
+club has the most members
+the club which has the largest number of members
+the name of the club that has the most students
+club has the most students as their members
+the organisation which has the most number of research staff
+the organization that has the most research staff
+organisation type hires most research staff
+the type of the organization with the most research staff
+project made the most number of outcomes
+the project with the most outcomes
+organisation hired the most number of research staff
+the organization with the most research staff
+project staff involved in most number of project outcomes
+the role that is involved with the most number of projects
+documents can one grant have at most
+grant id which one has the most
+the organisation id with the maximum outcome count
+the organization with the maximum number of outcomes
+the organization with the most projects
+role is most common for the staff
+the most common role for the staff
+person whose friends have the oldest average age
+the name of the person who has the oldest average age for their friends
+the most common country across members
+the most popular document type
+the most common document type
+structure of the document with the least number of accesses
+the document that has been accessed the fewest number of times
+users with the most popular role
+users that have the most common role
+the document with the most number of sections
+the document that has the most sections
+the most popular role among the users
+the most popular role among users
+documents with the least popular structure
+documents that have the least common structure
+the building that has the most company offices
+building has the largest number of company offices
+the industries of companies in descending order of the number of companies
+the industries in descending order of the count of companies in each industry
+the industry shared by the most companies
+industry has the most companies
+the most common type code across products
+the most common type of artworks
+customers who have the most mailshots
+department that has the biggest number of students minored in
+the department with the most students minoring in it
+the department that has the fewest members
+the department with the fewest members
+the rank of the faculty that the fewest faculties belong to
+the least common faculty rank
+the instructors who teach the top 3 number of courses
+the 3 instructors who teach the most courses
+the instructor who teaches the most number of courses
+the instructor who teaches the greatest number of courses
+the id of the product that was ordered the most often
+the product id for the product that was ordered most frequently
+the customer who made the largest number of orders
+the customer with the most orders
+the ids of the two department store chains with the largest number of department stores
+the two department store chains with the most department stores
+the id of the department with the least number of staff
+the id of the department with the fewest staff assignments
+product type whose average price is higher than the average price of all products
+the product type with an average price higher than the average price of all products
+the supplier who supplies the most products
+the supplier who supplies the greatest number of products
+alphabetically ordered by product type
+ordered by product type
+winning aircraft the most number of times
+aircraft that has won an award the most
+the pilot who has won the most number of times
+who has won the most number of times
+resident id in descending order of the count
+the maximum number that a certain service is provided
+the school that has the most players
+the school the most players belong to
+denominations and the corresponding number of schools in descending order
+denominations in descending order of the count of schools with the denomination
+the city with the most number of stores
+the city with the most number of flagship stores
+the most prominent max page size among all the products
+the most common maximum page size
+products that are not using the most frequently-used max page size
+products that are not the most frequently-used maximum page size
+position is most popular among players in the tryout
+the most popular position at tryouts
+the number of students who participate in the tryout for each college ordered by descending count
+participated in tryouts for each college by descennding count
+the shop that has the most kind of devices in stock
+the shop that has the most different kinds of devices in stock
+the shop that have the largest quantity of devices in stock
+the shop that has the greatest quantity of devices in stock
+the software platforms of devices in descending order of the count
+the different software platforms for devices , ordered by frequency
+the software platform shared by the greatest number of devices
+the software platform that is most common amongst all devices
+the payment method code used by the most orders
+the payment method that is used the most often in all the invoices
+code of the type of service that is performed the most often
+code of the service type that is performed the most times
+the marketing region code that has the most drama workshop groups
+marketing region has the most drama workshop groups
+the most frequent status of bookings
+status code is the most common of all the bookings
+the product id of the most frequently ordered item on invoices
+the id of the product ordered the most often on invoices
+the label that has the most albums
+the label with the most albums
+the last name of the musician that have produced the most number of songs
+the last name of the musician who was in the most songs
+last name of the musician that has been at position the most
+last name of the musicians who has played back position the most
+the most used instrument
+instrument is used the most
+song has the most vocals
+the song with the most vocals
+type is the most frequently appearring type
+the type of vocables that appears most frequently
+type played the most
+the type of vocals that played the most
+last name of the musician that have produced the most songs
+last name of the artist who sang the most songs
+type has played the most
+the types of vocals that played the most
+the first name of the band mate that has performed in most songs
+first name of the band mate who perfomed in the most songs
+type has played the most
+the vocal type played the most
+the product with the most problems have
+product has the most problems
+products which have the largest number of problems
+the three products that have the most problems
+the membership level with most number of members
+the membership level with the most people
+the branch with most number of memberships
+the branch that registered the most members
+major has the most students
+the major that is studied by the largest number of students
+the most common major among students
+the major that is studied by the most students
+the city_code of the city that the most students live in
+the code of the city that has the most students
+the description of the color for most products
+the color description that is most common across all products
+the description of the color used by least products
+the color description that is least common across products
+the characteristic name used by most number of the products
+the name of the characteristic that is most common across all products
+the country that has the most stadiums
+the stadium which held the most events
+the swimmer who has the most records
+stadiums that the most swimmers have been to
+the railway that are associated with the most trains
+the most common builder of railways
+the customer who has the most orders
+the customer with the most ordered product quantity
+the code of city where most of students are living in
+the code of the city with the most students
+the largest major
+the largest major
+amenity that is most common in all dorms
+the most common amenity in the dorms
+the dorm that has most number of amenities
+the dorm with the most amenities
+the dorm with least number of amenities
+the dorm with the fewest amount of amenities
+city has the least number of customers
+the city that had the fewest customers
+the product with the most complaints
+the product which has had the greatest number of complaints
+the customer who has filed least amount of complaints
+the customer who has filed the fewest complaints
+customer type with the most customers
+the customer type that is most common
+the top 5 staff who have handled the greatest number of complaints
+the 5 staff members who have handled the most complaints
+state has the most customers
+the state that has the most customers
+the most common college of authors of submissions
+college has the most authors with submissions
+each investor , ordered by average share count
+ordered by average amount of transactions
+the transaction type code that occurs the fewest times
+the transaction type code that occurs the most frequently
+the transaction type that occurs most frequently
+the investor that has the largest number of transactions
+the investors who have the top 3 number of transactions
+transportation method most people choose to get to
+transportation method is used the most often to get to
+code of the attraction type most tourist attractions belong to
+attraction type does the most tourist attractions belong to
+type has most number of games
+type has the most games
+type has least number of games
+the type with the fewest games
+the student who have most number of sports
+the student who played the most sports
+sport has most number of students
+the sport with the most scholarship students
+game name that has most number of hours played
+the game that has been played the most
+payment method is used by most customers
+the payment method that is used most frequently
+customers using the most popular payment method
+the customers who use the most frequently used payment method
+city has the most customers living in
+the city where the most customers live
+the name of the customer that has purchased the most items
+the name of the customer who ordered the most items in total
+the customer that has purchased the least quantity of items
+the customer who ordered the least amount of goods in total
+product has been ordered most number of times
+the most frequently ordered product
+the product whose total order quantity is the largest
+ID of the product bought the most
+the most common result of the music festival
+the result that is most frequent at music festivals
+the results of music festivals ordered by this count
+result , ordered descending by count
+the most common status of roller coasters
+rank is the most common among captains
+the rank for which there are the fewest captains
+flag is most widely used among all ships
+the flag that is most common among all ships
+year were most of ships built
+the year in which most ships were built
+city has hosted the most events
+the city that hosted the most events
+the name of the most popular party form
+the party form that is most common
+the most popular party form
+the party form that is the most common
+the email of the party that has used the services the most number of times
+the party email that has used party services the greatest number of times
+the name of organization that has the greatest number of contact individuals
+the name of the organization which has the most contact individuals
+the home city with the most number of drivers
+the airport that had most number of flights
+the most common company type
+pilot is in charge of the most number of flights
+the statement with most number of accounts
+the statement that has the most corresponding accounts
+the id of the project with least number of documents
+the id of the project that has the fewest corresponding documents
+the document type code with most number of documents
+the code of the document type that is most common
+the budget type code with most number of documents
+the budget type code that is most common among documents with expenses
+project that has the most number of scientists
+the project which has the most scientists assigned to it
+grape whose wine products has the highest average price
+the grape whose wine products have the highest average price
+the top 3 wineries with the greatest number of wines
+3 wineries produce the most wines
+the county where produces the most number of wines
+the county that produces the most wines
+the location with most number of train stations
+station name with greatest number of trains
+city lives most of staffs
+city do the most employees live
+customer status code has least number of customers
+the status code with the least number of customers
+city does has most number of customers
+the city with the most customers
+the vehicle used in lessons for most of the times
+building has most faculty members
+the building that has the largest number of faculty members
+rank has the smallest number of faculty members
+the faculty rank that has the least members
+the faculty who has the most students
+the faculty who advises the most students
+the faculty participating in the most activities
+the faculty who is involved in the largest number of activities
+the activity that has the most faculty members involved in
+activity has the most faculty members participating in
+the student participating in the most activities
+the student who has the most activities
+the activity with the most students
+the activity that has the largest number of student participants
+the airport which is the destination of the most number of routes
+city of the airport that the most routes end at
+the top 10 airlines that operate the most number of routes
+the airline ids with the top 10 most routes
+the airport which is the source for the most number of flight routes
+city of the airport from most of the routes start
+countries has the most number of airlines
+the country with the most number of home airlines
+countries has the most number of airlines
+the countries with the most airlines
+countries and their number of airlines in the descending order of number of airlines
+airlines operate out of each country in descending order
+order the countries by decreasing number of airports
+the number of airports per country , ordered from most to least
+order the cities by decreasing number of airports
+airports per city ordered from most to least
+the number of routes for each source airport , order the results by decreasing number
+how many routes start at that airport , ordered from most to least
+the name of airline which runs the most number of routes
+the name of the airline with the most routes
+airport that runs most number of routes
+the name of the airport with the most number of routes
+airport that runs most number of routes
+the name of the airport that is the destination of the most number of routes
+the customer who has the most orders
+customer made the most orders
+the customer who has the most orders
+the customer who made the most orders
+the order which has the most items
+order deals with the most items
+the customer who has the largest number of orders
+the customer who made the most orders
+the architect who built most mills
+the most common mill type
+the publisher with most number of books
+the publisher that has published the most books
