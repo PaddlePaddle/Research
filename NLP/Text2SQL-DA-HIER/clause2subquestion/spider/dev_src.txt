@@ -1,0 +1,937 @@
+movie 1 | where rating stars no less than 4 # 1 
+movie 1 | order by year # 1 
+movie 1 | select director , title from movie # 1 
+movie 1 | where rating stars equal to 5 # 1 
+movie 1 | select director , title from movie # 2 
+movie 1 | where rating stars equal to 5 # 2 
+movie 1 | select name , avg rating stars from reviewer , rating # 1 
+movie 1 | select name , avg rating stars from reviewer , rating # 2 
+movie 1 | select title from movie # 1 
+movie 1 | movie tab not in rating tab # 1 
+movie 1 | select title from movie # 2 
+movie 1 | movie tab not in rating tab # 2 
+movie 1 | select distinct name from reviewer # 1 
+movie 1 | where ratingdate equal to null # 1 
+movie 1 | select distinct name from reviewer # 2 
+movie 1 | where ratingdate equal to null # 2 
+movie 1 | select avg rating stars , title from rating , movie # 1 
+movie 1 | select avg rating stars , title from rating , movie # 2 
+movie 1 | where year equal to select max year # 1 
+movie 1 | select title from movie # 3 
+movie 1 | where year equal to select max year # 2 
+movie 1 | select max rating stars , year from rating , movie # 1 
+movie 1 | where year equal to select max year # 3 
+movie 1 | select max rating stars , year from rating , movie # 2 
+movie 1 | where year equal to select max year # 4 
+movie 1 | select title from movie # 4 
+movie 1 | where year more than select max year # 1 
+movie 1 | where director equal to stevenspielberg # 1 
+movie 1 | select title from movie # 5 
+movie 1 | where year more than select max year # 2 
+movie 1 | select title , director from movie # 1 
+movie 1 | where rating stars more than select avg t1.stars # 1 
+movie 1 | where director equal to jamescameron # 1 
+movie 1 | select title , director from movie # 2 
+movie 1 | where rating stars more than select avg t1.stars # 2 
+movie 1 | select name , title , rating stars , ratingdate from reviewer , movie , rating # 1 
+movie 1 | order by name # 1 
+movie 1 | select name from reviewer # 1 
+movie 1 | select name from reviewer # 2 
+movie 1 | select distinct name from reviewer # 3 
+movie 1 | where title equal to gonewiththewind # 1 
+movie 1 | select distinct name from reviewer # 4 
+movie 1 | select distinct director from movie # 1 
+movie 1 | where name equal to sarahmartinez # 1 
+movie 1 | select distinct director from movie # 2 
+movie 1 | where name equal to sarahmartinez # 2 
+movie 1 | select title , director from movie # 3 
+movie 1 | order by director # 1 
+movie 1 | select title , year from movie # 1 
+movie 1 | select director from movie # 1 
+movie 1 | select director from movie # 2 
+movie 1 | select director from movie # 3 
+movie 1 | where director not equal to null # 1 
+movie 1 | where director not equal to null # 2 
+movie 1 | select count movie , director # 1 
+movie 1 | select count movie , director # 2 
+movie 1 | select title , avg rating stars from movie , rating # 1 
+movie 1 | order by avg rating stars desc limit 1 # 1 
+movie 1 | select title , avg rating stars from movie , rating # 2 
+movie 1 | order by avg rating stars desc limit 1 # 2 
+movie 1 | select title , avg rating stars from movie , rating # 3 
+movie 1 | order by avg rating stars limit 1 # 1 
+movie 1 | select title , avg rating stars from movie , rating # 4 
+movie 1 | order by avg rating stars limit 1 # 2 
+movie 1 | select title , year from movie # 2 
+movie 1 | order by rating stars desc limit 3 # 1 
+movie 1 | select title , year from movie # 3 
+movie 1 | order by rating stars desc limit 3 # 2 
+movie 1 | select title , rating stars , director , min rating stars from movie , rating # 1 
+movie 1 | order by count rating desc limit 1 # 1 
+movie 1 | select title , mid from movie , rating # 1 
+movie 1 | order by count rating desc limit 1 # 2 
+movie 1 | select title from movie # 6 
+movie 1 | select title from movie # 7 
+movie 1 | select name from reviewer # 3 
+movie 1 | where rating stars more than 3 # 1 
+movie 1 | select name from reviewer # 4 
+movie 1 | where rating stars more than 3 # 2 
+movie 1 | select mid , avg rating stars from rating # 1 
+movie 1 | where name equal to brittanyharris # 1 
+movie 1 | select mid , avg rating stars from rating # 2 
+movie 1 | where name equal to brittanyharris # 2 
+movie 1 | select mid , avg rating stars from rating # 3 
+movie 1 | select rid from rating # 1 
+movie 1 | where rating stars not equal to 4 # 1 
+movie 1 | select rid from rating # 2 
+movie 1 | where rating stars not equal to 4 # 2 
+movie 1 | select distinct title from movie # 1 
+movie 1 | where name equal to brittanyharris # 3 
+movie 1 | select distinct title from movie # 2 
+movie 1 | where name equal to brittanyharris # 4 
+movie 1 | select title from movie # 8 
+movie 1 | where director equal to jamescameron or or year < 1980 # 1 
+movie 1 | select title from movie # 9 
+movie 1 | where director equal to jamescameron # 2 
+county public safety | select count county public safety # 1 
+county public safety | select count county public safety # 2 
+county public safety | select name from county public safety # 1 
+county public safety | order by population desc # 1 
+county public safety | select name from county public safety # 2 
+county public safety | order by population desc # 2 
+county public safety | select distinct police force from county public safety # 1 
+county public safety | where location not equal to east # 1 
+county public safety | select distinct police force from county public safety # 2 
+county public safety | where location not equal to east # 2 
+county public safety | select min crime rate , max crime rate from county public safety # 1 
+county public safety | select min crime rate , max crime rate from county public safety # 2 
+county public safety | select crime rate from county public safety # 1 
+county public safety | order by police officers asc # 1 
+county public safety | select crime rate from county public safety # 2 
+county public safety | order by police officers asc # 2 
+county public safety | select name from city # 1 
+county public safety | order by name asc # 1 
+county public safety | select name from city # 2 
+county public safety | order by name asc # 2 
+county public safety | select hispanic from city # 1 
+county public safety | where black more than 10 # 1 
+county public safety | select hispanic from city # 2 
+county public safety | where black more than 10 # 2 
+county public safety | select name from county public safety # 3 
+county public safety | order by population desc limit 1 # 1 
+county public safety | select name from county public safety # 4 
+county public safety | order by population desc limit 1 # 2 
+county public safety | select name from city # 3 
+county public safety | order by white desc limit 5 # 1 
+county public safety | select name from city # 4 
+county public safety | order by white desc limit 5 # 2 
+county public safety | select name , name from city , county public safety # 1 
+county public safety | select name , name from city , county public safety # 2 
+county public safety | select white , crime rate from city , county public safety # 1 
+county public safety | select white , crime rate from city , county public safety # 2 
+county public safety | select name from city # 5 
+county public safety | order by police officers desc limit 1 # 1 
+county public safety | select name from city # 6 
+county public safety | order by police officers desc limit 1 # 2 
+county public safety | select count city # 1 
+county public safety | where population more than 20000 # 1 
+county public safety | select count city # 2 
+county public safety | where population more than 20000 # 2 
+county public safety | select crime rate from county public safety # 3 
+county public safety | where white more than 90 # 1 
+county public safety | select crime rate from county public safety # 4 
+county public safety | where white more than 90 # 2 
+county public safety | select police force , count county public safety # 1 
+county public safety | select police force , count county public safety # 2 
+county public safety | select location from county public safety # 1 
+county public safety | order by count county public safety desc limit 1 # 1 
+county public safety | order by count county public safety desc limit 1 # 2 
+county public safety | select name from county public safety # 5 
+county public safety | select name from county public safety # 6 
+county public safety | county public safety not in city # 1 
+county public safety | select name from city # 7 
+county public safety | where crime rate less than 100 # 1 
+county public safety | select name from city # 8 
+county public safety | where crime rate less than 100 # 2 
+county public safety | select case burden from county public safety # 1 
+county public safety | order by population desc # 3 
+county public safety | select case burden from county public safety # 2 
+county public safety | order by population desc # 4 
+inn 1 | select roomname from rooms # 1 
+inn 1 | where baseprice less than 160 # 1 
+inn 1 | select roomname from rooms # 2 
+inn 1 | where baseprice less than 160 # 2 
+inn 1 | select roomname , roomid from rooms # 1 
+inn 1 | where baseprice more than 160 # 1 
+inn 1 | select roomname , roomid from rooms # 2 
+inn 1 | where baseprice more than 160 # 2 
+inn 1 | select roomname from rooms # 3 
+inn 1 | order by count reservations desc limit 1 # 1 
+inn 1 | order by count reservations desc limit 1 # 2 
+inn 1 | select kids from reservations # 1 
+inn 1 | select kids from reservations # 2 
+inn 1 | where firstname equal to roy # 1 
+inn 1 | select count reservations # 1 
+inn 1 | select count reservations # 2 
+inn 1 | select roomname , rate , checkin , checkout from rooms , reservations # 1 
+inn 1 | order by rate desc limit 1 # 1 
+inn 1 | select roomname , rate , checkin , checkout from rooms , reservations # 2 
+inn 1 | order by rate desc limit 1 # 2 
+inn 1 | select adults from reservations # 1 
+inn 1 | where checkin equal to 2010-10-23 # 1 
+inn 1 | select adults from reservations # 2 
+inn 1 | where checkin equal to 2010-10-23 # 2 
+inn 1 | select kids from reservations # 3 
+inn 1 | where checkin equal to 2010-09-21 # 1 
+inn 1 | select kids from reservations # 4 
+inn 1 | select sum beds from rooms # 1 
+inn 1 | where bedtype equal to king # 1 
+inn 1 | select sum beds from rooms # 2 
+inn 1 | where bedtype equal to king # 2 
+inn 1 | select roomname , decor from rooms # 1 
+inn 1 | where bedtype equal to king # 3 
+inn 1 | order by baseprice # 1 
+inn 1 | select roomname , decor from rooms # 2 
+inn 1 | order by baseprice # 2 
+inn 1 | select roomname , baseprice from rooms # 1 
+inn 1 | order by baseprice asc limit 1 # 1 
+inn 1 | select roomname , baseprice from rooms # 2 
+inn 1 | order by baseprice asc limit 1 # 2 
+inn 1 | select decor from rooms # 1 
+inn 1 | select decor from rooms # 2 
+inn 1 | where roomname equal to recluseanddefiance # 1 
+inn 1 | select bedtype , avg baseprice from rooms # 1 
+inn 1 | select bedtype , avg baseprice from rooms # 2 
+inn 1 | select sum maxoccupancy from rooms # 1 
+inn 1 | where decor equal to modern # 1 
+inn 1 | select sum maxoccupancy from rooms # 2 
+inn 1 | where decor equal to modern # 2 
+inn 1 | select decor from rooms # 3 
+inn 1 | order by count decor asc limit 1 # 1 
+inn 1 | order by count decor asc limit 1 # 2 
+inn 1 | select count rooms # 1 
+inn 1 | select count rooms # 2 
+inn 1 | select count rooms # 3 
+inn 1 | where bedtype equal to king # 4 
+inn 1 | select count rooms # 4 
+inn 1 | where bedtype equal to king # 5 
+inn 1 | select bedtype , count rooms # 1 
+inn 1 | select bedtype , count rooms # 2 
+inn 1 | select roomname from rooms # 4 
+inn 1 | order by maxoccupancy desc limit 1 # 1 
+inn 1 | select roomname from rooms # 5 
+inn 1 | order by maxoccupancy desc limit 1 # 2 
+inn 1 | select roomid , roomname from rooms # 1 
+inn 1 | order by baseprice desc limit 1 # 1 
+inn 1 | order by baseprice desc limit 1 # 2 
+inn 1 | select roomname , bedtype from rooms # 1 
+inn 1 | select roomname , bedtype from rooms # 2 
+inn 1 | where decor equal to traditional # 1 
+inn 1 | select decor , count rooms # 1 
+inn 1 | select decor , count rooms # 2 
+inn 1 | select decor , avg baseprice , min baseprice from rooms # 1 
+inn 1 | select decor , avg baseprice , min baseprice from rooms # 2 
+inn 1 | select roomname from rooms # 6 
+inn 1 | order by baseprice # 3 
+inn 1 | select roomname from rooms # 7 
+inn 1 | order by baseprice # 4 
+inn 1 | select decor , count * from rooms # 1 
+inn 1 | where baseprice more than 120 # 1 
+inn 1 | select decor , count * from rooms # 2 
+inn 1 | where baseprice more than 120 # 2 
+inn 1 | select bedtype , avg baseprice from rooms # 3 
+inn 1 | select bedtype , avg baseprice from rooms # 4 
+inn 1 | select roomname from rooms # 8 
+inn 1 | select roomname from rooms # 9 
+inn 1 | select count distinct bedtype from rooms # 1 
+inn 1 | select count distinct bedtype from rooms # 2 
+inn 1 | select roomid , roomname from rooms # 2 
+inn 1 | order by baseprice desc limit 3 # 1 
+inn 1 | select roomid , roomname from rooms # 3 
+inn 1 | order by baseprice desc limit 3 # 2 
+inn 1 | select roomname from rooms # 10 
+inn 1 | where baseprice more than select avg baseprice # 1 
+inn 1 | select roomname from rooms # 11 
+inn 1 | where baseprice more than select avg baseprice # 2 
+inn 1 | select count rooms # 5 
+inn 1 | select distinct room from reservations # 1 
+inn 1 | select count rooms # 6 
+inn 1 | select distinct room from reservations # 2 
+inn 1 | select roomname , count reservations , room # 1 
+inn 1 | select roomname from rooms # 12 
+inn 1 | select roomname from rooms # 13 
+inn 1 | select roomname from rooms # 14 
+inn 1 | select roomname from rooms # 15 
+inn 1 | select roomname from rooms # 16 
+inn 1 | where firstname like roy # 1 
+inn 1 | select roomname from rooms # 17 
+inn 1 | where firstname like roy # 2 
+local govt mdm | select cmi details from customer master index # 1 
+local govt mdm | where source system code equal to tax # 1 
+local govt mdm | order by council tax id # 1 
+local govt mdm | where cmi details not equal to schmidt,kertzmannandlubowitz # 1 
+local govt mdm | where source system code equal to electoral # 1 
+local govt mdm | select count distinct source system code from cmi cross references # 1 
+local govt mdm | order by cmi details desc # 1 
+local govt mdm | select council tax id , cmi cross reference id from parking fines # 1 
+local govt mdm | select count rent arrears # 1 
+local govt mdm | select distinct source system code from cmi cross references # 1 
+local govt mdm | select distinct source system code from cmi cross references # 2 
+local govt mdm | where source system code like en # 1 
+party host | select count party # 1 
+party host | select count party # 2 
+party host | select party theme from party # 1 
+party host | order by number of hosts asc # 1 
+party host | select party theme from party # 2 
+party host | order by number of hosts asc # 2 
+party host | select party theme , location from party # 1 
+party host | select party theme , location from party # 2 
+party host | select first year , last year from party # 1 
+party host | where party theme equal to spring # 1 
+party host | select first year , last year from party # 2 
+party host | where party theme equal to spring # 2 
+party host | select avg number of hosts from party # 1 
+party host | select avg number of hosts from party # 2 
+party host | select location from party # 1 
+party host | order by number of hosts desc limit 1 # 1 
+party host | select location from party # 2 
+party host | order by number of hosts desc limit 1 # 2 
+party host | select nationality , count host # 1 
+party host | select nationality , count host # 2 
+party host | select nationality from host # 1 
+party host | order by count host desc limit 1 # 1 
+party host | order by count host desc limit 1 # 2 
+party host | select party theme , name from party , host # 1 
+party host | select party theme , name from party , host # 2 
+party host | select location , name from party , host # 1 
+party host | order by age # 1 
+party host | select location , name from party , host # 2 
+party host | order by age # 2 
+party host | select location from party # 3 
+party host | where age more than 50 # 1 
+party host | select location from party # 4 
+party host | where age more than 50 # 2 
+party host | select name from host # 1 
+party host | where number of hosts more than 20 # 1 
+party host | select name from host # 2 
+party host | where number of hosts more than 20 # 2 
+party host | select name , nationality from host # 1 
+party host | order by age desc limit 1 # 1 
+party host | select name , nationality from host # 2 
+party host | order by age desc limit 1 # 2 
+party host | select name from host # 3 
+party host | host not in party host # 1 
+party host | select name from host # 4 
+party host | select host id from party host # 1 
+storm record | select count region # 1 
+storm record | select count region # 2 
+storm record | select region code , region name from region # 1 
+storm record | order by region code # 1 
+storm record | select region code , region name from region # 2 
+storm record | order by region code # 2 
+storm record | select region name from region # 1 
+storm record | order by region name # 1 
+storm record | select region name from region # 2 
+storm record | order by region name # 2 
+storm record | select region name from region # 3 
+storm record | where region name not equal to denmark # 1 
+storm record | select region name from region # 4 
+storm record | where region name not equal to denmark # 2 
+storm record | select count storm # 1 
+storm record | where number deaths more than 0 # 1 
+storm record | select count storm # 2 
+storm record | where number deaths more than 0 # 2 
+storm record | select name , dates active , number deaths from storm # 1 
+storm record | where number deaths no less than 1 # 1 
+storm record | select name , dates active , number deaths from storm # 2 
+storm record | where number deaths no less than 1 # 2 
+storm record | select avg damage millions usd , max damage millions usd from storm # 1 
+storm record | where max speed more than 1000 # 1 
+storm record | select avg damage millions usd , max damage millions usd from storm # 2 
+storm record | where max speed more than 1000 # 2 
+storm record | select sum number deaths , sum damage millions usd from storm # 1 
+storm record | where max speed more than select avg max speed # 1 
+storm record | select sum number deaths , sum damage millions usd from storm # 2 
+storm record | where max speed more than select avg max speed # 2 
+storm record | select name , damage millions usd from storm # 1 
+storm record | order by max speed desc # 1 
+storm record | select name , damage millions usd from storm # 2 
+storm record | order by max speed desc # 2 
+storm record | select count distinct region id from affected region # 1 
+storm record | select count distinct region id from affected region # 2 
+storm record | select region name from region # 5 
+storm record | region not in affected region # 1 
+storm record | select region name from region # 6 
+storm record | region not in affected region # 2 
+storm record | select region name , count affected region # 1 
+storm record | select region name , count affected region # 2 
+storm record | select name , count affected region # 1 
+storm record | select name , count affected region # 2 
+storm record | select name , max speed from storm # 1 
+storm record | order by count affected region desc limit 1 # 1 
+storm record | select name , max speed from storm # 2 
+storm record | order by count affected region desc limit 1 # 2 
+storm record | select name from storm # 1 
+storm record | storm not in affected region # 1 
+storm record | select name from storm # 2 
+storm record | storm not in affected region # 2 
+storm record | select region name from region # 7 
+storm record | where number deaths no less than 10 # 1 
+storm record | select region name from region # 8 
+storm record | where number deaths no less than 10 # 2 
+storm record | select name from storm # 3 
+storm record | where region name equal to denmark # 1 
+storm record | select name from storm # 4 
+storm record | where region name equal to denmark # 2 
+storm record | select region name from region # 9 
+storm record | select region name from region # 10 
+storm record | select region name from region # 11 
+storm record | order by number deaths desc limit 1 # 1 
+storm record | select region name from region # 12 
+storm record | order by number deaths desc limit 1 # 2 
+election | select count county # 1 
+election | select count county # 2 
+election | select county name , population from county # 1 
+election | select county name , population from county # 2 
+election | select avg population from county # 1 
+election | select avg population from county # 2 
+election | select max population , min population from county # 1 
+election | select max population , min population from county # 2 
+election | select distinct district from election # 1 
+election | select distinct district from election # 2 
+election | select zip code from county # 1 
+election | where county name equal to howard # 1 
+election | select zip code from county # 2 
+election | where county name equal to howard # 2 
+election | select delegate from election # 1 
+election | where district equal to 1 # 1 
+election | select delegate from election # 2 
+election | where district equal to 1 # 2 
+election | select delegate , committee from election # 1 
+election | select delegate , committee from election # 2 
+election | select count distinct governor from party # 1 
+election | select count distinct governor from party # 2 
+election | select lieutenant governor , comptroller from party # 1 
+election | where party equal to democratic # 1 
+election | select lieutenant governor , comptroller from party # 2 
+election | where party equal to democratic # 2 
+election | select distinct year from party # 1 
+election | where governor equal to eliotspitzer # 1 
+election | select distinct year from party # 2 
+election | where governor equal to eliotspitzer # 2 
+election | select delegate , county name from election , county # 1 
+election | select delegate , county name from election , county # 2 
+election | where population less than 100000 # 1 
+election | select delegate from election # 3 
+election | where population less than 100000 # 2 
+election | select count distinct delegate from election # 1 
+election | where population more than 50000 # 1 
+election | select count distinct delegate from election # 2 
+election | where population more than 50000 # 2 
+election | select county name from county # 1 
+election | where committee equal to appropriations # 1 
+election | select county name from county # 2 
+election | where committee equal to appropriations # 2 
+election | select delegate , party from election , party # 1 
+election | select delegate , party from election , party # 2 
+election | select governor from party # 1 
+election | where district equal to 1 # 3 
+election | select governor from party # 2 
+election | where district equal to 1 # 4 
+election | select comptroller from party # 1 
+election | select committee from election # 1 
+election | where party equal to democratic # 3 
+election | where party equal to democratic # 4 
+election | select county name , count election # 1 
+election | select county name , count election # 2 
+election | select party , count election # 1 
+election | select party , count election # 2 
+election | select county name from county # 3 
+election | order by population asc # 1 
+election | order by population asc # 2 
+party host | order by count nationality desc limit 1 # 1 
+party host | order by count nationality desc limit 1 # 2 
+storm record | order by count affected region desc limit 1 # 3 
+storm record | order by count affected region desc limit 1 # 4 
+election | order by count election desc limit 1 # 1 
+election | order by count election desc limit 1 # 2 
+election | order by count party desc limit 1 # 1 
+election | order by count party desc limit 1 # 2 
+election | order by count party desc limit 1 # 3 
+election | order by count party desc limit 1 # 4 
+news report | order by count journalist desc limit 1 # 1 
+restaurant 1 | order by count advisor desc limit 1 # 1 
+restaurant 1 | order by count major asc limit 1 # 1 
+restaurant 1 | order by sum spent asc limit 1 # 1 
+restaurant 1 | order by count Visits Restaurant desc limit 1 # 1 
+customer deliveries | order by count regular order products desc limit 1 # 1 
+customer deliveries | order by count payment method desc limit 1 # 1 
+customer deliveries | order by count Delivery Routes desc limit 1 # 1 
+icfp 1 | order by count papers desc limit 1 # 1 
+icfp 1 | order by count papers desc limit 1 # 2 
+icfp 1 | order by count papers desc limit 1 # 3 
+icfp 1 | order by count papers desc limit 1 # 4 
+sakila 1 | order by count actor desc limit 1 # 1 
+sakila 1 | order by count actor desc limit 1 # 2 
+sakila 1 | order by count address desc limit 1 # 1 
+sakila 1 | order by count address desc limit 1 # 2 
+sakila 1 | order by count film actor desc limit 1 # 1 
+sakila 1 | order by count film actor desc limit 1 # 2 
+sakila 1 | order by count film actor desc limit 1 # 3 
+sakila 1 | order by count film actor desc limit 1 # 4 
+sakila 1 | order by count inventory desc limit 1 # 1 
+sakila 1 | order by count inventory desc limit 1 # 2 
+sakila 1 | order by sum amount asc limit 1 # 1 
+sakila 1 | order by sum amount asc limit 1 # 2 
+sakila 1 | order by count inventory desc limit 1 # 3 
+sakila 1 | order by count inventory desc limit 1 # 4 
+sakila 1 | order by count inventory desc limit 1 # 5 
+sakila 1 | order by count inventory desc limit 1 # 6 
+sakila 1 | order by count payment asc limit 1 # 1 
+sakila 1 | order by count payment asc limit 1 # 2 
+sakila 1 | order by count customer desc limit 1 # 1 
+sakila 1 | order by count customer desc limit 1 # 2 
+loan 1 | order by sum amount # 1 
+loan 1 | order by sum amount # 2 
+loan 1 | order by sum amount desc limit 1 # 1 
+loan 1 | order by sum amount desc limit 1 # 2 
+loan 1 | order by sum no of customers desc limit 1 # 1 
+loan 1 | order by sum no of customers desc limit 1 # 2 
+loan 1 | order by sum amount desc limit 1 # 3 
+loan 1 | order by sum amount desc limit 1 # 4 
+loan 1 | order by sum amount desc limit 1 # 5 
+loan 1 | order by sum amount desc limit 1 # 6 
+behavior monitoring | order by count Assessment Notes desc limit 1 # 1 
+behavior monitoring | order by count Assessment Notes desc limit 3 # 1 
+behavior monitoring | order by count Behavior Incident desc limit 1 # 1 
+behavior monitoring | order by count Behavior Incident desc limit 1 # 2 
+behavior monitoring | order by avg monthly rental desc limit 1 # 1 
+behavior monitoring | order by avg monthly rental desc limit 1 # 2 
+behavior monitoring | order by count Behavior Incident desc limit 1 # 3 
+behavior monitoring | order by count Behavior Incident asc limit 1 # 1 
+assets maintenance | order by count Engineer Visits desc limit 1 # 1 
+assets maintenance | order by count Fault Log desc limit 1 # 1 
+assets maintenance | order by count Part Faults desc limit 1 # 1 
+assets maintenance | order by count Part Faults asc limit 1 # 1 
+assets maintenance | order by count Engineer Visits asc limit 1 # 1 
+assets maintenance | order by count Fault Log desc limit 1 # 2 
+assets maintenance | order by count Skills Required To Fix desc limit 1 # 1 
+assets maintenance | order by count staff desc limit 1 # 1 
+station weather | order by count route desc limit 1 # 1 
+station weather | order by avg high temperature desc limit 1 # 1 
+college 1 | order by count employee desc limit 1 # 1 
+college 1 | order by count employee desc limit 1 # 2 
+college 1 | order by count professor limit 1 # 1 
+college 1 | order by count professor limit 1 # 2 
+college 1 | order by avg stu gpa desc limit 1 # 1 
+college 1 | order by avg stu gpa desc limit 1 # 2 
+college 1 | order by sum crs credit desc limit 1 # 1 
+college 1 | order by sum crs credit desc limit 1 # 2 
+college 1 | order by count enroll desc limit 1 # 1 
+college 1 | order by count enroll desc limit 1 # 2 
+college 1 | order by count professor limit 1 # 3 
+college 1 | order by count professor limit 1 # 4 
+college 1 | order by count professor desc limit 1 # 1 
+college 1 | order by count professor desc limit 1 # 2 
+college 1 | order by count student desc limit 1 # 1 
+college 1 | order by count student desc limit 1 # 2 
+college 1 | order by count student desc limit 3 # 1 
+college 1 | order by count student desc limit 3 # 2 
+sports competition | order by count competition desc limit 1 # 1 
+sports competition | order by count competition desc limit 1 # 2 
+sports competition | order by count competition desc limit 1 # 3 
+sports competition | order by count competition desc limit 1 # 4 
+music 1 | order by count files desc limit 1 # 1 
+music 1 | order by count files desc limit 1 # 2 
+music 1 | order by count song desc limit 1 # 1 
+music 1 | order by count song desc limit 1 # 2 
+music 1 | order by count song desc limit 1 # 3 
+music 1 | order by count song desc limit 1 # 4 
+music 1 | order by languages # 1 
+music 1 | order by genre is # 1 
+music 1 | order by genre is # 2 
+music 1 | order by count song desc limit 3 # 1 
+music 1 | order by count song desc limit 3 # 2 
+music 1 | order by count song limit 1 # 1 
+music 1 | order by count song limit 1 # 2 
+music 1 | order by count song desc limit 3 # 3 
+music 1 | order by count song desc limit 3 # 4 
+baseball 1 | order by count player college desc limit 1 # 1 
+baseball 1 | order by count player college desc limit 1 # 2 
+baseball 1 | order by count all star desc limit 1 # 1 
+baseball 1 | order by count all star desc limit 1 # 2 
+baseball 1 | order by avg attendance desc limit 1 # 1 
+baseball 1 | order by avg attendance desc limit 1 # 2 
+baseball 1 | order by count manager award desc limit 1 # 1 
+baseball 1 | order by count manager award desc limit 1 # 2 
+baseball 1 | order by count player award desc limit 3 # 1 
+baseball 1 | order by count player award desc limit 3 # 2 
+baseball 1 | order by count player asc limit 3 # 1 
+baseball 1 | order by count player asc limit 3 # 2 
+baseball 1 | order by avg salary asc limit 1 # 1 
+baseball 1 | order by avg salary asc limit 1 # 2 
+baseball 1 | order by count postseason desc limit 1 # 1 
+baseball 1 | order by count postseason desc limit 1 # 2 
+baseball 1 | order by count hall of fame asc limit 1 # 1 
+baseball 1 | order by count hall of fame asc limit 1 # 2 
+mountain photos | order by count photos desc limit 1 # 1 
+program share | order by count broadcast desc limit 1 # 1 
+program share | order by count broadcast desc limit 1 # 2 
+e learning | order by count Student Tests Taken desc # 1 
+e learning | order by count Courses desc limit 1 # 1 
+e learning | order by count Courses desc limit 1 # 2 
+e learning | order by count Subjects asc # 1 
+e learning | order by count Subjects asc # 2 
+e learning | order by count Student Course Enrolment desc limit 1 # 1 
+e learning | order by count Student Course Enrolment desc limit 1 # 2 
+e learning | order by count Student Course Enrolment desc limit 1 # 3 
+e learning | order by count Student Course Enrolment desc limit 1 # 4 
+insurance policies | order by count Settlements desc limit 1 # 1 
+insurance policies | order by count Settlements desc limit 1 # 2 
+insurance policies | order by date claim settled desc limit 1 # 1 
+insurance policies | order by date claim settled desc limit 1 # 2 
+insurance policies | order by count Payments desc limit 1 # 1 
+insurance policies | order by count Payments desc limit 1 # 2 
+insurance policies | order by count Payments asc limit 1 # 1 
+insurance policies | order by count Payments asc limit 1 # 2 
+insurance policies | order by count Customer Policies desc limit 1 # 1 
+insurance policies | order by count Customer Policies desc limit 1 # 2 
+hospital 1 | order by count departmentid desc limit 1 # 1 
+hospital 1 | order by count departmentid desc limit 1 # 2 
+hospital 1 | order by count departmentid limit 1 # 1 
+hospital 1 | order by count departmentid limit 1 # 2 
+hospital 1 | order by count departmentid limit 1 # 3 
+hospital 1 | order by count departmentid limit 1 # 4 
+hospital 1 | order by count appointment desc limit 1 # 1 
+hospital 1 | order by count appointment desc limit 1 # 2 
+ship mission | order by count ship desc limit 1 # 1 
+ship mission | order by count ship desc limit 1 # 2 
+student 1 | order by count students desc limit 1 # 1 
+student 1 | order by count students desc limit 1 # 2 
+company employee | order by count company desc limit 1 # 1 
+film rank | order by count film desc limit 1 # 1 
+film rank | order by count film desc limit 1 # 2 
+cre Doc Tracking DB | order by count employees desc limit 1 # 1 
+cre Doc Tracking DB | order by count employees desc limit 1 # 2 
+cre Doc Tracking DB | order by count employees asc limit 1 # 1 
+cre Doc Tracking DB | order by count employees asc limit 1 # 2 
+cre Doc Tracking DB | order by count Document locations desc limit 1 # 1 
+cre Doc Tracking DB | order by count Document locations desc limit 1 # 2 
+cre Doc Tracking DB | order by count Document locations asc limit 1 # 1 
+cre Doc Tracking DB | order by count Document locations asc limit 1 # 2 
+club 1 | order by count member of club desc limit 1 # 1 
+club 1 | order by count member of club desc limit 1 # 2 
+club 1 | order by count member of club desc limit 1 # 3 
+club 1 | order by count member of club desc limit 1 # 4 
+tracking grants for research | order by count Research Staff desc limit 1 # 1 
+tracking grants for research | order by count Research Staff desc limit 1 # 2 
+tracking grants for research | order by count Research Staff desc limit 1 # 3 
+tracking grants for research | order by count Research Staff desc limit 1 # 4 
+tracking grants for research | order by count Project outcomes desc limit 1 # 1 
+tracking grants for research | order by count Project outcomes desc limit 1 # 2 
+tracking grants for research | order by count Research Staff desc limit 1 # 5 
+tracking grants for research | order by count Research Staff desc limit 1 # 6 
+tracking grants for research | order by count Project Staff desc limit 1 # 1 
+tracking grants for research | order by count Staff Roles desc limit 1 # 1 
+tracking grants for research | order by count Documents desc limit 1 # 1 
+tracking grants for research | order by count Documents desc limit 1 # 2 
+tracking grants for research | order by count Project outcomes desc limit 1 # 3 
+tracking grants for research | order by count Project outcomes desc limit 1 # 4 
+tracking grants for research | order by count Projects desc limit 1 # 1 
+tracking grants for research | order by count Project Staff desc limit 1 # 2 
+tracking grants for research | order by count Project Staff desc limit 1 # 3 
+network 2 | order by avg age desc limit 1 # 1 
+network 2 | order by avg age desc limit 1 # 2 
+decoration competition | order by count member desc limit 1 # 1 
+document management | order by count documents desc limit 1 # 1 
+document management | order by count documents desc limit 1 # 2 
+document management | order by count documents desc limit 1 # 3 
+document management | order by count documents desc limit 1 # 4 
+document management | order by count users desc limit 1 # 1 
+document management | order by count users desc limit 1 # 2 
+document management | order by count documents desc limit 1 # 5 
+document management | order by count documents desc limit 1 # 6 
+document management | order by count users desc limit 1 # 3 
+document management | order by count users desc limit 1 # 4 
+document management | order by count documents asc limit 1 # 1 
+document management | order by count documents asc limit 1 # 2 
+company office | order by count Office locations desc limit 1 # 1 
+company office | order by count Office locations desc limit 1 # 2 
+company office | order by count Companies desc # 1 
+company office | order by count Companies desc # 2 
+company office | order by count Companies desc limit 1 # 1 
+company office | order by count Companies desc limit 1 # 2 
+solvency ii | order by count Products desc limit 1 # 1 
+entertainment awards | order by count artwork desc limit 1 # 1 
+customers campaigns ecommerce | order by count mailshot customers desc limit 1 # 1 
+college 3 | order by count MINOR IN desc limit 1 # 1 
+college 3 | order by count MINOR IN desc limit 1 # 2 
+college 3 | order by count MEMBER OF asc limit 1 # 1 
+college 3 | order by count MEMBER OF asc limit 1 # 2 
+college 3 | order by count FACULTY asc limit 1 # 1 
+college 3 | order by count FACULTY asc limit 1 # 2 
+college 3 | order by count COURSE desc limit 3 # 1 
+college 3 | order by count COURSE desc limit 3 # 2 
+college 3 | order by count COURSE desc limit 1 # 1 
+college 3 | order by count COURSE desc limit 1 # 2 
+department store | order by count order items desc limit 1 # 1 
+department store | order by count order items desc limit 1 # 2 
+department store | order by count customer orders desc limit 1 # 1 
+department store | order by count customer orders desc limit 1 # 2 
+department store | order by count * desc limit 2 # 1 
+department store | order by count department stores desc limit 2 # 1 
+department store | order by count staff department assignments limit 1 # 1 
+department store | order by count staff department assignments limit 1 # 2 
+department store | select avg product price # 1 
+department store | select avg product price # 2 
+department store | order by count Product Suppliers desc limit 1 # 1 
+department store | order by count Product Suppliers desc limit 1 # 2 
+department store | order by product type code # 1 
+department store | order by product type code # 2 
+aircraft | order by count match desc limit 1 # 1 
+aircraft | order by count match desc limit 1 # 2 
+aircraft | order by count match desc limit 1 # 3 
+aircraft | order by count match desc limit 1 # 4 
+local govt and lot | order by count Residents Services desc # 1 
+local govt and lot | order by count Residents Services desc limit 1 # 1 
+school player | order by count player desc limit 1 # 1 
+school player | order by count player desc limit 1 # 2 
+school player | order by count schools desc # 1 
+school player | order by count schools desc # 2 
+store product | order by count store desc limit 1 # 1 
+store product | order by count store desc limit 1 # 2 
+store product | order by count product desc limit 1 # 1 
+store product | order by count product desc limit 1 # 2 
+store product | order by count product desc limit 1 # 3 
+store product | order by count product desc limit 1 # 4 
+soccer 2 | order by count tryout desc limit 1 # 1 
+soccer 2 | order by count tryout desc limit 1 # 2 
+soccer 2 | order by count tryout desc # 1 
+soccer 2 | order by count tryout desc # 2 
+device | order by count stock desc limit 1 # 1 
+device | order by count stock desc limit 1 # 2 
+device | order by sum quantity desc limit 1 # 1 
+device | order by sum quantity desc limit 1 # 2 
+device | order by count device desc # 1 
+device | order by count device desc # 2 
+device | order by count device desc limit 1 # 1 
+device | order by count device desc limit 1 # 2 
+cre Drama Workshop Groups | order by count INVOICES desc limit 1 # 1 
+cre Drama Workshop Groups | order by count INVOICES desc limit 1 # 2 
+cre Drama Workshop Groups | order by count Services desc limit 1 # 1 
+cre Drama Workshop Groups | order by count Services desc limit 1 # 2 
+cre Drama Workshop Groups | order by count Drama Workshop Groups desc limit 1 # 1 
+cre Drama Workshop Groups | order by count Drama Workshop Groups desc limit 1 # 2 
+cre Drama Workshop Groups | order by count BOOKINGS desc limit 1 # 1 
+cre Drama Workshop Groups | order by count BOOKINGS desc limit 1 # 2 
+cre Drama Workshop Groups | order by count INVOICES desc limit 1 # 3 
+cre Drama Workshop Groups | order by count INVOICES desc limit 1 # 4 
+music 2 | order by count albums desc limit 1 # 1 
+music 2 | order by count albums desc limit 1 # 2 
+music 2 | order by count songs desc limit 1 # 1 
+music 2 | order by count songs desc limit 1 # 2 
+music 2 | order by count Performance desc limit 1 # 1 
+music 2 | order by count Performance desc limit 1 # 2 
+music 2 | order by count instruments desc limit 1 # 1 
+music 2 | order by count instruments desc limit 1 # 2 
+music 2 | order by count vocals desc limit 1 # 1 
+music 2 | order by count vocals desc limit 1 # 2 
+music 2 | order by count vocals desc limit 1 # 3 
+music 2 | order by count vocals desc limit 1 # 4 
+music 2 | order by count vocals desc limit 1 # 5 
+music 2 | order by count vocals desc limit 1 # 6 
+music 2 | order by count songs desc limit 1 # 3 
+music 2 | order by count songs desc limit 1 # 4 
+music 2 | order by count vocals desc limit 1 # 7 
+music 2 | order by count vocals desc limit 1 # 8 
+music 2 | order by count songs desc limit 1 # 5 
+music 2 | order by count songs desc limit 1 # 6 
+music 2 | order by count vocals desc limit 1 # 9 
+music 2 | order by count vocals desc limit 1 # 10 
+tracking software problems | order by count problems desc limit 1 # 1 
+tracking software problems | order by count problems desc limit 1 # 2 
+tracking software problems | order by count problems desc limit 3 # 1 
+tracking software problems | order by count problems desc limit 3 # 2 
+shop membership | order by count member desc limit 1 # 1 
+shop membership | order by count member desc limit 1 # 2 
+shop membership | order by count membership register branch desc limit 1 # 1 
+shop membership | order by count membership register branch desc limit 1 # 2 
+voter 2 | order by count student desc limit 1 # 1 
+voter 2 | order by count student desc limit 1 # 2 
+voter 2 | order by count student desc limit 1 # 3 
+voter 2 | order by count student desc limit 1 # 4 
+voter 2 | order by count student desc limit 1 # 5 
+voter 2 | order by count student desc limit 1 # 6 
+products gen characteristics | order by count products desc limit 1 # 1 
+products gen characteristics | order by count products desc limit 1 # 2 
+products gen characteristics | order by count products asc limit 1 # 1 
+products gen characteristics | order by count products asc limit 1 # 2 
+products gen characteristics | order by count products desc limit 1 # 3 
+products gen characteristics | order by count products desc limit 1 # 4 
+swimming | order by count stadium desc limit 1 # 1 
+swimming | order by count stadium desc limit 1 # 2 
+swimming | order by count record desc limit 1 # 1 
+swimming | order by count record desc limit 1 # 2 
+railway | order by count train desc limit 1 # 1 
+railway | order by count railway desc limit 1 # 1 
+customers and products contacts | order by count customer orders desc limit 1 # 1 
+customers and products contacts | order by sum order quantity desc limit 1 # 1 
+dorm 1 | order by count student desc limit 1 # 1 
+dorm 1 | order by count student desc limit 1 # 2 
+dorm 1 | order by count student desc limit 1 # 3 
+dorm 1 | order by count student desc limit 1 # 4 
+dorm 1 | order by count dorm amenity desc limit 1 # 1 
+dorm 1 | order by count dorm amenity desc limit 1 # 2 
+dorm 1 | order by count has amenity desc limit 1 # 1 
+dorm 1 | order by count has amenity desc limit 1 # 2 
+dorm 1 | order by count has amenity limit 1 # 1 
+dorm 1 | order by count has amenity limit 1 # 2 
+customer complaints | order by count customers limit 1 # 1 
+customer complaints | order by count customers limit 1 # 2 
+customer complaints | order by count complaints limit 1 # 1 
+customer complaints | order by count complaints limit 1 # 2 
+customer complaints | order by count complaints limit 1 # 3 
+customer complaints | order by count complaints limit 1 # 4 
+customer complaints | order by count customers desc limit 1 # 1 
+customer complaints | order by count customers desc limit 1 # 2 
+customer complaints | order by count complaints limit 5 # 1 
+customer complaints | order by count complaints limit 5 # 2 
+customer complaints | order by count customers limit 1 # 3 
+customer complaints | order by count customers limit 1 # 4 
+workshop paper | order by count submission desc limit 1 # 1 
+workshop paper | order by count submission desc limit 1 # 2 
+tracking share transactions | order by avg share count # 1 
+tracking share transactions | order by avg amount of transaction # 1 
+tracking share transactions | order by count transactions asc limit 1 # 1 
+tracking share transactions | order by count transactions desc limit 1 # 1 
+tracking share transactions | order by count TRANSACTIONS desc limit 1 # 1 
+tracking share transactions | order by count TRANSACTIONS desc limit 1 # 2 
+tracking share transactions | order by count TRANSACTIONS desc limit 3 # 1 
+cre Theme park | order by count Tourist Attractions desc limit 1 # 1 
+cre Theme park | order by count Tourist Attractions desc limit 1 # 2 
+cre Theme park | order by count Tourist Attractions desc limit 1 # 3 
+cre Theme park | order by count Tourist Attractions desc limit 1 # 4 
+game 1 | order by count Video games desc limit 1 # 1 
+game 1 | order by count Video games desc limit 1 # 2 
+game 1 | order by count Video games limit 1 # 1 
+game 1 | order by count Video games limit 1 # 2 
+game 1 | order by count Sportsinfo desc limit 1 # 1 
+game 1 | order by count Sportsinfo desc limit 1 # 2 
+game 1 | order by count Sportsinfo desc limit 1 # 3 
+game 1 | order by count Sportsinfo desc limit 1 # 4 
+game 1 | order by sum hours played desc limit 1 # 1 
+game 1 | order by sum hours played desc limit 1 # 2 
+customers and addresses | order by count customers desc limit 1 # 1 
+customers and addresses | order by count customers desc limit 1 # 2 
+customers and addresses | order by count customers desc limit 1 # 3 
+customers and addresses | order by count customers desc limit 1 # 4 
+customers and addresses | order by count customers desc limit 1 # 5 
+customers and addresses | order by count customers desc limit 1 # 6 
+customers and addresses | order by sum order quantity desc limit 1 # 1 
+customers and addresses | order by sum order quantity desc limit 1 # 2 
+customers and addresses | order by sum order quantity limit 1 # 1 
+customers and addresses | order by sum order quantity limit 1 # 2 
+customers and addresses | order by count order items desc limit 1 # 1 
+customers and addresses | order by count order items desc limit 1 # 2 
+customers and addresses | order by sum order quantity limit 1 # 3 
+customers and addresses | order by sum order quantity limit 1 # 4 
+music 4 | order by count music festival desc limit 1 # 1 
+music 4 | order by count music festival desc limit 1 # 2 
+music 4 | order by count music festival desc # 1 
+music 4 | order by count music festival desc # 2 
+roller coaster | order by count roller coaster desc limit 1 # 1 
+ship 1 | order by count captain desc limit 1 # 1 
+ship 1 | order by count captain desc limit 1 # 2 
+ship 1 | order by count ship desc limit 1 # 1 
+ship 1 | order by count ship desc limit 1 # 2 
+ship 1 | order by count ship desc limit 1 # 3 
+ship 1 | order by count ship desc limit 1 # 4 
+city record | order by count city desc limit 1 # 1 
+city record | order by count city desc limit 1 # 2 
+e government | order by count forms desc limit 1 # 1 
+e government | order by count forms desc limit 1 # 2 
+e government | order by count parties desc limit 1 # 1 
+e government | order by count parties desc limit 1 # 2 
+e government | order by count party services desc limit 1 # 1 
+e government | order by count party services desc limit 1 # 2 
+e government | order by count organization contact individuals desc limit 1 # 1 
+e government | order by count organization contact individuals desc limit 1 # 2 
+school bus | order by count driver desc limit 1 # 1 
+flight company | order by count flight desc limit 1 # 1 
+flight company | order by count operate company desc limit 1 # 1 
+flight company | order by count airport desc limit 1 # 1 
+cre Docs and Epenses | order by count Accounts desc limit 1 # 1 
+cre Docs and Epenses | order by count Accounts desc limit 1 # 2 
+cre Docs and Epenses | order by count Documents asc limit 1 # 1 
+cre Docs and Epenses | order by count Documents asc limit 1 # 2 
+cre Docs and Epenses | order by count Documents desc limit 1 # 1 
+cre Docs and Epenses | order by count Documents desc limit 1 # 2 
+cre Docs and Epenses | order by count Documents with expenses desc limit 1 # 1 
+cre Docs and Epenses | order by count Documents with expenses desc limit 1 # 2 
+scientist 1 | order by count assignedto desc limit 1 # 1 
+scientist 1 | order by count assignedto desc limit 1 # 2 
+wine 1 | order by avg price desc limit 1 # 1 
+wine 1 | order by avg price desc limit 1 # 2 
+wine 1 | order by count wine desc limit 3 # 1 
+wine 1 | order by count wine desc limit 3 # 2 
+wine 1 | order by count wine desc limit 1 # 1 
+wine 1 | order by count wine desc limit 1 # 2 
+train station | order by count station desc limit 1 # 1 
+train station | order by count train station desc limit 1 # 1 
+driving school | order by count Staff desc limit 1 # 1 
+driving school | order by count Staff desc limit 1 # 2 
+driving school | order by count customers asc limit 1 # 1 
+driving school | order by count customers asc limit 1 # 2 
+driving school | order by count customers desc limit 1 # 1 
+driving school | order by count customers desc limit 1 # 2 
+driving school | order by count Lessons desc limit 1 # 1 
+activity 1 | order by count Faculty desc limit 1 # 1 
+activity 1 | order by count Faculty desc limit 1 # 2 
+activity 1 | order by count Faculty asc limit 1 # 1 
+activity 1 | order by count Faculty asc limit 1 # 2 
+activity 1 | order by count Student desc limit 1 # 1 
+activity 1 | order by count student desc limit 1 # 1 
+activity 1 | order by count Faculty participates in desc limit 1 # 1 
+activity 1 | order by count Faculty participates in desc limit 1 # 2 
+activity 1 | order by count Faculty participates in desc limit 1 # 3 
+activity 1 | order by count Faculty participates in desc limit 1 # 4 
+activity 1 | order by count Participates in desc limit 1 # 1 
+activity 1 | order by count Participates in desc limit 1 # 2 
+activity 1 | order by count Participates in desc limit 1 # 3 
+activity 1 | order by count Participates in desc limit 1 # 4 
+flight 4 | order by count routes desc limit 1 # 1 
+flight 4 | order by count routes desc limit 1 # 2 
+flight 4 | order by count routes desc limit 10 # 1 
+flight 4 | order by count routes desc limit 10 # 2 
+flight 4 | order by count routes desc limit 1 # 3 
+flight 4 | order by count routes desc limit 1 # 4 
+flight 4 | order by count airlines desc limit 1 # 1 
+flight 4 | order by count airlines desc limit 1 # 2 
+flight 4 | order by count airlines desc limit 1 # 3 
+flight 4 | order by count airlines desc limit 1 # 4 
+flight 4 | order by count airlines desc # 1 
+flight 4 | order by count airlines desc # 2 
+flight 4 | order by count airports desc # 1 
+flight 4 | order by count airports desc # 2 
+flight 4 | order by count airports desc # 3 
+flight 4 | order by count airports desc # 4 
+flight 4 | order by count routes desc # 1 
+flight 4 | order by count routes desc # 2 
+flight 4 | order by count routes desc limit 1 # 5 
+flight 4 | order by count routes desc limit 1 # 6 
+flight 4 | order by count routes desc limit 1 # 7 
+flight 4 | order by count routes desc limit 1 # 8 
+flight 4 | order by count routes desc limit 1 # 9 
+flight 4 | order by count routes desc limit 1 # 10 
+tracking orders | order by count orders desc limit 1 # 1 
+tracking orders | order by count orders desc limit 1 # 2 
+tracking orders | order by count orders desc limit 1 # 3 
+tracking orders | order by count orders desc limit 1 # 4 
+tracking orders | order by count order items desc limit 1 # 1 
+tracking orders | order by count order items desc limit 1 # 2 
+tracking orders | order by count orders desc limit 1 # 5 
+tracking orders | order by count orders desc limit 1 # 6 
+architecture | order by count mill desc limit 1 # 1 
+architecture | order by count mill desc limit 1 # 2 
+culture company | order by count book club desc limit 1 # 1 
+culture company | order by count book club desc limit 1 # 2 

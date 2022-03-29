@@ -21,9 +21,9 @@ import random
 
 parser = argparse.ArgumentParser()
 parser.add_argument(
-    "--trainval_path", type=str, default="CCKS_dataset/ccks2021/train.json")
+    "--trainval_path", type=str, default="dataset/dataset/train.json")
 parser.add_argument(
-    "--test_path", type=str, default="CCKS_dataset/ccks2021/test_a.json")
+    "--test_path", type=str, default="dataset/dataset/test_a.json")
 
 TAG_NAMES = ["B-ENT", "I-ENT", "O"]
 

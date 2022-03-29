@@ -1,0 +1,1 @@
+python3 -u auto_gen_simple_query.py -c 3 -t db_content.json -o ../spider/clause_aug.json -d db_id.txt -i tables.json

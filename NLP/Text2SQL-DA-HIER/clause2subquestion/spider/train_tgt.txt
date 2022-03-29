@@ -1,0 +1,3746 @@
+how many heads
+are older than 56
+list the name , born state and age of the heads
+ordered by age
+list the creation year , name and budget of each department
+what are the maximum and minimum budget of the departments
+what is the average number of employees of the departments
+what are the names of the heads
+who are born outside the california state
+what are the distinct creation years of the departments
+born in state
+states where at least 3 heads were born
+in which year were most departments
+year were most departments established
+show the name and number of employees for the departments
+temporary acting
+how many acting
+how many departments
+departments are led by heads who are not mentioned
+what are the distinct ages of the heads
+acting
+list the id , name and the number of heads
+list the id and name
+head 's name has the substring 'ha ' ?
+how many farms
+count the number of farms
+list the total number of horses on farms
+the total number of horses on farms in ascending order
+what is the total horses record for each farm
+the total horses record for each farm , sorted ascending
+what are the hosts of competitions
+theme is not `` aliens
+return the hosts of competitions
+theme is not aliens
+what are the themes of farm competitions
+sorted by year in ascending order
+return the themes of farm competitions
+sorted by year ascending
+what is the average number of working horses of farms
+farms with more than 5000 total number of horses
+give the average number of working horses on farms
+farms with more than 5000 total horses
+what are the maximum and minimum number of cows across all farms
+return the maximum and minimum number of cows across all farms
+how many different statuses do cities
+count the number of different statuses
+list official names of cities
+in descending order of population
+what are the official names of cities
+ordered descending by population
+list the official name and status of the city
+the largest population
+what is the official name and status of the city
+the most residents
+show the years and the official names of the host cities
+give the years and official names of the cities
+show the official names of the cities
+what are the official names of cities
+show the status of the city
+has hosted the greatest number of competitions
+what is the status of the city
+has hosted the most competitions
+show the themes of competitions
+cities having populations larger than 1000
+what are the themes of competitions
+cities with more than 1000 residents
+show the different statuses of cities and the average population of cities with each status
+what are the statuses and average populations of each city
+show the different statuses , ordered by the number of cities
+the different statuses , ordered by the number of cities that have
+return the statuses of cities
+the different statuses of cities, ascending by frequency
+list the status across cities
+the most common type of status across cities
+what is status across all cities
+the most common status across all cities
+list the official names of cities
+cities that have not held any competition
+what are the official names of cities
+cities that have not hosted a farm competition
+official names of cities
+cities with population bigger than 1500 or smaller than 500
+what are the official names of cities
+cities that have population over 1500
+cities that have population less than 500
+show the census ranking of cities
+cities whose status are not `` village
+what are the census rankings of cities
+cities that do not have the status `` village
+which course
+course has most number of registered students
+what is the name of the course
+course with the most registered students
+what is id of students who registered some courses
+the least number of courses in these students
+students who registered for some courses
+had the least number of courses for all students
+what are the first name and last name
+what are the first and last names
+list the id of students
+students who never attends courses
+what are the ids of every student
+student who has never attended a course
+list the id of students who attended some courses
+what are the ids of all students who have attended at least one course
+what are the ids of all students for courses and what are the names of those courses
+what is detail of the student
+who most recently registered course
+what details do we have on the students
+who registered for courses most recently
+how many students attend course
+course english
+how many students are attending english courses
+english courses
+how many courses do the student
+student whose id is 171 attend
+how many courses does the student
+student with id 171 actually attend
+find id of the candidate
+email is stanley.monahan@example.org
+what is the id of the candidate
+email is stanley.monahan@example.org
+find id of the candidate
+most recently accessed the course
+what is the id of the candidate
+who most recently accessed the course
+what is detail of the student
+student who registered the most number of courses
+what are the details of the student
+student who registered for the most number of courses
+list the id of students
+who registered some courses and the number of their registered courses
+how many courses are they registered for
+list course name
+how many registed students do each course have ? 
+what are the course names
+for each course id , how many students are registered
+find id of candidates
+whose assessment code is `` pass
+what are the ids of the candidates
+that have an outcome code of pass
+find the cell mobile number
+whose assessment code is `` fail
+what are the cell phone numbers
+that received assessment code of `` fail
+what are the id of students who registered
+who registered course 301
+what are the ids of the students
+who registered for course 301
+what is the id of the student
+registered course 301
+who most recently registered
+what are the ids of the students
+who registered for course 301
+registered for course most recently
+find distinct cities of addresses
+what are the different cities
+find distinct cities of address
+what are the different cities
+list the names of courses
+names of courses in alphabetical order
+what are the names of the courses
+the names of the courses in alphabetical order
+list the first names of people
+the first names of people in alphabetical order
+what are the first names of the people
+the first names of the people in alphabetical order
+what are all info of students who registered courses
+list the id of students who registered course 
+who registered course statistics
+order of registration date
+what are the ids of the students
+who registered course statistics
+by order of registration date
+list the id of students
+statistics courses
+in the order of attendance date
+what are the ids of the students
+courses in the statistics
+in the order of attendance date
+give me the dates
+when the max temperature was higher than 85
+what are the dates
+with a maximum temperature higher than 85
+what are the names of stations
+stations that have latitude lower than 37.5
+what are the names of all stations
+stations with a latitude smaller than 37.5
+for each city , return the highest latitude among its stations
+for each city , what is the highest latitude for its stations
+give me the start station and end station for the trips
+the three oldest id
+what is the station station and end station for the trips
+the three smallest ids
+what is the average latitude and longitude of stations
+stations located in san jose city
+what is the average latitude
+in san jose
+what is the id of the trip
+has the shortest duration
+what is the id of trip
+the shortest trip
+what is the total and maximum duration of trips
+trips with bike id 636
+what is the total and maximum duration for all trips
+trips with the bike id 636
+for each zip code , return the average mean temperature
+august
+for each zip code , what is the average mean temperature
+dates that start with 8
+find the number of unique bikes
+how many different bike ids
+what is the number of distinct cities the stations
+how many different cities have these stations
+how many stations
+stations does mountain view city
+how many stations
+stations are in mountain view
+return the unique name for stations
+had 7 bikes available
+what are the different names for each station
+had 7 bikes available
+give me the name and id of the station
+which start station had the most trips starting from august
+which start station had the most trips
+what are the start station 's name and id
+start trips in august
+the start station 's name for the one that had the most start trips
+which bike traveled
+in zip code 94002
+bike traveled the most often
+what is the id of the bike
+in 94002
+the id of the bike that traveled the most
+how many days
+mean humidity above 50
+mean visibility above 8
+what is the number of days
+average humity above 50
+an average visibility above 8
+what is the latitude , longitude , city of the station
+the shortest trip started
+what is the latitude , longitude , and city of the station
+with smallest duration
+what is cloud cover
+in the region of zip code 94107
+the 3 most common cloud cover
+what are cloud covers
+in the zip code of 94107
+the 3 most common cloud covers
+what is the zip code
+the zip code in which the average mean sea level pressure is the lowest
+what is the zip code
+the zip code that has the lowest average mean sea level pressure
+what is the average bike availability
+located in palo alto
+what is the average bike availablility
+in palo alto
+what is the average longitude
+what is the mean longitude
+when and in what zip code did max temperature
+max temperature reach 80
+what zip codes have a station with a max temperature and when
+max temperature greater than or equal to 80
+give me ids for all the trip
+find the ids of all trips
+for each zip code, return how many times
+max wind speed reached 25
+for each zip code, how many times
+maximum wind speed reached 25 mph
+day and in which zip code
+was the min dew point lower than any day
+in zip code 94107
+which days and in which zip codes
+had a minimum dew point smaller than any day
+in zip code 94107
+return its ending station 's installation date
+what is the installation date for each ending station on all the trips
+give me the trip id
+the largest dock count
+what is the id of the trip
+the highest dock count
+count the number of trips
+did not end in san francisco city
+how many trips
+did not end in san francisco
+on which day
+in zip code 94107
+neither been foggy
+what are the name , latitude , and city of the station
+with the lowest latitude
+what is the name , latitude , and city of the station
+that is located the furthest
+what are the date , mean temperature and mean humidity
+the top 3 days with the largest max gust speeds
+what is the date , average temperature and mean humidity
+the 3 largest maximum gust speeds
+list the name and the number of stations for all the cities
+what is the name of city and how many stations does it
+find the ids and names of stations
+what are the ids and names of all start stations that were the beginning of at least 200 trips
+find the zip code
+for each zip code, select all those
+list all the cities
+the cities in a decreasing order of each city 's stations ' highest latitude
+city , list their names
+in decreasing order by their highest station latitude
+what are the dates ? also tell me the cloud cover
+the top 5 cloud cover rates
+what are the dates
+the 5 highest cloud cover
+what are the ids and durations of the trips
+durations of the trips with the top 3 durations
+what are the ids of the trips and how long
+that lasted the longest
+station , return its longitude and the average duration of trips that started from the station
+what is its name , longitude and average duration of trips
+station , find its latitude and the minimum duration of trips that ended at the station
+what is its name , latitude , and minimum duration for trips
+list all the distinct stations
+trip of duration below 100
+what are all the different start station names for a trip
+trip that lasted less than 100
+find the id for the trips
+that lasted at least as long as the average duration of trips
+in zip code 94103
+what are the ids of all trips
+duration as long as the average trip duration
+in the zip code 94103
+what are the dates
+what are the dates
+what are the id and name of the stations
+that have ever had more than 12 bikes available
+what are the different ids and names of the stations
+that have had more than 12 bikes available
+how many trips
+started from mountain view city
+how many trips
+station in mountain view
+ended at one in palo alto
+what is the average latitude and longitude
+what is the average latitude and longitude of all starting stations
+how many books
+list the writers of the books
+the writers of the books in ascending alphabetical order
+list the titles of the books
+in ascending order of issues
+what are the titles of the books
+books whose writer is not elaine lee
+what are the title and issues of the books
+what are the dates of publications
+in descending order of price
+what are the distinct publishers of publications
+publications with price higher than 5000000
+list the publisher of the publication
+with the highest price
+list the publication dates of publications
+with 3 lowest prices
+show the title and publication dates of books
+show writers who have published a book
+price more than 4000000
+show the titles of books
+in descending order of publication price
+show publishers
+show different publishers together with the number of publications
+show the publication date
+the most common publication date
+list the writers who have written
+list the titles of books
+books that are not published
+what is the number of distinct publication dates
+how many distinct publication dates
+show the prices of publications
+publications whose publisher is either `` person
+how many actors
+count the number of actors
+list the name of actors
+the name of actors in ascending alphabetical order
+what are the names of actors
+the names of actors, ordered alphabetically
+what are the characters and duration of actors
+return the characters and durations for each actor
+list the name of actors
+actors whose age is not 20
+what are the names of actors
+actors who are not 20
+what are the characters of actors
+in descending order of age
+return the characters for actors
+ordered by age descending
+what is the duration
+the oldest actor
+return the duration of the actor
+the greatest age
+what are the names of musicals
+musicals with nominee
+return the names of musicals
+musicals who have the nominee bob fosse
+what are the distinct nominees of the musicals
+musicals with the award that is not tony award
+return the different nominees of musicals
+that have an award that is not the tony award
+show names of actors and names of musicals
+what are the names of actors and the musicals
+show names of actors
+musical with name the phantom of the opera
+what are the names of actors
+musical titled the phantom of the opera
+show names of actors
+in descending order of the year their musical
+what are the names of actors
+ordered descending by the year
+show names of musicals and the number of actors who have appeared in the musicals
+how many actors have appeared in each musical
+show names of musicals
+what are the names of musicals
+show different nominees and the number of musicals
+how many musicals has each nominee
+show the nominee
+the nominee who has been nominated the greatest number
+who is the nominee
+the nominee who has been nominated for the most musicals
+list the result
+the most common result of the musicals
+return result across all musicals
+the most frequent result across all musicals
+list the nominees
+who are the nominees
+list the name of musicals
+musicals that do not have actors
+what are the names
+musicals who have no actors
+show the musical nominee
+with award tony award
+who are the nominees
+find the emails of the user
+named `` mary
+what is the partition id of the user
+named iron man
+how many users
+how many followers
+find the number of followers for each user
+find the number of tweets
+find the number of users who posted some tweets
+find name and email of the user
+whose name contains the word swift
+find the names of users
+emails contain superstar
+return the text of tweets
+text of tweets about the topic intern
+find the name and email of the users
+who have more than 1000 followers
+names of the users whose number of followers is greater than that of the user named
+whose number of followers is greater than that of the user
+the user named tyler swift
+find the name and email for the users
+find the names of users
+find the id of users who are followed
+are followed mary
+find the name of the user
+the largest number of followers
+find the name and email of the user
+the user followed by the least number of people
+list the name and number of followers for each user
+sort the results by the number of followers
+list the names
+5 users followed by the largest number of other users
+list the text of all tweets
+in the order of date
+find the name of each user and number of tweets tweeted by each
+find the name and partition id for users
+find the name of the user and number of tweets tweeted by them
+find the average number of followers
+find the average number of followers
+find the maximum and total number of followers
+find the names of all the catalog entries
+what are all the catalog entry names
+list of attribute data types
+what are the attribute data types
+what is the attribute data type
+attribute with name `` green
+find the attribute data type
+attribute named `` green
+find the name and level of catalog structure
+what are the name and level of catalog structure
+find all the catalog publishers
+catalog publishers whose name contains `` murray
+which catalog publishers
+catalog publishers have substring `` murray
+which catalog publisher
+catalog publisher has published the most catalogs
+find the catalog publisher
+the catalog publisher that has the most catalogs
+find the names and publication dates of all catalogs
+catalog level number greater than 5
+what are the name and publication date of the catalogs
+catalog level number above 5
+what are the entry names of catalog
+with the attribute possessed by most entries
+find the entry names of the catalog
+the attribute that have the most entries
+what is the entry name
+the most expensive catalog in usd
+find the entry name of the catalog
+the highest price in usd
+what is the level name
+the cheapest catalog in usd
+find the level name of the catalog
+the lowest price in usd
+what are the average and minimum price in euro
+give me the average and minimum price in euro
+give me the catalog entry name
+the highest height
+give me the catalog entry name
+the highest height
+find the name of the product
+that has the smallest capacity
+return the catalog entry name
+the smallest capacity
+find the names of all the products
+products whose stock number starts with `` 2
+show the catalog entry names
+product stock number that starts from `` 2
+find the names of catalog entries
+catalog entries with level number 8
+what are the names of catalog entries
+catalog entries with level number 8
+find the names of the products 
+length smaller than 3
+find the catalog entry names
+length below 3
+find the name and attribute ID of the attribute definitions
+attribute value 0
+give me the attribute name and attribute id
+attribute value 0
+find the name and capacity
+price greater than 700 ( in usd
+show their catalog entry names and capacities
+price above 700 dollars
+find the dates
+which days revisions were made on catalogs
+how many products
+find the total number of catalog contents
+name all the products
+next entry id greater than 8
+what are the catalog entry names
+next entry id above 8
+how many aircrafts
+how many aircrafts
+show name and distance for all aircrafts
+what are the names and distances
+show ids for all aircrafts
+aircrafts with more than 1000 distance
+what are the ids of all aircrafts
+aircrafts that can cover a distance of more than 1000
+how many aircrafts have
+what is the count of aircrafts that have
+what is the name and distance for aircraft
+aircraft with id 12
+what is the name and distance for the aircraft
+aircraft that has an id of 12
+what is the minimum , average , and maximum distance of all aircrafts
+minimum , average and maximum distances traveled across all aircrafts
+show the id and name of the aircraft
+the maximum distance
+what is the id and name of the aircraft
+the maximum distance
+show the name of aircrafts
+three lowest distances
+What are the aircrafts , list their names
+3 shortest lengthes
+show names for all aircrafts
+distances more than the average
+what are the names of all aircrafts
+cover more distances than average
+how many employees
+what is the number of employees
+show name and salary for all employees
+sorted by salary
+what is the name and salary of all employees
+in order of salary
+show ids for all employees
+employees with at least 100000 salary
+what is the id of every employee
+employee who has at least a salary of 100000
+how many employees
+what is the number of employees that have
+what is the name and salary for employee
+employee with id 242518965
+what is the name and salary of the employee
+employee with the id 242518965
+what is average and maximum salary of all employees
+what is the average and largest salary of all employees
+show the id and name of the employee
+maximum salary
+what is the id and name of the employee
+the highest salary
+show the name of employees
+three lowest salaries
+what is the name of employees
+the 3 employees who get paid the least
+show names for all employees
+salary more than the average
+what are the names of all employees
+salary higher than average
+show the id and salary
+mark young
+what is the id and salary of the employee
+employee named mark young
+how many flights
+what is the number of flights
+show flight number , origin , destination of all flights
+in the alphabetical order of the departure cities
+what is the flight number , origin , and destination for all flights
+in alphabetical order by departure cities
+show all flight number
+from los angeles
+what are the numbers of all flights
+coming from los angeles
+show origins of all flights
+flights with destination honolulu
+what are the origins of all flights
+flights that are headed to honolulu
+show me the departure date and arrival date for all flights
+flights from los angeles
+what are the departure and arrival dates of all flights
+flights from la
+show flight number for all flights
+flights with more than 2000 distance
+what are the numbers of all flights
+that can cover distance of more than 2000
+what is the average price for flights
+flights from los angeles
+what is the average price for flights
+flights from la
+show origin and destination for flights
+flights with price higher than 300
+what is the origin and destination for all flights
+flights whose price is higher than 300
+show the flight number and distance of the flight
+the maximum price
+what is the flight number and its distance
+the maximum price
+show the flight number of flights
+three lowest distances
+what are the numbers of the shortest flights
+the shortest flights
+what is the average distance and average price for flights
+flights from los angeles
+what is the average distance and price for all flights
+flights from la
+show all origins and the number of flights from each origin
+for each origin , how many flights
+show all destinations and the number of flights to each destination
+what are the destinations and number of flights
+which origin
+origin has most number of flights
+what place the flights coming from
+place has the most flights coming from
+which destination
+destination has least number of flights
+what destination
+destination has the fewest number of flights
+what is the aircraft name
+flight with number 99
+what is the name of the aircraft
+flight number 99
+show all flight numbers
+aircraft airbus a340-300
+what are the flight numbers
+aircraft airbus a340-300
+show aircraft names and number of flights for each aircraft
+what is the name of each aircraft and how many flights
+show names for all aircraft
+what are the names for all aircrafts
+how many employees have
+what is the count of distinct employees with certificates
+show names for all aircrafts
+john williams
+what are the names of all aircrafts
+john williams
+show names for all employees
+who have certificate of boeing 737-800
+what are the names of all employees
+who have a certificate to fly boeing 737-800
+show the name of aircraft
+aircraft which fewest people have its certificate
+what are the names of the aircraft
+aircraft that the least people are certified to fly
+show the name and distance of the aircrafts
+distance of the aircrafts with more than 5000 distance
+which at least 5 people have its certificate
+what is the name and distance of every aircraft
+that can cover a distance of more than 5000
+which at least 5 people can fly
+what is the salary and name of the employee
+the most number of aircraft certificates
+what is the salaray and name of the employee
+that is certified to fly the most planes
+what is the name of the employee
+aircrafts with distance more than 5000
+who has the most number of certificates on aircrafts
+what is the name of the employee
+fly planes more than 5000
+with the most certificates
+how many allergies are there
+how many allergy are there
+how many different allergy types
+how many distinct allergies
+show all allergy types
+what are the different allergy types
+show all allergies and their types
+what are the allergies and their types
+show all allergies
+with type food
+what are all the different food allergies
+food
+what is the type of allergy
+allergy cat
+what is allergy type
+cat allergy
+how many allergies
+type animal
+how many type allergies exist
+animal type
+show all allergy types and the number of allergies in each type
+what are the allergy types and how many allergies correspond to each one
+which allergy type
+allergy type has most number of allergies
+which allergy type
+allergy type is most common
+which allergy type
+allergy type has least number of allergies
+which allergy type
+allergy type is the least common
+how many students
+what is the total number of students
+show first name and last name for all students
+what are the full names of all students
+how many different advisors
+how many advisors
+show all majors
+what are the different majors
+show all cities where students
+what cities do students live in
+show first name , last name , age for all female students
+female students . their sex is f
+what are the full names and ages for all female students
+female students whose sex is f
+show student ids
+male students
+what are the student ids
+male students
+how many students
+students are age 18
+how many students
+students are 18 years old
+show all student ids
+who are older than 20
+what are the student ids for students
+students over 20 years old
+which city does the student
+student whose last name is `` kim
+give the city that the student
+student whose family name is kim
+who is the advisor of student
+student with id 1004
+who advises student
+student 1004
+how many students
+students live in hkg
+give the number of students
+students living in either hkg
+show the minimum , average , and maximum age of all students
+what is the minimum , mean , and maximum age across all students
+what is the last name
+youngest student
+provide the last name
+the youngest student
+show the student id
+the oldest student
+what student id
+the oldest student
+show all majors and corresponding number of students
+how many students are there for each major
+which major
+major has most number of students
+what is the major
+the largest major
+show all ages and corresponding number of students
+how many students are each age
+show the average age for male and female students
+what are the average ages for male and female students
+show all cities and corresponding number of students
+how many students live in each city
+show all advisors and corresponding number of students
+how many students does each advisor
+which advisor of students
+advisor has most number of students
+give the advisor 
+the advisor with the most students
+how many students have allergies
+cat allergies
+how many students allergie
+cat allergies
+show all student ids
+what are the students ids
+female students
+how many students
+students who are female
+how many students
+food allergy
+how many students
+food related allergies
+which allergy
+allergy has most number number of students affected
+which allergy
+allergy is the most common
+show all allergies with number of students affected
+how many students have each different allergy
+show all allergy type with number of students affected
+how many students are affected by each allergy type
+what are the allergies and their types
+student with first name lisa
+and order the result by name of allergies
+what are the allergies and what are the types of them ?
+the girl named lisa
+order the result by allergy
+list the first and last name of the students
+food type allergy
+what is the full name of each student
+allergic to any type of food
+find the number of students
+sex is 'm ' ) students
+food type allery
+how many students
+male students sex is 'm'
+allergic to any type of food
+find the different first names and cities of the students
+allergy to milk
+what are the distinct first names and cities of the students
+allergy either to milk
+the number of students
+students who are older than 18
+allergy to either food
+how many students
+students are over 18
+allergy to food
+find the first name and major of the students
+allegry to soy
+what are the first name and major of the students
+who are able to consume soy
+list country name and number of invoices
+the top 5 countries by number of invoices
+what are the countries by number of invoices and how many do they have
+the top 5 countries by number of invoices
+list country name and gross invoice
+the top 8 countries by gross/total invoice size
+what are the names and what are those sizes
+the names of the top 8 countries by total invoice size
+list country name and average invoice
+the top 10 countries by average invoice size
+what are the names of the countries and average invoice size
+the countries and average invoice size of the top countries by size
+list customers ' first and last name
+5 customers who most recently purchased
+what are the first and last names
+the 5 customers who purchased something most recently
+total number of orders . list customers ' first and last name
+the top 10 customers by total number of orders
+What are the top 10 customers first and last names and how many orders did they make
+the top 10 customers by total number of orders
+List customers' first and last name and total gross sales
+the top 10 customers by total gross sales
+first and last names , and also what are the sales
+the top 10 customers with the highest gross sales
+list genres name and total tracks
+the top 5 genres by number of tracks
+how many tracks does each genre have and what are the names
+each genre have and what are the names of the top 5
+list every album 's title
+what are the titles of all the albums
+list every album 
+ordered by album title in ascending order
+what are the titles of all the albums
+the titles of all the albums alphabetically ascending
+list every album whose title
+album whose title starts with a
+title in alphabetical order
+what are the titles of all albums
+titles of all albums that start with a
+the titles of all albums in alphabetical order
+list the customers first and last name
+10 least expensive invoices
+what are the first and last names of the customers
+the 10 cheapest invoices
+list total amount of invoice
+invoice from chicago
+what are the total amount of money in the invoices
+invoices billed from chicago
+list the number of invoices
+invoices from chicago
+how many invoices
+invoices were billed from chicago
+list the number of invoices from the us , grouped by state
+invoices from the us
+how many invoices were billed from each state
+invoices were billed
+in the us
+the state with the most invoices
+the states with the most invoices
+list the number of invoices and the invoice total from california
+from california
+what is the number of invoices and total money billed
+from ca
+list aerosmith 's albums
+aerosmith
+what are the titles
+the aerosmith albums
+how many albums
+billy cobham has
+how many albums
+billy cobam released
+which company
+eduardo martins is a customer
+what is the company
+eduardo martins is a customer
+what is email and phone
+astrid
+what is the email and phone number
+astrid gruber the customer
+how many customers
+customers live in prague city
+how many customers
+customers live in the city of prague
+how many customers
+customers in state of ca
+how many customers
+customers are from california
+what country
+roberto
+in which country
+roberto
+list the name of albums
+whose name has ' led '
+what is the title of the album
+whose name has the phrase ' led '
+how many customers
+steve
+what is the count of customers
+steve
+what is the title , phone and hire date
+nancy
+what is the title , phone number and hire date for the employee
+employee named nancy
+find the full name of employees
+employees who report to nancy
+what is the first and last name of the employee
+employee who reports to nancy
+what is the address of employee
+employee nancy
+what is address
+nancy edwards's
+find the full name of employee
+employee who supported the most number of customers
+what is the full name of the employee
+employee who has the most customers
+how many employees
+employees are living in canada
+how many employees
+employees live in canada
+employee nancy
+what is the the phone
+nancy
+list employee 's first and last name
+the youngest
+what is first and last name
+the youngest
+list employee 's first and last name
+top 10 employee work longest in the company
+what are the first and last names
+the top 10 longest-serving employees
+the number of employees from each city
+employees whose title is it staff
+how many employees are from each city
+employees who are it staff
+list employee 's first and last name , and number of people report to that employee
+employee manage most number of peoples ? list employee 's first and last name , and number of people report to
+what are the first and last names of all the employees and how many people report to
+how many orders
+lucas
+how many orders
+luca
+what is the total amount of money 
+how much money spend
+lucas
+list all media types
+what are the names
+list all different genre
+what are the different names of the genres
+list the name of all playlist
+what are the names of all the playlists
+Who is the composer of track
+track fast as a shark
+what is the composer
+who created the track `` fast as a shark
+how long does track
+track fast as a shark
+how many milliseconds long
+fast as a shark
+what is the name of tracks
+tracks whose genre is rock
+what is the name of all tracks
+tracks in the rock genre
+what is title of album
+which track balls to the wall belongs to
+what is the name of the album
+track ball to the wall
+list name of all tracks
+balls to the wall
+what is the name of all tracks
+album named balls to the wall
+list title of albums
+what are the names of the albums
+list the name of tracks
+belongs to genre rock
+what are the names of all rock tracks
+list the name of tracks
+belongs to genre rock
+what are the names of all tracks
+belong to rock genre
+list the name of tracks
+belongs to genre rock
+what are the names of the tracks
+list the name of all tracks
+in the playlists of movies
+what are the names of all tracks
+that are on playlists titled movies
+list the name of playlist
+what are the names of all playlists
+list all tracks
+by customer daan
+what are the tracks
+dean peeters bought
+how much is the track
+track fast as a shark
+what is the unit price
+the tune fast as a shark
+number of tracks in each genre
+how many tracks are in each genre
+how many editors
+list the names of editors
+order of age
+what are the names and ages of editors
+list the names of editors
+editors who are older than 25
+show the names of editors
+editors of age either 24
+what is the name of editor
+the youngest editor
+show each age along with the number of editors of that age
+show age of editors
+the most common age of editors
+show the distinct themes of journals
+show the names of editors and the theme of journals
+find the editor name and the journal theme
+show the names and ages of editors and the theme of journals
+in ascending alphabetical order of theme
+show the names of editors
+journals with sales bigger than 3000
+show the id , name of each editor
+show the names of editors
+list the names of editors
+what is the average sales of the journals
+work type is ' photo '
+how many accounts
+count the number of accounts
+show ids , customer ids , names for all accounts
+what are the account ids , customer ids , and account names for all the accounts
+show other account details
+account with name 338
+what are the other account details
+account with the name 338
+what is the first name , last name , and phone of the customer
+account name 162
+give the full name and phone of the customer
+account name 162
+how many accounts
+customer with first name art
+return the number of accounts
+customer with the first name art
+show all customer ids and the number of accounts for each customer
+how many accounts are there for each customer id
+show the customer id and number of accounts with most accounts
+the customer id with most accounts
+what is the customer id and how many accounts
+the customer with the most accounts
+what is the customer first , last name and id 
+id with least number of accounts
+give the full name and customer id of the customer
+the customer with the fewest accounts
+show the number of all customers 
+customers without an account
+how many customers
+customers do not have an account
+show distinct first and last names for all customers
+what are the full names of customers
+how many customers have an account
+count the number of customers who hold an account
+how many customers
+count the number of customers
+show ids , first names , last names , and phones for all customers
+what are the ids , full names , and phones of each customer
+what is the phone and email for customer
+customer with first name aniyah
+return the phone and email of the customer
+customer with the first name aniyah
+show the number of customer cards
+how many customer cards are there
+show ids , customer ids , card type codes , card numbers
+what are card ids , customer ids , card types , and card numbers
+show the date valid from and the date valid to
+card number 4560596484842
+what are the valid from and valid to dates
+number 4560596484842
+what is the first name , last name , and phone of the customer
+card 4560596484842
+return the full name and phone of the customer
+card number 4560596484842
+how many cards does customer
+customer art
+count the number of cards the customer
+customer with the first name art
+how many cards do we have
+debit cards
+count the number of customer cards
+cards of the type debit
+how many cards
+customer blanche
+count the number of credit cards
+customer with first name blanche
+show all customer ids and the number of cards owned by each customer
+what are the different customer ids and how many does he have
+the customer id with most number of cards
+return the id of the customer as well as the number of cards .
+the id of the customer who has the most cards
+show id , first and last names for all customers
+what are the ids and full names of customers
+what is the customer id , first and last name
+the customer with least number of accounts
+return the id and full name of the customer
+the customer who has the fewest accounts
+show all card type codes and the number of cards in each type
+what are the different card types , and how many cards
+what is the card type code
+the card type code with most number of cards
+return the code of the card type
+the code of the card type that is most common
+show card type codes
+what are the codes of card types
+show all card type codes and the number of customers holding cards in each type
+what are the different card type codes , and how many different customers hold each type
+show all card type codes
+what are the different card type codes
+show the number of card types
+how many different card types
+show all transaction types
+what are the different types of transactions
+show the number of transaction types
+how many different types of transactions
+what is the average and total transaction amount
+average transaction amount , as well as the total amount of all transactions
+show the card type codes and the number of transactions
+what are the different card types , and how many transactions
+show the transaction type and the number of transactions
+what are the different transaction types and how many transactions of each have
+what is the transaction type
+the transaction type that has processed the greatest total amount in transactions
+return the type of transaction
+the type of transaction with the highest total amount
+show the account id and the number of transactions for each account
+what are the different account ids as well as how many transactions
+how many tracks
+count the number of tracks
+show the name and location for all tracks
+what are the names and locations of all tracks
+show names and seatings
+tracks opened after 2000
+ordered by seating for all tracks
+what are the names and seatings for all tracks
+tracks opened after 2000
+ordered by seating
+what is the name , location and seating for track
+the most recently opened track
+return the name , location , and seating of the track
+opened in the most recent year
+what is the minimum , maximum , and average seating for all tracks
+return the minimum , maximum , and average seating across all tracks
+show the name , location , open year for all tracks
+seating higher than the average
+what are the names , locations , and years of opening for tracks
+seating higher than average
+what are distinct locations where tracks
+give the different locations of tracks
+how many races
+count the number of races
+what are the distinct classes that races
+return the different classes of races
+show name , class , and date for all races
+what are the names , classes , and dates for all races
+show the race class and number of races in each class
+what are the different classes of races , and how many races
+what is the race class
+the race class with most number of races
+give the class of races
+the class of races that is most common
+list the race class
+what are the classes of races
+show all track names
+return the names of tracks
+tracks that have no had any races
+show year where a track
+what are the years of opening for tracks
+show the name of track and the number of races in each track
+show the name of track
+track with most number of races
+what is the name of the track
+the track that has had the greatest number of races
+show the name and date for each race and its track name
+what are the names and dates of races , and the names of the tracks
+show the name and location of track
+what are the names and locations of tracks
+how many members
+members have the black membership card
+the number of members living in each address
+give me the names of members
+members whose address is in harford
+find the ids and names of members
+members with black membership card
+find the purchase time , age and address of each member
+in the order of purchase
+which membership card
+how many members
+members are not living in hartford
+show the shop addresses
+ordered by their opening year
+what are the average score and average staff number of all shops
+find the id and address of the shops
+score is below the average score
+find the address and staff number of the shops 
+shops that do not have any happy hour
+what are the id and address
+in may
+list its id and number of happy hours
+shop has happy hour most frequently
+which month
+month has the most happy hours
+which months
+how many albums
+find the number of albums
+list the names of all music genres
+what are the names of different music genres
+customer information in state ny
+customer information for customers in ny state
+what are the first names and last names of the employees
+employees who live in calgary city
+find the full names of employees
+employees living in the city of calgary
+what are the distinct billing countries of the invoices
+find the different billing countries for all
+find the names of all artists
+artists that have `` a '' in their names
+what are the names of artist
+artist who have the letter 'a ' in their names
+find the title of all the albums
+artist `` ac/dc
+what are the titles of albums
+artist `` ac/dc
+hom many albums
+artist `` metallica
+the number of albums
+artist `` metallica
+which artist
+album `` balls to the wall
+find the name of the artist
+album `` balls to the wall
+which artist
+artist has the most albums
+what is the name of the artist
+the name of the artist with the greatest number of albums
+find the names of all the tracks
+names of all the tracks that contain the word `` you
+what are the names of tracks
+names of tracks that contain the the word you
+what is the average unit price of all the tracks
+find the average unit price for a track
+what are the durations of the longest and the shortest tracks in milliseconds
+find the maximum and minimum durations of tracks in milliseconds
+show the album names , ids and the number of tracks for each album
+what are the names and ids of the different albums
+what is the name of genre
+the most common genre in all tracks
+find the name of the genre
+genre that is most frequent across all tracks
+What is media type
+the least common media type in all tracks
+what is the name of the media type
+the media type that is least common across all tracks
+show the album names and ids for albums that contain tracks
+tracks with unit price bigger than 1
+what are the titles and ids for albums
+tracks with unit price greater than 1
+how many tracks belong to 
+belong to rock genre
+count the number of tracks
+tracks that are part of the rock genre
+what is the average unit price of tracks
+tracks that belong to jazz genre
+find the average unit price of jazz tracks
+jazz tracks
+what is the first name and last name of the customer
+customer that has email luisg@embraer.com.br
+find the full name of the customer
+customer with the email luisg@embraer.com.br
+how many customers
+customers have email that contains `` gmail.com
+count the number of customers
+customers that have an email containing `` gmail.com
+what is the first name and last name employee
+customer with first name leonie
+find the full names of employees
+customers with the first name leonie
+what city does the employee
+customer with postal code 70174
+find the cities corresponding to employees
+customers with the postal code 70174
+how many distinct cities does the employees
+the number of different cities that employees live in
+find all invoice dates
+customers with first name astrid
+what are the invoice dates
+customers with the first name astrid
+find the first names of all customers
+customers that live in brazil
+what are the different first names for customers
+customers from brazil
+find the address of all customers
+customers that live in germany
+what are the addresses of customers
+customers living in germany
+list the phone numbers of all employees
+what are the phone numbers for each employee
+how many tracks
+aac audio file media type
+count the number of tracks
+the media type aac audio file
+what is the average duration in milliseconds of tracks
+tracks that belong to latin
+find the average millisecond length
+latin tracks
+show the employee first names and ids of employees
+what are the first names and support rep ids for employees
+show the employee last names
+what are the last names of employees
+list all album titles
+titles in alphabetical order
+what are all the album titles
+the album titles , in alphabetical order
+list the name and id of all artists
+the name in alphabetical order
+what are the names and ids of artists
+the names listed in alphabetical order
+what is the average unit price of rock tracks
+find the average unit price of tracks
+the rock genre
+What are the duration of longest and shortest pop tracks in milliseconds
+pop tracks
+find the maximum and minimum millisecond lengths of pop tracks
+pop tracks
+what are the birth dates of employees
+employees living in edmonton
+find the birth dates corresponding to employees
+employees who live in the city of edmonton
+what are the distinct unit prices of all
+find the distinct unit prices for tracks
+how many artists
+artists do not have any album
+the number of artists who have
+artists who have not released an album
+find all the phone numbers
+what are all the phone
+what are the customer phone numbers
+policy life insurance
+what are the phone numbers of customers
+policy with the code life insurance
+which policy type
+policy type has the most records in the database
+which olicy type
+policy type appears most frequently in the available policies
+what are all the customer phone
+the most popular policy type
+find the phone numbers of customers
+the most common policy type among the available policies
+find the policy type
+show their type code
+find the total and average amount of settlements
+return the sum and average of all settlement amounts
+find the name of services
+return the service name
+what is the effective date of the claim
+has the largest amount of total settlement
+return the effective date of the claim
+claim that has the largest total settlement amount
+how many policies are listed for the customer
+customer named dayana robel
+count the total number of policies used by the customer
+customer named dayana robel
+what is the name of the customer
+the name of the customer who has the most policies listed
+give me the customer name
+customer uses the most policies ?
+what are all the policy types
+customer named dayana robel
+tell me the types of the policy used by the customer
+customer name dayana robel
+what are all the policy types of the customer
+the customer that has the most policies listed
+list all the policy types used by the customer
+the customer enrolled in the most policies
+list all the services
+the services in the alphabetical order
+give me a list of all the service names
+the service names sorted alphabetically
+how many services
+count the total number of available services
+find the names of customers
+service `` close a policy '' or the service
+service named close a policy
+find the ids of customers
+whose name contains `` diana
+what are the ids of customers
+customers who have diana '' in part of their names
+what are the maximum and minimum settlement amount
+find the maximum and minimum settlement amount
+list all the customers
+customers in increasing order of ids
+the ordered list of customer ids
+retrieve the open and close dates of all the policies associated with the customer
+customer whose name contains `` diana
+what are the open and close dates of all the policies used by the customer
+customer who have `` diana '' in part of their names
+how many kinds of enzymes
+what is the total count of enzymes
+list the name of enzymes
+the name of enzymes in descending lexicographical order
+what are the names of enzymes
+the names of enzymes in descending order
+list the names and the locations that the enzymes
+what are the names and locations of all enzymes
+what is the maximum online mendelian inheritance in man ( omim ) value of the enzymes
+what is the maximum omim
+what is the product , chromosome and porphyria related to the enzymes
+enzymes which take effect at the location cytosol
+what is the product , chromosome , and porphyria of the enzymes
+enzymes located at cytosol
+what are the names of enzymes
+enzymes who does not produce 'heme
+what are the names of enzymes
+enzymes whose product is not Heme
+what are the names and trade names of the medicines
+medicines which has 'yes ' value in the fda record
+what are the names and trade names
+fda approved
+what are the names of enzymes
+medicine named amisulpride
+what are the names of the enzymes
+medicine amisulpride
+what are the ids and names of the medicine
+id , what are the names of the medicines
+what are the ids , names and fda approval status of medicines
+the ids , in descending order of the number
+what are the ids , names , and fda approval status for medicines
+the ids for medicines ordered by descending number
+what is the id and name of the enzyme
+the id of the enzyme with most number of medicines
+what is the id and name of the enzyme
+what is the interaction type of the enzyme
+enzyme named ala synthase
+what is the type of interaction for the enzyme
+enzyme named ala synthase
+the most common interaction type between enzymes and medicine ? and how many
+the most common types of interactions between enzymes and medicine
+how many medicines
+medicines have the fda approval status no
+how many medicines
+medicines were not approved by the fda
+how many enzymes
+what is the count of enzymes
+what is the id and trade name of the medicines
+what are the ids and trade names of the medicine
+what are the distinct name , location and products of the enzymes
+which has any inhibitor interaction
+what are the different names , locations , and products of the enzymes
+that are capable inhibitor interactions
+how many distinct fda approval statuses are there for the medicines
+how many different fda approval statuses exist for medicines
+which enzyme names
+enzyme names have the substring `` ala
+what are the names of enzymes
+names of enzymes that include the string ala
+find the number of medicines offered by each trade
+how many medicines are offered by each trade name
+list all schools and their nicknames
+in the order of founded year
+what are the different schools and their nicknames
+ordered by their founding years
+list all public schools and their locations
+what are the public schools and what are their locations
+school with the largest enrollment
+return the founded year for the school
+the largest enrollment
+find the founded year of school
+the founded year of the newest
+school that was founded most recently
+how many schools are in the basketball match
+count the number of schools that have had basketball matches
+what is the highest acc percent
+the highest acc percent
+return the acc percent
+the highest acc percent
+what is the primary conference
+the lowest acc percent
+return the primary conference
+the lowest acc percentage score
+what is the team name and acc regular season
+school that was founded for the longest time
+return the name of the team and the acc during the regular season
+school that was founded the earliest
+find the location and all games score of the school
+clemson as its team name
+what are the all games score and location
+called clemson
+what are the average enrollment size of the universities
+universities that are founded before 1850
+return the average enrollment of universities
+universities founded before 1850
+show the enrollment and primary_conference
+the oldest college
+what are the enrollment and primary conference for the university
+university which was founded the earliest
+what is the total and minimum enrollment
+return the total and minimum enrollments
+find the total student enrollment for different affiliation
+what are the total enrollments of universities of each affiliation
+how many schools
+count the number of universities 
+find the schools
+founded after 1850
+what are the schools
+founded before 1850
+how many different affiliation
+count the number of different affiliation
+how many school locations have
+locations have the word ny
+how many universities
+universities have a location that contains ny
+find the team names
+enrollments are smaller than the average enrollment
+what are the names of teams
+that have a below average enrollment
+universities that have over a 20000 enrollment
+enrollment size of above 20000
+total number of students enrolled in the colleges for each affiliation
+founded after the year of 1850
+what are the different affiliations , and what is the total enrollment of schools
+founded after 1850
+what is the maximum enrollment
+return the maximum enrollment
+list names of all teams in the basketball competition
+ordered by all home scores in descending order
+what are the names of all the teams
+sorted by all home scores in descending order
+names of models
+list the model name and the amount of ram
+model has the least amount of ram
+what are the chip model and screen mode of the phone
+phone with hardware model name `` lg-p760
+how many phone hardware models
+phone hardware models are produced by the company named
+what is maximum and minimum ram
+phone produced by company named nokia corporation
+what is the average rom size of phone
+phones produced by the company named nokia corporation
+list the hardware model name and company name for all the phones
+launched in year 2002
+list the hardware model name and company name
+phones that have word 'full ' in their accreditation types
+find the char cells , pixels and hardware colours
+phone whose hardware model name is `` lg-p760
+list the hardware model name and company name for the phone
+type is `` graphics
+list the company name and the number of phone model produced by that company
+the name of the company that has the least number of phone models
+list the name of the company
+list the maximum , minimum and average number of used kb
+list the name of the phone model
+launched in year 2002
+the highest ram size
+what are the wifi and screen mode type
+hardware model named `` lg-p760
+list the hardware model name for the phones
+type `` text
+list the hardware model name for the phones
+type is `` graphics
+list the hardware model name
+that were produced by nokia corporation
+list the phone hardware model and company name for the phones
+the number of phones for each accreditation type
+how many phones belongs to each accreditation type
+find the accreditation level
+how many models
+do not have the wifi function
+count the number of chip model
+that do not have wifi
+list all the model names
+sorted by their launch year
+find the average ram mib size of the chip models
+how many countries are there in total
+count the number of countries
+show the country name and capital of all countries
+what are the names and capitals of each country
+show all official native languages
+official native languages that contain the word `` english
+what are the official native languages
+official native languages that contain the string `` english
+show all distinct positions
+what are the different positions
+show the players
+players from college ucla
+who are the players
+players from ucla
+show the distinct position
+players from college ucla
+what are the different positions
+players from ucla colleges
+show the draft pick numbers and draft classes
+whose positions are defenders
+what are the draft pick numbers and draft classes
+who play the defender position
+how many distinct teams
+count the number of different teams
+show the players and the years played
+Who are the different players and how many years has each played
+show all team names
+what are the names of all teams
+show the season , the player , and the name of the country that player
+for each player , what are their name , season ,  and country that they belong to
+which players
+are from indonesia
+who are the players
+from indonesia
+what are the distinct positions
+country whose capital is dublin
+give the different positions
+country with the capital dublin
+what are the official languages of the countries
+from maryland college
+return the official native languages of countries
+how many distinct official languages are there among countries
+whose positions are defenders
+count the number of different official languages corresponding to countries
+who play defender are from
+show the season , the player , and the name of the team that players
+Who are the different players , what season do they play in , and what is the name of the team
+show the positions of the players from the team 
+team with name ryleygoldner
+return the positions of players
+team ryley goldner
+how many distinct colleges
+team with name columbuscrew
+count the number of different colleges
+columbus crew are from
+show the players and years played for players
+from team `` columbus crew
+what are the players, and how many years did each play
+players who played for columbus crew
+return all players
+sorted by college in ascending alphabetical order
+what are all the players
+sorted by college in ascending alphabetical order
+show the most common position
+the most common position
+what is the position
+the position that is most common among players in match seasons
+show the colleges
+the top 3 most common colleges
+what are the three colleges
+the three colleges from which the most players are from
+show the name of colleges
+what are the names of all colleges
+show the name of colleges
+in descending alphabetical order
+what are the names of colleges
+colleges listed in descending alphabetical order
+what are the names of teams
+return the names of teams
+how many climbers
+count the number of climbers
+list the names of climbers
+in descending order of points
+what are the names of the climbers
+ordered by points descending
+list the names of climbers
+climbers whose country is not switzerland
+what are the names of climbers
+climbers who are not from the country of switzerland
+what is the maximum point for climbers
+climbers whose country is united kingdom
+return the maximum number of points for climbers
+climbers from the united kingdom
+how many distinct countries are the climbers
+count the number of different countries that climbers
+what are the names of mountains
+the names of mountains in ascending alphabetical order
+give the names of mountains
+the names of mountains in alphabetical order
+what are the countries of mountains
+mountains with height bigger than 5000
+return the countries of the mountains
+mountains that have a height larger than 5000
+what is the name of the highest mountain
+the highest mountain
+return the name of the mountain
+the greatest height
+list the distinct ranges of the mountains
+the top 3 prominence
+what are the different ranges of mountains
+the 3 mountains with the highest prominence
+show names of climbers and the names of mountains
+what are the names of climbers and the corresponding names of mountains
+show the names of climbers and the heights of mountains
+what are the names of climbers and the corresponding heights of the mountains
+show the height of the mountain
+the climber with the maximum points
+what is the height of the mountain
+the most points
+show the distinct names of mountains
+climbers from country west germany
+what are the different names of mountains
+climbers from the country west germany
+show the times used by climbers
+mountains in country uganda
+what are the times used by climbers
+mountains in the country of uganda
+show the countries and the number of climbers from each country
+how many climbers are from each country
+list the countries 
+which countries
+list the names of mountains
+what are the names of countains
+show the range of mountains
+the range that has the most number of mountains
+which range 
+range contains the most mountains
+show the names of mountains
+mountains with height more than 5000
+what are the names of mountains
+mountains that have a height of over 5000
+how many body builders are there
+list the total scores of body builders
+the total of body builders in ascending order
+list the snatch score and clean jerk score of body builders
+in ascending order of snatch
+what is the average snatch
+what are the clean and jerk
+the highest total score
+what are the birthdays of people
+in ascending order of height
+what are the names of body builders
+what are the names
+total score is higher than 300
+what is the name
+the greatest body weight
+what are the birth date and birth place
+the highest total points
+what are the heights
+total score smaller than 315
+what is the average total score
+height bigger than 200
+what are the names
+in descending order of total scores
+list each birth place along with the number of people
+what is the birth place of people
+the most common birth place of people
+what are the birth places
+list the height and weight of people
+in descending order of height
+how many distinct birth places
+how many persons
+list the weight
+snatch score higher than 140
+what are the total scores
+whose birthday contains the string january
+what is the minimum snatch
+how many elections
+list the votes of elections
+the votes of elections in descending order
+list the dates and vote percents of elections
+what are the minimum and maximum vote percents of elections
+what are the names and parties of representatives
+what are the names of representatives
+representatives whose party is not `` republican
+what are the life spans of representatives
+representatives from new york state or indiana state
+what are the names of representatives and the dates of elections
+what are the names of representatives
+with more than 10000 votes in election
+what are the names of representatives
+in descending order of votes
+what is the party of the representative
+the smallest number of votes
+what are the lifespans of representatives
+in descending order of vote percent
+what is the average number of votes
+representatives from party `` republican
+show the party name and the number of representatives in each party
+what is the party that has the largest number of representatives
+the party that has the largest number of representatives
+what parties
+what states
+list the names of representatives
+how many distinct parties are there for representatives
+how many apartment bookings are there in total
+count the total number of apartment bookings
+show the start dates and end dates
+what are the start date and end date
+show all distinct building descriptions
+list of all the distinct building descriptions
+show the short names of the buildings
+buildings managed by `` emma
+give me the short names of the buildings
+buildings does `` emma '' manage
+show the addresses and phones of all the buildings
+buildings managed by `` brenden
+what are the address and phone number of the buildings
+buildings managed by `` brenden
+what are the building full names
+building full names that contain the word `` court
+find all building full names
+building full names containing the word `` court
+what is the minimum and maximum number of bathrooms of all the apartments
+give me the minimum and maximum bathroom count among all the apartments
+what is the average number of bedrooms of all apartments
+find the average number of bedrooms of all the apartments
+return the apartment number and the number of rooms for each apartment
+what are the apartment number and the room count of each apartment
+what is the average number of rooms of apartments
+apartments with type code `` studio
+find the average room count of the apartments
+apartments that have the `` studio '' type code
+reutrn the apartment numbers of the apartments
+apartments with type code `` flat
+give me their apartment numbers
+apartments have type code `` flat
+return the first names and last names of all guests
+what are the first names and last names of all the guests
+return the date of birth for all the guests
+guests with gender code `` male
+what are dates of birth of all the guests
+guests whose gender is `` male
+show the apartment numbers , start dates , and end dates of all the apartment
+what are the apartment number , start date , and end date of each apartment
+what are the booking start and end dates
+apartments with type code `` duplex
+booking start date and end date
+apartments that have type code `` duplex
+what are the booking start and end dates
+apartments with more than 2 bedrooms
+find the booking start date and end date
+apartments that have more than two bedrooms
+what is the booking status code
+apartment with apartment number
+apartment with number suite 634
+show the distinct apartment numbers of the apartments
+bookings with status code `` confirmed
+return their apartment numbers
+bookings with status code `` confirmed
+show the average room count of the apartments
+booking status code `` provisional
+what is the average room count of the apartments
+booking status code is `` provisional
+show the guest first names , start dates , and end dates
+what are the guest first name , start date , and end date
+show the start dates and end dates of all the apartment bookings
+guests with gender code `` female
+what are the start date and end date of the apartment bookings
+female guests ( gender code `` female
+show the first names and last names of all the guests
+bookings with status code `` confirmed
+return their first names and last names
+bookings with status code `` confirmed
+show the facility codes of apartments
+apartments with more than 4 bedrooms
+what are the facility codes of the apartments
+apartments with more than four bedrooms
+show the total number of rooms of all apartments
+facility code `` gym
+find the total number of rooms in the apartments
+facility code `` gym
+show the total number of rooms of the apartments
+building with short name columbus square
+how many rooms in total are there in the apartments
+building with short name columbus square
+show the addresses of the buildings
+apartments with more than 2 bathrooms
+give me the addresses of the buildings
+apartments that have more than two bathrooms
+show the apartment type codes and apartment numbers
+buildings managed by `` kyle
+what apartment type codes and apartment numbers
+buildings managed by `` kyle
+show the booking status code and the corresponding number of bookings
+return all the apartment numbers
+sorted by the room count in ascending order
+in ascending order of room count
+return the apartment number
+the largest number of bedrooms
+what is the apartment number of the apartment
+the apartment with the most beds
+show the apartment type codes and the corresponding number of apartments
+the apartment type codes sorted by the number of apartments
+return each apartment type code with the number of apartments having that apartment type
+in ascending order of the number of apartments
+show the apartment type codes
+the top 3 apartment type codes sorted by the average number of rooms
+what are the apartment types
+the top three apartment types in terms of the average room count
+show the apartment type code , together with the number of bathrooms and number of bedrooms
+the apartment type code that has the largest number of total rooms
+return the apartment type code , its number of bathrooms and number of bedrooms
+apartment type has the largest number of total rooms
+the most common apartment type code
+which apartment type code
+type code appears the most often
+show the most common apartment type code among apartments
+apartments with more than 1 bathroom
+the most common apartment type code among apartments
+which apartment type code
+apartments with more than one bathroom
+apartment type code is the most common among apartments
+show each apartment type code , and the maximum and minimum number of rooms for each type
+return each apartment type code along with the maximum and minimum number of rooms among each type
+show each gender code and the corresponding count of guests
+gender code and the corresponding count of guests sorted by the count
+sort the gender codes in descending order of their corresponding number of guests
+how many apartments
+find the number of apartments
+how many games
+games are held after season 2007
+list the dates of games
+the home team name in descending order
+list the season , home team , away team of all the games
+what are the maximum , minimum and average home games each stadium
+what is the average attendance of stadiums
+stadiums with capacity percentage higher than 100
+what are the player name , number of matches , and information source for players
+who do not suffer from injury of knee problem
+what is the season of the game
+player walter samuel
+what are the ids , scores , and dates of the games
+what are the id and name of the stadium
+the stadium where the most injury accidents happened
+find the id and name of the stadium
+the stadium where the largest number of injury accidents occurred
+in which season and which stadium
+have an injury of foot injury
+how many different kinds of information sources
+how many games
+how many distinct kinds of injuries
+happened after season 2010
+which stadium name
+stadium name contains the substring `` bank
+how many games has each stadium
+find the date of the game and the name of the injured player in the game
+in descending order of game season
+list all country and league names
+how many leagues
+in england
+what is the average weight of all players
+what is the maximum and minimum weight of all players
+list all player names
+overall rating higher than the average
+what are the names of players
+list the names of all players
+crossing score higher than 90
+list the names of all players
+left-footed players
+what is the average rating for right-footed players and left-footed
+how many are right-footed and left-footed
+overall rating greater than 80
+who are the players
+the top 3 players in terms of overall rating
+list the names and birthdays of the players
+the top five players in terms of potential
+how many performances
+list the hosts of performances
+in ascending order of attendance
+what are the dates and locations of performances
+show the attendances of the performances
+performances at location td garden
+what is the average number of attendees for performances
+what is the date of the performance
+the highest number of attendees
+show different locations and the number of performances at each location
+the most common location of performances
+show the locations that have at least two performances
+show the names of members and the location of the performances
+in ascending alphabetical order of their names
+show the dates of performances
+members whose roles are `` violin
+show the names of members and the dates of performances
+order of attendance of the performances
+list the names of members
+find the buildings
+capacity more than 50
+what are the distinct buildings
+capacities of greater than 50
+count the number of rooms
+in the lamberton building
+how many classrooms
+classrooms are not in lamberton
+what is the name and building of the departments
+budget is more than the average budget
+give the name and building of the departments
+with greater than average budget
+find the room number of the rooms
+what are the room numbers and corresponding buildings for classrooms
+find the name and building of the department
+the highest budget
+what is the department name and corresponding building for the department
+the greatest budget
+what is the name of the student
+in the history department
+has the highest total credits
+give the name of the student
+student in the history department
+with the most credits
+how many rooms
+lamberton building
+count the number of classrooms
+classrooms in lamberton
+how many students have advisors
+count the number of students who have advisors
+how many departments offer courses
+count the number of departments which offer courses
+how many different courses
+physics department
+count the number of courses
+physics department
+find the title of courses
+what are the titles for courses
+find the title , credit , and department name of courses
+what is the title , credit value , and department name for courses
+how many courses
+count the number of courses
+courses without prerequisites
+find the name of the courses
+courses that do not have any prerequisite
+what are the titles of courses
+courses without prerequisites
+how many different instructors
+count the number of distinct instructors
+find the total budgets
+marketing or finance department
+what is the sum of budgets
+marketing and finance departments
+find the department name of the instructor
+find the instructor whose name
+what is the name of the department
+instructure who has a name like soisalon
+how many rooms
+lamberton building
+count the number of rooms
+in lamberton
+find the name and budget of departments
+departments whose budgets are more than the average budget
+what are the names and budgets of departments
+departments with budgets greater than the average
+what is the name of the instructor
+instructor who is in statistics
+earn the lowest salary
+give the name of the instructor
+instructor in the statistics department
+the lowest earning instructor
+find the name of students
+in the years of 2009 and 2010
+what are the names of the students
+in 2009 or 2010
+find the names of the departments
+departments that provide the largest amount of courses
+what are the names of the departments
+the 3 departments with the most courses
+find the name of the department
+the department that offers the highest total credits
+what is the name of the department
+the name of the department with the most credits
+list the names of all courses
+ordered by their titles
+given titles of all courses
+in order of titles
+which department
+has the lowest budget
+give the name of the department
+with the lowest budget
+list the names and buildings of all departments
+departments sorted by the budget from large to small
+what are the names and buildings
+sorted by budget descending
+who is the instructor
+with the highest salary
+give the name of the instructor
+the highest paid instructor
+ordered by their salary in ascending order
+in order of salary from least to greatest
+find the name of the students and their department names
+sorted by their total credits in ascending order
+what are the names of students and their respective departments
+ordered by number of credits from least to greatest
+list all course names and their instructors ' names
+in year 2008
+in alphabetic order all course names
+show all titles and their instructors ' names
+in 2008
+in alphabetical order by title
+find the name of instructors
+what are the names of instructors
+find the name of the students
+what are the names of students
+find the number of rooms
+with more than 50 capacity
+how many rooms in each building have
+have capacity of over 50
+find the maximum and average capacity among rooms in each building
+what are the greatest and average capacity for rooms in each building
+find the title of the course
+what are the titles of courses
+find the total credits of courses provided by different department
+how many total credits are offered by each department
+find the minimum salary for the departments
+departments whose average salary is above the average payment of all instructors
+what is the lowest salary in departments with average salary
+departments with average salary greater than the overall average
+find the number of courses provided in each semester and year
+how many courses are provided in each semester and year
+find the year
+find the year
+which year
+year had the greatest number of courses
+find the year and semester
+semester when the largest number of courses
+what is the year and semester
+semester with the most courses
+find the name of department
+the name of department has the highest amount of students
+what is the name of the deparment
+the name of the deparment with the highest enrollment
+find the total number of students in each department
+how many students are in each department
+find the semester and year
+year which has the least number of student taking any class
+which semeseter and year
+the fewest students
+what is the id of the instructor
+students from history department
+give id of the instructor
+students in the history department
+find the name and salary of the instructors
+student from history department
+what are the names and salaries of instructors
+students in the history department
+Find the name of the courses
+courses that do not have any prerequisite
+what are the names of courses
+courses without prerequisites
+what is the title of the prerequisite class
+class of International Finance course
+give the title of the prerequisite
+the course International Finance
+find the title of course
+course whose prerequisite is course differential geometry
+what is the title of the course
+the course with differential geometry
+find the names of students
+in the fall semester
+what are the names of students
+in the fall of 2003
+what is the title of the course
+course that was offered at building chandler
+give the title of the course
+course offered in chandler
+find the name of the instructors
+who taught c programming course
+what are the names of instructors
+who have taught c programming courses
+find the name and salary of instructors
+students from the math department
+what are the names and salaries of instructors
+students in the math department
+find the name of instructors
+students from the math department
+sort the results by students ' total credit
+what are the names of all instructors
+students in the math depart
+sorted by total credits of the student
+what is the course title
+course Mobile Computing
+what is the title of the course
+course that is a prerequisite for Mobile Computing
+find the name of instructor
+student who has the highest number of total credits
+what is the name of the instructor
+with the greatest number of total credits
+find the name of instructors
+instructors who didn't teach any courses
+what are the names of instructors
+instructors who didn't teach
+find the names of instructors
+instructors who didn't each any courses
+in any spring semester
+what are the names of instructors
+instructors who didn't teach courses
+teach courses in the spring
+Find the name of the department
+the name of the department which has the highest average salary
+department has the highest average instructor
+department has the highest average instructor salary
+find the number and averaged salary of all instructors
+with the highest budget
+how many instructors are in the department , and what is their average salary
+department the highest budget
+what is the title and credits of the course
+give the title and credits for the course
+find the name of students
+students who didn't take any course
+course from biology department
+what are the names of students
+students who haven't taken any courses
+taken any biology courses
+find the total number of students and total number of instructors for each department
+how many students and instructors are in each department
+find the name of students
+the course with title international finance
+what are the names of students
+the course international finance
+find the name and salary of instructors
+instructors whose salary is below the average salary of the instructors
+in the physics
+what are the names and salaries for instructors
+instructors who earn less than the average salary of instructors
+in the physics
+find the name of students
+course offered by statistics department
+what are the names of students
+who have taken statistics courses
+find the building , room number , semester and year
+courses offered by psychology department
+sorted by course titles
+what are the building , room number , semester and year
+in the psychology department
+sorted using course
+find the names of all instructors
+instructors in computer science department
+what are the names of all instructors
+instructors in the comp . sci . department
+find the names of all instructors
+instructors in comp . sci . department
+what are the names of the instructors
+instructors in the comp . sci . department
+find the names of all instructors
+what are the names of all instructors
+find the names of all instructors in the art department
+instructors in the art department
+what are the names of art instructors and the corresponding course id
+art instructors
+find the names of all instructors
+whose name includes the substring dar
+what are the names of all instructors
+names of all instructors with names that include `` dar
+list names of all distinct
+in alphabetic order the names
+list the distinct names of the instructors
+ordered by name
+find the salaries of all distinct
+instructors that are less than the largest salary
+what are the distinct salaries of all
+instructors who earned less than the maximum salary
+find the total number of instructors
+teach a course in the spring 2010 semester
+how many instructors teach
+teach a course in the spring of 2010
+find the names and average salaries of all departments
+what are the names and average salaries for departments
+find names of instructors
+salary greater than that of some ( at least one ) instructor
+in the biology department
+what are the names of instructors
+who earn more than at least one instructor
+from the biology department
+find the names of all instructors
+whose salary is greater than the salary of all instructors
+in the biology department
+what are the names of all instructors
+instructors with a higher salary than any of the instructors
+in the biology department
+how many debates are there
+list the venues of debates
+in ascending order of the number of audience
+what are the date and venue of each debate
+list the dates of debates
+debates with number of audience bigger than 150
+show the names of people
+people aged either 35 or 36
+what is the party
+the youngest people
+show different parties of people along with the number of people in each party
+show the party
+the party that has the most people
+show the distinct venues of debates
+show the names of people , and dates and venues of debates
+show the names of people , and dates and venues of debates
+ordered in ascending alphabetical order of name
+show the names of people
+debates with number of audience bigger than 200
+show the names of people and the number of times they have been
+show the names of people
+list the names of people
+List the names of all the customers
+the customers in alphabetical order
+the customer names
+sort the customer names in alphabetical order
+find all the policy type codes
+with the customer `` dayana robel
+what are the type codes of the policies
+used by the customer `` dayana robel
+give me the policy type code
+type of policy is most frequently used
+type code of the most frequently used policy
+the type code of the most frequently used policy
+find all the policy types
+give me the policy type codes
+find the total and average amount paid
+what are the total amount and average amount paid
+find the total amount claimed
+the most recently created
+how much amount in total
+the most recently created
+what is the name of the customer
+who has made the largest amount of claim
+return the customer details
+customer made the largest amount of claim
+What is the name of the customer
+return the customer details
+customer made the smallest amount of claim
+how many claim processing stages are there in total
+Find the number of distinct stages in claim processing
+what is the name of the claim processing stage
+claim processing stage that most of the claims are on
+show the claim status name
+stage has the most claims
+customers whose name contains `` diana
+customers whose name contains `` diana
+return the customer details
+customers have the substring `` diana '' in their names
+find the names of the customers
+deputy policy
+give me the customer details
+policy with the type code `` deputy
+find the names of customers
+deputy policy or uniformed policy
+return the customer details
+policy with the type code `` deputy
+the number of records of each policy type and its type code
+for each policy type , return its type code and its count in the record
+find the names of the customer
+the customer that has been involved in the most policies
+give me the customer details
+customer have the most policies
+what is the description of the claim status
+claim status `` open
+find the description of the claim status
+claim status `` open
+how many distinct claim outcome codes
+count the number of distinct claim outcome codes
+which customer
+find the customer
+started a policy most recently
+show the number of accounts
+how many accounts
+how many customers have opened an account
+count the number of customers
+show the id , the date of account opened , the account name , and other account detail for all accounts
+what are the ids , date opened , name , and other details for all accounts
+show the id , the account name , and other account details for all accounts
+customer with first name meaghan
+what are the ids , names , dates of opening , and other details for accounts
+customer with the first name `` meaghan
+show the account name and other account detail for all accounts
+customer with first name meaghan
+what are the names and other details for accounts
+customer named meaghan
+show the first name and last name for the customer
+account name 900
+what are the full names of customers
+account name 900
+how many customers
+customers do n't have an account
+count the number of customers
+customers who do not have an account
+show the unique first names , last names , and phone numbers for all
+what are the distinct first names , last names , and phone numbers for customers
+how many accounts does each customer have ? list the number and customer id
+count the number of accounts corresponding to each customer id
+what is the customer id , first and last name
+the customer id with most number of accounts
+return the id and full name of the customer
+the id with the most accounts
+show id , first name and last name for all customers and the number of accounts
+what are the the full names and ids for all customers , and how many accounts
+show first name and id for all customers
+what are the first names and ids for customers
+show the number of customers
+count the number of customers
+show the number of customers for each gender
+how many customers are there of each gender
+how many transactions do we have
+count the number of transactions
+how many transaction does each account have ? show the number and account id
+count the number of financial transactions that correspond to each account id
+how many transaction
+account with name 337 have
+count the number of financial transactions
+account with the name 337 has
+what is the average , minimum , maximum , and total transaction amount
+return the average , minimum , maximum , and total transaction amounts
+show ids for all transactions
+whose amounts are greater than the average
+what are the ids for transactions
+transactions that have an amount greater than the average amount
+show the transaction types and the total amount of transactions
+what are total transaction amounts for each transaction type
+show the account name , id and the number of transactions for each account
+return the names and ids of each account, as well as the number of transactions
+show the account id
+the account id with most number of transactions
+what is the id of the account
+the id of the account with the most transactions
+show the account id and name
+what are the ids and names of accounts
+show all product sizes
+what are the different product sizes
+show all product colors
+what are the different product colors
+show the invoice number and the number of transactions for each invoice
+how many transactions correspond to each invoice number
+what is the invoice number and invoice date for the invoice
+the invoice with most number of transactions
+what is the invoice number and invoice date corresponding to the invoice
+the invoice with the greatest number of transactions
+how many invoices
+count the number of invoices
+show invoice dates and order id and details for all invoices
+what are the invoice dates , order ids , and order details for all invoices
+show the order ids and the number of invoices for each order
+how many invoices correspond to each order id
+what is the order id and order details for the order
+return the order ids and details
+what is the customer last name , id and phone number
+customer id with most number of orders
+return the last name , id and phone number of the customer
+the customer who has made the greatest number of orders
+show all product names and the total quantity ordered for each product name
+what are the different product names , and what is the sum of quantity ordered for each product
+show the order ids and the number of items in each order
+how many order items correspond to each order id
+show the product ids and the number of unique orders containing each product
+how many distinct order ids correspond to each product
+show all product names and the number of customers having an order on each product
+what are teh names of the different products , as well as the number of customers who have ordered each product
+show order ids and the number of products in each order
+how many different products correspond to each order id
+show order ids and the total quantity in each order
+give the order ids for all orders , as well as the total product quantity
+how many products
+how many products
+count the number of products
+Count the number of products
+how many churches
+churches opened before 1850
+show the name , open date , and organizer for all churches
+list all church names
+in descending order of opening date
+show the opening year
+show the organizer and name for churches
+show all opening years and the number of churches
+show the name and opening year for three churches
+three churches that opened most recently
+how many people
+female people are older than 30
+show the minimum , maximum , and average age for all people
+show the name and country for all people
+whose age is smaller than the average
+weddings after year 2014
+show the name and age for all people
+male people
+people who do n't have a wedding
+show all church names
+show the names for all people
+having a wedding in year 2016
+how many weddings
+weddings are there in year 2016
+show the church names
+people older than 30
+show all countries and the number of people from each country
+how many churches
+wedding in year 2016
+how many artists
+count the number of artists
+show all artist name , age , and country
+ordered by the yeared they joined
+what are the names , ages , and countries of artists
+sorted by the year they joined
+what are all distinct country for artists
+return the different countries for artists
+show all artist names and the year
+who are not from united states
+what are the names and year of joining for artists
+artists that do not have the country united states
+how many artists
+artists are above age 46
+joined after 1990
+count the number of artists
+artists who are older than 46
+what is the average and minimum age of all artists
+artists from united states
+return the average and minimum ages across artists
+artists from the united states
+what is the name of the artist
+the artist who joined latest
+return the name of the artist
+artist who has the latest join year
+how many exhibition
+in year 2005 or after
+count the number of exhibitions
+exhibitions that happened in or after 2005
+show theme and year for all exhibitions
+exhibitions with ticket prices lower than 15
+what are the theme and year for all exhibitions
+exhibitions that have a ticket price under 15
+show all artist names and the number of exhibitions for each artist
+how many exhibitions has each artist
+what is the name and country for the artist
+the artist with most number of exhibitions
+return the name and country corresponding to the artist
+the artist who has had the most exhibitions
+show names for artists
+artists without any exhibition
+what are the names of artists
+artists that have not had any exhibitions
+what is the theme and artist name for the exhibition
+a ticket price higher than the average
+return the names of artists and the themes of their exhibitions
+exhibitions that had a ticket price higher than average
+show the average , minimum , and maximum ticket prices for exhibitions
+exhibitions for all years before 2009
+what are the average , minimum , and maximum ticket prices for exhibitions
+exhibitions that happened prior to 2009
+show theme and year for all exhibitions
+in an descending order of ticket price
+what are the themes and years for exhibitions
+sorted by ticket price descending
+what is the theme , date , and attendance for the exhibition
+exhibition in year 2004
+return the themes , dates , and attendance for exhibitions
+exhibitions that happened in 2004
+how many exhibitions
+attendance more than 100
+count the number of exhibitions
+that have had an attendnance of over 100
+a ticket prices under 10
+show all artist names
+what are the names of artist
+item whose title is `` orange
+find the number of reviews
+how many users are there
+find the average and maximum rating of all reviews
+find the highest rank of all reviews
+how many different users wrote some reviews
+how many different items were reviewed
+find the number of items
+items that did not receive any review
+Find the names of users
+users who did not leave any review
+Find the names of goods
+goods that receive a rating of 10
+Find the titles of items
+items whose rating is higher than the average review rating
+find the titles of items
+items that received any rating below 5
+find the name of the item
+the item with the lowest average rating
+list the titles of all items
+the titles of all items in alphabetic order
+Find the name of the user
+the user who gives the most reviews
+find the name and id of the item
+the item with the highest average rating
+Find the name and id of the good
+the good with the highest average rank
+return the name and the average rating of reviews
+For each user , find their name and the number of reviews
+Find the name of the user
+the user who gave the highest rating
+Find the name of the source user
+the source user with the highest average trust score
+Find each target user name and average trust
+Find the name of the target user
+user with the lowest trust score
+Find the names of the items
+items that did not receive any review
+Find the names of users
+users who did not leave any review
+Find the number of users
+users who did not write any review
+Find the number of items
+items without any review
+how many players
+list the names of players
+in ascending order of votes
+what are the gender and occupation of players
+list the name and residence for players
+occupation is not `` researcher
+show the names of sponsors of players
+players whose residence is either `` brandon or birtle
+what is the name of the player
+the player with the largest number of votes
+show different occupations along with the number of players in each occupation
+the most common occupation of players
+show the residences
+show the names of players and names of their coaches
+show the names of players
+players coached by the rank 1 coach
+show the names and genders of players
+a coach starting after 2011
+show the names of players and names of their coaches
+coaches in descending order of the votes of players
+list the names of players
+players that do not have coaches
+List the club id, name and the number of coaches
+how many gold medals has the club
+club with the most coaches won
+how many gymnasts
+count the number of gymnasts
+list the total points of gymnasts
+the total points of gymnasts in descending order
+what are the total points for all gymnasts
+ordered by total points descending
+list the total points of gymnasts
+in descending order of floor exercise points
+what are the total points of gymnasts
+ordered by their floor exercise points descending
+what is the average horizontal bar points for all gymnasts
+return the average horizontal bar points across all gymnasts
+what are the names of people
+the names of people in ascending alphabetical order
+return the names of people
+the names of people , ordered alphabetically
+what are the names of gymnasts
+Return the names of the gymnasts
+what are the names of gymnasts
+hometown is not santo domingo
+Return the names of gymnasts
+who did not grow up in santo domingo
+what is the age of the person
+the  person
+Return the age of the person
+with the greatest height
+list the names of people
+the top 5 oldest people
+what are the names of people
+the five oldest people
+what is the total point count
+the youngest gymnast
+return the total points of the gymnast
+the gymnast with the lowest age
+what is the average age
+Return the average age across all gymnasts
+what are the distinct hometowns
+gymnasts with total points more than 57.5
+give the different hometowns
+gymnasts that have a total point score of above 57.5
+what are the hometowns of gymnasts and the corresponding number of gymnasts
+how many gymnasts are from each hometown
+what is the hometown
+the most common hometown of gymnasts
+return the hometown
+the hometown that is most common among gymnasts
+what are the hometowns
+give the hometowns
+list the names of gymnasts
+gymnasts in ascending order by their heights
+what are the names of gymnasts
+gymnasts, ordered by their heights ascending
+how many distinct hometowns did these people
+count the number of different hometowns of these people
+show the ages of gymnasts
+gymnasts in descending order of total points
+what are the ages of the gymnasts
+gymnasts, ordered descending by their total points
+find the total savings balance
+except the account with name brown
+what is the total balance of savings
+accounts not belonging to someone with the name brown
+how many accounts are there in total
+count the number of accounts
+what is the total checking balance
+find the total balance across checking
+find the average checking balance
+what is the average balance in checking
+how many accounts
+balance above the average savings balance
+find the the number of accounts with a savings
+balance that is higher than the average savings balance
+find the name and id of accounts
+whose balance is below the maximum checking balance
+what are the customer id and name corresponding to accounts
+with a checking balance less than the largest checking balance
+what is the checking balance of the account
+name contains the substring ee
+find the balance of the checking
+an owner whose name contains ee
+find the checking balance and saving balance
+in the brown account
+what are the checking and savings balances
+in accounts belonging to brown
+find the balance of the accounts
+accounts whose savings balance is higher than the average savings balance
+what are the balances of checking accounts
+with savings balances greater than the average savings balance
+list all customers names
+names in the alphabetical order
+what are the names of all the customers
+customers in alphabetical order
+find the name and checking balance of the account
+the lowest savings balance
+what are the names and balances of checking accounts
+the customer with the lowest savings balance
+find the number of checking accounts for each account name
+what are the names of customers with accounts , and how many checking accounts
+find the total saving balance for each account name
+what are the names of customers with accounts , and what are the total savings balances
+find the name of accounts
+whose checking balance is below the average checking balance
+what are the names of customers
+with checking balances lower than the average checking balance
+find the saving balance of the account
+the account with the highest checking balance
+what is the savings balance of the account
+the customer with the highest checking balance
+find the name and checking balance of the account
+the account with the lowest saving balance
+what is the name and checking balance of the account
+the account which has the lowest savings balance
+find the name , checking balance and saving balance
+what are the names , checking balances , and savings balances
+find the name of accounts
+whose checking balance is higher than corresponding saving balance
+what are the names of customers
+customers with a higher checking balance than savings balance
+find the name and savings balance of accounts
+the top 3 accounts with the highest saving balance sorted by savings balance
+what are names and savings balances of the three accounts
+the three accounts with the highest savings balances
+how many main stream browsers
+browsers whose market share is at least 5 exist
+list the name of browsers
+in descending order by market share
+list the ids , names and market shares
+what is the maximum , minimum and average market share
+what is the id and market share of the browser
+browser safari
+what are the name and os of web client accelerators
+accelerators that do not work with only a ' broadband ' type connection
+what is the name of the browser
+compatible with the accelerator cproxy
+what are the ids and names of the web accelerators
+what is the id and name of the browser
+the id of the browser that is compatible with the most web accelerators
+the web accelerator cachebox
+how many different kinds of clients are supported by the web clients
+how many accelerators
+what distinct accelerator names
+the browswers that have market share higher than 15
+which accelerator name
+name contains substring `` opera
+find the number of web accelerators used for each operating system
+give me names of all compatible browsers and accelerators
+in the descending order of compatible year
+how many wrestlers
+count the number of wrestlers
+list the names of wrestlers
+in descending order of days held
+what are the names of the wrestlers
+ordered descending by days held
+what is the name of the wrestler
+with the fewest days held
+return the name of the wrestler
+who had the lowest number of days held
+what are the distinct reigns of wrestlers
+wrestlers whose location is not tokyo,japan
+give the different reigns of wrestlers
+wrestlers who are not located in tokyo , japan
+what are the names and location of the wrestlers
+give the names and locations of all wrestlers
+what are the elimination moves
+wrestlers whose team is team orton
+return the elimination movies
+on team orton
+what are the names of wrestlers and the elimination moves
+give the names of wrestlers and their elimination moves
+list the names of wrestlers and the teams in elimination
+in descending order of days held
+what are the names of wrestlers and their teams in elimination
+ordered descending by days held
+list the time of elimination
+wrestlers with largest days held
+what is the time of elimination
+wrestler with the most days held
+show times of elimination
+wrestlers with days held more than 50
+what are the times of elimination
+wrestlers with over 50 days held
+show different teams in eliminations and the number of eliminations from each team
+how many eliminations did each team
+show teams eliminations
+show the reign and days held of wrestlers
+what are the reigns and days held of all wrestlers
+what are the names of wrestlers
+wrestlers days held less than 100
+return the names of wrestlers
+wrestlers with fewer than 100 days held
+please show the reigns of wrestlers
+the most common reigns of wrestlers
+reign is the most common among wrestlers
+list the locations
+list the names of wrestlers
+what are the names of wrestlers
+what is the number of distinct teams that suffer elimination
+how many different teams
+show the times of elimination
+elimination by `` punk or orton
+what are the times of elimination
+in which the elimination was done by punk
+how many schools
+count the number of schools
+show all school names
+school names in alphabetical order
+list the name , location , mascot for all schools
+what are the total and average enrollment of all schools
+what are the mascots for schools
+schools with enrollments above the average
+list the name of the school
+the school with the smallest enrollment
+show the average , maximum , minimum enrollment of all schools
+show each county along with the number of schools and total enrollment in each county
+how many donors have endowment
+school named `` glenn
+list each donator name and the amount of endowment
+donator name in descending order of the amount of endowment
+list the names of the schools
+schools without any endowment
+list all the names of schools
+list the amount and donor name
+the largest amount of donation
+how many budgets
+budgets are above 3000 in year 2001 or before
+count the number of budgets
+whose budgeted amount is greater than 3000
+show each school name , its budgeted amount , and invested
+invested amount in year 2002 or after
+show all donor names
+how many budget record
+has a budget amount smaller than the invested amount
+what is the total budget amount
+school `` glenn
+show the names of schools
+find the names of schools
+with donation amount above 8.5
+list the name , ihsaa football class , and mascot of the schools
+schools that have more than 6000 of budgeted amount
+in the order of percent of total invested budget and total budgeted budget
+how many buildings
+show the name , street address , and number of floors for all buildings
+ordered by the number of floors
+what is the name of the tallest building
+the tallest building
+what are the average , maximum , and minimum number of floors for all buildings
+show the number of buildings
+height above the average
+a number of floors above the average
+list the names of buildings
+buildings with at least 200 feet of height
+show the names and locations of institutions
+institutions that are founded after 1990
+show institution types , along with the number of institutions and total enrollment for each type
+show the institution type
+the institution type with the largest number of institutions
+show the institution type
+an institution founded after 1990
+show the name of buildings
+buildings that do not have any institution
+show the name of the building and the number of institutions in it
+show the names and heights of buildings
+institutions founded after 1880
+show all the distinct institution types
+show institution names along with the number of proteins for each institution
+how many proteins
+institution founded after 1880
+show the protein name and the institution
+how many proteins
+building with at least 20 floors
+how many institutions
+institutions do not have an associated protein
+how many cinema
+count the number of cinemas
+show name , opening year , and capacity for each cinema
+show the cinema name and location for cinemas
+cinemas with capacity above average
+what are all the locations with a cinema
+find the distinct locations that has a cinema
+show all the cinema names and opening years
+in descending order of opening year
+what are the name and location of the cinema
+the largest capacity
+show the average , minimum , and maximum capacity for all the cinemas
+cinemas opened in year 2011 or later
+show each location and the number of cinemas
+what is the location
+cinemas opened in year 2010
+the location with the most cinemas
+show all the locations
+cinemas with capacity above 300
+cinemas with capacity over 300
+show the title and director for all films
+what are the title and director of each film
+show all directors
+who are all the directors
+list all directors along with the number of films directed by each director
+what is total number of show times per dat for each cinema
+what are the title and maximum price
+give me the title and highest price
+show cinema name , film title , date , and price for each record in schedule
+what are the title and director
+films without any schedule
+show director
+director with the largest number of show times in total
+find the locations
+theater with capacity above 300
+theater with capacity above 300
+how many films
+films have the word 'dummy ' in their titles
+count the number of films
+films whose title contains the word dummy
+coupons with amount 500
+list the customer id , first name
+list the customer id and amount
+the maximum total amount paid by a customer
+what are the id and the amount of refund of the booking
+the id of the booking that incurred the most times of payments
+what is the id of the product
+what is the product description of the product
+booked with an amount of 102.76
+what are the start date and end date of the booking
+product named book collection a
+what are the names of products
+products whose availability equals to 1
+how many different product types
+what are the first name , last name , and gender of customers
+all the good customers
+order by their last name
+what is the average amount due for all the payments
+what are the maximum , minimum , and average booked count
+what are all the distinct payment types
+what are the daily hire costs
+products with substring book in its name
+how many products
+booked with amount higher than 200
+what are the payment date of the payment
+payment with amount paid higher than 300
+what are the names and descriptions of the products
+products that are of cutlery type
+how many phones
+list the names of phones
+in ascending order of price
+what are the memories and carriers of phones
+list the distinct carriers of phones
+phones with memories bigger than 32
+show the names of phones
+phones with carrier either `` sprint
+what is the carrier
+the most expensive phone
+show different carriers of phones together with the number of phones with each carrier
+the most frequently used carrier of the phones
+show the names of phones and the districts of markets
+show the names of phones and the districts of markets they are on
+in ascending order of the ranking of the market
+show the names of phones
+market with number of shops greater than 50
+show its names and total number of stocks
+show the names of phones
+in descending order of the total number of stocks
+list the names of phones
+how many gas companies
+what is the total number of companies
+list the company name and rank for all companies
+companies in the decreasing order of their sales
+What is the name and rank of every company
+ordered by descending number of sales
+show the company name and the main industry for all companies
+headquarters are not from usa
+what are the companies and main industries of all companies
+in the united states
+show all company names and headquarters
+in the descending order of market value
+what are the names and headquarters of all companies
+ordered by descending market value
+show minimum , maximum , and average market value for all companies
+what is the minimum , maximum , and average market value for every company
+show all main industry for all
+what are the different main industries for all
+list all headquarters and the number of companies in each headquarter
+for each headquarter , what are the headquarter and how many companies
+show all main industry and total market value
+what are the main indstries and total market value for each industry
+list the main industry and its number of companies
+the main industry with highest total market value
+main industry , what is the total number of companies
+industry with the highest total market value
+show headquarters
+companies in the banking industry
+what are the headquarters
+companies in the banking industry
+show gas station id , location , and manager_name for all gas stations
+ordered by open year
+what are the gas station ids , locations , and manager names
+ordered by opening year
+how many gas station
+what is the total number of gas stations
+show all locations and the number of gas stations in each location
+gas stations in each location ordered by the count
+for each location , how many gas stations are there in order
+show the company name with the number of gas station
+show company name and main industry
+industry without a gas station
+what are the main industries of the companies and what are the companies
+the companies without gas stations
+show the manager name for gas stations
+stations belonging to the exxonmobil company
+what are the names of the managers
+gas stations that are operated by the exxonmobil company
+show all locations where a gas station for company
+company with market value greater than 100
+what are the locations
+company with a market value greater than 100
+show the manager name
+gas stations opened after 2000
+the manager name with most number of gas stations
+what is the name of the manager
+gas stations that opened after 2000
+the name of the manager with the most gas stations
+the opening year
+what are the locations
+ordered by opening year
+find the rank , company names , market values of the companies
+in the banking industry
+order by their sales and profits in billion
+what is the rank , company , and market value
+in the banking industry
+ordered by sales and profits
+find the location and representative name
+companies with top 3 asset amounts
+what are the locations and representatives ' names
+the 3 largest amounts of assets
+how many regions
+count the number of regions
+show all distinct region names
+ordered by their labels
+what are the different region names
+ordered by labels
+how many parties
+count the number of different parties
+show the ministers and the time they took and left office
+listed by the time they left office
+who are the ministers , when did they take office , and when did they leave office
+ordered by when they left office
+show the minister
+who took office after 1961
+who are the ministers
+who took office after 1961
+show all ministers
+who do not belong to progress party
+are not a part of the progress party
+show all ministers and parties
+they took office
+who are the ministers and what parties
+they took office
+listed descending by the times
+return the minister
+who left office at the latest time
+which minister
+left office the latest
+list member names and their party names
+what are the names of members and their corresponding parties
+show all party names and the number of members in each party
+how many members are in each party
+what is the name of party
+party with most number of members
+return the name of the party
+party with the most members
+show all party names and their region names
+what are the names of parties and their respective regions
+show names of parties
+that does not have any members
+what are the names of parties
+parties that have no members
+show member names
+that are not in the progress party
+which member names corresponding to members
+who are not in the progress party
+how many party events
+count the number of party events
+show party names and the number of events for each party
+how many events are there for each party
+what are the names of parties
+return the names of parties
+what is the name of member
+member in charge of greatest number of events
+return the name of the member
+member who is in charge of the most events
+find the event names
+event names were used more than twice for party events
+events happened in the united kingdom region
+count the number of annual meeting events
+in the region of the united kingdom
+how many pilots
+list the names of pilots
+in ascending order of rank
+what are the positions and teams of pilots
+list the distinct positions of pilots
+pilots older than 30
+show the names of pilots
+team `` bradley
+what is the joined year of the pilot
+the highest rank
+show each nationality and the number of pilots of each nationality
+the most common nationality of pilots
+show the names of pilots and models of aircrafts
+show the names of pilots and fleet series of the aircrafts
+in ascending order of the rank of the pilot
+show the fleet series of the aircrafts
+pilots younger than 34
+show the names of pilots
+show names of pilots
+list the names of pilots
+pilots that do not have any record
+what document status codes
+what is the description of document
+document status code working
+what document type codes do we have
+what is the description of document type
+document type paper
+what are the shipping agent names
+what is the shipping agent code
+shipping agent ups
+what are all role codes
+what is the description
+role code ed
+how many employees
+what is the role of the employee
+employee named koby
+list all document ids and receipt dates of documents
+how many employees does each role have ? list role description
+what is the document status description
+document with id 1
+how many documents
+documents have the status code done
+list the document type code for the document
+document with the id 2
+list the document ids for any documents
+documents with the status code done
+what is the name of the shipping agent
+the document with id 2
+how many documents
+documents were shipped by usps
+list the shipping agent name and the number of documents
+what is the receipt date of the document
+document with id 3
+what address
+the document with id 4
+what is the mail date
+the document with id 7
+what is draft detail
+the document with id 7
+how many draft copies
+document with id 2
+list its document id and number of draft copies
+document has the most draft copies
+list document id and number of draft copies
+list the employee's name
+the document with id 1
+list the employee 's name and the number of drafts and copies
+has showed up in most circulation history documents
+list all department names
+ordered by their starting date
+find all dependent names
+who have a spouse relation
+how many dependents
+female dependents
+find the names of departments
+departments that are located in houston
+return the first names and last names of employees
+employees who earn more than 30000 in salary
+find the number of employees of each gender
+employees whose salary is lower than 50000
+list the first and last names , and the addresses of all employees
+employees in the ascending order of their birth date
+what are the event details
+services that have the type code
+what are the ids and details of events
+list the participant id , type and the number
+what are all the participant ids , type code and details
+how many participants
+participants belong to the type organizer
+list the type of the services
+the type of the services in alphabetical order
+list the service id and details for the events
+how many events had participants
+participants whose details had the substring dr.
+the most common participant type
+service id has the least number of participants
+what is the id of the event
+the id of the event with the most participants
+how many events
+what are all the distinct participant ids
+what is the name of the race
+the race held most recently
+what is the name of the race
+the race that occurred most recently
+what is the name and date of the most recent race
+the most recent race
+what is the name and date of the race
+the race that occurred most recently
+find the names of all races
+races held in 2017
+what are the names of all the races
+races that occurred in the year 2017
+find the distinct names of all races
+what are the unique names of all race
+list the forename and surname of all distinct
+who once had laptime less than 93000 milliseconds
+what are the forenames and surnames of all unique
+who had a lap time of less than 93000 milliseconds
+find all the distinct id and nationality of drivers
+who have had laptime more than 100000 milliseconds
+what are the different driver ids and nationalities of all
+who had a laptime of more than 100000 milliseconds
+what are the forename and surname of the driver
+the driver who has the smallest laptime
+what is the forename and surname of the driver
+the driver with the shortest laptime
+what is the id and family name of the driver
+driver who has the longest laptime
+what is the id and last name of the driver
+the driver with the longest laptime
+what is the id , forname and surname of the driver
+driver who had the first position
+what is the id , first name , and last name of the driver
+driver who was in the first position
+in the race australian grand prix
+in the australian grand prix
+how many drivers
+held in 2009
+how many drivers
+did not race in 2009
+list of names and years of races
+driver whose forename is lewis
+what are the names and years of all races that had a driver with the last name
+driver with the last name lewis
+find the forename and surname of drivers
+drivers whose nationality is german
+what is the first and last name of all the german drivers
+german drivers
+find all the forenames of distinct
+drivers who was in position 1
+what are all the different first names of the drivers
+drivers who are in position 1
+find all the forenames of distinct drivers
+drivers who won in position 1
+what are the first names of the different
+who won in position 1
+what are the numbers of constructors for different nationalities
+for each nationality , how many different constructors
+what are the numbers of races for each constructor id
+For each constructor id , how many races are there
+what are the names of races
+circuits were in the country of spain
+what are the names of the races
+in spain
+what are the unique names of races
+circuits were in spain
+what are the names of all races
+races hold in spain
+drivers that have a shorter pit stop duration than some drivers
+race with id 841
+what is the id and stop number for each driver
+driver that has a shorter pit stop than the driver
+race with id 841
+find the distinct driver id of all drivers
+drivers that have a longer stop duration than some drivers
+race whose id is 841
+what are the different ids and stop durations of all the drivers
+drivers whose stop lasted longer than the driver
+race with the id 841
+list the forenames of all distinct
+the forenames of all distinct drivers in alphabetical order
+what are the first names of all the different
+the first names of all the different drivers in alphabetical order
+list the names of all distinct
+the names of all distinct races in reversed lexicographic order
+what are the different names of all
+all the races in reverse alphabetical order
+what are the names of races
+what are the names of all races
+what are the names of races
+races held after 12:00:00 or before 09:00:00
+what are the names of all races
+races that occurred after 12:00:00 or before 09:00:00
+what is the id and last name of the driver
+races after 2010
+the id of the driver who participated in the most races
+what is the id and last name of the driver
+races after 2010
+the driver who participated in the most races
+what are the names of circuits
+circuits that belong to uk or malaysia
+what are the names of all the circuits
+circuits that are in the uk or malaysia
+find the id and location of circuits
+circuits that belong to france or belgium
+what are the ids and locations of all circuits
+circuits in france or belgium
+find the names of constructors
+japanese constructors
+what are the names of all the constructors
+japanese constructors
+what is the average fastest lap speed
+race named 'monaco grand prix ' in 2008
+what is the average fastest lap speed
+in 2008
+what is the maximum fastest lap speed
+race named 'monaco grand prix ' in 2008
+what is the maximum fastest lap speed
+in 2008
+what are the maximum fastest lap speed in races held after 2004 grouped by race name
+races held after 2004
+grouped by race name and ordered by year
+for each race name , ordered by year
+races held after 2004
+grouped by race name and ordered by year
+what is the average fastest lap speed for each race
+races held after 2004
+for each race , ordered by year
+find the id , forename and number of races of all drivers
+what is the id , forename , and number of races for all drivers
+find the driver id and number of races of all drivers
+find the id and surname of the driver
+the driver who participated the most number of races
+what are the ids and last names of all drivers
+drivers who participated in the most races
+how many technicians
+what is the number of technicians
+list the names of technicians
+in ascending order of age
+what are the names of the technicians
+by ascending order of age
+what are the team and starting year of technicians
+what is the team and starting year for each technician
+list the name of technicians
+technicians whose team is not `` nyy
+what is the name of the technician
+technician whose team is not nyy
+show the name of technicians
+technicians aged either 36 or 37
+what are the names of the technicians
+technicians aged either 36 or 37
+what is the starting year of technicians
+the oldest technicians
+what is the starting year for the technician
+the oldest technician
+show different teams of technicians and the number of technicians in each team
+for each team , how many technicians
+show the team
+the team that has the most number of technicians
+what are the teams
+the teams with the most technicians
+show the team
+what is the team
+show names of technicians and series of machines
+what are the names of technicians and the machine series
+show names of technicians
+in ascending order of quality rank of the machine
+what are the names of the technicians
+by ascending order of quality rank for the machine
+show names of technicians
+machines with value point more than 70
+what are the names of the technicians
+machines with more point values than 70
+show names of technicians
+what are the names of the technicians and how many machines
+list the names of technicians
+list the names of technicians
+what are the names of the technicians
+how many entrepreneurs
+count the number of entrepreneurs
+list the companies of entrepreneurs
+in descending order of money requested
+what are the companies of entrepreneurs
+ordered descending by amount of money requested
+list the companies and the investors of entrepreneurs
+what are the companies and investors that correspond to each entrepreneur
+what is the average money requested by all entrepreneurs
+return the average money requested across all entrepreneurs
+what are the names of people
+in ascending order of weight
+return the names of people
+ordered by weight ascending
+what are the names of entrepreneurs
+return the names of entrepreneurs
+what are the names of entrepreneurs
+entrepreneurs whose investor is not rachel elnaugh
+Return the names of entrepreneurs
+entrepreneurs do no not have the investor rachel elnaugh
+what is the weight
+the shortest person
+return the weight
+the shortest person
+what is the name of the entrepreneur
+the greatest weight
+return the name of entrepreneur
+the heaviest entrepreneur
+what is the total money requested by entrepreneurs
+entrepreneurs with height more than 1.85
+give the total money requested by entrepreneurs
+entrepreneurs who are taller than 1.85
+what are the dates of birth of entrepreneurs
+entrepreneurs with investor simon woodroffe
+return the dates of birth for entrepreneurs
+entrepreneurs who have either the investor simon woodroffe
+what are the weights of entrepreneurs
+in descending order of money requested
+return the weights of entrepreneurs
+ordered descending by amount of money requested
+what are the investors of entrepreneurs and the corresponding number of entrepreneurs invested by each investor
+how many entrepreneurs correspond to each investor
+what is the investor
+the investor that has invested in the most number of entrepreneurs
+return the investor
+the investor who have invested in the greatest number of entrepreneurs
+what are the investors
+return the investors
+list the names of entrepreneurs and their companies
+in descending order of money requested
+what are the names of entrepreneurs and their corresponding investors
+ordered descending by the amount of money requested
+list the namesof people 
+what are the names of people
+people who are not entrepreneurs
+how many distinct companies
+count the number of different companies
+show the company
+the tallest entrepreneur
+company was started by the entrepreneur
+the entrepreneur with the greatest height
+how many perpetrators
+list the date of perpetrators
+in descending order of the number of people killed
+list the number of people injured by perpetrators
+injured by perpetrators in ascending order
+what is the average number of people injured by all perpetrators
+what is the location of the perpetrator
+the perpetrator with the largest kills
+what are the names of people
+in ascending order of height
+what are the names of perpetrators
+what are the names of perpetrators
+perpetrators whose country is not `` china
+what is the name of perpetrators
+perpetrators with the biggest weight
+what is the total kills of the perpetrators
+the perpetrators with height more than 1.84
+what are the names of perpetrators
+perpetrators in country `` china
+what are the heights of perpetrators
+in descending order of the number of people they injured
+show each country and the corresponding number of perpetrators
+what is the country that has the most perpetrators
+the country that has the most perpetrators
+what are the countries that have at least two perpetrators
+list the names of perpetrators
+in descending order of the year
+list the names of people
+how many distinct locations of perpetrators
+show the date of the perpetrator
+the tallest perpetrator
+year did the most recent crime happen
+Report the name of all campuses
+in los angeles county
+what campuses
+located in the county of Los Angeles
+What are the names of all campuses
+located at chico
+what campuses
+are located in chico
+find all the campuses
+opened in 1958
+what are the campuses
+opened in 1958
+find the names of the campuses
+opened before 1800
+what campuses
+opened before 1800
+which campus
+opened between 1935 and 1939
+what campuses
+opened between 1935 and 1939
+what is the campus fee
+san jose state university
+what is the campus fee
+san jose state university
+what is the campus fee
+san francisco state university in year 1996
+what is the campus fee
+san francisco state university in 1996
+Find the count of universities
+campus fee is greater than the average campus fee
+how many universities have a campus fee
+campus fee higher than average
+Find the count of universities whose campus fee
+campus fee is greater than the average campus fee
+how many universities have a campus fee
+campus fee greater than the average
+which university
+in los angeles county
+what campuses
+are located in Los Angeles county and opened after 1950
+year has the most degrees conferred
+year was the most degrees conferred
+which campus
+campus has the most degrees conferred in all times
+campus has the most degrees conferrred over its entire existence
+in year 2003
+the most faculties
+what campus
+in 2003
+the most faculties
+Find the average fee on a CSU campus
+in 1996
+what is the average fee for a CSU campus
+in the year of 1996
+what is the average fee on a CSU campus
+what is the average fee for a CSU campus
+in the year of 2005
+report total number of degrees
+granted between 1998 and 2002
+how many degrees
+orange county
+orange county
+find the names of the campus
+the campus which has more faculties
+What are the names of the campus
+that have more faculties than the maximum number
+what campus
+in year 1956
+what campus
+started in year 1956
+how many campuses
+campuses are there in los angeles county
+how many campuses
+campuses exist are in the county of la
+list the campuses
+in los angeles county
+what campuses
+in los angeles county
+how many degrees
+san jose state university
+how many degrees
+san jose state university
+what are the degrees
+san francisco state university
+what degrees
+san francisco state university
+how many faculty is there in total
+in the year of 2002
+how many faculty , in total
+in the year 2002
+What is the number of faculty lines
+What is the number of faculty
+how many faculty lines
+in year 2004
+how many faculty lines
+list the campus
+campus that have between 600 and 1000 faculty
+what are the campuses
+campuses that had between 600 and 1000 faculty members
+how many faculty lines are there
+university that conferred the most number of degrees
+how many faculty members
+the university that conferred the most degrees
+how many faculty lines
+in year 2001
+the university that conferred the least number of degrees
+how many faculty members
+the university that gave the least number of degrees
+how many undergraduates
+in year 2004
+how many undergraduates
+what is the number of graduates
+how many people graduated
+what is the campus fee
+san francisco state university
+what is the campus fee
+san francisco state university
+find the campus fee
+san jose state university
+what is the campus fee
+san jose state university
+how many csu campuses
+what is the total number of campuses
+how many candidates
+count the number of candidates
+poll resource provided the most number of candidate
+return the poll resource
+the poll resource associated with the most candidates
+what are the support rates
+the top 3 highest support rates
+return the support rates
+the top 3 greatest support rates
+find the id of the candidate
+the lowest oppose rate
+what is the id of the candidate
+the lowest oppose rate
+list support , consider , and oppose rates for each candidate
+order by unsure rate
+what are the support , consider , and oppose rates of each candidate
+ordered ascending by their unsure rate
+the highest oppose rate
+return the poll source corresponding to the candidate
+list all people names
+in the order of their date of birth from old to young
+what are the names of all people
+ordered by their date of birth
+Find the average height and weight
+all males , sex is m
+what are the average height and weight
+males sex is m
+find the names of people
+people who are taller than 200 or lower than 190
+what are the names of people
+people who have a height greater than 200
+find the average and minimum weight for each gender
+what are the average and minimum weights for people of each sex
+Find the name and gender of the candidate
+the highest support rate
+what is the name and sex of the candidate
+candidate with the highest support rate
+find the name of the candidates whose oppose percentage is the lowest for each sex
+gender got the highest average uncertain ratio
+what is the sex of the candidate
+the sex of the candidate who had the highest unsure rate
+what are the names of people
+people who did not participate in the candidate
+give the names of people
+people who did not participate in the candidate
+Find the names of the candidates
+candidates whose support percentage is lower than their oppose rate
+what are the names of candidates
+candidates who have a lower support rate than oppose rate
+how many people are there whose weight is higher than 85 for each gender
+people whose weight is higher than 85
+count the number of people of each sex who have
+who have a weight higher than 85
+find the highest support percentage , lowest consider rate and oppose rate of all candidates
+return the maximum support rate , minimum consider rate , and minimum oppose rate across all candidates
+female ( sex is f
+names in the alphabetical order
+what are the names of all candidates
+female candidates
+the names in alphabetical order
+find the name of people
+height is lower than the average
+what are the names of people
+who are shorter than average
+find the titles of all movies
+movies directed by steven spielberg
+what are the names of all movies
+movies directed by Steven Spielberg
+what is the name of the movie
+movie produced after 2000 and directed by James Cameron
+what are the titles of all movies
+movies that james cameron directed after 2000
+how many movies
+movies were made before 2000
+how many movies
+movies were made before 2000
+who is the director of movie
+movie avatar
+who directed
+how many reviewers
+how many reviewers
+what is the id of the reviewer
+reviewer whose name has substring mike
+what is the id of the reviewer
+reviewer whose name includes the word `` mike
+what is the reviewer id
+reviewer id of daniel lewis
+what is the id of the reviewer
+reviewer named daniel lewis
+what is the total number of ratings
+ratings that has more than 3 stars
+how many movie ratings
+ratings have more than 3 stars
+what is the lowest and highest rating star
+what is the maximum and mininum number of stars a rating
+find all years that have a movie
+movie that received a rating of 4
+sort them in increasing order of year
+what years did a movie
