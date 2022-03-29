@@ -11,14 +11,15 @@ Most of the open-domain dialogue models tend to perform poorly in the setting of
 
 ## Dataset: DuLeMon
 
-Bai**du** **L**ong-t**e**rm **M**emory C**on**vesation
+Bai**du** **L**ong-t**e**rm **M**emory C**on**versation
 
 ![](./images/fig3.png)
 
 Download:
 
 ```sh
-wget https://dialogue.bj.bcebos.com/Knover/DuLeMon.zip
+cd ./data
+bash download_dulemon.sh
 ```
 
 Example of a conversation session:
