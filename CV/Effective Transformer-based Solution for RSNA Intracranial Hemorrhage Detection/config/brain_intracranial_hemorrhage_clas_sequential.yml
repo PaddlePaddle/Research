@@ -1,0 +1,80 @@
+# config file for RSNA-MICCAI Brain Intracranial Hemorrhage Classification (BrainIHClasTask)
+#https://www.kaggle.com/c/rsna-intracranial-hemorrhage-detection/data
+
+batch_size: 1
+iters: 60000
+mode: "clas"
+
+train_task:
+  type: BranIHClasTask
+  datasets: 
+    - type: BrainIntracranialHemorrhage
+      sequential: True
+      split: train
+      dataset_root: /ssd3/easymia_processed_data/brain_ihd_clas/
+      transforms: 
+        - type: RandomResizedCrop
+          size: 224
+          scale: [0.8, 1.2]
+        - type: RandomHorizontalFlip
+        - type: RandomVerticalFlip
+        - type: RandomRotation
+          degrees: 180
+
+val_task:
+  type: BranIHClasTask  
+  datasets: 
+    - type: BrainIntracranialHemorrhage
+      sequential: True
+      split: val
+      dataset_root: /ssd3/easymia_processed_data/brain_ihd_clas/
+      transforms: 
+        - type: Resize
+          size: 224
+
+test_task:
+  type: BranIHClasTask  
+  datasets: 
+    - type: BrainIntracranialHemorrhage
+      sequential: True
+      split: test
+      dataset_root: /ssd3/easymia_processed_data/brain_ihd_clas/
+      transforms: 
+        - type: Resize
+          size: 224
+
+optimizer:
+  type: sgd
+  momentum: 0.9
+  weight_decay: 1.0e-4
+  use_nesterov: True
+
+lr_scheduler:
+  type: WarmupCosine
+  learning_rate: 0.001
+  warmup_steps: 300
+
+metric:
+  types: 
+    - type: NLLMetric
+      class_reduction: sum
+      weight: [0.142857, 0.142857, 0.142857, 0.142857, 0.142857, 0.285714]
+
+loss:
+  types:
+    - type: BinaryCrossEntropyLoss
+      weight: [1, 1, 1, 1, 1, 2]
+    - type: BinaryCrossEntropyLoss
+      weight: [1, 1, 1, 1, 1, 2]
+  coef: [2, 1]
+
+model:
+  type: BrainIntranialHemorrhageClsModel
+  in_ch: 3
+  image_size: 224
+  num_classes: 6
+  sequential: True
+
+infer_plugin:
+  - type: CSVWritePlugin
+
