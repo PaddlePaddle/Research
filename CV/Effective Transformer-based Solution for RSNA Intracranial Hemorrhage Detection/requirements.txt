@@ -1,0 +1,6 @@
+scikit-image==0.17.1
+numpy>=1.19.5
+paddlepaddle-gpu>=2.2.0
+SimpleITK==2.0.2
+PyYAML==5.4.1
+opencv-python>=4.5.5
