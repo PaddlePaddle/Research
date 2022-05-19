@@ -1,6 +1,6 @@
 # An Effective Transformer-based Solution for RSNA Intracranial Hemorrhage Detection Competition
 
-[[Arxiv](https://arxiv.org/abs/2205.07556)] [[AIStudio](https://aistudio.baidu.com/aistudio/projectdetail/4032049)]
+[[Arxiv](https://arxiv.org/abs/2205.07556)] [[AIStudio](https://aistudio.baidu.com/aistudio/projectdetail/4047192)]
 
 # Background
 
