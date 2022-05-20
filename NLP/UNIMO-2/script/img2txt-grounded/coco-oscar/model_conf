@@ -1,0 +1,80 @@
+output_name="img2txt-grounded"
+
+# env
+source ./script/${output_name}/method_conf
+
+## CONTROL
+task=coco-oscar
+
+# hyper param
+lr_scheduler="linear_warmup_decay"
+use_fp16="False"
+# Merge the ALLReduce times of a layer
+use_fuse="True"
+use_hierarchical_allreduce="True"
+loss_scaling=12800
+
+skip_steps=100
+save_steps=100000
+validation_steps=2000
+label_smooth=0.1
+weight_decay=0.01
+max_seq_len=50
+random_seed=666
+
+#decoding params
+do_decode="true"
+max_obj_len=100
+max_tgt_len=50
+max_out_len=50
+min_out_len=5
+beam_size=5
+length_penalty=0.6
+block_trigram="False"
+use_multi_gpu_test="True"
+
+#adam optimizer
+beta1=0.9
+beta2=0.98
+epsilon=1e-06
+
+#dataset
+data_path="./data/coco"
+train_filelist="train_filelist"
+valid_filelist="valid_filelist"
+test_filelist="test_filelist"
+do_train="true"
+do_val="false"
+do_test="true"
+do_pred="false"
+
+#evaluate
+eval_script="bash ./src/eval/tasks/coco/eval.sh"
+eval_mertrics="Bleu_1,Bleu_2,Bleu_3,Bleu_4,METEOR,ROUGE_L,CIDEr,SPICE"
+
+## turning params
+pred_batch_size=32
+epoch=10
+BATCH_SIZE=("32")
+LR_RATE=("1e-5")
+DD_RAND_SEED=("1")
+WARMUP_PROP=("0.06")
+
+use_recompute=True
+resolution=16
+image_size=384
+num_codebook=2048
+grounding_method='topk'
+topk_value=100
+
+model_type="grounded"
+# "grounded" "baseline"
+with_grounding_projection=False
+
+with_grounding_pos=False
+text_enc_layers='0,1,2,3,4,5,6,7,8,9,10,11'
+grounding_enc_layers='0,1,2,3,4,5,6,7,8,9,10,11'
+
+config_path="./model_files/config/grounded_base_en.json"
+object_file_local_path="coco_object_0.35_tot.ids"
+init_model="./model_files/UNIMO-2"

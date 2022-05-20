@@ -1,0 +1,5 @@
+source ./env_local/utils.sh
+
+vocab_file="./model_files/dict/roberta_base_en.vocab.txt"
+bpe_json="./model_files/dict/roberta_base_en.encoder.json"
+bpe_file="./model_files/dict/roberta_base_en.vocab.bpe"
