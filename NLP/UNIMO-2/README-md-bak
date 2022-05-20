@@ -124,9 +124,30 @@ bash ./script/img2txt-grounded/coco-oscar/run.sh
 
 
 
+### (3) Visual Entailment
+####todo
 
 
-2 Textual Tasks
+
+### (4) Visual Question Answering (VQA)
+####todo
+
+
+
+
+
+2 Visual Tasks
+---
+
+### (1) Image Classification
+####todo
+
+### (2) Zero-shot Image Classification
+####todo
+
+
+
+3 Textual Tasks
 ---
 
 ### (1) Natural Language Inference
@@ -152,6 +173,24 @@ bash ./script/classification/MNLI-AX/run.sh
 |   UNIMO-2  |  87.5/87.5 |
 
 
+
+
+### (2) Sentiment Classification
+####todo
+
+
+
+
+
+### (3) Similarity Tasks
+####todo
+
+
+
+
+
+### (4) Linguistic Acceptability Judgments
+####todo
 
 
 
