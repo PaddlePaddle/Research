@@ -1,0 +1,62 @@
+output_name="retrieval-grounded"
+
+# env
+source ./script/${output_name}/method_conf
+
+## CONTROL
+task=Flickr30k-fleet
+
+
+## hyper param
+epoch=40
+is_distributed=True
+nccl_comm_num=2
+use_fp16="False"
+loss_scaling=12800
+use_fuse="True"
+do_train="True"
+do_val="True"
+do_test="False"
+save_checkpoints="False"
+save_steps=10000
+validation_steps=10000
+skip_steps=100
+
+seed=1
+batch_size=2
+test_batch_size=128
+lr=5e-6
+lr_scheduler="scale_by_epoch_decay"
+learning_rate_scale=0.1
+learning_rate_decay_epoch1=24
+learning_rate_decay_epoch2=32
+warmup_step=1
+weight_decay=0.01
+max_len=128
+use_sigmoid=False
+eval_mertrics="recall@k"
+
+samples_num=20
+zero_shot="True"
+
+use_recompute=True
+resolution=16
+image_size=384
+num_codebook=2048
+grounding_method='topk'
+topk_value=100
+
+model_type="grounded"
+# "grounded" "baseline"
+with_cmcl=True
+with_grounding_projection=False
+with_cmcl_projection=False
+cmcl_share_parameters=False
+cmcl_score_weight=0.3
+
+with_grounding_pos=False
+text_enc_layers='0,1,2,3,4,5,6,7,8,9,10,11'
+grounding_enc_layers='0,1,2,3,4,5,6,7,8,9,10,11'
+
+CONFIG_PATH="./model_files/config/grounded_base_en.json"
+init_model="./model_files/UNIMO-2"

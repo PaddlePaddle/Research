@@ -1,0 +1,58 @@
+output_name="classification-grounded"
+
+# env
+source ./script/${output_name}/method_conf
+
+## CONTROL
+task=MNLI-AX
+
+
+## hyper param
+lr_scheduler="linear_warmup_decay"
+use_fp16="False"
+loss_scaling=12800
+do_train="True"
+do_val="True"
+do_val_hard="True"
+do_test="False"
+do_test_hard="False"
+do_pred="False"
+do_pred_hard="False"
+do_diagnostic="False"
+num_labels=3
+weight_decay=0
+max_len=512
+warmup_ratio=0.06
+do_lower_case="True"
+in_tokens="False"
+weight_sharing="True"
+save_checkpoints="False"
+save_steps=200000
+validation_steps=20000
+skip_steps=100
+eval_mertrics=simple_accuracy
+
+num_codebook=2048
+grounding_method='topk'
+topk_value=100
+
+model_type="grounded"
+# "grounded" "baseline"
+with_grounding_projection=False
+
+with_grounding_pos=False
+text_enc_layers='0,1,2,3,4,5,6,7,8,9,10,11'
+grounding_enc_layers='0,1,2,3,4,5,6,7,8,9,10,11'
+
+#adam optimizer
+beta1=0.9
+beta2=0.98
+epsilon=1e-06
+
+EPOCH=("20")
+BATCH_SIZE=("16")
+LR_RATE=("1e-5" "2e-5" "3e-5")
+DD_RAND_SEED=("1" "2" "3" "4" "5")
+
+CONFIG_PATH="./model_files/config/grounded_base_en.json"
+init_model="./model_files/UNIMO-2"
