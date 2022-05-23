@@ -22,7 +22,7 @@ jmespath==0.9.5
 kiwisolver==1.1.0
 matplotlib==2.2.3
 nltk==3.4
-numpy==1.16.1
+numpy==1.21.0
 objgraph==3.4.1
 opencv-python==4.1.1.26
 paddlepaddle-gpu==1.6.1.post97
