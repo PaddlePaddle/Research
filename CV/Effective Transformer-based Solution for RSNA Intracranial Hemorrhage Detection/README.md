@@ -55,10 +55,10 @@ python3 -u -m paddle.distributed.launch infer.py \
 If you use our work in your research, please cite our work by using the following BibTeX entry:
 
 ```
-@misc{2205.07556,
-Author = {Fangxin Shang and Siqi Wang and Yehui Yang},
-Title = {An Effective Transformer-based Solution for RSNA Intracranial Hemorrhage Detection Competition},
-Year = {2022},
-Eprint = {arXiv:2205.07556},
+@article{shang2022effective,
+  title={An Effective Transformer-based Solution for RSNA Intracranial Hemorrhage Detection Competition},
+  author={Shang, Fangxin and Wang, Siqi and and Wang, Xiaorong and Yang, Yehui},
+  journal={arXiv preprint arXiv:2205.07556},
+  year={2022}
 }
 ```
