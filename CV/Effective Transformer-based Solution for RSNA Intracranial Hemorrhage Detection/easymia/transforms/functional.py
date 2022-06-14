@@ -157,3 +157,23 @@ def rotate(img, angle, center=None):
         return cv2.warpAffine(img, M, (cols, rows))[:, :, np.newaxis]
     else:
         return cv2.warpAffine(img, M, (cols, rows))
+
+
+def hu2uint8(image, HU_min=-1200.0, HU_max=600.0, HU_nan=-2000.0):
+    """
+    Convert HU unit into uint8 values. First bound HU values by predfined min
+    and max, and then normalize
+    image: 3D numpy array of raw HU values from CT series in [z, y, x] order.
+    HU_min: float, min HU value.
+    HU_max: float, max HU value.
+    HU_nan: float, value for nan in the raw CT image.
+    """
+    image_new = np.array(image)
+    image_new[np.isnan(image_new)] = HU_nan
+
+    # normalize to [0, 1]
+    image_new = (image_new - HU_min) / (HU_max - HU_min)
+    image_new = np.clip(image_new, 0, 1)
+    image_new = (image_new * 255).astype('uint8')
+
+    return image_new
