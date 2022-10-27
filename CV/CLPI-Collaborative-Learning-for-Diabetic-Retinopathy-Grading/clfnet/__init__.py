@@ -29,8 +29,6 @@ from . import lesionnet
 from . import densenet
 from . import inception_v4 as inception
 
-from learning_rate import cosine_decay_with_warmup
-
 __all__ = ["create_model"]
 
 ResNetModels = sorted(name for name in resnet.__dict__
