@@ -14,6 +14,7 @@ In this paper, we present a robust framework, which can collaboratively utilize 
 For uncompressing model weights:
 ```
 cd ./demo/
+wget "https://bj.bcebos.com/v1/ai-studio-online/d419957a9b1a46358fc04235d2e67504c6971c46ed0641af90b1206dd98a6393?responseContentDisposition=attachment%3B%20filename%3Dmessidor_densenet_full_best.zip&authorization=bce-auth-v1%2F5cfe9a5e1454405eb2a975c43eace6ec%2F2022-10-31T02%3A20%3A31Z%2F-1%2F%2Fc451fb52f231a9f54a61a747458680f75bddc8241f539eb95d0ac27eb2bd1e9f" -O messidor_densenet_full_best.zip
 tar zxvf messidor_densenet_binary_full_best.tar.gz
 
 cd ../
