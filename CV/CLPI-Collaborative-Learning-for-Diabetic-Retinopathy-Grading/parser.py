@@ -22,6 +22,7 @@ def args_parser():
         description='image classification model command-line')
     parser.add_argument('--arch', '-a', metavar='ARCH', default='DenseNet121')
     parser.add_argument('--data', '-d', default='./data')
+    parser.add_argument('--loss-type', default='ce', type=str)
     parser.add_argument('--resume-from', dest='resumed_checkpoint_path', default='',
                         type=str, metavar='PATH',
                         help='path to latest checkpoint. Use to resume paused training session.')
