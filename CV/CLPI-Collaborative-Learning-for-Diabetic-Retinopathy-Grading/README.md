@@ -4,7 +4,8 @@ In this paper, we present a robust framework, which can collaboratively utilize 
 ![Arch](./figs/arch.png)
 
 # Requirements
-    - PaddlePaddle-GPU >= 1.6.3
+    - python 3.6.5
+    - PaddlePaddle-GPU == 1.6.3 (Paddle < 2.x should be fine.)
     - opencv-python 3.4.3.18
     - pandas 1.0.5
     - tabulate 0.8.7
