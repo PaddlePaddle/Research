@@ -177,3 +177,16 @@ def hu2uint8(image, HU_min=-1200.0, HU_max=600.0, HU_nan=-2000.0):
     image_new = (image_new * 255).astype('uint8')
 
     return image_new
+
+
+def load_dcm(sorted_dcm_list):
+    """
+    Return img array and [z,y,x]-ordered origin and spacing
+    """
+    itkimage = sitk.ReadImage(sorted_dcm_list)
+    numpyImage = sitk.GetArrayFromImage(itkimage)
+
+    numpyOrigin = np.array(list(reversed(itkimage.GetOrigin())))
+    numpySpacing = np.array(list(reversed(itkimage.GetSpacing())))
+
+    return numpyImage, numpyOrigin, numpySpacing
