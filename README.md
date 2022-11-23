@@ -24,6 +24,7 @@
 | 图像分类 | [CLPI](CV/CLPI-Collaborative-Learning-for-Diabetic-Retinopathy-Grading) | 模型利用一个Lesion Generator改善了糖尿病视网膜病变图像分级的模型性能，理论上可用于所有希望实现局部+整体模型分析的场景 | - |
 | 图像分类 | [RSNA-IHD](CV/Effective Transformer-based Solution for RSNA Intracranial Hemorrhage Detection) | 提出了一种有效的颅内出血检测(IHD)方法，其性能超过了在RSNA-IHD竞赛(2019)中获胜的解决方案。与此同时，与获胜者的解决方案相比，我们的模型只有其20%的参数量和10%的FLOPs | https://arxiv.org/abs/2205.07556 |
 | 小样本学习 | [PaddleFSL](CV/PaddleFSL) | 小样本学习工具包，可复现多个常用基线方法在多个图片分类数据集上的汇报效果 | - |
+| 迁移学习 |  [SMILE](CV/SMILE) | 提出了一种自蒸馏样本混合迁移学习框架，适用于小样本图片分类 | https://arxiv.org/abs/2103.13941 |
 
 ## 自然语言处理
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
