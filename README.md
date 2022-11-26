@@ -72,8 +72,8 @@
 ## 研发效率 
 | 软件名称       | 目录                     | 简介                                              |
 |--------------|------------------------|-------------------------------------------------|
-| paddleext    | [RE](RE/paddleext)     | paddle的扩展功能插件，可以让部分pytorch code 无缝运行在paddle平台上。 | 
-| paddlemetric | [P3AC](RE/paddlemetric) | torchmetric 的 paddle迁移版本，目前支持分类测度。              |
+| paddleext    | [paddleext](RE/paddleext)     | paddle的扩展功能插件，可以让部分pytorch code 无缝运行在paddle平台上。 | 
+| paddlemetric | [paddlemetric](RE/paddlemetric) | torchmetric 的 paddle迁移版本，目前支持分类测度。              |
 
 ## 许可证书
 此向导由[PaddlePaddle](https://github.com/PaddlePaddle/Paddle)贡献，受[Apache-2.0 license](LICENSE)许可认证。
