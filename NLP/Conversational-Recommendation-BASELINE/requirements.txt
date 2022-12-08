@@ -3,7 +3,7 @@ boto==2.49.0
 boto3==1.12.18
 botocore==1.15.18
 bz2file==0.98
-certifi==2019.9.11
+certifi==2022.12.7
 chardet==3.0.4
 cloudpickle==1.2.2
 cycler==0.10.0
