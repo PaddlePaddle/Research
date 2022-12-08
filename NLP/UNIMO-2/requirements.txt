@@ -2,7 +2,7 @@ astor==0.8.1
 astroid==2.11.2
 black==22.3.0
 cached-property==1.5.2
-certifi==2020.12.5
+certifi==2022.12.7
 chardet==4.0.0
 click==8.1.1
 colorama==0.4.4
