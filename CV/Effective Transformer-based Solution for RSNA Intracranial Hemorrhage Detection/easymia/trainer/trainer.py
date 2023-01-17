@@ -180,7 +180,7 @@ class Trainer(Evaluator):
                 lr_sche.step()
 
             self.recorder.record("batch_cost_time", time.time() - batch_start)
-            self.recorder.record("loss", loss.numpy()[0])
+            self.recorder.record("loss", float(loss))
             self.recorder.record("lr", current_lr)
 
             if iter % self.log_iters == 0 and local_rank == 0:
