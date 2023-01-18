@@ -290,7 +290,7 @@ def train(cfg):
                                                                epoch + 1,
                                                                during_time[:6],
                                                                batch_id + 1,
-                                                               train_avg_loss.numpy()[0],
+                                                               float(train_avg_loss),
                                                                lr)
                 
                 if batch_id % 100 == 0:
@@ -334,7 +334,7 @@ def train(cfg):
                     print('Validation trained_id:{}, epoch:{}, batch_id:{}, time:{}s, val_loss:{}.'.format(train_id, epoch+1,
                                                                                                             batch_id,
                                                                                                             during_time[:6],
-                                                                                                            val_avg_loss.numpy()[0],
+                                                                                                            float(val_avg_loss),
                                                                                                             ))
             acc, acc_cls, iu, mean_iu_val, fwavacc, kappa = val_iou_np.evaluate()
             print('Validation epoch:{}, val_loss{}, val_iou_np:{}'.format(epoch+1, test_avg_loss_manager.eval()[0], mean_iu_val))

@@ -187,7 +187,7 @@ class Trainer(object):
                             embedding=list(embeddings.detach().cpu()[num].numpy())
                             embedding=[str(x) for x in embedding]
                             content.extend([' '.join(embedding)])
-                            x_norm = str(embeddings_norm.detach().cpu()[num].numpy()[0])
+                            x_norm = str(float(embeddings_norm.detach().cpu()[num]))
                             content.append(x_norm)
                             content='\t'.join(content)
                             f.write(content + '\n') 

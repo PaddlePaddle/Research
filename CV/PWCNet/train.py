@@ -113,7 +113,7 @@ def val(model, batch_reader, epoch, batch_num):
         network_output = model(im_all, output_more=False)
         loss = realEPE(network_output, label)
         end = time.time()
-        loss_cnt.update(loss.numpy()[0], step)
+        loss_cnt.update(float(loss), step)
         print('val epoch {} batch {}/{} run time: {}s read data time {}s loss {}'.format(epoch, batch_id, batch_num,
                                                                                      round(end - start, 2),
                                                                                      round(read_data_time, 2),
