@@ -1,4 +1,4 @@
 matplotlib==2.2.2
 numpy==1.16.4
-opencv-python==3.4.3
+opencv-python==4.2.0.32
 paddlepaddle-gpu==1.6.2
