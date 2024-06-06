@@ -53,7 +53,7 @@ tifffile==2021.6.14
 tomli==2.0.1
 typed-ast==1.5.2
 typing-extensions==4.1.1
-urllib3==1.26.4
+urllib3==1.26.5
 wrapt==1.14.0
 xlrd==1.2.0
 xlwt==1.2.0
