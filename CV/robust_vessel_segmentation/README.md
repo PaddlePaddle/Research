@@ -37,4 +37,34 @@ This demo takes the domo.jpg (a compressed image from the DRIVE test set) as inp
 
 ## Citation request
 
-If you find this code useful in your research, please consider citing our paper.
+If you find this code useful in your research, please consider citing [our paper](https://link.springer.com/chapter/10.1007%2F978-3-030-87000-3_20).
+
+    Sun X. et al. (2021) Robust Retinal Vessel Segmentation from a Data Augmentation Perspective. In: Fu H., Garvin M.K., MacGillivray T., Xu Y., Zheng Y. (eds) Ophthalmic Medical Image Analysis. OMIA 2021. Lecture Notes in Computer Science, vol 12970. Springer, Cham. https://doi.org/10.1007/978-3-030-87000-3_20 
+
+Here is a BiBTex citation as well:
+
+    @InProceedings{10.1007/978-3-030-87000-3_20,
+        author="Sun, Xu
+        and Fang, Huihui
+        and Yang, Yehui
+        and Zhu, Dongwei
+        and Wang, Lei
+        and Liu, Junwei
+        and Xu, Yanwu",
+        editor="Fu, Huazhu
+        and Garvin, Mona K.
+        and MacGillivray, Tom
+        and Xu, Yanwu
+        and Zheng, Yalin",
+        title="Robust Retinal Vessel Segmentation from a Data Augmentation Perspective",
+        booktitle="Ophthalmic Medical Image Analysis",
+        year="2021",
+        publisher="Springer International Publishing",
+        address="Cham",
+        pages="189--198",
+        isbn="978-3-030-87000-3"
+       }
+
+
+
+
