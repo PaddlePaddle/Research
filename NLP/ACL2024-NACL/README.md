@@ -146,5 +146,5 @@ The available tasks are:
 ```
 
 ## References
-[^1]: Zhang, Xinrong, et al. "$\infty $ Bench: Extending Long Context Evaluation Beyond 100K Tokens." arXiv preprint arXiv:2402.13718 (2024).
-[^2]: Llama team. "The Llama 3 Herd of Models"
+[$\infty $ Bench: Extending Long Context Evaluation Beyond 100K Tokens.](https://arxiv.org/abs/2402.13718)
+[The Llama 3 Herd of Models](https://scontent-itm1-1.xx.fbcdn.net/v/t39.2365-6/452387774_1036916434819166_4173978747091533306_n.pdf?_nc_cat=104&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=DTS7hDTcxZoQ7kNvgFEityk&_nc_ht=scontent-itm1-1.xx&gid=AK98To87L1-SZHQ0fCh7NFy&oh=00_AYCUYV1JtufGAbl4hVwf_rmIiU11NatzvqCsYJJ6Qn03rw&oe=66AED48D)
