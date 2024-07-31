@@ -1,3 +1,8 @@
+"""
+    Prompt for different tasks and models.
+    Refer to https://github.com/OpenBMB/InfiniteBench/blob/main/src/prompt.py
+"""
+
 gpt4_templates = {
     "passkey": "There is an important info hidden inside a lot of irrelevant text. Find it and memorize them. I will quiz you about the important information there.\n\n{context}\n\n{input}",  # noqa
     "number_string": "There is an important info hidden inside a lot of irrelevant text. Find it. I will quiz you about the important information there.\n\n{context}\n\n{input}",  # noqa

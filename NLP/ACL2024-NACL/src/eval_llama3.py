@@ -7,6 +7,8 @@ import unicodedata
 import paddle
 import paddle.distributed as dist
 from paddlenlp.transformers import AutoTokenizer, AutoModelForCausalLM
+from llama_nacl_patch import replace_llama_attn_with_nacl_eviction
+from paddlenlp.transformers.llama.modeling import LlamaAttention
 
 from eval_utils import (
     dump_jsonl,
@@ -114,6 +116,10 @@ if __name__ == "__main__":
 
     # Model
     model_name = args.model_name
+    if args.enable_nacl_evict:
+        if not hasattr(LlamaAttention, "kvcache_eviction"):
+            print("Replace LLaMA Attention to support NaCL Eviction. Please update paddlenlp to skip this patch!")
+            replace_llama_attn_with_nacl_eviction()
     model, tok = load_model(args.model_path)
 
     if args.enable_nacl_evict:
@@ -174,7 +180,7 @@ if __name__ == "__main__":
         for i in range(start_idx, stop_idx):
             eg = examples[i]
             input_text = create_prompt(eg, data_name, model_name, args.data_dir)
-            print(f"====== {data_name} Example {i} ======")
+            print(f"====== {data_name} Example {i}/{stop_idx - start_idx + 1} ======")
             pred = get_pred(
                 model, tok, input_text, max_tokens=max_tokens, verbose=args.verbose
             )

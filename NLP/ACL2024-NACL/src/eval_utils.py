@@ -1,3 +1,7 @@
+"""
+    Eval utility functions
+    Refer to https://github.com/OpenBMB/InfiniteBench/blob/main/src/eval_utils.py
+"""
 from rouge import Rouge
 import re
 from collections import Counter

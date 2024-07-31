@@ -1,3 +1,7 @@
+"""
+    Compute Scores for InfiniteBench.
+    Refer to https://github.com/OpenBMB/InfiniteBench/blob/main/src/compute_scores.py
+"""
 from pathlib import Path
 import json
 import re

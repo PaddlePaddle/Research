@@ -1,33 +1,68 @@
-# NACL: A General and Effective KV Cache Eviction Framework for LLM at Inference Time
+<div align="center">
+  <img src="figures/nacl_icon.png" width="550px"/>
+  <br />
+  <br />
 
-## Introduction
-Large Language Models (LLMs) have ignited an innovative surge of AI applications, marking a new era of exciting possibilities equipped with extended context windows. However, hosting these models is cost-prohibitive mainly due to the extensive memory consumption of KV Cache involving long-context modeling. Despite several works proposing to evict unnecessary tokens from the KV Cache, most of them rely on the biased local statistics of accumulated attention scores and report performance using unconvincing metric like perplexity on inadequate short-text evaluation. In this paper, we propose NACL, a general framework for long-context KV cache eviction that achieves more optimal and efficient eviction in a single operation during the encoding phase. Due to NACL’s efficiency, we combine more accurate attention score statistics in PROXY-TOKENS EVICTION with the diversified random eviction strategy of RANDOM EVICTION, aiming to alleviate the issue of attention bias and enhance the robustness in maintaining pivotal tokens for long-context modeling tasks. Notably, our method significantly improves the perfor- mance on short- and long-text tasks by 80% and 76% respectively, reducing KV Cache by up to 5× with over 95% performance maintenance. 
+# [NACL: A General and Effective KV Cache Eviction Framework for LLMs at Inference Time](https://chenyilong.cn/assets/nacl.pdf)
+   <a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct" target="_blank">
+      <img alt="Models" src="https://img.shields.io/badge/🦙-LLaMA3.1-blue" />
+   </a>
+   <a href="https://github.com/OpenBMB/InfiniteBench" target="_blank">
+      <img alt="Datasets" src="https://img.shields.io/badge/📖-128K_Input-green" />
+   </a>
+  <a href="https://github.com/PaddlePaddle/Paddle/blob/develop/python/paddle/nn/functional/flash_attention.py#L1256" target="_blank">
+      <img alt="Kernel" src="https://img.shields.io/badge/⚡-FlashAttention2-yellow" />
+   </a>
+  <a href="https://chenyilong.cn/assets/nacl.pdf" target="_blank">
+      <img alt="Paper" src="https://img.shields.io/badge/📜-Paper-purple" />
+   </a>
+  <a href="https://2024.aclweb.org/" target="_blank">
+      <img alt="ACL 2024" src="https://img.shields.io/badge/Proceedings-ACL2024-red" />
+   </a>
+</div>
 
-## Installation
+## 📖 Introduction
+Welcome to NACL, a general and effective KV cache eviction framework for LLMs, requires no additional training. NACL can be easily integrated into existing LLMs, such as Meta-Llama, largely reducing KV Cache by up to 5x with minor performance loss. The official repository contains the code for our ACL2024 paper.
 
-```shell
-conda create -n NACL python=3.9
+## 🌟 Features
+- 🚀**General KV cache eviction framework**
+  - **Progressively layer-by-layer eviction** to progressively release the memory usage of previous layers during eviction.
+  - **Global optimal one eviction** among the whole encoding input to avoid the computational overhead of *one-token-in one-token-out eviction*.
+  - **Head-wise eviction** to introduce more diversity for improved generalization.
+- 💡**Two effective eviction policy in NACL**
+  - **Proxy token eviction** utilize a small portion of task-specific tokens for identifying pivotal tokens.
+  - **Random eviction** randomly sampling some tokens to be evicted to relieve biased attention scores and promote more robustness.
+- 🔥**Open-sourced implementation**
+  - Support the latest Meta-Llama 3.1 model[^1].
+  - Support the challenging InfiniteBench-128K[^2].
+  - Support FlashAttention-2 to return the attention score.
+  - Support multi-GPU inference.
 
-conda activate NACL
 
-wget https://paddle-whl.bj.bcebos.com/nightly/cu118/paddlepaddle-gpu/paddlepaddle_gpu-3.0.0.dev20240722-cp39-cp39-linux_x86_64.whl
+## 📌 How to run locally
 
-pip install paddlepaddle_gpu-3.0.0.dev20240722-cp39-cp39-linux_x86_64.whl
-
-pip install --pre --upgrade paddlenlp -f https://www.paddlepaddle.org.cn/whl/paddlenlp.html
-
+### 🗃️ Clone the repository
+```
 git clone https://github.com/PaddlePaddle/Research.git
-
 cd Research/NLP/ACL2024-NACL
+```
 
+### 🛠️ Requirements
+```shell
+# initialize conda env
+conda create -n NACL python=3.9
+conda activate NACL
+# install paddlepaddle-gpu with customized NACL's kernel for FlashAttention-2
+wget https://paddle-whl.bj.bcebos.com/nightly/cu118/paddlepaddle-gpu/paddlepaddle_gpu-3.0.0.dev20240722-cp39-cp39-linux_x86_64.whl
+pip install paddlepaddle_gpu-3.0.0.dev20240722-cp39-cp39-linux_x86_64.whl
+# install paddlenlp
+pip install --pre --upgrade paddlenlp -f https://www.paddlepaddle.org.cn/whl/paddlenlp.html
+# install other requirements
 pip install -r requirements.txt
 
 ```
 
-## How to Run
-
-
-### How to Download Data
+### 📚 How to Download Data
 
 Download the dataset the `data` folder. The data folder structure should be as follows.
 
@@ -56,9 +91,10 @@ ACL2024-NACL
 ...
 ```
 
-### How to Eval
+### 📈 How to Eval
+To evaluate the LLama3.1-8B model with 128K input, a single 80GB GPU is required.
 
-In the `src` folder, execute:
+**In the `src` folder**, execute:
 
 #### Single GPU Eval
 
@@ -111,7 +147,7 @@ The available tasks are:
 
 
 
-## Evaluation Result
+## 📊 Evaluation Result
 
 | Task Name        | Lamma3.1 8B 128K | NACL(80% KVCache Eviction) |
 | ---------------- | ---------------- | -------------------------- | 
@@ -127,17 +163,17 @@ The available tasks are:
 | Code.Run         | 0.0125           | 0.0175                     | 
 | Math.Calc        | -                | -                          | 
 | Math.Find        | 0.3285           | 0.3285                     | 
-| AVG              | 0.3914           | 0.3163                     | 
+| AVG.              | 0.3914           | 0.3163                     | 
 
 
 
-## Citation
+## 🔗 Citation
 
 
 ```bibtex
 @inproceedings{nacl2024,
-      title={NACL: A General and Effective KV Cache Eviction Framework for LLM at Inference Time}, 
-      author={Yilong Chen and Guoxia Wang and Junyuan Shang and  Shiyao Cui and Zhenyu Zhang and Tingwen Liu and Shuohuan Wang and Yu Sun and Dianhai Yu and Hua Wu},
+      title={NACL: A General and Effective KV Cache Eviction Framework for LLMs at Inference Time}, 
+      author={Yilong Chen and Guoxia Wang and Junyuan Shang and Shiyao Cui and Zhenyu Zhang and Tingwen Liu and Shuohuan Wang and Yu Sun and Dianhai Yu and Hua Wu},
       booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)},
       year={2024},
       publisher={Association for Computational Linguistics},
@@ -146,5 +182,7 @@ The available tasks are:
 ```
 
 ## References
-[$\infty $ Bench: Extending Long Context Evaluation Beyond 100K Tokens.](https://arxiv.org/abs/2402.13718)
-[The Llama 3 Herd of Models](https://scontent-itm1-1.xx.fbcdn.net/v/t39.2365-6/452387774_1036916434819166_4173978747091533306_n.pdf?_nc_cat=104&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=DTS7hDTcxZoQ7kNvgFEityk&_nc_ht=scontent-itm1-1.xx&gid=AK98To87L1-SZHQ0fCh7NFy&oh=00_AYCUYV1JtufGAbl4hVwf_rmIiU11NatzvqCsYJJ6Qn03rw&oe=66AED48D)
+
+[^1]:[The Llama 3 Herd of Models](https://scontent-itm1-1.xx.fbcdn.net/v/t39.2365-6/452387774_1036916434819166_4173978747091533306_n.pdf?_nc_cat=104&ccb=1-7&_nc_sid=3c67a6&_nc_ohc=DTS7hDTcxZoQ7kNvgFEityk&_nc_ht=scontent-itm1-1.xx&gid=AK98To87L1-SZHQ0fCh7NFy&oh=00_AYCUYV1JtufGAbl4hVwf_rmIiU11NatzvqCsYJJ6Qn03rw&oe=66AED48D)
+
+[^2]:[$\infty $ Bench: Extending Long Context Evaluation Beyond 100K Tokens.](https://arxiv.org/abs/2402.13718)
