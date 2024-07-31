@@ -41,8 +41,6 @@ Welcome to NACL, a general and effective KV cache eviction framework for LLMs, r
 
 ## 📌 How to run locally
 
-Using a single A100 80G GPU, perform dynamic graph inference on the InfiniteBench dataset with the Llama 3.1 8B model.
-
 ### 🗃️ Clone the repository
 ```
 git clone https://github.com/PaddlePaddle/Research.git
@@ -94,7 +92,7 @@ ACL2024-NACL
 ```
 
 ### 📈 How to Eval
-To evaluate the LLama3.1-8B model with 128K input, a single 80GB GPU is required.
+To evaluate the LLama3.1-8B model with 128K input, a single A100/A800 80GB GPU is required.
 
 **In the `src` folder**, execute:
 
