@@ -7,6 +7,7 @@
 * [自然语言处理(Natrual Language Processing)](#自然语言处理)
 * [知识图谱(Knowledge Graph)](#知识图谱)
 * [时空数据挖掘(Spatial-Temporal Data-Mining)](#时空数据挖掘)
+* [研发效率(Research Efficiency)](#研发效率)
 
 ## 计算机视觉
 | 任务类型     | 目录                                                         | 简介                                                         | 论文链接 |
@@ -68,6 +69,11 @@
 | 兴趣点生成 |[P3AC](ST_DM/KDD2020-P3AC)| 具备个性化的前缀嵌入的POI自动生成。 | - |
 | 区域生成 |[P3AC](ST_DM/GenRegion)| 基于路网进行区域划分的方法, 实现对特定区域基于路网的全划分，区域之间无交叠，无空隙，算法支持对全球的区域划分。| - |
 
+## 研发效率 
+| 软件名称       | 目录                     | 简介                                              |
+|--------------|------------------------|-------------------------------------------------|
+| paddleext    | [paddleext](RE/paddleext)     | paddle的扩展功能插件，可以让部分pytorch code 无缝运行在paddle平台上。 | 
+| paddlemetric | [paddlemetric](RE/paddlemetric) | torchmetric 的 paddle迁移版本，目前支持分类测度。              |
 
 ## 许可证书
 此向导由[PaddlePaddle](https://github.com/PaddlePaddle/Paddle)贡献，受[Apache-2.0 license](LICENSE)许可认证。
