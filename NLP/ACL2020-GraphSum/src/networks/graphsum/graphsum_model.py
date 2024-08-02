@@ -160,7 +160,7 @@ class GraphSumModel(object):
             if sen_slf_attn_bias is not None:
                 sen_slf_attn_bias = fluid.layers.cast(x=sen_slf_attn_bias, dtype=self._dtype)
 
-            if sen_slf_attn_bias is not None:
+            if graph_attn_bias is not None:
                 graph_attn_bias = fluid.layers.cast(x=graph_attn_bias, dtype=self._dtype)
 
         res = namedtuple('results', ['emb_out', 'word_slf_attn_bias', 'sen_slf_attn_bias',
