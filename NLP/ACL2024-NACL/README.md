@@ -151,20 +151,22 @@ The available tasks are:
 
 | Task Name        | Lamma3.1 8B 128K | NACL(80% KVCache Eviction) |
 | ---------------- | ---------------- | -------------------------- | 
-| Retrieve.PassKey | 1.0              | 0.9457                     | 
-| Retrieve.Number  | 0.9949           | 0.7474                     | 
-| Retrieve.KV      | 0.592            | 0.044                      | 
-| En.Sum           | 0.2761           | 0.2570                     | 
-| En.QA            | 0.1303           | 0.1338                     | 
-| En.MC            | 0.6637           | 0.6681                     | 
-| En.Dia           | 0.17             | 0.195                      | 
-| Zh.QA            | 0.1303           | 0.1330                     | 
-| Code.Debug       | 0.0076           | 0.0101                     | 
+| Retrieve.PassKey | 1.000              | 1.000                     | 
+| Retrieve.Number  | 0.9949           | 0.9661                     | 
+| Retrieve.KV*      | 0.5920            | 0.036                      | 
+| En.Sum           | 0.2761           | 0.2653                     | 
+| En.QA            | 0.1303           | 0.1441                     | 
+| En.MC            | 0.6637           | 0.6638                     | 
+| En.Dia           | 0.1700             | 0.155                      | 
+| Zh.QA            | 0.1303           | 0.1257                     | 
+| Code.Debug       | 0.0076           | 0.0102                     | 
 | Code.Run         | 0.0125           | 0.0175                     | 
 | Math.Calc        | -                | -                          | 
-| Math.Find        | 0.3285           | 0.3285                     | 
-| AVG.              | 0.3914           | 0.3163                     | 
+| Math.Find        | 0.3285           | 0.3286                     | 
+| AVG.             | 0.3914           | 0.3375                     | 
+| AVG. (w.o. Retrieve.KV)             | 0.3714           | 0.3676                    | 
 
+*We found that Retrieve.KV is one of the most challeging tasks for KV cache eviction-based methods under an extremely low KV cache eviction budget, such as 20%. This result indicates that there is considerable room for analysis and improvement in related methods.
 
 
 ## 🔗 Citation

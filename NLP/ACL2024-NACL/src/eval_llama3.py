@@ -72,8 +72,9 @@ def get_pred(
         print(input_text[-200:])
         print("=====================================")
     input = tok(input_text, truncation=False, return_tensors="pd")
-    input["temperature"] = 0.6
-    input["top_p"] = 0.9
+    input["decode_strategy"] = "greedy_search" # "greedy_search", "sampling" and "beam_search"
+    # input["temperature"] = 0.6
+    # input["top_p"] = 0.9
     input["max_new_tokens"] = max_tokens
     outputs = model.generate(**input)
 

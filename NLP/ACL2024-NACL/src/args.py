@@ -36,10 +36,10 @@ def parse_args() -> Namespace:
     p.add_argument("--verbose", action='store_true')
     p.add_argument("--device", type=str, default="cuda")
     p.add_argument("--enable_nacl_evict", action='store_true', help="Enable the NACL eviction strategy.") # noqa
-    p.add_argument("--proxy_tokens_ratio", type=float, default=0.18, help="Proportion of proxy tokens in the sequence length, used for calculating the Attention Score.") # noqa
-    p.add_argument("--proxy_token_keep_ratio", type=float, default=0.06, help="Ratio of tokens retained by the proxy token eviction strategy relative to sequence length.") # noqa
-    p.add_argument("--random_token_keep_ratio", type=float, default=0.12, help="Ratio of tokens retained by the random eviction strategy relative to sequence length.") # noqa
-    p.add_argument("--token_protect_ratio", type=float, default=0.02, help="Ratio of tokens retained for protection, including sink tokens and recently used tokens, relative to sequence length.") # noqa
-    p.add_argument("--sink_tokens", type=int, default=50, help="Number of sink tokens.") # noqa
+    p.add_argument("--proxy_tokens_ratio", type=float, default=0.01, help="Proportion of proxy tokens in the sequence length, used for calculating the Attention Score.") # noqa
+    p.add_argument("--proxy_token_keep_ratio", type=float, default=0.12, help="Ratio of tokens retained by the proxy token eviction strategy relative to sequence length.") # noqa
+    p.add_argument("--random_token_keep_ratio", type=float, default=0.07, help="Ratio of tokens retained by the random eviction strategy relative to sequence length.") # noqa
+    p.add_argument("--token_protect_ratio", type=float, default=0.01, help="Ratio of tokens retained for protection, including sink tokens and recently used tokens, relative to sequence length.") # noqa
+    p.add_argument("--sink_tokens", type=int, default=256, help="Number of sink tokens.") # noqa
     p.add_argument("--min_eviction_seqlen", type=int, default=2048, help="Minimum sequence length to trigger the eviction strategy.") # noqa
     return p.parse_args()

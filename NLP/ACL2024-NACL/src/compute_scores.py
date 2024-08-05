@@ -424,7 +424,7 @@ ALL_TASKS = [
     "longbook_qa_eng",
     "longbook_qa_chn",
     "math_find",
-    "math_calc",
+    # "math_calc",
     "code_run",
     "code_debug",
 ]
