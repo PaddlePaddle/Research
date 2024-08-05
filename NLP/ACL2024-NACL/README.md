@@ -92,7 +92,7 @@ ACL2024-NACL
 ```
 
 ### 📈 How to Eval
-To evaluate the LLama3.1-8B model with 128K input, a single 80GB GPU is required.
+To evaluate the LLama3.1-8B model with 128K input, a single A100/A800 80GB GPU is required.
 
 **In the `src` folder**, execute:
 
