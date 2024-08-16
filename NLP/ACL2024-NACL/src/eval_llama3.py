@@ -125,12 +125,12 @@ if __name__ == "__main__":
 
     if args.enable_nacl_evict:
         kvcache_eviction = {
-            "proxy_tokens_ratio": args.proxy_tokens_ratio, # default: 0.18
-            "sink_tokens": args.sink_tokens, # default: 50
-            "proxy_token_keep_ratio": args.proxy_token_keep_ratio, # default: 0.06
-            "random_token_keep_ratio": args.random_token_keep_ratio, # default: 0.12
-            "token_protect_ratio": args.token_protect_ratio, # default: 0.02
-            "min_eviction_seqlen": args.min_eviction_seqlen # default: 2048
+            "proxy_tokens_ratio": args.proxy_tokens_ratio,
+            "sink_tokens": args.sink_tokens,
+            "proxy_token_keep_ratio": args.proxy_token_keep_ratio,
+            "random_token_keep_ratio": args.random_token_keep_ratio,
+            "token_protect_ratio": args.token_protect_ratio,
+            "min_eviction_seqlen": args.min_eviction_seqlen
         }
         model.config.kvcache_eviction = kvcache_eviction
         print(f"Enable NACL eviction, config: {kvcache_eviction}")

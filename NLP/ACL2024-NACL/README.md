@@ -3,7 +3,7 @@
   <br />
   <br />
 
-# [NACL: A General and Effective KV Cache Eviction Framework for LLMs at Inference Time](https://chenyilong.cn/assets/nacl.pdf)
+# [NACL: A General and Effective KV Cache Eviction Framework for LLMs at Inference Time](https://aclanthology.org/2024.acl-long.428)
    <a href="https://huggingface.co/meta-llama/Meta-Llama-3.1-8B-Instruct" target="_blank">
       <img alt="Models" src="https://img.shields.io/badge/🦙-LLaMA3.1-blue" />
    </a>
@@ -13,7 +13,7 @@
   <a href="https://github.com/PaddlePaddle/Paddle/blob/develop/python/paddle/nn/functional/flash_attention.py#L1256" target="_blank">
       <img alt="Kernel" src="https://img.shields.io/badge/⚡-FlashAttention2-yellow" />
    </a>
-  <a href="https://chenyilong.cn/assets/nacl.pdf" target="_blank">
+  <a href="https://aclanthology.org/2024.acl-long.428" target="_blank">
       <img alt="Paper" src="https://img.shields.io/badge/📜-Paper-purple" />
    </a>
   <a href="https://2024.aclweb.org/" target="_blank">
@@ -173,13 +173,25 @@ The available tasks are:
 
 
 ```bibtex
-@inproceedings{nacl2024,
-      title={NACL: A General and Effective KV Cache Eviction Framework for LLMs at Inference Time}, 
-      author={Yilong Chen and Guoxia Wang and Junyuan Shang and Shiyao Cui and Zhenyu Zhang and Tingwen Liu and Shuohuan Wang and Yu Sun and Dianhai Yu and Hua Wu},
-      booktitle={Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (ACL)},
-      year={2024},
-      publisher={Association for Computational Linguistics},
-      address={Bangkok, Thailand}
+@inproceedings{chen-etal-2024-nacl,
+    title = "{NACL}: A General and Effective {KV} Cache Eviction Framework for {LLM} at Inference Time",
+    author = "Chen, Yilong  and
+      Wang, Guoxia  and
+      Shang, Junyuan  and
+      Cui, Shiyao  and
+      Zhang, Zhenyu  and
+      Liu, Tingwen  and
+      Wang, Shuohuan  and
+      Sun, Yu  and
+      Yu, Dianhai  and
+      Wu, Hua",
+    booktitle = "Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = aug,
+    year = "2024",
+    address = "Bangkok, Thailand",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.acl-long.428",
+    pages = "7913--7926"
 }
 ```
 
