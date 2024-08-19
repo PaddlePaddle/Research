@@ -1,0 +1,451 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.8.12, pytest-7.1.2, pluggy-1.0.0
+rootdir: /Users/sun/Projects/oix/baidu/ccl/paddlemetric/src/tests/classification
+plugins: hydra-core-1.1.0.dev5
+collected 816 items
+
+test_f_beta.py ..................ssssssssssssssssss..ssssssssssssssssss..ssssssssssssssssss..............................................................................................................ssssssssss................ss..................ss..................ss..................ss....ssssssssssssssssss..ssssssssssssssssss..ssssssssssssssssss..............................................................................................................ssssssssss................ss..................ss..................ss..................ss....ssssssssssssssssss..ssssssssssssssssss..ssssssssssssssssss..............................................................................................................ssssssssss................ss..................ss..................ss..................ss../Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/comet_ml/monkey_patching.py:19: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+/Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/comet_ml/monkey_patching.py:19: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+  import imp
+....................
+
+=============================== warnings summary ===============================
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:19
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:19: DeprecationWarning: Call to deprecated create function FileDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    DESCRIPTOR = _descriptor.FileDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:33
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:33: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:37
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:37: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:41
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:41: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:45
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:45: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:49
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:49: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:53
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:53: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:57
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:57: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:61
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:61: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:65
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:65: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:69
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:69: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:73
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:73: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:77
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:77: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:81
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:81: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:27
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:27: DeprecationWarning: Call to deprecated create function EnumDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _ATTRTYPE = _descriptor.EnumDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:115
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:115: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:119
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:119: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:123
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:123: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:127
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:127: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:131
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:131: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:135
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:135: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:139
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:139: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:143
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:143: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:147
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:147: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:151
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:151: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:155
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:155: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:159
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:159: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:163
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:163: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:167
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:167: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:171
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:171: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:175
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:175: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:179
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:179: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:183
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:183: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:187
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:187: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:191
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:191: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:195
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:195: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:199
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:199: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:203
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:203: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:207
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:207: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:211
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:211: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:215
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:215: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:219
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:219: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:223
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:223: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:227
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:227: DeprecationWarning: Call to deprecated create function EnumValueDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.EnumValueDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:109
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:109: DeprecationWarning: Call to deprecated create function EnumDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _VARTYPE_TYPE = _descriptor.EnumDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:247
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:247: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:240
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:240: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _VERSION = _descriptor.Descriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:278
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:278: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:285
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:285: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:292
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:292: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:299
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:299: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:271
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:271: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _PROCESSMESHDESC = _descriptor.Descriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:330
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:330: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:337
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:337: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:344
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:344: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:351
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:351: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:358
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:358: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:365
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:365: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:372
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:372: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:379
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:379: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:386
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:386: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:393
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:393: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:400
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:400: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:407
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:407: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:414
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:414: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:421
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:421: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:428
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:428: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:323
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:323: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _OPDESC_ATTR = _descriptor.Descriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:458
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:458: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:465
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:465: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:451
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:451: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _OPDESC_VAR = _descriptor.Descriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:495
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:495: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:502
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:502: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:509
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:509: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:516
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:516: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:523
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:523: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:488
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:488: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _OPDESC = _descriptor.Descriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:554
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:554: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:561
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:561: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:568
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:568: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:575
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:575: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:582
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:582: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:589
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:589: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:596
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:596: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:547
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:547: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _OPPROTO_VAR = _descriptor.Descriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:626
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:626: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:633
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:633: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:640
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:640: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:647
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:647: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:654
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:654: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:661
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:661: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:619
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:619: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _OPPROTO_ATTR = _descriptor.Descriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:691
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:691: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:698
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:698: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:705
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:705: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:712
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:712: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:719
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:719: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:684
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:684: DeprecationWarning: Call to deprecated create function Descriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _OPPROTO = _descriptor.Descriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:750
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:750: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:757
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/proto/framework_pb2.py:757: DeprecationWarning: Call to deprecated create function FieldDescriptor(). Note: Create unlinked descriptors is going to go away. Please use get/find descriptors from generated code or query the descriptor_pool.
+    _descriptor.FieldDescriptor(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/comet_ml/monkey_patching.py:19
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/comet_ml/monkey_patching.py:19: DeprecationWarning: the imp module is deprecated in favour of importlib; see the module's documentation for alternative uses
+    import imp
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/fluid/dygraph/math_op_patch.py:276: 1 warning
+test_f_beta.py: 3304 warnings
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/dygraph/math_op_patch.py:276: UserWarning: The dtype of left and right variables are not the same, left dtype is paddle.float32, but right dtype is paddle.int64, the right dtype will convert to paddle.float32
+    warnings.warn(
+
+../../../../../../../.envs/oix/lib/python3.8/site-packages/paddle/tensor/creation.py:125: 1 warning
+test_f_beta.py: 326 warnings
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/tensor/creation.py:125: DeprecationWarning: `np.object` is a deprecated alias for the builtin `object`. To silence this warning, use `object` by itself. Doing this will not modify any behavior and is safe. 
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    if data.dtype == np.object:
+
+test_f_beta.py: 2012 warnings
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/layers/tensor.py:657: UserWarning: paddle.assign doesn't support float64 input now due to current platform protobuf data limitation, we convert it to float32
+    warnings.warn(
+
+test_f_beta.py: 13026 warnings
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/framework.py:1104: DeprecationWarning: `np.bool` is a deprecated alias for the builtin `bool`. To silence this warning, use `bool` by itself. Doing this will not modify any behavior and is safe. If you specifically wanted the numpy scalar type, use `np.bool_` here.
+  Deprecated in NumPy 1.20; for more details and guidance: https://numpy.org/devdocs/release/1.20.0-notes.html#deprecations
+    elif dtype == np.bool:
+
+test_f_beta.py: 794 warnings
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/dygraph/math_op_patch.py:276: UserWarning: The dtype of left and right variables are not the same, left dtype is paddle.float32, but right dtype is paddle.int32, the right dtype will convert to paddle.float32
+    warnings.warn(
+
+test_f_beta.py: 792 warnings
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/dygraph/math_op_patch.py:276: UserWarning: The dtype of left and right variables are not the same, left dtype is paddle.int64, but right dtype is paddle.int32, the right dtype will convert to paddle.int64
+    warnings.warn(
+
+test_f_beta.py: 792 warnings
+  /Users/sun/Projects/.envs/oix/lib/python3.8/site-packages/paddle/fluid/dygraph/math_op_patch.py:276: UserWarning: The dtype of left and right variables are not the same, left dtype is paddle.int64, but right dtype is paddle.float32, the right dtype will convert to paddle.int64
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+========= 600 passed, 216 skipped, 21149 warnings in 85.12s (0:01:25) ==========
