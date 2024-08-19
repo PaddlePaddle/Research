@@ -24,7 +24,7 @@ matplotlib==2.2.3
 nltk==3.4
 numpy==1.16.1
 objgraph==3.4.1
-opencv-python==4.1.1.26
+opencv-python==4.2.0.32
 paddlepaddle-gpu==1.6.1.post97
 Pillow==6.2.0
 prettytable==0.7.2
