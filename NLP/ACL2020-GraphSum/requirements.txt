@@ -1,4 +1,4 @@
-nltk==3.4.5
+nltk==3.6.6
 numpy==1.18.1
 paddlepaddle-gpu==1.6.3.post107
 pyrouge==0.1.3
