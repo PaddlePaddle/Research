@@ -1,4 +1,4 @@
-numpy==1.14.5
+numpy==1.22.0
 six==1.11.0
 paddlepaddle-gpu==1.7.1.post97
 paddlehub==1.6.1
